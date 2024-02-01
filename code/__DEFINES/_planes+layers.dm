@@ -353,6 +353,12 @@
  */
 #define FULLSCREEN_PLANE 75
 
+/**
+ *! -- Sonar Plane
+ *? Used for renders for effects like sonar / sensory things
+ */
+#define SONAR_PLANE 91 // 91 because 90 is the Blind plane, and you should be able to use your ears when your eyes don't work
+
 #define FULLSCREEN_LAYER_OBFUSCATION 19.9
 #define FULLSCREEN_LAYER_MAIN 20.1
 #define FULLSCREEN_LAYER_DAMAGE 20.2
@@ -365,7 +371,12 @@
  *? Used for renders for effects like sonar / sensory things
  *  todo: this needs to be under fullscreen plane but above blind.
  */
+<<<<<<< HEAD
 #define SONAR_PLANE 80
+=======
+#define CAMERA_MASK_PLANE 92
+#define CAMERA_MASK_LAYER_MAIN 1
+>>>>>>> 90092831c (Makes sonar go over blindness (#6306))
 
 /**
  *! -- Player HUD Plane
