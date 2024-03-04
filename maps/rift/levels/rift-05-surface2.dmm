@@ -3119,7 +3119,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/pool)
 "bVi" = (
-/obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/lower/medsec_maintenance)
 "bVn" = (
@@ -21780,7 +21779,6 @@
 /obj/structure/closet,
 /obj/random/maintenance/medical,
 /obj/random/maintenance/clean,
-/obj/random/junk,
 /obj/item/reagent_containers/food/drinks/bottle/rum{
 	desc = "TASTE DEMOCRACY";
 	name = "Managed Democra-cider"
@@ -23237,9 +23235,6 @@
 /area/rnd/outpost/xenobiology/outpost_slimepens)
 "oPZ" = (
 /obj/structure/closet/crate/trashcart,
-/obj/random/junk,
-/obj/random/junk,
-/obj/random/junk,
 /turf/simulated/floor,
 /area/maintenance/substation/security)
 "oQa" = (
@@ -24121,7 +24116,6 @@
 /area/hallway/primary/surfacetwo)
 "pmi" = (
 /obj/structure/catwalk,
-/obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/security/upper)
 "pnl" = (
@@ -25225,7 +25219,6 @@
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacetwo)
 "qdL" = (
-/obj/random/junk,
 /turf/simulated/floor/wood,
 /area/maintenance/security/upper)
 "qdY" = (
@@ -26727,7 +26720,6 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/lower/medsec_maintenance)
 "rbb" = (
@@ -35110,7 +35102,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/asmaint2)
 "wOG" = (
-/obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/security/upper)
 "wPF" = (
