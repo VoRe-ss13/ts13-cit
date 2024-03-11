@@ -352,6 +352,7 @@
 			return
 
 	var/old_loc = src.loc
+<<<<<<< HEAD
 
 	throwing?.terminate()
 
@@ -366,7 +367,38 @@
 	// 		return
 	// else if(!user.put_in_active_hand(src))
 	if(!user.put_in_active_hand(src))
+=======
+	var/obj/item/actually_picked_up = src
+	var/has_to_drop_to_ground_on_fail = FALSE
+
+	if(isturf(old_loc))
+		// if picking up from floor
+		throwing?.terminate()
+	else if(item_flags & ITEM_IN_STORAGE)
+		// trying to take out of backpack
+		var/datum/object_system/storage/resolved
+		if(istype(loc, /atom/movable/storage_indirection))
+			var/atom/movable/storage_indirection/holder = loc
+			resolved = holder.parent
+		else if(isobj(loc))
+			var/obj/obj_loc = loc
+			resolved = obj_loc.obj_storage
+		if(isnull(resolved))
+			item_flags &= ~ITEM_IN_STORAGE
+			CRASH("in storage at [loc] ([REF(loc)]) ([loc?.type || "NULL"]) but cannot resolve storage system")
+		actually_picked_up = resolved.try_remove(src, user, new /datum/event_args/actor(user))
+		// they're in user, but not equipped now. this is so it doesn't touch the ground first.
+		has_to_drop_to_ground_on_fail = TRUE
+
+	if(isnull(actually_picked_up))
+		to_chat(user, SPAN_WARNING("[src] somehow slips through your grasp. What just happened?"))
 		return
+	if(!user.put_in_hands(actually_picked_up))
+		if(has_to_drop_to_ground_on_fail)
+			actually_picked_up.forceMove(user.drop_location())
+>>>>>>> f4fae7f84 (bugfixes (#6329))
+		return
+	// success
 	if(isturf(old_loc))
 		var/obj/effect/temporary_effect/item_pickup_ghost/ghost = new(old_loc)
 		ghost.assumeform(src)

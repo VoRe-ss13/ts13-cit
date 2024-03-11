@@ -120,6 +120,11 @@ SUBSYSTEM_DEF(ticker)
 
 				SSdbcore.SetRoundEnd()
 				SSpersistence.SavePersistence()
+<<<<<<< HEAD
+=======
+				if(!SSpersistence.world_saved_count && CONFIG_GET(flag/persistence) && !SSpersistence.world_non_canon)
+					SSpersistence.save_the_world()
+>>>>>>> f4fae7f84 (bugfixes (#6329))
 
 
 /datum/controller/subsystem/ticker/proc/on_mc_init_finish()

@@ -22,9 +22,15 @@
 		adminspawned = TRUE
 		rebuild()
 		return INITIALIZE_HINT_NORMAL
+<<<<<<< HEAD
 	var/conflict = length(duplicates())
 	if(conflict)
 		stack_trace("WARNING: [type] network building helper found check_duplicates() conflicts [english_list(conflict)] in its location.!")
+=======
+	var/conflict = duplicates()
+	if(length(conflict))
+		stack_trace("WARNING: [type] network building helper found check_duplicates() conflicts [english_list(conflict)] ([length(conflict)]) in its location.!")
+>>>>>>> f4fae7f84 (bugfixes (#6329))
 		return INITIALIZE_HINT_QDEL
 	network_directions = scan()
 	return INITIALIZE_HINT_LATELOAD
