@@ -263,8 +263,23 @@
 	SEND_SIGNAL(source, COMSIG_CD_RESET(index), S_TIMER_COOLDOWN_TIMELEFT(source, index))
 	TIMER_COOLDOWN_END(source, index)
 
+<<<<<<< HEAD
 //? simple serialize/deserialize; it's expected to use this for simple datums only.
 //? do not use this for /atoms, SSpersistence handles that!
+=======
+//* Duplication *//
+
+/**
+ * makes a clone of this datum
+ *
+ * @params
+ * * include_contents - include semantic contents; ergo 'what we are hosting' vs 'what we are'
+ */
+/datum/proc/clone(include_contents)
+	return new type
+
+//* Serialization *//
+>>>>>>> f825c9af6 (adds persistent sheet silos to mining (#6353))
 
 /**
  * serializes us to a list
