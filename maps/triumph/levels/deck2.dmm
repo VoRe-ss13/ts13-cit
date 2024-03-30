@@ -14989,10 +14989,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/cargo)
 "Tw" = (
-/obj/structure/flora/pottedplant/orientaltree,
 /obj/machinery/computer/security/telescreen{
 	pixel_x = 32
 	},
+/obj/machinery/vending/mre,
 /turf/simulated/floor/wood,
 /area/crew_quarters/bar)
 "Ty" = (
