@@ -2806,6 +2806,18 @@
 	},
 /turf/simulated/floor,
 /area/maintenance/substation/cafeteria_dock)
+<<<<<<< HEAD
+=======
+"bHa" = (
+/obj/effect/floor_decal/industrial/loading{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monodark,
+/area/security/security_processing)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "bHs" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -8598,6 +8610,10 @@
 /obj/structure/cable/green{
 	icon_state = "2-4"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/security_processing)
 "fEL" = (
@@ -13283,6 +13299,18 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/crew_quarters/sleep)
+"iED" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 4
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel,
+/area/security/hallway)
 "iEO" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/medical,
@@ -14997,6 +15025,18 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/reception)
+<<<<<<< HEAD
+=======
+"jMp" = (
+/obj/machinery/turnstile/exit{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_processing)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "jMu" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/steel,
@@ -22723,6 +22763,9 @@
 	dir = 4;
 	pixel_x = -30
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/security_processing)
 "oxe" = (
@@ -23313,6 +23356,12 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/recreation_area)
+"oQZ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monodark,
+/area/security/security_processing)
 "oRp" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -23693,6 +23742,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -30332,6 +30384,7 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/security/security_processing)
 "tAT" = (
@@ -30678,6 +30731,18 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/crew_quarters/sleep)
+<<<<<<< HEAD
+=======
+"tJz" = (
+/obj/effect/floor_decal/borderfloorblack/corner{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_processing)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "tJG" = (
 /obj/machinery/door/airlock/glass/research{
 	name = "Telescience Wing"
@@ -31456,6 +31521,19 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/hallway)
+<<<<<<< HEAD
+=======
+"uoj" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/structure/curtain/open/black,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_processing)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "uom" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/research/xenobio)
@@ -35890,12 +35968,6 @@
 	},
 /obj/effect/floor_decal/corner/red/bordercorner2{
 	dir = 4
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 5
-	},
-/obj/effect/floor_decal/corner/red/bordercorner2{
-	dir = 5
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/hallway)
@@ -55769,6 +55841,14 @@ nJT
 scJ
 hpE
 kzS
+<<<<<<< HEAD
+=======
+bnf
+tkZ
+iED
+grI
+nDY
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 nQn
 wft
 rcB
@@ -56349,9 +56429,18 @@ wsa
 vKj
 tiu
 bhS
+<<<<<<< HEAD
 nuH
 nMi
 dBB
+=======
+kxd
+ceg
+llM
+llM
+oQZ
+llM
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 yeT
 nMi
 dBB

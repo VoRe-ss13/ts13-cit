@@ -2246,6 +2246,13 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /turf/simulated/floor/tiled,
 /area/engineering/atmos)
+"fJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "fK" = (
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/borderfloor{
@@ -3266,6 +3273,18 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/underone)
+<<<<<<< HEAD
+=======
+"jw" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/chemical_dispenser/catering/bar_soft{
+	dir = 4
+	},
+/obj/machinery/fire_alarm/west_mount,
+/turf/simulated/floor/tiled/white,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "jx" = (
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 8
@@ -3828,6 +3847,18 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/rnd/secure_storage/upper)
+<<<<<<< HEAD
+=======
+"lB" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/machinery/appliance/cooker/fryer,
+/obj/structure/extinguisher_cabinet{
+	dir = 8;
+	pixel_x = 30
+	},
+/turf/simulated/floor/tiled/white,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "lC" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -4238,6 +4269,40 @@
 "mQ" = (
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/atmos/hallway)
+<<<<<<< HEAD
+=======
+"mR" = (
+/obj/structure/table/reinforced,
+/obj/item/towel/random{
+	pixel_y = -4
+	},
+/obj/item/towel/random{
+	pixel_y = -4
+	},
+/obj/item/towel/random{
+	pixel_y = -4
+	},
+/obj/item/towel/random,
+/obj/item/towel/random,
+/obj/item/towel/random,
+/obj/item/towel/random{
+	pixel_y = 4
+	},
+/obj/item/towel/random{
+	pixel_y = 4
+	},
+/obj/item/towel/random{
+	pixel_y = 4
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+"mT" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "mU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
@@ -4545,6 +4610,17 @@
 "ol" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/engineering)
+<<<<<<< HEAD
+=======
+"om" = (
+/obj/machinery/camera/network/security{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "on" = (
 /obj/machinery/atmospherics/component/binary/pump{
 	dir = 4;
@@ -4587,6 +4663,27 @@
 /obj/effect/paint/pipecyan,
 /turf/simulated/floor/plating,
 /area/engineering/atmos)
+<<<<<<< HEAD
+=======
+"ov" = (
+/obj/effect/floor_decal/industrial/halfstair{
+	dir = 4
+	},
+/obj/structure/railing/grey{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "ow" = (
 /obj/machinery/door/airlock/glass/atmos,
 /obj/machinery/atmospherics/pipe/simple/hidden/red,
@@ -4699,6 +4796,35 @@
 	},
 /turf/simulated/floor/tiled/steel_dirty,
 /area/rnd/secure_storage/upper)
+<<<<<<< HEAD
+=======
+"oQ" = (
+/obj/effect/floor_decal/industrial/warning/full,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/green{
+	icon_state = "16-0"
+	},
+/obj/machinery/atmospherics/pipe/zpipe/up/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "oS" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -4842,6 +4968,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/engineering)
+"pq" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "pr" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -4974,6 +5107,12 @@
 "pM" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/rift/station/fighter_bay/transport_tunnel_garage)
+"pN" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/concrete/tile/indoors,
+/area/security/prison/lower)
 "pO" = (
 /obj/structure/railing{
 	dir = 8
@@ -5141,6 +5280,22 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/atmos)
+<<<<<<< HEAD
+=======
+"qu" = (
+/obj/structure/closet/crate/freezer,
+/turf/simulated/floor/tiled/freezer/cold,
+/area/security/prison/lower)
+"qw" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "qy" = (
 /obj/structure/cable/green{
 	icon_state = "0-4"
@@ -5184,6 +5339,26 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/underone)
+<<<<<<< HEAD
+=======
+"qD" = (
+/obj/machinery/atmospherics/component/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/concrete/tile/indoors,
+/area/security/prison/lower)
+"qF" = (
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	id = "prison_spectators";
+	name = "Prison Spectating Booth"
+	},
+/turf/simulated/floor,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "qH" = (
 /obj/spawner/window/low_wall/borosillicate/reinforced/full/firelocks,
 /turf/simulated/floor/plating,
@@ -5668,6 +5843,20 @@
 /obj/random/trash_pile,
 /turf/simulated/floor/plating,
 /area/maintenance/engineering)
+<<<<<<< HEAD
+=======
+"sO" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/appliance/mixer/candy,
+/obj/machinery/fire_alarm/east_mount,
+/turf/simulated/floor/tiled/white,
+/area/security/prison/lower)
+"sP" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "sQ" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9
@@ -6413,6 +6602,10 @@
 /obj/machinery/pipedispenser/disposal,
 /turf/simulated/floor/tiled,
 /area/engineering/atmos)
+"vp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "vq" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow,
 /obj/machinery/meter,
@@ -6934,6 +7127,10 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/wood,
 /area/rift/station/fighter_bay)
+"xi" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "xj" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -7430,6 +7627,17 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/secure_storage/upper)
+<<<<<<< HEAD
+=======
+"yC" = (
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/turf/simulated/floor,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "yD" = (
 /obj/machinery/light{
 	dir = 4
@@ -7460,6 +7668,19 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/underone)
+<<<<<<< HEAD
+=======
+"yJ" = (
+/obj/effect/floor_decal/industrial/halfstair{
+	dir = 8
+	},
+/turf/simulated/floor/concrete/tile/indoors,
+/area/security/prison/lower)
+"yL" = (
+/obj/machinery/atmospherics/component/unary/vent_scrubber/on,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "yM" = (
 /obj/effect/floor_decal/rust,
 /obj/structure/cable/green{
@@ -7958,6 +8179,18 @@
 /obj/machinery/holoplant,
 /turf/simulated/floor/tiled/white,
 /area/rnd/secure_storage/upper)
+<<<<<<< HEAD
+=======
+"Az" = (
+/obj/machinery/door/window/westleft,
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	id = "prison_kitchen";
+	name = "Prison Kitchen"
+	},
+/turf/simulated/floor/concrete/tile/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "AA" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/door/blast/regular{
@@ -8092,6 +8325,14 @@
 	},
 /turf/simulated/floor/wood,
 /area/maintenance/engineering)
+"Bi" = (
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/extinguisher_cabinet{
+	dir = 8;
+	pixel_x = 30
+	},
+/turf/simulated/floor/concrete/tile/indoors,
+/area/security/prison/lower)
 "Bj" = (
 /turf/simulated/shuttle/wall/voidcraft,
 /area/turbolift/rmine/under1)
@@ -8677,6 +8918,26 @@
 /obj/effect/floor_decal/borderfloor,
 /turf/simulated/floor/tiled,
 /area/rnd/secure_storage/upper)
+<<<<<<< HEAD
+=======
+"Dy" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/radio/intercom/department/security{
+	dir = 1;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/monowhite,
+/area/security/prison/lower)
+"Dz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "DC" = (
 /obj/machinery/door/airlock/glass_external{
 	req_one_access = list(47)
@@ -9202,6 +9463,10 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/underone)
+"Fx" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/on,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "Fz" = (
 /obj/effect/floor_decal/techfloor,
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
@@ -9603,6 +9868,12 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/engineering/drone_fabrication)
+"GG" = (
+/obj/machinery/atmospherics/component/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "GH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/purple{
 	dir = 4
@@ -9617,6 +9888,12 @@
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
 /turf/simulated/floor/tiled,
 /area/engineering/atmos)
+"GK" = (
+/obj/effect/floor_decal/rust,
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/turf/simulated/floor,
+/area/security/prison/lower)
 "GM" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
 	dir = 1
@@ -9688,6 +9965,15 @@
 /obj/random/maintenance/engineering,
 /turf/simulated/floor/plating,
 /area/maintenance/engineering)
+"Hb" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "Hc" = (
 /obj/structure/railing{
 	dir = 4
@@ -10232,6 +10518,28 @@
 /obj/item/reagent_containers/spray/squirt,
 /turf/simulated/floor/plating,
 /area/maintenance/elevator)
+<<<<<<< HEAD
+=======
+"IS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+"IT" = (
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	id = "prison_spectators";
+	name = "Spectator Shutter Control";
+	pixel_x = -25;
+	pixel_y = -5;
+	req_one_access = list(1,2,4,38)
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/concrete/tile/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "IV" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -10665,6 +10973,16 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/engineering/atmos)
+"Kz" = (
+/obj/effect/floor_decal/rust,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/security/prison/lower)
 "KA" = (
 /obj/effect/floor_decal/industrial/loading{
 	dir = 4
@@ -11776,6 +12094,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/rnd/secure_storage/upper)
+"Og" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "Oh" = (
 /obj/item/circuitboard/skills{
 	pixel_x = -3;
@@ -11907,6 +12232,21 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/rift/station/fighter_bay/hangar)
+<<<<<<< HEAD
+=======
+"Ox" = (
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "Oy" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9
@@ -12493,6 +12833,16 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/station/protean_nanite_room)
+"QS" = (
+/obj/effect/floor_decal/rust,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/security/prison/lower)
 "QU" = (
 /obj/effect/floor_decal/spline/plain,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -12622,6 +12972,15 @@
 /obj/effect/paint/pipecyan,
 /turf/simulated/floor/plating,
 /area/engineering/atmos)
+"Rq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "Rr" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/structure/cable{
@@ -12657,10 +13016,21 @@
 /turf/simulated/floor/tiled/steel,
 /area/rift/station/fighter_bay/maintenance)
 "Rx" = (
+<<<<<<< HEAD
 /obj/structure/railing,
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/lythios43c/indoors,
 /area/security/prison)
+=======
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "Rz" = (
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -12731,6 +13101,15 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/engineering/atmos)
+"RK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "RL" = (
 /obj/structure/grille,
 /obj/structure/foamedmetal,
@@ -12821,6 +13200,22 @@
 	},
 /turf/simulated/floor/tiled/kafel_full/blue,
 /area/crew_quarters/pool)
+<<<<<<< HEAD
+=======
+"Sa" = (
+/obj/effect/floor_decal/rust,
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor,
+/area/security/prison/lower)
+"Sb" = (
+/turf/simulated/floor/tiled/white,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "Se" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -12949,6 +13344,22 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/underone)
+<<<<<<< HEAD
+=======
+"SD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+"SE" = (
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/concrete/tile/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "SG" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/membrane{
@@ -13273,6 +13684,13 @@
 	},
 /turf/simulated/floor,
 /area/hallway/primary/underone)
+"Uj" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
 "Ul" = (
 /obj/machinery/space_heater,
 /obj/structure/railing,
@@ -13413,6 +13831,22 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tcommsat/computer)
+<<<<<<< HEAD
+=======
+"UJ" = (
+/obj/structure/railing/grey{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/scale,
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "UL" = (
 /obj/structure/railing{
 	dir = 4
@@ -14760,6 +15194,24 @@
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled,
 /area/maintenance/elevator)
+<<<<<<< HEAD
+=======
+"ZH" = (
+/obj/effect/floor_decal/rust,
+/obj/machinery/door/airlock/maintenance/sec,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/security/prison/lower)
+"ZJ" = (
+/obj/structure/bed/chair/sofa/green/left,
+/turf/simulated/floor/concrete/indoors,
+/area/security/prison/lower)
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 "ZK" = (
 /obj/machinery/atmospherics/component/binary/pump{
 	dir = 1;
@@ -31471,6 +31923,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+BH
+gq
+Kz
+vc
+BH
+aa
+ua
+rI
+Vg
+SP
+Vg
+Vg
+Vg
+Vg
+wj
+ua
+Np
+dA
+yg
+Vb
+DM
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
@@ -31857,6 +32342,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+ua
+ua
+JJ
+Kz
+Vd
+VJ
+ua
+ua
+rI
+Vg
+SP
+Vg
+Ai
+Ai
+Vg
+Vg
+Pu
+Jo
+dA
+Ym
+Vb
+DM
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
@@ -32050,6 +32568,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+ua
+Zi
+vc
+JT
+qw
+GK
+QS
+JJ
+ua
+FP
+Vg
+Vg
+GG
+Vg
+Vg
+mT
+YF
+ua
+Np
+dA
+rQ
+Vb
+DM
+ua
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
@@ -32244,6 +32795,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+fB
+vc
+JT
+JT
+JJ
+Oo
+Sa
+GK
+yC
+om
+IS
+IS
+pq
+Hb
+vp
+SD
+wj
+ua
+Np
+dA
+iK
+Vb
+DM
+ua
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
@@ -32438,6 +33022,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+AK
+JT
+ua
+ua
+ua
+ua
+ua
+ua
+ua
+ua
+UJ
+Jy
+Jy
+Rx
+Vg
+Jy
+UG
+ua
+ua
+ua
+bB
+ua
+ua
+ua
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
@@ -32826,6 +33443,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+JJ
+JT
+ua
+ua
+UT
+uG
+Vg
+Vg
+Vg
+Vg
+Vg
+Vg
+Vg
+Rx
+Vg
+Vg
+Vg
+qR
+EH
+EH
+EH
+EH
+qL
+ua
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
@@ -33020,6 +33670,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+SY
+JT
+ua
+ua
+ZA
+Yw
+Vg
+Vg
+Vg
+Vg
+Vg
+RK
+IS
+Rq
+Vg
+Vg
+Vg
+qR
+EH
+EH
+EH
+EH
+qL
+ua
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
@@ -33214,6 +33897,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+ua
+qF
+ua
+kM
+Vv
+dD
+dD
+dD
+dD
+dD
+Vg
+Rx
+dD
+Tk
+Tk
+Tk
+dD
+ua
+ua
+Dy
+EH
+rZ
+ua
+ua
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 IE
@@ -33408,6 +34124,39 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+ua
+IT
+dD
+ua
+le
+ei
+ei
+ei
+ei
+ei
+dD
+Vg
+Rx
+dD
+OU
+OU
+OU
+MG
+ua
+ua
+ua
+El
+ua
+ua
+ua
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 IE
@@ -33604,6 +34353,76 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+ua
+Nf
+dD
+ua
+AE
+dD
+dD
+CR
+dD
+lE
+Ip
+Vg
+Rx
+dD
+Tk
+Tk
+Tk
+dD
+ua
+Ni
+DF
+Sb
+El
+Ad
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 IE
 Ee
@@ -33798,6 +34617,76 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+Pg
+dD
+Ku
+jF
+hj
+dD
+dD
+dD
+dD
+dD
+lm
+Vg
+Rx
+dD
+dD
+dD
+dD
+FW
+ua
+Ez
+dA
+Sb
+ua
+ua
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 th
 IF
@@ -33992,6 +34881,76 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+Rn
+dD
+Hq
+jF
+hj
+dD
+dD
+dD
+dD
+dD
+Ip
+Vg
+Rx
+dD
+Tk
+Tk
+Tk
+dD
+ua
+Nd
+dA
+Sb
+El
+Ad
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 uO
 OE
@@ -34186,6 +35145,76 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+Ju
+dD
+Wh
+jF
+hj
+dD
+dD
+dD
+dD
+dD
+Ip
+yL
+Uj
+dD
+OU
+OU
+OU
+MG
+ua
+Ns
+dA
+Sb
+ua
+ua
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 xo
 Po
@@ -34379,6 +35408,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+XP
+dD
+Wh
+jF
+hj
+dD
+dD
+ng
+dD
+dD
+Ip
+Vg
+Rx
+dD
+Tk
+Tk
+Tk
+dD
+ua
+Ns
+St
+Sb
+El
+MV
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 IE
 IE
@@ -34573,6 +35649,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+Ai
+dD
+Wh
+jF
+hj
+dD
+dD
+dD
+dD
+dD
+Ip
+Fx
+Og
+dD
+dD
+dD
+dD
+TK
+ua
+ua
+ua
+ua
+ua
+ua
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 cp
 cp
@@ -34767,6 +35890,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+Uo
+dD
+ZJ
+jF
+hj
+dD
+dD
+dD
+dD
+dD
+Ip
+Vg
+Rx
+LR
+Vk
+Vk
+Vk
+Az
+ua
+ua
+ua
+ua
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 RB
 ZA
@@ -34961,6 +36131,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+Rn
+dD
+Ku
+jF
+hj
+dD
+dD
+dD
+dD
+dD
+Xt
+Vg
+Rx
+fN
+sP
+sP
+sP
+sP
+KV
+Yo
+jw
+yF
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 cp
 cp
@@ -35155,6 +36372,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ua
+eH
+dD
+dD
+ua
+AE
+dD
+dD
+SQ
+dD
+Gf
+Ip
+Vg
+Rx
+fN
+sP
+sP
+sP
+sP
+sP
+sP
+sP
+nr
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 IE
 IE
@@ -35357,6 +36621,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+ua
+ua
+dD
+Lz
+ua
+le
+Mk
+Mk
+Mk
+Mk
+Mk
+dD
+Vg
+Rx
+fN
+sP
+sP
+sP
+sP
+sP
+sP
+sP
+WV
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 KM
 KM
@@ -35551,6 +36862,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+ua
+Rn
+dD
+mv
+Su
+Vg
+Vg
+Vg
+Vg
+Vg
+Vg
+Vg
+Rx
+iA
+sP
+yc
+gn
+TF
+AC
+sP
+sP
+Vx
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 KM
 KM
@@ -35745,6 +37103,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+aa
+ua
+GS
+dD
+JV
+yY
+Vg
+Dz
+xi
+xi
+xi
+fJ
+IS
+Rq
+lK
+sP
+sP
+sP
+sP
+sP
+sP
+sP
+Hk
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 IE
 IE
@@ -35940,6 +37345,53 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
+=======
+aa
+aa
+aa
+aa
+ua
+ua
+ua
+ua
+kM
+dD
+qD
+Vg
+Vg
+Vg
+pN
+dD
+dD
+lK
+sP
+sP
+sP
+sP
+sP
+sP
+sP
+nr
+ua
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 IE
 ZC
 hO
@@ -37649,6 +39101,7 @@ aa
 aa
 aa
 aa
+<<<<<<< HEAD
 aa
 aa
 aa
@@ -37660,6 +39113,19 @@ aa
 aa
 aa
 aa
+=======
+ua
+ua
+IA
+SE
+pg
+Bi
+pg
+SE
+eu
+ua
+ua
+>>>>>>> ac0bbb3f9 (genpop QOL updates (#6359))
 aa
 aa
 aa
