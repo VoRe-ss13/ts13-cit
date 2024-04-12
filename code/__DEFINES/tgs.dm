@@ -1,6 +1,10 @@
 // tgstation-server DMAPI
 
+<<<<<<< HEAD
 #define TGS_DMAPI_VERSION "7.0.2"
+=======
+#define TGS_DMAPI_VERSION "7.1.2"
+>>>>>>> cf857fb16 (Automatic TGS DMAPI Update (#6358))
 
 // All functions and datums outside this document are subject to change with any version and should not be relied on.
 
@@ -305,6 +309,7 @@
 	var/datum/tgs_chat_embed/structure/embed
 
 /datum/tgs_message_content/New(text)
+	..()
 	if(!istext(text))
 		TGS_ERROR_LOG("[/datum/tgs_message_content] created with no text!")
 		text = null
@@ -347,6 +352,7 @@
 	var/proxy_url
 
 /datum/tgs_chat_embed/media/New(url)
+	..()
 	if(!istext(url))
 		CRASH("[/datum/tgs_chat_embed/media] created with no url!")
 
@@ -360,6 +366,7 @@
 	var/proxy_icon_url
 
 /datum/tgs_chat_embed/footer/New(text)
+	..()
 	if(!istext(text))
 		CRASH("[/datum/tgs_chat_embed/footer] created with no text!")
 
@@ -376,6 +383,7 @@
 	var/proxy_icon_url
 
 /datum/tgs_chat_embed/provider/author/New(name)
+	..()
 	if(!istext(name))
 		CRASH("[/datum/tgs_chat_embed/provider/author] created with no name!")
 
@@ -388,6 +396,7 @@
 	var/is_inline
 
 /datum/tgs_chat_embed/field/New(name, value)
+	..()
 	if(!istext(name))
 		CRASH("[/datum/tgs_chat_embed/field] created with no name!")
 
@@ -493,7 +502,7 @@
 /*
 The MIT License
 
-Copyright (c) 2017-2023 Jordan Brown
+Copyright (c) 2017-2024 Jordan Brown
 
 Permission is hereby granted, free of charge,
 to any person obtaining a copy of this software and
