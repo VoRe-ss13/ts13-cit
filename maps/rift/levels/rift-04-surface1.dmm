@@ -1940,6 +1940,7 @@
 /obj/effect/floor_decal/corner/purple/border,
 /obj/structure/closet/jcloset,
 /obj/item/soap/nanotrasen,
+/obj/item/reagent_containers/glass/rag/sponge,
 /turf/simulated/floor/tiled/steel,
 /area/janitor)
 "bqw" = (
@@ -2818,6 +2819,7 @@
 /obj/effect/floor_decal/corner/purple/bordercorner2{
 	dir = 6
 	},
+/obj/item/reagent_containers/glass/rag/sponge,
 /turf/simulated/floor/tiled/steel,
 /area/janitor)
 "bWD" = (
@@ -21362,6 +21364,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cmo)
+<<<<<<< HEAD
+=======
+"nFg" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/machinery/computer/security{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/prison/upper)
+>>>>>>> 2a1529441 (Adds Sponge (#6381))
 "nFk" = (
 /obj/structure/table/reinforced,
 /obj/random/toy,
@@ -23809,6 +23823,7 @@
 /obj/structure/closet/jcloset,
 /obj/item/soap/nanotrasen,
 /obj/machinery/light,
+/obj/item/reagent_containers/glass/rag/sponge,
 /turf/simulated/floor/tiled/steel,
 /area/janitor)
 "pbz" = (
