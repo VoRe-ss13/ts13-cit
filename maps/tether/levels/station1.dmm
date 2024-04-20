@@ -917,9 +917,6 @@
 	},
 /turf/simulated/floor/tiled/eris/dark/techfloor_grid,
 /area/shuttle/securiship/cockpit)
-"bQ" = (
-/turf/simulated/floor,
-/area/maintenance/station/eng_lower)
 "bR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1831,8 +1828,8 @@
 "dA" = (
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/airlock/glass_science{
-	name = "Exploration";
-	req_one_access = list(19,43,67)
+	name = "Exploration Lobby";
+	req_one_access = null
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2146,6 +2143,7 @@
 /obj/machinery/camera/network/engineering,
 /turf/simulated/floor/tiled,
 /area/engineering/engine_eva)
+<<<<<<< HEAD
 "ej" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2153,6 +2151,8 @@
 /obj/random/junk,
 /turf/simulated/floor,
 /area/maintenance/station/eng_lower)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "ek" = (
 /obj/machinery/vending/cola,
 /turf/simulated/floor/tiled,
@@ -2570,9 +2570,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/customs)
-"eY" = (
-/turf/simulated/floor/wood,
-/area/maintenance/abandonedlibrary)
 "eZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2777,10 +2774,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/hallway)
+<<<<<<< HEAD
 "fv" = (
 /obj/random/junk,
 /turf/simulated/floor,
 /area/constructionsite)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "fw" = (
 /obj/structure/table/standard,
 /obj/item/towel,
@@ -3372,10 +3372,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/medivac/cockpit)
+<<<<<<< HEAD
 "gP" = (
 /obj/random/trash,
 /turf/simulated/floor,
 /area/vacant/vacant_restaurant_lower)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "gQ" = (
 /obj/effect/floor_decal/steeldecal/steel_decals7{
 	dir = 9
@@ -5975,6 +5978,7 @@
 	},
 /turf/simulated/floor,
 /area/constructionsite)
+<<<<<<< HEAD
 "mh" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -5982,6 +5986,8 @@
 /obj/random/trash,
 /turf/simulated/floor,
 /area/maintenance/station/eng_lower)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "mi" = (
 /turf/simulated/floor/wood,
 /area/crew_quarters/heads/blueshield)
@@ -6414,11 +6420,14 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/engineering/shield_gen)
+<<<<<<< HEAD
 "nd" = (
 /obj/random/junk,
 /obj/random/trash,
 /turf/simulated/floor,
 /area/maintenance/station/eng_lower)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "ne" = (
 /obj/structure/cable/green{
 	icon_state = "2-8"
@@ -8152,11 +8161,6 @@
 /obj/structure/bed/chair/bay/chair,
 /turf/simulated/floor/tiled/eris/dark/violetcorener,
 /area/shuttle/securiship/general)
-"qE" = (
-/obj/structure/bookcase,
-/obj/effect/debris/cleanable/cobweb,
-/turf/simulated/floor/wood,
-/area/maintenance/abandonedlibrary)
 "qF" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
 	dir = 1
@@ -9496,9 +9500,6 @@
 	},
 /turf/simulated/floor,
 /area/vacant/vacant_restaurant_lower)
-"ts" = (
-/turf/simulated/floor/wood/broken,
-/area/maintenance/station/eng_lower)
 "tt" = (
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/tether/elevator/two)
@@ -9562,10 +9563,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/station/docks)
+<<<<<<< HEAD
 "tB" = (
 /obj/random/junk,
 /turf/simulated/floor/wood/broken,
 /area/maintenance/abandonedlibrary)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "tC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -10997,9 +11001,6 @@
 	},
 /turf/simulated/floor/tiled/eris/techmaint_panels,
 /area/shuttle/securiship/engines)
-"wL" = (
-/turf/simulated/floor/plating,
-/area/maintenance/abandonedlibrary)
 "wM" = (
 /obj/spawner/window/low_wall/full/firelocks,
 /obj/effect/paint_stripe/sun,
@@ -12352,10 +12353,13 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/engineering/gravity_gen)
+<<<<<<< HEAD
 "zw" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/abandonedlibraryconference)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "zx" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -12606,12 +12610,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
 	},
-/obj/machinery/door/airlock/science{
-	name = "Contraband and Security holdings";
-	req_one_access = list(44)
-	},
 /obj/structure/cable/pink{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/security{
+	name = "Exploration Security Station";
+	req_one_access = list(38,63)
 	},
 /turf/simulated/floor/tiled,
 /area/security/checkpoint/science)
@@ -13373,10 +13377,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/tether/exploration/hallway)
+<<<<<<< HEAD
 "BE" = (
 /obj/random/junk,
 /turf/simulated/floor,
 /area/maintenance/station/eng_lower)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "BF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15174,6 +15181,12 @@
 /obj/item/tank/oxygen,
 /obj/item/tank/oxygen,
 /obj/item/tank/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
+/obj/item/tank/jetpack/oxygen,
 /turf/simulated/floor/tiled,
 /area/tether/exploration/equipment)
 "Fa" = (
@@ -17171,10 +17184,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/customs)
+<<<<<<< HEAD
 "Jh" = (
 /obj/random/trash,
 /turf/simulated/floor,
 /area/constructionsite)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "Ji" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor,
@@ -19558,16 +19574,11 @@
 "Om" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/purple/border,
-/obj/structure/table/rack/shelf,
 /obj/structure/window/reinforced{
 	dir = 4;
 	pixel_x = 3
 	},
-/obj/item/suit_cooling_unit,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/shoes/magboots,
-/obj/item/clothing/suit/space/void/medical/emt,
-/obj/item/clothing/head/helmet/space/void/medical/emt,
+/obj/machinery/suit_storage_unit/search_and_rescue,
 /turf/simulated/floor/tiled,
 /area/tether/exploration/equipment)
 "On" = (
@@ -20830,16 +20841,11 @@
 /turf/simulated/floor/tiled,
 /area/hallway/station/docks)
 "QO" = (
-/obj/structure/table/rack/shelf,
 /obj/structure/window/reinforced{
 	dir = 4;
 	pixel_x = 3
 	},
-/obj/item/suit_cooling_unit,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/shoes/magboots,
-/obj/item/clothing/suit/space/void/medical/emt,
-/obj/item/clothing/head/helmet/space/void/medical/emt,
+/obj/machinery/suit_storage_unit/search_and_rescue,
 /turf/simulated/floor/tiled,
 /area/tether/exploration/equipment)
 "QP" = (
@@ -21118,11 +21124,14 @@
 /obj/structure/bed/chair/comfy/black,
 /turf/simulated/floor/plating,
 /area/maintenance/abandonedlibrary)
+<<<<<<< HEAD
 "Rx" = (
 /obj/effect/floor_decal/rust,
 /obj/random/junk,
 /turf/simulated/floor,
 /area/maintenance/station/eng_lower)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "Ry" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -21209,10 +21218,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled,
 /area/hallway/station/docks)
+<<<<<<< HEAD
 "RM" = (
 /obj/random/junk,
 /turf/simulated/floor,
 /area/maintenance/station/spacecommandmaint)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "RN" = (
 /turf/simulated/floor/tiled,
 /area/engineering/atmos/backup)
@@ -21510,10 +21522,13 @@
 /obj/structure/table,
 /turf/simulated/floor/plating,
 /area/maintenance/abandonedlibrary)
+<<<<<<< HEAD
 "Sp" = (
 /obj/random/trash,
 /turf/simulated/floor/carpet,
 /area/maintenance/abandonedlibrary)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "Sq" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 1
@@ -24061,10 +24076,13 @@
 	},
 /turf/simulated/floor,
 /area/maintenance/station/eng_lower)
+<<<<<<< HEAD
 "Xn" = (
 /obj/random/junk,
 /turf/simulated/floor,
 /area/vacant/vacant_restaurant_lower)
+=======
+>>>>>>> 9ec4693b6 (does stuff to tether nobody asked for, and some stuff people asked for (#6386))
 "Xo" = (
 /obj/machinery/air_alarm{
 	dir = 1;
@@ -25254,6 +25272,8 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
+/obj/item/binoculars,
+/obj/item/binoculars,
 /turf/simulated/floor/wood,
 /area/tether/exploration/crew)
 "ZI" = (
@@ -42953,7 +42973,7 @@ ng
 ng
 ng
 ng
-Xn
+ng
 eF
 ng
 ng
@@ -44117,7 +44137,7 @@ GS
 ng
 ng
 ng
-gP
+ng
 xJ
 ng
 ng
@@ -46789,7 +46809,7 @@ qx
 mI
 mI
 mI
-bQ
+iw
 qm
 sh
 Qy
@@ -46985,7 +47005,7 @@ Qt
 mI
 ya
 qm
-bQ
+iw
 Qy
 FG
 NU
@@ -47177,9 +47197,9 @@ vD
 bT
 wT
 mI
-bQ
+iw
 qm
-bQ
+iw
 Qy
 Qy
 Qy
@@ -47206,7 +47226,7 @@ VO
 Do
 Xp
 zd
-ej
+dl
 Vc
 Ig
 RH
@@ -47371,12 +47391,12 @@ hy
 nw
 tP
 mI
-bQ
+iw
 qm
-bQ
-bQ
+iw
+iw
 Ag
-bQ
+iw
 pb
 sh
 ZL
@@ -47565,9 +47585,9 @@ yq
 yq
 NV
 mI
-bQ
+iw
 Wy
-ej
+dl
 dl
 Ox
 dl
@@ -47620,7 +47640,7 @@ Ap
 Qg
 Qg
 Qg
-fv
+Qg
 Qg
 Qg
 LC
@@ -47775,9 +47795,9 @@ zM
 Zk
 Md
 zM
-Rx
 Ag
-bQ
+Ag
+iw
 Fx
 sh
 cm
@@ -47815,11 +47835,11 @@ aF
 Qg
 Qg
 Ji
-fv
+Qg
 Qg
 LC
-Jh
-fv
+Qg
+Qg
 Qg
 LC
 rF
@@ -47958,7 +47978,7 @@ Zw
 Vp
 zM
 qm
-bQ
+iw
 zM
 Zw
 Zw
@@ -48010,7 +48030,7 @@ Qg
 Qg
 Qg
 Qg
-fv
+Qg
 LC
 Qg
 Qg
@@ -48152,7 +48172,7 @@ Zw
 Vp
 zM
 qm
-bQ
+iw
 zM
 Zw
 Zw
@@ -48160,15 +48180,15 @@ zM
 zM
 zM
 zM
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
 zM
 TA
 Zf
@@ -48199,10 +48219,10 @@ bS
 Wp
 LC
 Si
-Jh
 Qg
 Qg
-fv
+Qg
+Qg
 Wp
 Qg
 LC
@@ -48346,23 +48366,23 @@ Zw
 Vp
 zM
 qm
-bQ
+iw
 zM
 zM
 zM
 zM
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
 Jm
 xB
 IW
@@ -48400,9 +48420,9 @@ LC
 yH
 LC
 LC
-fv
-fv
-fv
+Qg
+Qg
+Qg
 LC
 Ap
 gf
@@ -48540,19 +48560,19 @@ Zw
 Vp
 zM
 qm
-bQ
+iw
 zM
 zM
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
+iw
 zM
 zM
 zM
@@ -48734,13 +48754,13 @@ Zw
 Vp
 zM
 qm
-bQ
-bQ
+iw
+iw
 zM
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
 zM
 zM
 zM
@@ -48781,7 +48801,7 @@ jj
 Qg
 LC
 Ap
-fv
+Qg
 Qg
 Qg
 LC
@@ -48928,12 +48948,12 @@ Zw
 zM
 zM
 qm
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
+iw
+iw
 zM
 zM
 Zw
@@ -48972,17 +48992,17 @@ SK
 SK
 SK
 Uj
-fv
+Qg
 LC
 Pc
 Qg
-fv
+Qg
 Qg
 LC
 Qg
 aF
 Qg
-fv
+Qg
 LC
 Qg
 Qg
@@ -49120,12 +49140,12 @@ mI
 Zw
 zM
 zM
-bQ
+iw
 qm
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
 zM
 zM
 zM
@@ -49165,7 +49185,7 @@ Qg
 YM
 Qg
 Qg
-fv
+Qg
 Qg
 LC
 Fm
@@ -49178,7 +49198,7 @@ LC
 zW
 LC
 LC
-fv
+Qg
 Qg
 Qg
 Qg
@@ -49313,10 +49333,10 @@ Ph
 mI
 Vp
 zM
-bQ
+iw
 tm
 Nd
-bQ
+iw
 zM
 zM
 zM
@@ -49365,9 +49385,9 @@ Bg
 ll
 Qg
 Qg
-fv
 Qg
-Jh
+Qg
+Qg
 Qg
 Qg
 Qg
@@ -49507,7 +49527,7 @@ Qk
 Qk
 zM
 zM
-bQ
+iw
 qm
 zM
 zM
@@ -49696,12 +49716,12 @@ DB
 DB
 zM
 xL
-BE
+iw
 mq
 iw
 zM
 zM
-bQ
+iw
 qm
 zM
 Zw
@@ -49887,15 +49907,15 @@ ZZ
 ZZ
 DB
 DB
-bQ
+iw
 jR
-bQ
-bQ
-bQ
-nd
-mh
+iw
+iw
+iw
+iw
+jR
 zM
-bQ
+iw
 qm
 zM
 Zw
@@ -49939,7 +49959,7 @@ lx
 lx
 lx
 AM
-RM
+cu
 bf
 bf
 bf
@@ -50082,14 +50102,14 @@ ZZ
 DB
 zU
 zU
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
+iw
+iw
 zM
-bQ
+iw
 qm
 zM
 zM
@@ -50276,16 +50296,16 @@ ZZ
 DB
 bv
 YH
-bQ
-bQ
+iw
+iw
 ZA
-bQ
-bQ
-bQ
+iw
+iw
+iw
 Jm
-bQ
+iw
 qm
-bQ
+iw
 zM
 Zw
 UT
@@ -50470,14 +50490,14 @@ ZZ
 DB
 aM
 aM
-bQ
-bQ
-bQ
-bQ
-bQ
-bQ
+iw
+iw
+iw
+iw
+iw
+iw
 zM
-bQ
+iw
 Wy
 hz
 zM
@@ -50663,16 +50683,16 @@ ZZ
 ZZ
 DB
 DB
-bQ
+iw
 xI
-bQ
-bQ
-bQ
+iw
+iw
+iw
 Ag
 qK
 zM
-bQ
-bQ
+iw
+iw
 qm
 zM
 Zw
@@ -50866,7 +50886,7 @@ sy
 xN
 xN
 xN
-bQ
+iw
 ga
 zM
 Zw
@@ -51844,7 +51864,7 @@ Rk
 zM
 HM
 eC
-ts
+Dm
 uN
 au
 iB
@@ -52286,7 +52306,7 @@ St
 zm
 Yr
 ey
-zw
+zm
 Gr
 Vp
 Vp
@@ -52464,8 +52484,8 @@ PW
 PW
 EM
 Xc
-eY
-qE
+cU
+Pk
 CE
 nM
 Gh
@@ -52658,11 +52678,11 @@ NN
 XG
 fz
 Hi
-wL
+CJ
 Pk
 Vg
-qE
-eY
+Pk
+cU
 vl
 CJ
 FS
@@ -52851,17 +52871,17 @@ ui
 Th
 da
 fz
-wL
+CJ
 Xh
 cU
 Ts
-wL
+CJ
 Xk
 Cl
 Xk
 Xk
 Xh
-wL
+CJ
 jT
 iO
 iO
@@ -53434,11 +53454,11 @@ ui
 pR
 fz
 Mt
-eY
-wL
+cU
+CJ
 pT
-wL
-eY
+CJ
+cU
 HK
 Lv
 So
@@ -53628,15 +53648,15 @@ ui
 tn
 fz
 OV
-tB
+Xk
 KG
-eY
-qE
+cU
+Pk
 Xk
 Ef
-wL
+CJ
 pC
-wL
+CJ
 uq
 oh
 Sm
@@ -53821,9 +53841,9 @@ vc
 ui
 eP
 fz
-qE
+Pk
 MG
-eY
+cU
 kr
 fS
 kf
@@ -54410,9 +54430,9 @@ Go
 fc
 ZK
 LB
-wL
+CJ
 gE
-wL
+CJ
 tf
 jf
 Zw
@@ -54603,8 +54623,8 @@ Ok
 oG
 SU
 ZK
-Sp
-wL
+ja
+CJ
 iI
 fR
 jf
