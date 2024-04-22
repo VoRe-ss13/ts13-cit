@@ -183,8 +183,6 @@
 		////////////////////////////////////
 		//things that require the database//
 		////////////////////////////////////
-	///Track hours of leave accured for each department.
-	var/list/department_hours = list()
 
 	preload_rsc = PRELOAD_RSC
 
