@@ -1260,6 +1260,7 @@
 		W.add_fingerprint(src)
 
 /mob/living/carbon/human/emp_act(severity)
+	. = ..()
 	if(isSynthetic())
 		switch(severity)
 			if(1)
@@ -1279,8 +1280,6 @@
 		to_chat(src, "<font align='center' face='fixedsys' size='10' color='red'><B>*BZZZT*</B></font>")
 		to_chat(src, "<font face='fixedsys'><span class='danger'>Warning: Electromagnetic pulse detected.</span></font>")
 		to_chat(src, "<font face='fixedsys'><span class='danger'>Warning: Navigation systems offline. Restarting...</span></font>")
-		..()
-
 
 /mob/living/carbon/human/can_inject(var/mob/user, var/error_msg, var/target_zone, var/ignore_thickness = FALSE)
 	. = 1
