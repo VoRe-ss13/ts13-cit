@@ -43,6 +43,10 @@
 "ag" = (
 /turf/simulated/open,
 /area/rift/station/stairs_two)
+"ah" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/underground/under1)
 "ai" = (
 /turf/simulated/shuttle/wall/voidcraft,
 /area/turbolift/runder/level1)
@@ -5577,9 +5581,19 @@
 /obj/effect/floor_decal/plaque,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/underone)
+<<<<<<< HEAD
 "sj" = (
 /turf/simulated/mineral/floor/icerock/lythios43c/indoors/ignore_cavegen,
 /area/security/prison)
+=======
+"si" = (
+/obj/structure/flora/grass/both{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/underground/under1)
+>>>>>>> 7f994cf43 (adds trees to atlas (#6442))
 "sk" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on,
 /turf/simulated/floor/tiled/monotile,
@@ -19488,7 +19502,7 @@ WR
 WR
 WR
 WR
-WR
+ah
 WR
 WR
 WR
@@ -19886,7 +19900,7 @@ Va
 Va
 WR
 WR
-WR
+Qx
 WR
 WR
 WR
@@ -20457,7 +20471,7 @@ ER
 WR
 WR
 WR
-WR
+hq
 WR
 WR
 WR
@@ -23395,7 +23409,7 @@ Lv
 Lv
 Va
 WR
-WR
+hq
 WR
 rV
 WR
@@ -23593,7 +23607,7 @@ WR
 WR
 WR
 WR
-WR
+hq
 WR
 WR
 aa
@@ -24746,7 +24760,7 @@ WR
 Qx
 WR
 WR
-WR
+si
 WR
 WR
 Va

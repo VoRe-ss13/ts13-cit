@@ -10809,6 +10809,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/rift/turbolift/maint)
+"hbr" = (
+/obj/structure/flora/ausbushes/ywflowers{
+	pixel_x = 8;
+	pixel_y = -2
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
 "hbT" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/cable/green{
@@ -14852,6 +14859,10 @@
 /obj/machinery/vending/coffee,
 /turf/simulated/floor/wood,
 /area/rnd/breakroom)
+"jGx" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
 "jGy" = (
 /obj/structure/cable/green{
 	icon_state = "2-8"
@@ -15312,6 +15323,10 @@
 	},
 /turf/simulated/floor/tiled/monowhite,
 /area/medical/morgue)
+"jUn" = (
+/obj/structure/flora/grass/both,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
 "jUG" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9
@@ -16661,6 +16676,7 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/telescience_lab/storage)
+<<<<<<< HEAD
 "kMS" = (
 /obj/machinery/door/airlock/maintenance/medical{
 	name = "Medical Maintenance Access";
@@ -16675,6 +16691,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/medical/surgery_hallway)
+=======
+"kMx" = (
+/obj/structure/flora/rock/ice/alternative_2,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
+>>>>>>> 7f994cf43 (adds trees to atlas (#6442))
 "kMU" = (
 /obj/machinery/door/airlock/voidcraft/vertical{
 	name = "Air Management";
@@ -25757,6 +25779,7 @@
 /obj/machinery/light,
 /turf/simulated/floor/water/pool,
 /area/triumph/surfacebase/sauna)
+<<<<<<< HEAD
 "qvp" = (
 /obj/effect/floor_decal/steeldecal/steel_decals4{
 	dir = 6
@@ -25766,6 +25789,15 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/brig)
+=======
+"qvf" = (
+/obj/structure/flora/grass/both{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
+>>>>>>> 7f994cf43 (adds trees to atlas (#6442))
 "qvx" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -30397,6 +30429,13 @@
 	},
 /turf/simulated/floor/plating/lythios43c,
 /area/rift/surfacebase/outside/outside2)
+"tBL" = (
+/obj/structure/flora/grass/both{
+	pixel_x = -5;
+	pixel_y = -4
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
 "tBX" = (
 /obj/machinery/light{
 	dir = 1
@@ -31592,6 +31631,12 @@
 /obj/structure/closet/wardrobe/science_white,
 /turf/simulated/floor/tiled/dark,
 /area/rnd/lockers)
+"uvW" = (
+/obj/structure/flora/grass/green{
+	pixel_x = -13
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
 "uwn" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -32453,6 +32498,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/rift/station/public_garden/gantry)
+"uVX" = (
+/obj/structure/flora/grass/green,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
 "uWd" = (
 /obj/machinery/shower{
 	pixel_y = 18
@@ -33035,6 +33084,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/recovery_room)
+"vmf" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside2)
 "vmU" = (
 /obj/effect/floor_decal/steeldecal/steel_decals_central6,
 /obj/effect/floor_decal/steeldecal/steel_decals10{
@@ -47430,7 +47483,7 @@ bBF
 uIZ
 tVG
 oLJ
-oLJ
+uVX
 oLJ
 oLJ
 pBj
@@ -47624,7 +47677,7 @@ tex
 oLJ
 oLJ
 oLJ
-oLJ
+uvW
 oLJ
 pBj
 pBj
@@ -47648,7 +47701,7 @@ xec
 oLJ
 oLJ
 oLJ
-oLJ
+uVX
 oLJ
 oLJ
 oLJ
@@ -47847,7 +47900,7 @@ oLJ
 pBj
 oLJ
 oLJ
-oLJ
+uVX
 oLJ
 cnh
 ufF
@@ -48370,15 +48423,15 @@ oLJ
 oLJ
 oLJ
 oLJ
+jGx
 oLJ
-oLJ
-oLJ
+uVX
 fVv
 bBF
 bBF
 bBF
 keH
-oLJ
+hbr
 oLJ
 oLJ
 oLJ
@@ -48441,7 +48494,7 @@ oLJ
 oLJ
 oLJ
 oLJ
-oLJ
+uVX
 oLJ
 oLJ
 oLJ
@@ -48567,10 +48620,10 @@ oLJ
 oLJ
 oLJ
 oLJ
-oLJ
+vmf
 oLJ
 tex
-oLJ
+uVX
 oLJ
 oLJ
 oLJ
@@ -49128,8 +49181,8 @@ sAX
 dUn
 enB
 enB
-oLJ
-oLJ
+jUn
+tBL
 oLJ
 enB
 enB
@@ -49323,7 +49376,7 @@ dUn
 enB
 enB
 oLJ
-oLJ
+qvf
 oLJ
 enB
 enB
@@ -49711,7 +49764,7 @@ dUn
 enB
 enB
 oLJ
-oLJ
+kMx
 oLJ
 enB
 enB
