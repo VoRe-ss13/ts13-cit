@@ -2792,11 +2792,6 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/rnd/xenobiology/xenoflora_storage)
 "buF" = (
-/obj/item/storage/firstaid/o2{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/storage/firstaid/o2,
 /obj/effect/floor_decal/corner/blue/full{
 	dir = 8
 	},
@@ -2804,6 +2799,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/table/standard,
+/obj/machinery/lathe/medical/stocked,
 /turf/simulated/floor/tiled/white,
 /area/tether/surfacebase/medical/storage)
 "buX" = (
@@ -7778,6 +7774,14 @@
 	dir = 4
 	},
 /obj/structure/table/standard,
+/obj/item/storage/firstaid/o2{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/item/storage/firstaid/o2{
+	pixel_y = 10;
+	pixel_x = -12
+	},
 /turf/simulated/floor/tiled/white,
 /area/tether/surfacebase/medical/storage)
 "euI" = (
