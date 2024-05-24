@@ -19419,6 +19419,9 @@
 /obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
+"dRa" = (
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area)
 "dRq" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
 	dir = 4
@@ -26488,6 +26491,42 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel,
 /area/exploration)
+<<<<<<< HEAD
+=======
+"vrM" = (
+/obj/machinery/computer/ship/helm,
+/obj/item/gps/internal/base{
+	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
+	gps_tag = "OLDCENTURY";
+	name = "century old beacon"
+	},
+/obj/item/toy/figure/hop{
+	layer = 6;
+	pixel_x = 7;
+	pixel_y = 18
+	},
+/obj/item/toy/prize/phazon{
+	layer = 6;
+	pixel_y = 27
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/oldcentury)
+"vsW" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/fire_alarm/south_mount{
+	pixel_y = -24
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/bar)
+>>>>>>> be61dd76b (moving MRE vendors-ATLAS version (WIP) (#6451))
 "vtz" = (
 /obj/structure/sink/kitchen{
 	pixel_y = 26
@@ -39703,8 +39742,13 @@ aAd
 aAd
 acH
 aAd
+<<<<<<< HEAD
 aAd
 acH
+=======
+dRa
+qgy
+>>>>>>> be61dd76b (moving MRE vendors-ATLAS version (WIP) (#6451))
 aAd
 aAd
 aAd
