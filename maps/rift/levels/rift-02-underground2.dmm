@@ -8611,12 +8611,19 @@
 "CC" = (
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/miningdock)
+<<<<<<< HEAD
 "CD" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor,
 /area/engineering/engine_room)
+=======
+"CG" = (
+/obj/machinery/lathe/autolathe,
+/turf/simulated/floor/tiled,
+/area/engineering/workshop)
+>>>>>>> 61a344df7 (Goodbye Questionable Buttons inside Walls and Bins, Hello Atlas Engineering Autolathe (#6452))
 "CH" = (
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/sun,
@@ -11443,10 +11450,6 @@
 "Nk" = (
 /obj/machinery/requests_console/preset/ce{
 	pixel_y = -30
-	},
-/obj/machinery/mass_driver{
-	dir = 8;
-	id = "enginecore"
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/chief)
@@ -30858,7 +30861,7 @@ cX
 KY
 ES
 FZ
-FZ
+CG
 oD
 gs
 Mb
