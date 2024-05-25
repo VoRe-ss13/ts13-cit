@@ -1,9 +1,21 @@
 /*
+<<<<<<<< HEAD:code/modules/sprite_accessories/hair/_hair.dm
 ////////////////////////////
 /  =--------------------=  /
 /  == Hair Definitions ==  /
 /  =--------------------=  /
 ////////////////////////////
+========
+You probably shouldn't be messing with this file anymore. Use hair.dm
+
+ATTENTION! Hair sprites NOT contained in icons/mob/sprite_accessory/hair/hair.dm go here and
+are considered "legacy hair sprites"; that use darkscaling (a-k-a obsolete scaling) instead
+of white/greyscaling. In other words, these are all the hairstyles added BEFORE April 2024.
+Hopefully, no one will ever wanna touch this file ever again in the history of Citadel:RP.
+
+These sprites are scattered around icons/mob/human_face.dmi, human_face_vr.dmi (and the
+many other .dmi files that start with "human_face".)
+>>>>>>>> 555a596b6 (Ports a few hairstyles from SR (~16) - also repaths (and adds documentation) to hair files (#6447)):code/modules/sprite_accessories/hair/legacy.dm
 */
 
 /datum/sprite_accessory/hair
@@ -385,7 +397,12 @@
 	id = "hair_flow"
 	icon_state = "hair_f"
 
+<<<<<<<< HEAD:code/modules/sprite_accessories/hair/_hair.dm
 /datum/sprite_accessory/hair/fluffy_short
+========
+// the long version of this hairstyle is in hair.dm
+/datum/sprite_accessory/hair/legacy/fluffy_short
+>>>>>>>> 555a596b6 (Ports a few hairstyles from SR (~16) - also repaths (and adds documentation) to hair files (#6447)):code/modules/sprite_accessories/hair/legacy.dm
 	name = "Fluffy Short"
 	id = "hair_fluffy_short"
 	icon_state = "hair_fluffy_short"
