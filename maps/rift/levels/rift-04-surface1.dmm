@@ -1611,9 +1611,6 @@
 "biN" = (
 /obj/machinery/door/window/eastright,
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/tank/oxygen,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/lightgrey/border,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -1624,7 +1621,8 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/clothing/mask/gas/clear,
+/obj/item/clothing/mask/warmer,
+/obj/item/clothing/suit/storage/hooded/wintercoat,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
 "biY" = (
@@ -3133,9 +3131,6 @@
 "cfw" = (
 /obj/machinery/door/window/eastleft,
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/tank/oxygen,
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
@@ -3149,6 +3144,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/item/clothing/suit/storage/hooded/wintercoat,
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
@@ -3531,9 +3527,6 @@
 	dir = 8
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/tank/oxygen,
 /obj/effect/floor_decal/borderfloor{
 	dir = 6
 	},
@@ -3545,7 +3538,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/clothing/mask/gas/clear,
+/obj/item/clothing/mask/warmer,
+/obj/item/clothing/suit/storage/hooded/wintercoat,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
 "cvM" = (
@@ -12560,9 +12554,6 @@
 "igZ" = (
 /obj/machinery/door/window/eastright,
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/tank/oxygen,
 /obj/effect/floor_decal/borderfloor{
 	dir = 10
 	},
@@ -12574,6 +12565,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/item/clothing/suit/storage/hooded/wintercoat,
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
@@ -18540,9 +18532,6 @@
 "maf" = (
 /obj/machinery/door/window/westright,
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/tank/oxygen,
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
 	},
@@ -18556,7 +18545,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/clothing/mask/gas/clear,
+/obj/item/clothing/mask/warmer,
+/obj/item/clothing/suit/storage/hooded/wintercoat,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
 "mau" = (
@@ -20891,9 +20881,6 @@
 	dir = 8
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/tank/oxygen,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/lightgrey/border,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -20904,6 +20891,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/item/clothing/suit/storage/hooded/wintercoat,
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
