@@ -2434,16 +2434,6 @@
 /obj/item/flashlight/lamp,
 /turf/simulated/floor/wood,
 /area/bridge/bunker)
-"ahI" = (
-/obj/machinery/computer/ship/sensors,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "ahJ" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
@@ -3618,21 +3608,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/locker/laundry_arrival)
-"akJ" = (
-/obj/machinery/computer/ship/engines{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "akN" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -3704,12 +3679,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/exploration/excursion_dock)
-"akV" = (
-/obj/structure/bed/chair/shuttle{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "akX" = (
 /obj/machinery/shipsensors{
 	dir = 1
@@ -3863,15 +3832,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/rift/trade_shop/landing_pad)
-"alq" = (
-/obj/structure/bed/chair/shuttle{
-	dir = 1
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "alr" = (
 /obj/machinery/appliance/cooker/fryer{
 	anchored = 0;
@@ -3986,23 +3946,6 @@
 /obj/structure/panic_button,
 /turf/simulated/shuttle/wall/voidcraft/green,
 /area/shuttle/civvie/cockpit)
-"alR" = (
-/obj/machinery/door/airlock/glass_external,
-/obj/map_helper/airlock/door/ext_door,
-/obj/map_helper/airlock/sensor/ext_sensor,
-/obj/machinery/airlock_sensor/airlock_exterior/shuttle{
-	frequency = 1380;
-	id_tag = "emt_shuttle_exterior_sensor";
-	master_tag = "emt_shuttle_docker";
-	pixel_x = -24;
-	pixel_y = -8
-	},
-/obj/structure/fans/tiny,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/shuttle/emt/general)
 "alS" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/floodlight,
@@ -4026,24 +3969,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/rift/trade_shop/landing_pad)
-"alU" = (
-/obj/machinery/computer/shuttle_control/explore/emt{
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "alV" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -4167,13 +4092,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/bridge)
-"amh" = (
-/obj/machinery/shipsensors,
-/obj/effect/floor_decal/spline/fancy{
-	dir = 9
-	},
-/turf/simulated/floor/tiled/techfloor/grid/lythios43c,
-/area/shuttle/emt/cockpit)
 "ami" = (
 /obj/machinery/power/apc/south_mount,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4192,12 +4110,6 @@
 	},
 /turf/simulated/floor/reinforced/lythios43c,
 /area/rift/surfacebase/outside/outside3)
-"amk" = (
-/obj/structure/handrail{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "aml" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9
@@ -4207,12 +4119,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
-"amm" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "amn" = (
 /obj/structure/railing,
 /turf/simulated/floor/reinforced/lythios43c,
@@ -4306,12 +4212,6 @@
 "amD" = (
 /turf/simulated/shuttle/wall/voidcraft/blue,
 /area/shuttle/emt/general)
-"amE" = (
-/obj/machinery/light/spot{
-	pixel_y = 32
-	},
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/emt/cockpit)
 "amH" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 1
@@ -4630,17 +4530,6 @@
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/bridge_hallway)
-"anz" = (
-/obj/structure/panic_button,
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/emt/cockpit)
-"anA" = (
-/obj/structure/shuttle/engine/heater,
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 1
-	},
-/turf/simulated/shuttle/wall/voidcraft/blue,
-/area/shuttle/emt/general)
 "anC" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -4749,15 +4638,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/exploration/explorer_prep)
-"anR" = (
-/obj/machinery/door/airlock/voidcraft{
-	name = "cockpit"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "anT" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on,
 /turf/simulated/floor/lino,
@@ -4875,9 +4755,6 @@
 "aoo" = (
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/excursion/general)
-"aop" = (
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/emt/cockpit)
 "aor" = (
 /obj/structure/mirror/long/right{
 	dir = 8;
@@ -4920,6 +4797,28 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/excursion/cargo)
+"aov" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/bed/chair/wheelchair,
+/obj/effect/floor_decal/industrial/outline/blue,
+/obj/machinery/air_alarm/alarms_hidden{
+	dir = 8;
+	pixel_x = 22;
+	req_one_access = list(160)
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 6
+	},
+/obj/machinery/light{
+	old_wall = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "aow" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -5244,20 +5143,6 @@
 "apj" = (
 /turf/simulated/floor/tiled/techmaint,
 /area/rift/surfaceeva/aa/cliff_north)
-"apk" = (
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 9
-	},
-/obj/effect/floor_decal/industrial/outline/blue,
-/obj/structure/closet/walllocker/emergsuit_wall{
-	pixel_y = 30
-	},
-/obj/structure/handrail,
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "apl" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -5830,9 +5715,6 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/ai_upload)
-"aqP" = (
-/turf/simulated/floor/tiled/monowhite,
-/area/shuttle/emt/general)
 "aqQ" = (
 /obj/structure/closet/secure_closet/hop2,
 /obj/item/clothing/accessory/poncho/roles/cloak/hop,
@@ -5844,26 +5726,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/hop)
-"aqR" = (
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
-	},
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 5
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 5
-	},
-/obj/structure/closet/walllocker/emergsuit_wall{
-	pixel_y = 30
-	},
-/obj/structure/bed/chair/shuttle,
-/obj/machinery/power/apc/east_mount,
-/obj/structure/cable/cyan{
-	icon_state = "0-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "aqS" = (
 /obj/structure/railing{
 	dir = 8
@@ -6131,51 +5993,6 @@
 /obj/map_helper/airlock/door/ext_door,
 /turf/simulated/floor/plating,
 /area/shuttle/courser/general)
-"arB" = (
-/obj/structure/closet/crate/medical,
-/obj/item/storage/firstaid/regular{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/bodybag/cryobag{
-	pixel_x = 5
-	},
-/obj/item/bodybag/cryobag{
-	pixel_x = 5
-	},
-/obj/item/storage/firstaid/o2{
-	layer = 2.8;
-	pixel_x = 4;
-	pixel_y = 6
-	},
-/obj/item/storage/box/masks,
-/obj/item/storage/box/gloves{
-	pixel_x = 3;
-	pixel_y = 4
-	},
-/obj/item/storage/firstaid/toxin,
-/obj/item/storage/firstaid/fire{
-	layer = 2.9;
-	pixel_x = 2;
-	pixel_y = 3
-	},
-/obj/item/storage/firstaid/adv{
-	pixel_x = -2
-	},
-/obj/item/defib_kit/loaded,
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 9
-	},
-/obj/effect/floor_decal/industrial/outline/blue,
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "arC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -6243,15 +6060,6 @@
 /obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/kitchen)
-"arO" = (
-/obj/effect/floor_decal/borderfloorwhite/corner{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "arR" = (
 /obj/effect/floor_decal/borderfloorblack/corner,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -6454,21 +6262,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/captain)
-"ass" = (
-/obj/machinery/computer/ship/helm,
-/obj/item/gps/internal/base{
-	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
-	gps_tag = "EMT";
-	name = "shuttle beacon"
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "ast" = (
 /obj/machinery/photocopier/faxmachine{
 	department = "Command Meeting Room"
@@ -6915,20 +6708,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ai_upload_foyer)
-"atM" = (
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 8
-	},
-/obj/structure/bed/roller,
-/obj/effect/floor_decal/industrial/outline/blue,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "atN" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
@@ -7060,10 +6839,6 @@
 	},
 /turf/simulated/floor/grass,
 /area/hydroponics)
-"aue" = (
-/obj/machinery/atmospherics/component/unary/vent_pump/on,
-/turf/simulated/floor/tiled/monowhite,
-/area/shuttle/emt/general)
 "auf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -7083,17 +6858,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/hop)
-"auh" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/machinery/recharger,
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
 "aui" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -7282,25 +7046,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/bridge_hallway)
-"auK" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/machinery/power/apc/south_mount,
-/obj/structure/cable/cyan,
-/obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/cockpit)
-"auL" = (
-/obj/machinery/light/spot{
-	pixel_y = 32
-	},
-/turf/simulated/shuttle/wall/voidcraft/blue,
-/area/shuttle/emt/cockpit)
 "auM" = (
 /obj/machinery/computer/crew{
 	dir = 1
@@ -7455,12 +7200,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai)
-"avh" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "avi" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -7541,15 +7280,6 @@
 /obj/structure/ship_munition/disperser_charge/emp,
 /turf/simulated/floor/tiled/dark,
 /area/exploration/courser_dock)
-"avt" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 8
-	},
-/obj/structure/cable/green{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "avu" = (
 /obj/random/trash_pile,
 /turf/simulated/floor/plating,
@@ -8433,14 +8163,6 @@
 /obj/machinery/power/apc/high,
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/excursion/cargo)
-"axq" = (
-/obj/machinery/door/airlock/glass_external,
-/obj/map_helper/airlock/door/int_door,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/shuttle/emt/general)
 "axr" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -9079,14 +8801,6 @@
 /obj/structure/lattice,
 /turf/simulated/open/lythios43c,
 /area/rift/surfacebase/outside/outside3)
-"azg" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 4;
-	name = "Engine Fuel Port"
-	},
-/obj/effect/floor_decal/industrial/outline/red,
-/turf/simulated/floor,
-/area/shuttle/emt/general)
 "azh" = (
 /obj/structure/table/woodentable,
 /obj/random/maintenance/clean,
@@ -9378,20 +9092,6 @@
 "aAd" = (
 /turf/simulated/floor/outdoors/gravsnow/lythios43c,
 /area/rift/surfacebase/outside/outside3)
-"aAf" = (
-/obj/structure/fuel_port{
-	dir = 4;
-	pixel_x = 30
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 1
-	},
-/obj/machinery/meter,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/shuttle/emt/general)
 "aAg" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/freezer{
@@ -9438,12 +9138,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/bar)
-"aAk" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 10
-	},
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/emt/general)
 "aAl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
@@ -9464,22 +9158,6 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
-"aAo" = (
-/obj/map_helper/airlock/atmos/chamber_pump,
-/obj/machinery/atmospherics/component/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1380;
-	id_tag = "emt_shuttle_docker_pump"
-	},
-/obj/structure/handrail{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/emt/general)
 "aAp" = (
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/corner/blue{
@@ -9589,14 +9267,6 @@
 	dir = 4;
 	volume = 15000
 	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor,
-/area/shuttle/emt/general)
-"aAP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9
-	},
-/obj/machinery/recharge_station,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor,
 /area/shuttle/emt/general)
@@ -9980,12 +9650,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/rift/surfaceeva/airlock/arrivals/secondary)
-"aBY" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 8
-	},
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/emt/general)
 "aBZ" = (
 /obj/structure/railing,
 /obj/structure/railing{
@@ -10179,30 +9843,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/commandmaint)
-"aCE" = (
-/obj/structure/table/standard,
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 10
-	},
-/obj/effect/floor_decal/borderfloorwhite/corner2{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner2{
-	dir = 9
-	},
-/obj/structure/closet/walllocker/emerglocker{
-	pixel_x = -30
-	},
-/obj/item/storage/box/freezer{
-	pixel_x = 5;
-	pixel_y = 2
-	},
-/obj/item/storage/box/freezer,
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "aCF" = (
 /obj/structure/table/bench/wooden,
 /obj/landmark/spawnpoint/job/botanist,
@@ -10283,20 +9923,6 @@
 /obj/random/tool,
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
-"aCV" = (
-/obj/structure/closet/walllocker/emerglocker{
-	pixel_x = -30
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/effect/shuttle_landmark/rift/deck3/emt,
-/obj/overmap/entity/visitable/ship/landable/emt,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/emt/general)
 "aCW" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
@@ -10780,22 +10406,6 @@
 "aEA" = (
 /turf/simulated/floor/tiled/techmaint,
 /area/rift/surfaceeva/aa/cliff_south)
-"aEC" = (
-/obj/machinery/atmospherics/component/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1380;
-	id_tag = "emt_shuttle_docker_pump"
-	},
-/obj/map_helper/airlock/atmos/chamber_pump,
-/obj/structure/handrail{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/emt/general)
 "aED" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -11065,13 +10675,6 @@
 /obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/dark,
 /area/security/nuke_storage)
-"aFp" = (
-/obj/structure/shuttle/engine/heater,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 6
-	},
-/turf/simulated/shuttle/wall/voidcraft/blue,
-/area/shuttle/emt/general)
 "aFq" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -11382,13 +10985,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/hop)
-"aGe" = (
-/obj/structure/shuttle/engine/heater,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 10
-	},
-/turf/simulated/shuttle/wall/voidcraft/blue,
-/area/shuttle/emt/general)
 "aGf" = (
 /obj/effect/floor_decal/corner_techfloor_grid{
 	dir = 10
@@ -11413,12 +11009,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/commandmaint)
-"aGh" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9
-	},
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/emt/general)
 "aGj" = (
 /obj/structure/railing,
 /obj/structure/railing{
@@ -13146,29 +12736,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/excursion/cargo)
-"aKM" = (
-/obj/machinery/vending/wallmed1{
-	name = "Emergency NanoMed";
-	pixel_y = -28
-	},
-/obj/effect/floor_decal/borderfloorwhite,
-/obj/effect/floor_decal/corner/paleblue/border,
-/obj/effect/floor_decal/borderfloorwhite/corner2,
-/obj/effect/floor_decal/borderfloorwhite/corner2{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner2,
-/obj/effect/floor_decal/corner/paleblue/bordercorner2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 8
-	},
-/obj/structure/handrail{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "aKN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -14160,18 +13727,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration/courser_dock)
-"aNX" = (
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 1
-	},
-/obj/machinery/sleep_console{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "aNY" = (
 /obj/structure/handrail{
 	dir = 1
@@ -15739,24 +15294,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/exploration)
-"aSl" = (
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 1
-	},
-/obj/effect/floor_decal/borderfloorwhite/corner2{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner2{
-	dir = 1
-	},
-/obj/machinery/sleeper{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "aSm" = (
 /obj/machinery/disperser/back{
 	dir = 4
@@ -17306,12 +16843,6 @@
 	},
 /turf/simulated/floor/carpet/purcarpet,
 /area/exploration/meeting)
-"aWI" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "aWJ" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 9
@@ -17513,25 +17044,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/exploration/pathfinder_office)
-"aXm" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 1
-	},
-/obj/effect/floor_decal/borderfloorwhite/corner2{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner2{
-	dir = 4
-	},
-/obj/structure/bed/chair/shuttle,
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "aXn" = (
 /obj/item/bedsheet,
 /obj/structure/bed,
@@ -18279,10 +17791,6 @@
 	},
 /turf/simulated/floor/outdoors/snow/lythios43c,
 /area/rift/surfacebase/outside/outside3)
-"aZB" = (
-/obj/structure/shuttle/engine/heater,
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/emt/general)
 "aZC" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
@@ -18435,18 +17943,6 @@
 	},
 /turf/simulated/floor/plating/lythios43c,
 /area/rift/surfacebase/outside/outside3)
-"baX" = (
-/obj/effect/floor_decal/borderfloorwhite/corner{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "bdJ" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -18468,10 +17964,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
-"bfN" = (
-/obj/spawner/window/low_wall/reinforced/full/firelocks,
-/turf/simulated/floor/plating,
-/area/shuttle/emt/cockpit)
+"bgH" = (
+/obj/machinery/atmospherics/pipe/tank/air{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "bis" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -18500,6 +17999,25 @@
 "bjs" = (
 /turf/simulated/wall/prepainted/civilian,
 /area/maintenance/bar)
+<<<<<<< HEAD
+=======
+"bkq" = (
+/obj/machinery/bodyscanner{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/blue,
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+"bly" = (
+/turf/simulated/floor/tiled/techfloor/grid/lythios43c,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "bnc" = (
 /obj/machinery/door/firedoor/glass{
 	dir = 8
@@ -18577,6 +18095,29 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/excursion/general)
+<<<<<<< HEAD
+=======
+"bsQ" = (
+/obj/machinery/computer/ship/helm,
+/obj/item/gps/internal/base{
+	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
+	gps_tag = "EMT";
+	name = "shuttle beacon"
+	},
+/obj/effect/floor_decal/borderfloorwhite/full,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
+"btC" = (
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/techfloor/grid/lythios43c,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "bvV" = (
 /obj/effect/floor_decal/borderfloor/corner,
 /obj/effect/floor_decal/corner/lightgrey/bordercorner,
@@ -18629,6 +18170,43 @@
 /obj/structure/sign/warning/falling,
 /turf/simulated/wall/r_wall/prepainted,
 /area/rift/surfacebase/outside/outside3)
+"bGu" = (
+/obj/structure/table/standard,
+/obj/machinery/air_alarm/alarms_hidden{
+	dir = 8;
+	pixel_x = 22;
+	req_one_access = list(160)
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
+"bGE" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan,
+/obj/effect/floor_decal/borderfloorwhite/corner{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/bordercorner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "bHN" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -18656,6 +18234,27 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/wood,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
+=======
+"bJk" = (
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/outdoors/snow/noblend/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"bJt" = (
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area)
+"bKm" = (
+/obj/structure/flora/grass/both{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"bLD" = (
+/obj/effect/debris/cleanable/dirt,
+/turf/simulated/floor/carpet/patterened/green,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "bMK" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
@@ -18699,6 +18298,7 @@
 /obj/effect/floor_decal/corner/paleblue/border,
 /turf/simulated/floor/tiled/steel_grid,
 /area/exploration/medic_prep)
+<<<<<<< HEAD
 "bPD" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 5
@@ -18713,6 +18313,20 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/emt/general)
+=======
+"bOR" = (
+/obj/effect/floor_decal/rust,
+/obj/structure/handrail{
+	dir = 1
+	},
+/obj/structure/cable/cyan{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/high/south_mount,
+/obj/effect/debris/cleanable/dirt,
+/turf/simulated/floor/tiled/old_tile/gray,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "bPV" = (
 /turf/simulated/wall/r_wall/prepainted/command,
 /area/crew_quarters/heads/hop)
@@ -18837,6 +18451,17 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration/pilot_prep)
+"cdU" = (
+/obj/machinery/computer/shuttle_control/explore/emt,
+/obj/effect/floor_decal/borderfloorwhite/full,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
 "cgU" = (
 /obj/machinery/computer/secure_data{
 	dir = 1
@@ -19023,6 +18648,7 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
 "cCj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
 	dir = 4
@@ -19032,6 +18658,19 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/emt/general)
+=======
+"cCS" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/high_volume{
+	frequency = 1380;
+	id_tag = "oldcentury_docker_pump"
+	},
+/obj/map_helper/airlock/atmos/chamber_pump,
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/old_tile/green,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "cDv" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
@@ -19120,6 +18759,19 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/bar)
+"cVB" = (
+/obj/machinery/sleeper{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/outline/blue,
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "cWu" = (
 /turf/simulated/wall/prepainted/exploration,
 /area/maintenance/bar/lower)
@@ -19192,6 +18844,19 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/captain)
+"deN" = (
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/obj/structure/closet/walllocker/emerglocker/west,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
 "dfy" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 10
@@ -19201,15 +18866,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
-"dgX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 8
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "diY" = (
 /obj/effect/floor_decal/industrial/halfstair,
 /obj/structure/cable/green{
@@ -19217,9 +18873,21 @@
 	},
 /turf/simulated/floor/plating/lythios43c,
 /area/rift/surfacebase/outside/outside3)
+"djI" = (
+/obj/structure/shuttle/engine/heater,
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 4
+	},
+/turf/simulated/shuttle/wall/voidcraft/hard_corner,
+/area/shuttle/emt/general)
+"dkS" = (
+/obj/spawner/window/low_wall/reinforced/full/firelocks,
+/turf/simulated/floor,
+/area/shuttle/emt/cockpit)
 "dnb" = (
 /turf/simulated/wall/r_wall/prepainted/science,
 /area/rnd/telescience_lab)
+<<<<<<< HEAD
 "dph" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -19228,6 +18896,19 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan,
 /obj/structure/cable/green,
 /turf/simulated/floor,
+=======
+"doA" = (
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/obj/effect/debris/cleanable/dirt,
+/turf/simulated/floor,
+/area/shuttle/oldcentury)
+"doW" = (
+/obj/effect/floor_decal/borderfloorwhite,
+/obj/effect/floor_decal/corner/paleblue/border,
+/turf/simulated/floor/tiled/white,
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 /area/shuttle/emt/general)
 "dpK" = (
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
@@ -19245,6 +18926,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/shuttle/courser/general)
+"dqU" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "drn" = (
 /obj/machinery/door/airlock/maintenance/common,
 /obj/machinery/door/firedoor/glass,
@@ -19369,6 +19054,10 @@
 "dDI" = (
 /turf/simulated/wall/r_wall/prepainted/command,
 /area/crew_quarters/heads/blueshield)
+"dFH" = (
+/obj/machinery/shipsensors,
+/turf/simulated/floor/airless,
+/area/shuttle/emt/general)
 "dIa" = (
 /obj/spawner/window/low_wall/full/nogrille/firelocks,
 /obj/effect/paint/violet,
@@ -19405,6 +19094,35 @@
 /obj/item/flame/candle,
 /turf/simulated/floor/carpet/bcarpet,
 /area/crew_quarters/bar)
+"dNn" = (
+/obj/machinery/door/airlock/glass_external,
+/obj/map_helper/airlock/door/ext_door,
+/obj/machinery/airlock_sensor/airlock_exterior/shuttle{
+	dir = 4;
+	frequency = 1380;
+	id_tag = "emt_shuttle_exterior_sensor";
+	master_tag = "emt_shuttle_docker";
+	pixel_y = 23
+	},
+/obj/map_helper/airlock/sensor/ext_sensor,
+/obj/structure/fans/tiny,
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/emt/general)
+"dOC" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/component/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
 "dOT" = (
 /obj/structure/table/hardwoodtable,
 /obj/effect/floor_decal/spline/plain,
@@ -19425,6 +19143,18 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/telescience_lab)
+"dRG" = (
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "dSD" = (
 /obj/machinery/holopad,
 /obj/effect/floor_decal/borderfloor{
@@ -19512,6 +19242,14 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfacethree)
+"dXR" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/recharge_station,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "dYH" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -19615,6 +19353,18 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/surfacethree)
+"ekN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 9
+	},
+/obj/machinery/meter,
+/obj/machinery/computer/ship/engines,
+/obj/machinery/air_alarm/alarms_hidden{
+	pixel_y = 22;
+	req_one_access = list(160)
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "ekT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4
@@ -19625,6 +19375,11 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/shuttle/courser/general)
+"enP" = (
+/obj/machinery/body_scanconsole,
+/obj/effect/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "eod" = (
 /turf/simulated/wall/r_wall/prepainted/command,
 /area/ai)
@@ -19638,15 +19393,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/surfacethree)
-"eoM" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 9
-	},
-/obj/structure/handrail{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/emt/general)
 "epp" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -19675,6 +19421,25 @@
 	},
 /turf/simulated/open,
 /area/rnd/telescience_lab/chamber)
+"eur" = (
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/obj/machinery/power/apc/east_mount{
+	old_wall = 1
+	},
+/obj/structure/cable/cyan{
+	icon_state = "0-4";
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
 "evR" = (
 /obj/effect/floor_decal/borderfloor/corner,
 /obj/effect/floor_decal/corner/lightgrey/bordercorner,
@@ -19831,6 +19596,32 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/commandmaint)
+<<<<<<< HEAD
+=======
+"eEr" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/reinforced/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"eEz" = (
+/obj/machinery/door/airlock/glass_external,
+/obj/map_helper/airlock/door/ext_door,
+/obj/structure/fans/tiny,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/emt/general)
+"eGc" = (
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	dir = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/plating/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "eGn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -20234,6 +20025,12 @@
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/steel,
 /area/hydroponics)
+"frm" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 6
+	},
+/turf/simulated/shuttle/wall/voidcraft/blue,
+/area/shuttle/emt/general)
 "fsc" = (
 /obj/structure/bed/chair/sofa/black/right,
 /obj/effect/floor_decal/spline/plain{
@@ -20252,6 +20049,25 @@
 "fuM" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/barrestroom)
+"fxf" = (
+/obj/structure/cable/cyan{
+	icon_state = "0-4";
+	dir = 8
+	},
+/obj/machinery/power/apc/east_mount{
+	old_wall = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 10
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "fxA" = (
 /obj/structure/table/hardwoodtable,
 /obj/machinery/chemical_dispenser/catering/bar_soft{
@@ -20320,21 +20136,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"fFL" = (
-/obj/map_helper/airlock/sensor/chamber_sensor,
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "emt_shuttle_docker";
-	pixel_x = 24
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
-	dir = 1
-	},
-/obj/structure/handrail{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/emt/general)
 "fGK" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 1
@@ -20366,6 +20167,30 @@
 	},
 /turf/simulated/floor,
 /area/shuttle/civvie/general)
+<<<<<<< HEAD
+=======
+"fIk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10
+	},
+/turf/simulated/shuttle/wall/voidcraft/blue,
+/area/shuttle/emt/general)
+"fIx" = (
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "Centuries_old_shuttle_general"
+	},
+/obj/structure/table/rack/shelf/steel,
+/obj/machinery/atmospherics/component/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/obj/effect/debris/cleanable/dirt,
+/turf/simulated/floor/tiled/old_tile/green,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "fIY" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -20451,6 +20276,16 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/docking_hallway2)
+"fTc" = (
+/obj/machinery/door/airlock/voidcraft/vertical{
+	name = "Engine Bay"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "fTe" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
@@ -20550,6 +20385,12 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration/pilot_prep)
+"gcu" = (
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/reinforced/lythios43c,
+/area/rift/surfacebase/outside/outside3)
 "ghf" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
 /obj/structure/cable/green{
@@ -20560,19 +20401,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/kitchen)
-"giX" = (
-/obj/structure/closet/walllocker/emergsuit_wall{
-	pixel_x = 32
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/emt/general)
 "gjR" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -20691,12 +20519,68 @@
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /turf/simulated/floor/plating,
 /area/maintenance/bar)
+<<<<<<< HEAD
 "gvt" = (
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /obj/effect/paint_stripe/violet,
 /obj/effect/paint_stripe/violet,
 /turf/simulated/floor/plating,
 /area/shuttle/excursion/cockpit)
+=======
+"gvh" = (
+/obj/machinery/door/airlock/glass_external,
+/obj/map_helper/airlock/door/int_door,
+/obj/machinery/access_button{
+	dir = 1;
+	frequency = 1380;
+	master_tag = "emt_shuttle_docker";
+	name = "interior access button";
+	pixel_x = 8;
+	pixel_y = -24
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	cycle_to_external_air = 1;
+	dir = 4;
+	frequency = 1380;
+	id_tag = "emt_shuttle_docker";
+	pixel_x = 8;
+	pixel_y = -36
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/emt/general)
+"gvz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/machinery/air_alarm/alarms_hidden{
+	dir = 4;
+	pixel_x = -22;
+	req_one_access = list(160)
+	},
+/obj/effect/debris/cleanable/dirt,
+/turf/simulated/floor/tiled/monodark,
+/area/shuttle/oldcentury)
+"gwB" = (
+/obj/structure/shuttle/engine/heater,
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 1
+	},
+/turf/simulated/shuttle/wall/voidcraft/hard_corner,
+/area/shuttle/emt/general)
+"gyK" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/debris/cleanable/dirt,
+/obj/structure/closet/walllocker/emergsuit_wall{
+	pixel_x = 32
+	},
+/turf/simulated/floor,
+/area/shuttle/oldcentury)
+"gzi" = (
+/obj/effect/paint/silver,
+/turf/simulated/wall/rshull,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "gzQ" = (
 /obj/machinery/light{
 	dir = 8
@@ -20804,6 +20688,15 @@
 /obj/machinery/fire_alarm/west_mount,
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
+"gRm" = (
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "gTy" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -20840,6 +20733,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+<<<<<<< HEAD
 "haO" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 6
@@ -20860,6 +20754,18 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/emt/general)
+=======
+"hfa" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/pipe/tank/air{
+	dir = 8
+	},
+/obj/structure/cable/cyan{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "hfE" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -20949,6 +20855,7 @@
 	},
 /turf/simulated/floor/wood,
 /area/exploration/pilot_Office)
+<<<<<<< HEAD
 "hsD" = (
 /obj/machinery/door/airlock/glass_external,
 /obj/map_helper/airlock/door/int_door,
@@ -20969,6 +20876,25 @@
 	pixel_y = 8
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
+=======
+"huM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9
+	},
+/obj/effect/paint/black,
+/turf/simulated/wall/rshull,
+/area/shuttle/oldcentury)
+"huS" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 2
+	},
+/obj/effect/floor_decal/corner/paleblue/border,
+/turf/simulated/floor/tiled/white,
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 /area/shuttle/emt/general)
 "hAi" = (
 /obj/machinery/light{
@@ -21084,12 +21010,32 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/exploration/pilot_Office)
+<<<<<<< HEAD
 "hDa" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 8
 	},
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/shuttle/emt/general)
+=======
+"hDB" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-8"
+	},
+/obj/machinery/light/small{
+	brightness_color = "#da7c02";
+	color = "#da7c02";
+	dir = 4
+	},
+/obj/structure/bed/chair/sofa/black/left{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/patterened/green,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "hDW" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 9
@@ -21134,6 +21080,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter)
+"hIh" = (
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "hIO" = (
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /obj/machinery/door/blast/regular{
@@ -21261,6 +21216,9 @@
 "hXj" = (
 /turf/simulated/wall/prepainted/exploration,
 /area/exploration/explorer_prep)
+"hYq" = (
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "hYK" = (
 /obj/machinery/fire_alarm/south_mount{
 	pixel_y = -24
@@ -21408,6 +21366,13 @@
 /obj/item/storage/firstaid/o2,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/docking_hallway)
+"inC" = (
+/obj/structure/shuttle/engine/heater,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10
+	},
+/turf/simulated/shuttle/wall/voidcraft/hard_corner,
+/area/shuttle/emt/cockpit)
 "inQ" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -21438,6 +21403,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/exploration)
+"ivj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "ivw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
@@ -21493,6 +21464,20 @@
 /obj/effect/paint/commandblue,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/hop)
+"iCo" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/flora/grass/both{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/simulated/floor/reinforced/lythios43c,
+/area/rift/surfacebase/outside/outside3)
 "iCv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -21572,6 +21557,31 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/rift/surfacebase/outside/outside3)
+<<<<<<< HEAD
+=======
+"iKt" = (
+/obj/machinery/door/window/brigdoor/northleft,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/effect/floor_decal/borderfloorwhite/cee{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red/bordercee,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+"iKK" = (
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/obj/effect/debris/cleanable/dirt,
+/obj/structure/table/bench/wooden{
+	pixel_x = 15
+	},
+/turf/simulated/floor/carpet/patterened/green,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "iLh" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -21614,12 +21624,47 @@
 /obj/effect/debris/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/maintenance/commandmaint)
+<<<<<<< HEAD
+=======
+"iQv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5
+	},
+/obj/effect/paint/black,
+/turf/simulated/wall/rshull,
+/area/shuttle/oldcentury)
+"iRe" = (
+/obj/structure/handrail{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 10
+	},
+/obj/structure/panic_button{
+	pixel_y = -28
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
+"iRy" = (
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "iRO" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
+<<<<<<< HEAD
 "iXB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 10
@@ -21630,6 +21675,23 @@
 	},
 /turf/simulated/floor,
 /area/shuttle/emt/general)
+=======
+"iSW" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 4
+	},
+/obj/effect/paint/black,
+/turf/simulated/wall/rshull,
+/area/shuttle/oldcentury)
+"iZn" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10
+	},
+/obj/effect/paint/black,
+/obj/effect/paint_stripe/black,
+/turf/simulated/wall/rshull,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "iZv" = (
 /obj/machinery/door/airlock/command{
 	id_tag = "captaindoor";
@@ -21709,6 +21771,24 @@
 /obj/machinery/fire_alarm/north_mount,
 /turf/simulated/floor/tiled/steel,
 /area/exploration/courser_dock)
+<<<<<<< HEAD
+=======
+"jhj" = (
+/obj/structure/flora/rock/ice,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"jhF" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/high_volume{
+	frequency = 1380;
+	id_tag = "emt_shuttle_docker_pump"
+	},
+/obj/map_helper/airlock/atmos/chamber_pump,
+/obj/structure/closet/walllocker/emergsuit_wall{
+	pixel_y = 30
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "jil" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
@@ -21781,6 +21861,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/exploration/explorer_prep)
+"jrm" = (
+/obj/structure/handrail{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 2
+	},
+/obj/effect/floor_decal/corner/paleblue/border,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "jrG" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/manifold/hidden{
@@ -21826,6 +21916,13 @@
 "jsv" = (
 /turf/simulated/wall/r_wall/prepainted/civilian,
 /area/crew_quarters/bar)
+"jsT" = (
+/obj/structure/shuttle/engine/heater,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 6
+	},
+/turf/simulated/shuttle/wall/voidcraft/hard_corner,
+/area/shuttle/emt/general)
 "jtQ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -21891,6 +21988,12 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration/pilot_prep)
+"jBb" = (
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/reinforced/lythios43c,
+/area/rift/surfacebase/outside/outside3)
 "jBo" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/rift/surfaceeva/aa/cliff_north)
@@ -22052,12 +22155,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
-"jLf" = (
-/obj/machinery/door/airlock/glass_external,
-/obj/map_helper/airlock/door/ext_door,
-/obj/structure/fans/tiny,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/shuttle/emt/general)
 "jLR" = (
 /obj/structure/table/wooden_reinforced,
 /obj/item/book/manual/legal/sop_vol5_6{
@@ -22211,6 +22308,45 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
+<<<<<<< HEAD
+=======
+"jXt" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/fire_alarm/south_mount{
+	pixel_y = -24
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/bar)
+"jYd" = (
+/obj/structure/table/rack/shelf/steel,
+/obj/item/clothing/suit/space/emergency/russian,
+/obj/item/clothing/head/helmet/space/emergency/russian,
+/obj/item/light/bulb/orange,
+/obj/item/light/bulb/orange,
+/obj/item/light/bulb/orange,
+/obj/item/light/bulb/orange,
+/obj/item/light/bulb/orange,
+/obj/item/light/bulb/orange,
+/obj/item/light/bulb/orange,
+/obj/item/light/bulb/orange,
+/obj/machinery/light/small{
+	brightness_color = "#da7c02";
+	color = "#da7c02";
+	dir = 4
+	},
+/obj/item/tank/emergency/oxygen,
+/obj/item/clothing/mask/gas/clear,
+/turf/simulated/floor,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "jZk" = (
 /obj/structure/lattice,
 /turf/simulated/open,
@@ -22273,6 +22409,15 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/rift/trade_shop/landing_pad)
+"kjF" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 10
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "kjZ" = (
 /obj/machinery/power/terminal{
 	dir = 8
@@ -22478,6 +22623,29 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration)
+"kRm" = (
+/obj/structure/table/standard,
+/obj/item/soap/nanotrasen,
+/obj/item/reagent_containers/glass/beaker/cryoxadone{
+	pixel_x = -4
+	},
+/obj/random/medical/lite,
+/obj/random/medical/lite,
+/obj/random/medical/lite,
+/obj/random/medical/lite,
+/obj/random/medical/lite,
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 10
+	},
+/obj/machinery/light{
+	dir = 8;
+	old_wall = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "kRX" = (
 /turf/simulated/wall/r_wall/prepainted/security,
 /area/security/checkpoint2)
@@ -22677,6 +22845,17 @@
 /obj/landmark/spawnpoint/job/pilot,
 /turf/simulated/floor/wood,
 /area/exploration/pilot_Office)
+"luX" = (
+/obj/structure/bed/roller,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "lxt" = (
 /obj/effect/paint/black,
 /obj/effect/paint_stripe/violet,
@@ -22809,6 +22988,72 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/station/exploration)
+<<<<<<< HEAD
+=======
+"lNQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/effect/paint/black,
+/turf/simulated/wall/rshull,
+/area/shuttle/oldcentury)
+"lNU" = (
+/obj/structure/closet/crate/medical,
+/obj/item/storage/firstaid/regular{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/bodybag/cryobag{
+	pixel_x = 5
+	},
+/obj/item/bodybag/cryobag{
+	pixel_x = 5
+	},
+/obj/item/storage/firstaid/o2{
+	layer = 2.8;
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/obj/item/storage/box/masks,
+/obj/item/storage/box/gloves{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/fire{
+	layer = 2.9;
+	pixel_x = 2;
+	pixel_y = 3
+	},
+/obj/item/storage/firstaid/adv{
+	pixel_x = -2
+	},
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/defib_kit/loaded,
+/obj/machinery/air_alarm/alarms_hidden{
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 5
+	},
+/obj/machinery/light{
+	dir = 4;
+	old_wall = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "lOr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -22994,10 +23239,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"lZF" = (
-/obj/machinery/holopad/ship,
-/turf/simulated/floor/tiled/monowhite,
-/area/shuttle/emt/general)
 "lZM" = (
 /turf/simulated/wall/prepainted/exploration,
 /area/exploration/meeting)
@@ -23067,6 +23308,25 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/shuttle/courser/general)
+<<<<<<< HEAD
+=======
+"mlj" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/pipe/tank/phoron{
+	dir = 4;
+	volume = 15000
+	},
+/turf/simulated/floor,
+/area/shuttle/oldcentury)
+"mlu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 5
+	},
+/obj/effect/floor_decal/borderfloorwhite,
+/obj/effect/floor_decal/corner/paleblue/border,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "mnJ" = (
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /obj/effect/paint/purplegray,
@@ -23327,6 +23587,21 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/station/exploration)
+"mQw" = (
+/obj/structure/bed/chair/shuttle{
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "mQz" = (
 /obj/machinery/door/airlock/maintenance/engi{
 	name = "Substation Access"
@@ -23532,12 +23807,28 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ai_server_room)
+"nlg" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/turf/simulated/shuttle/wall/voidcraft/blue,
+/area/shuttle/emt/general)
 "nms" = (
 /obj/structure/table/rack/steel,
 /obj/random/maintenance/medical,
 /obj/random/coin,
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
+"nmw" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable/green{
+	icon_state = "0-8";
+	dir = 1
+	},
+/obj/machinery/air_alarm/alarms_hidden{
+	pixel_y = 22;
+	req_one_access = list(160)
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "nmA" = (
 /obj/machinery/door/airlock/glass_external/public{
 	name = "Public External Airlock"
@@ -23605,28 +23896,6 @@
 /obj/item/stack/cable_coil/random,
 /turf/simulated/floor/plating,
 /area/maintenance/commandmaint)
-"nyL" = (
-/obj/effect/floor_decal/borderfloorwhite,
-/obj/effect/floor_decal/corner/paleblue/border,
-/obj/effect/floor_decal/borderfloorwhite/corner2,
-/obj/effect/floor_decal/borderfloorwhite/corner2{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner2,
-/obj/effect/floor_decal/corner/paleblue/bordercorner2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 8
-	},
-/obj/structure/handrail{
-	dir = 1
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "nCn" = (
 /obj/structure/ladder{
 	pixel_y = 8
@@ -23838,6 +24107,13 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/exploration/courser_dock)
+"oqd" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/on,
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "oqe" = (
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 4
@@ -23889,6 +24165,25 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/docking_hallway)
+"otK" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
+	dir = 4
+	},
+/obj/machinery/airlock_sensor{
+	dir = 1;
+	frequency = 1380;
+	id_tag = "emt_shuttle_docker";
+	pixel_y = -21
+	},
+/obj/map_helper/airlock/sensor/chamber_sensor,
+/obj/structure/handrail{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/emt/general)
 "otN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
@@ -23947,6 +24242,23 @@
 	},
 /turf/simulated/floor/wood,
 /area/exploration/pilot_Office)
+<<<<<<< HEAD
+=======
+"oys" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/debris/cleanable/dirt,
+/turf/simulated/floor,
+/area/shuttle/oldcentury)
+"ozQ" = (
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "oAw" = (
 /obj/structure/cable/pink{
 	icon_state = "1-2"
@@ -24048,6 +24360,24 @@
 "oLI" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/rift/surfaceeva/airlock/arrivals)
+"oMK" = (
+/obj/structure/table/standard,
+/obj/item/storage/box/freezer{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/item/storage/box/freezer,
+/obj/structure/window/reinforced/polarized{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "oNh" = (
 /obj/machinery/light/small,
 /obj/structure/catwalk,
@@ -24056,6 +24386,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/commandmaint)
+"oPq" = (
+/obj/machinery/door/airlock/glass_external,
+/obj/map_helper/airlock/door/int_door,
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/emt/general)
 "oQY" = (
 /obj/machinery/door/firedoor/glass{
 	dir = 1
@@ -24179,11 +24514,21 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+<<<<<<< HEAD
 "pem" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
+=======
+"pat" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"peo" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 	},
-/turf/simulated/shuttle/wall/voidcraft/hard_corner,
+/turf/simulated/shuttle/wall/voidcraft/blue,
 /area/shuttle/emt/general)
 "peI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -24292,23 +24637,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar_backroom)
-"psu" = (
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 4
-	},
-/obj/structure/bed/roller,
-/obj/effect/floor_decal/industrial/outline/blue,
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/shuttle/emt/general)
 "ptn" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
@@ -24338,6 +24666,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/bunker)
+<<<<<<< HEAD
 "pwb" = (
 /obj/machinery/door/firedoor/glass,
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
@@ -24353,6 +24682,23 @@
 /obj/effect/paint/commandblue,
 /turf/simulated/floor/plating,
 /area/bridge)
+=======
+"puC" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/machinery/vending/wallmed1{
+	name = "Emergency NanoMed";
+	pixel_x = 28
+	},
+/obj/effect/floor_decal/borderfloorwhite/cee{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue/bordercee,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "pxd" = (
 /obj/spawner/window/low_wall/borosillicate/reinforced/full/firelocks,
 /obj/effect/paint/purplegray,
@@ -24736,6 +25082,19 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfacethree)
+"qwS" = (
+/obj/machinery/holopad/ship,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/bordercorner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "qxq" = (
 /obj/spawner/window/low_wall/full/nogrille/firelocks,
 /turf/simulated/floor/plating,
@@ -25078,6 +25437,18 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/r_wall/prepainted/command,
 /area/bridge)
+"rvp" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "rxA" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 4
@@ -25131,19 +25502,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
-"rFB" = (
-/obj/machinery/door/airlock/voidcraft{
-	name = "battery hatch"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor,
-/area/shuttle/emt/general)
 "rJB" = (
 /obj/structure/bed/chair/bay/comfy/black{
 	dir = 8
@@ -25347,6 +25705,35 @@
 /obj/effect/floor_decal/corner/lime/border,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
+<<<<<<< HEAD
+=======
+"sjx" = (
+/obj/structure/bed/chair/shuttle{
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 5
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+"ski" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5
+	},
+/obj/effect/paint/black,
+/obj/effect/paint_stripe/black,
+/turf/simulated/wall/rshull,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "slu" = (
 /obj/structure/railing{
 	dir = 4
@@ -25363,6 +25750,29 @@
 	},
 /turf/simulated/floor/tiled/old_tile/green,
 /area/shuttle/civvie/general)
+<<<<<<< HEAD
+=======
+"slN" = (
+/obj/machinery/sleep_console{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/outline/blue,
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+"smV" = (
+/obj/structure/flora/ausbushes/ppflowers{
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "sny" = (
 /obj/structure/railing,
 /obj/structure/foodcart,
@@ -25442,6 +25852,25 @@
 /obj/effect/paint_stripe/violet,
 /turf/simulated/wall/rshull,
 /area/shuttle/excursion/general)
+<<<<<<< HEAD
+=======
+"sGd" = (
+/obj/machinery/door/airlock/voidcraft{
+	name = "cockpit"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
+"sGC" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "sHK" = (
 /obj/structure/sign/department/conference_room,
 /turf/simulated/wall/prepainted/command,
@@ -25522,6 +25951,10 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
+"sQd" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/turf/simulated/shuttle/wall/voidcraft/blue,
+/area/shuttle/emt/general)
 "sRD" = (
 /obj/structure/railing{
 	dir = 8
@@ -25600,6 +26033,22 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfacethree)
+"tgx" = (
+/obj/structure/bed/chair/shuttle{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 8;
+	old_wall = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "tiv" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
@@ -25680,6 +26129,12 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/surfacethree)
+"tsO" = (
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/reinforced/lythios43c,
+/area/rift/surfacebase/outside/outside3)
 "tuh" = (
 /obj/structure/frame{
 	anchored = 1
@@ -25719,6 +26174,32 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/kitchen)
+<<<<<<< HEAD
+=======
+"tzX" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/light/small{
+	brightness_color = "#da7c02";
+	color = "#da7c02";
+	dir = 4
+	},
+/obj/effect/floor_decal/rust,
+/obj/item/modular_computer/laptop/preset/custom_loadout/standard/talon/pilot,
+/turf/simulated/floor/tiled/monodark,
+/area/shuttle/oldcentury)
+"tAd" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 4;
+	name = "Engine Fuel Port"
+	},
+/obj/machinery/light{
+	dir = 8;
+	light_range = 12;
+	old_wall = 1
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "tAo" = (
 /turf/simulated/wall/r_wall/prepainted/command,
 /area/bridge)
@@ -25907,6 +26388,18 @@
 /obj/effect/paint/palebottlegreen,
 /turf/simulated/floor/plating,
 /area/crew_quarters/bar)
+"tSQ" = (
+/obj/structure/handrail{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "tSU" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -25990,6 +26483,29 @@
 /obj/effect/floor_decal/spline/fancy,
 /turf/simulated/floor/tiled,
 /area/exploration/pilot_prep)
+"ufh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 5
+	},
+/obj/machinery/light{
+	light_range = 12;
+	old_wall = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/effect/shuttle_landmark/rift/deck3/emt,
+/obj/overmap/entity/visitable/ship/landable/emt,
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/emt/general)
+"ugY" = (
+/obj/structure/fuel_port{
+	dir = 4;
+	pixel_x = 30
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "uhz" = (
 /obj/structure/bed/chair/bay/chair{
 	dir = 1
@@ -26057,6 +26573,35 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration)
+<<<<<<< HEAD
+=======
+"uuE" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"uvz" = (
+/obj/structure/flora/bush{
+	pixel_y = 7
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"uwP" = (
+/obj/structure/bed/chair/shuttle{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 9
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/closet/walllocker/emerglocker/west,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "uxa" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 9
@@ -26283,6 +26828,13 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/docking_hallway2)
+"uWR" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/structure/closet/firecloset/full,
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "uWY" = (
 /obj/machinery/computer/telescience,
 /turf/simulated/floor/tiled,
@@ -26363,6 +26915,10 @@
 "veT" = (
 /turf/simulated/wall/prepainted/exploration,
 /area/exploration)
+"vfp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "vfQ" = (
 /obj/machinery/door/airlock/glass_external/public{
 	name = "Public External Airlock"
@@ -26488,6 +27044,35 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel,
 /area/exploration)
+<<<<<<< HEAD
+=======
+"vrq" = (
+/obj/structure/railing,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"vrM" = (
+/obj/machinery/computer/ship/helm,
+/obj/item/gps/internal/base{
+	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
+	gps_tag = "OLDCENTURY";
+	name = "century old beacon"
+	},
+/obj/item/toy/figure/hop{
+	layer = 6;
+	pixel_x = 7;
+	pixel_y = 18
+	},
+/obj/item/toy/prize/phazon{
+	layer = 6;
+	pixel_y = 27
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/oldcentury)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "vtz" = (
 /obj/structure/sink/kitchen{
 	pixel_y = 26
@@ -26605,6 +27190,12 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
+"vCa" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9
+	},
+/turf/simulated/shuttle/wall/voidcraft/blue,
+/area/shuttle/emt/general)
 "vCA" = (
 /obj/structure/railing{
 	dir = 4
@@ -26918,6 +27509,16 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfacethree)
+"web" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1;
+	old_wall = 1
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
 "wec" = (
 /obj/item/radio/intercom{
 	dir = 4;
@@ -27106,13 +27707,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/checkpoint2)
-"wCu" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/obj/spawner/window/low_wall/reinforced/full/firelocks,
-/turf/simulated/floor,
-/area/shuttle/emt/general)
 "wCC" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
@@ -27176,6 +27770,12 @@
 "wOC" = (
 /turf/simulated/wall/r_wall/prepainted/command,
 /area/crew_quarters/captain)
+"wOD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 6
+	},
+/turf/simulated/shuttle/wall/voidcraft/blue,
+/area/shuttle/emt/cockpit)
 "wPr" = (
 /obj/machinery/light{
 	dir = 4
@@ -27500,6 +28100,31 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/docking_hallway2)
+<<<<<<< HEAD
+=======
+"xKs" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/obj/effect/debris/cleanable/dirt,
+/turf/simulated/floor/carpet/patterened/green,
+/area/shuttle/oldcentury)
+"xKI" = (
+/obj/structure/handrail{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "xKM" = (
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 4
@@ -27587,6 +28212,24 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfacethree)
+"xXL" = (
+/obj/machinery/computer/ship/sensors,
+/obj/machinery/light{
+	dir = 4;
+	old_wall = 1
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-8"
+	},
+/obj/effect/floor_decal/borderfloorwhite/full,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
 "xYy" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
 /obj/machinery/power/apc/south_mount,
@@ -27626,6 +28269,22 @@
 /obj/effect/paint/palebottlegreen,
 /turf/simulated/floor/plating,
 /area/hydroponics)
+"ybK" = (
+/obj/machinery/door/window/brigdoor/southleft,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/effect/floor_decal/borderfloorwhite/cee,
+/obj/effect/floor_decal/corner/red/bordercee{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 4;
+	old_wall = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/general)
 "ybP" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -38517,7 +39176,11 @@ anP
 arV
 aUI
 aAj
+<<<<<<< HEAD
 jsv
+=======
+jXt
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 lbu
 akB
 ajM
@@ -39703,8 +40366,13 @@ aAd
 aAd
 acH
 aAd
+<<<<<<< HEAD
 aAd
 acH
+=======
+bJt
+qgy
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 aAd
 aAd
 aAd
@@ -43297,7 +43965,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -43491,7 +44159,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -43685,7 +44353,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -43879,7 +44547,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -44073,7 +44741,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -44267,7 +44935,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -44461,7 +45129,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -44655,7 +45323,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 aBK
 aus
 aus
@@ -44849,7 +45517,7 @@ acH
 acH
 acH
 acH
-aQK
+acH
 ays
 aus
 aus
@@ -45059,9 +45727,9 @@ aej
 acH
 aAd
 aAd
-acH
 afk
 aPZ
+aUZ
 aUZ
 aUZ
 aUZ
@@ -45252,8 +45920,7 @@ aQK
 acH
 acH
 aAd
-aAd
-adx
+aId
 aus
 aus
 aus
@@ -45261,16 +45928,17 @@ aus
 aus
 aus
 aus
-amD
-urI
-urI
-amD
-amD
-amD
-amD
-aZB
-awp
 aus
+aus
+aus
+jBb
+glL
+glL
+glL
+glL
+glL
+glL
+gcu
 amj
 acF
 aIA
@@ -45446,25 +46114,25 @@ acH
 acH
 acH
 aAd
-aAd
-adx
+aId
 aus
 aus
 aus
 aus
 aus
-amh
-amE
+aus
+aus
+aus
+amD
+dNn
+eEz
 ayS
-arB
-atM
-aCE
-ayS
-azg
-aAO
-aFp
-awp
-aus
+amD
+amD
+amD
+amD
+amD
+eEr
 amn
 acF
 aIA
@@ -45640,25 +46308,25 @@ acH
 acH
 acH
 aAd
-aAd
-adx
+aId
 aus
 aus
 aus
-aaM
-bfN
-bfN
-aop
-apk
-arO
-aue
-avh
-avZ
-aAf
-aAP
-anA
+aus
+aus
+aus
+aus
+amD
+amD
+jhF
+ufh
+amD
+bgH
+tAd
+aAO
+jsT
 awp
-aus
+eEr
 amn
 acF
 aIA
@@ -45834,25 +46502,25 @@ acH
 acH
 aAd
 aAd
-aAd
-adx
+aId
 aus
 aus
-aaM
-aop
-akJ
-auh
-aop
-aNX
-aqP
-aqP
-aKM
-ayS
-aAk
-aBY
-aGh
-ayS
 aus
+aus
+aus
+aus
+dFH
+amD
+amD
+jhF
+otK
+sQd
+ekN
+ivj
+ugY
+gwB
+awp
+eEr
 amn
 cbG
 aIA
@@ -46028,25 +46696,25 @@ acH
 acH
 aAd
 aAd
-aAd
-adx
+aId
 aus
-aus
-bfN
-ahI
-akV
-amk
-anz
-aSl
-aqP
-lZF
-avt
-axq
-aAo
-aCV
-aEC
-alR
-glL
+amD
+ayS
+urI
+urI
+urI
+amD
+amD
+ayS
+oPq
+gvh
+ayS
+amD
+avZ
+fIk
+nlg
+amD
+tsO
 glL
 qEh
 dSP
@@ -46222,24 +46890,24 @@ acH
 acH
 aAd
 aAd
-acH
-adx
+aNk
 aus
-aus
-bfN
-ass
-alq
-amm
-anR
-aWI
-aqP
-aqP
-dgX
-hsD
-fFL
-giX
-eoM
-jLf
+ayS
+ayS
+cVB
+xKI
+bkq
+kRm
+uwP
+tgx
+gRm
+rvp
+tSQ
+amD
+nmw
+aQe
+gwB
+awp
 aus
 aus
 aNG
@@ -46416,24 +47084,24 @@ acH
 acH
 aAd
 aAd
-acH
-adx
+aNk
 aus
-aus
-aaM
-aop
-alU
-auK
-aop
-aXm
-aqP
-aqP
-nyL
-ayS
-hDa
-aAk
-pem
-ayS
+urI
+urI
+slN
+hYq
+enP
+doW
+dRG
+hYq
+oqd
+iRy
+huS
+fTc
+hIh
+dXR
+gwB
+awp
 aus
 amn
 hPQ
@@ -46610,23 +47278,23 @@ aAd
 aAd
 aAd
 aAd
-acH
-adx
+aNk
 aus
-aus
-aus
-aaM
-bfN
-bfN
-aop
-aqR
-baX
-aue
-cCj
-rFB
-dph
-aQe
-anA
+urI
+urI
+ozQ
+dqU
+vfp
+mlu
+sjx
+mQw
+oMK
+qwS
+jrm
+amD
+web
+uWR
+gwB
 awp
 aus
 amn
@@ -46804,23 +47472,28 @@ aAd
 aAd
 aAd
 aAd
+<<<<<<< HEAD
 acH
 adx
+=======
+vrq
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 aus
-aus
-aus
-aus
-aus
-aus
-auL
 ayS
-bPD
-psu
-haO
-wCu
-iXB
+ayS
+lNU
+luX
+luX
+fxf
+iKt
+ybK
+puC
+bGE
+aov
+peo
+kjF
 aDH
-aGe
+gwB
 awp
 aus
 amn
@@ -46998,26 +47671,26 @@ acH
 acH
 acH
 acH
-acH
-adx
+aNk
 aus
-aus
-aus
-aus
-aus
-aus
-aus
+amD
+ayS
 amD
 urI
 urI
 amD
+aaM
+aaM
+aaM
+sGd
+aaM
+aaM
 amD
+frm
+vCa
 amD
-amD
-aZB
-awp
 aus
-atI
+amn
 aej
 acH
 acH
@@ -47189,6 +47862,7 @@ acH
 acH
 acH
 acH
+<<<<<<< HEAD
 acH
 acH
 acH
@@ -47211,8 +47885,30 @@ aTN
 aTN
 aTN
 aGj
+=======
+nbh
+aNk
+aus
+aus
+aus
+aus
+aus
+aus
+aus
+dkS
+cdU
+deN
+dOC
+iRe
+aaM
+frm
+djI
+awp
+aus
+aus
+amn
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 aej
-acH
 acH
 acH
 fam
@@ -47386,6 +48082,7 @@ acH
 acH
 acH
 acH
+<<<<<<< HEAD
 acH
 acH
 acH
@@ -47408,6 +48105,30 @@ acH
 acH
 acH
 acH
+=======
+aNk
+aus
+aus
+aus
+aus
+aus
+aus
+aus
+dkS
+bsQ
+bGu
+xXL
+eur
+wOD
+djI
+awp
+aus
+aus
+aus
+amn
+aej
+jrR
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 acH
 fam
 bSx
@@ -47576,6 +48297,7 @@ acH
 acH
 acH
 acH
+<<<<<<< HEAD
 acH
 acH
 acH
@@ -47601,6 +48323,29 @@ acH
 acH
 acH
 acH
+=======
+aNk
+aus
+aus
+aus
+aus
+aus
+aus
+aus
+aaM
+aaM
+aaM
+aaM
+aaM
+inC
+awp
+aus
+aus
+aus
+aus
+iCo
+aej
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 acH
 acH
 fam
@@ -47775,25 +48520,25 @@ acH
 acH
 acH
 acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
-acH
+aiL
+aIM
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aTN
+aGj
+aej
 acH
 acH
 acH
@@ -47988,8 +48733,8 @@ acH
 acH
 acH
 acH
-afq
-afq
+acH
+acH
 aqG
 aqW
 aqW
@@ -48176,14 +48921,14 @@ acH
 acH
 acH
 acH
-afq
-afq
-afq
-afq
-afq
-afq
-afq
-afq
+acH
+acH
+acH
+acH
+acH
+acH
+acH
+acH
 aqG
 acH
 aqW
@@ -48369,6 +49114,8 @@ afq
 afq
 acH
 acH
+acH
+acH
 afq
 afq
 afq
@@ -48376,9 +49123,7 @@ afq
 afq
 afq
 afq
-afq
-afq
-aqG
+acH
 aqG
 aqW
 jPH
@@ -48572,7 +49317,7 @@ afq
 afq
 afq
 afq
-afq
+acH
 aqG
 aqW
 bjm
@@ -48766,7 +49511,7 @@ afq
 afq
 afq
 afq
-afq
+acH
 aqG
 aqW
 aqW
@@ -48960,7 +49705,7 @@ aGO
 aGO
 afq
 afq
-afq
+acH
 aqG
 aqG
 aqG

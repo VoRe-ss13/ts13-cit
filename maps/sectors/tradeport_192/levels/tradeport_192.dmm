@@ -312,6 +312,13 @@
 	},
 /turf/simulated/floor/tiled/old_tile/blue,
 /area/tradeport/spine)
+"bb" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "bc" = (
 /turf/simulated/wall/r_wall,
 /area/tradeport/spine)
@@ -396,12 +403,15 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/simulated/floor/grass,
 /area/tradeport)
+<<<<<<< HEAD
 "br" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "bs" = (
 /obj/structure/railing{
 	dir = 4
@@ -519,6 +529,17 @@
 	},
 /turf/simulated/mineral/floor/vacuum,
 /area/tradeport/atmospherics)
+"bV" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/tradeport/pads)
 "bW" = (
 /obj/structure/closet/crate/bin{
 	anchored = 1
@@ -712,10 +733,13 @@
 	},
 /turf/simulated/floor/wood,
 /area/tradeport/commons)
+<<<<<<< HEAD
 "cF" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "cG" = (
 /obj/machinery/portable_atmospherics/canister/phoron,
 /obj/machinery/light/small{
@@ -1071,6 +1095,13 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/facility)
+"dQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "dR" = (
 /obj/machinery/vending/snack{
 	name = "hacked Getmore Chocolate Corp";
@@ -1235,6 +1266,13 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/tradeport/engineering)
+"ev" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "ew" = (
 /obj/structure/railing{
 	dir = 8
@@ -1292,6 +1330,20 @@
 /obj/structure/table/bench/steel,
 /turf/simulated/floor/tiled/old_tile/red,
 /area/tradeport)
+"eH" = (
+/obj/machinery/access_button{
+	command = "cycle_int";
+	frequency = 8018;
+	master_tag = "trade_space_lock";
+	pixel_x = -25;
+	pixel_y = -5
+	},
+/obj/machinery/door/airlock/glass_external{
+	name = "Ship Hatch"
+	},
+/obj/map_helper/airlock/door/int_door,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "eI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1369,6 +1421,22 @@
 	},
 /turf/simulated/floor/wood,
 /area/shuttle/trade_ship/general)
+"eV" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/catwalk,
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump3d";
+	name = "Nebula Pump Controller";
+	pixel_x = -25
+	},
+/turf/simulated/floor,
+/area/tradeport/pads)
 "eW" = (
 /obj/structure/window/reinforced,
 /obj/machinery/door/blast/shutters{
@@ -1576,6 +1644,14 @@
 /obj/structure/flora/grass/brown,
 /turf/simulated/floor/snow,
 /area/tradeport/cyndishow)
+"fJ" = (
+/obj/machinery/vending/assist{
+	contraband = null;
+	name = "Old Vending Machine";
+	products = list(/obj/item/assembly/prox_sensor = 5, /obj/item/assembly/signaler = 4, /obj/item/assembly/infra = 4, /obj/item/assembly/prox_sensor = 4, /obj/item/handcuffs = 8, /obj/item/flash = 4, /obj/item/cartridge/signal = 4, /obj/item/clothing/glasses/sunglasses = 4)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/cockpit)
 "fK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/biogenerator,
@@ -1679,6 +1755,14 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/tradeport/commons)
+"gb" = (
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	frequency = 8018;
+	id_tag = "trade_space_lock";
+	pixel_x = -25
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "gc" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -1707,6 +1791,13 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
+"gf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
 /area/shuttle/trade_ship/general)
 "gg" = (
 /turf/simulated/floor/tiled/old_tile/blue,
@@ -1798,6 +1889,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+<<<<<<< HEAD
 "gs" = (
 /obj/machinery/embedded_controller/radio/simple_docking_controller{
 	frequency = 1380;
@@ -1805,12 +1897,29 @@
 	name = "Nebula Pump Controller";
 	pixel_x = 25
 	},
+=======
+"gu" = (
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 /obj/machinery/light{
-	dir = 4
+	dir = 1
 	},
-/obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor/reinforced,
-/area/tradeport/pads)
+/obj/item/radio/intercom/trader{
+	dir = 1;
+	pixel_y = 25
+	},
+/obj/structure/closet/crate,
+/obj/fiftyspawner/bcarpet,
+/obj/fiftyspawner/blucarpet,
+/obj/fiftyspawner/arcadecarpet,
+/obj/fiftyspawner/carpet,
+/obj/fiftyspawner/gaycarpet,
+/obj/fiftyspawner/oracarpet,
+/obj/fiftyspawner/purcarpet,
+/obj/fiftyspawner/sblucarpet,
+/obj/fiftyspawner/tealcarpet,
+/obj/fiftyspawner/turcarpet,
+/turf/simulated/floor/tiled/dark,
+/area/tradeport/facility)
 "gv" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/neutral,
@@ -1855,6 +1964,7 @@
 /obj/item/contraband/poster,
 /turf/simulated/floor/wood,
 /area/tradeport/cyndi)
+<<<<<<< HEAD
 "gH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1872,6 +1982,8 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "gJ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1922,6 +2034,22 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/commons)
+"gS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/multi_tile/glass{
+	name = "Nebula Gas - Employees Only";
+	req_access = list(160)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor{
+	req_one_access = list(160)
+	},
+/turf/simulated/floor/tiled/neutral,
+/area/tradeport)
 "gU" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -1942,6 +2070,7 @@
 /obj/machinery/meter,
 /turf/simulated/floor/plating,
 /area/tradeport/pads)
+<<<<<<< HEAD
 "gW" = (
 /obj/machinery/embedded_controller/radio/simple_docking_controller{
 	frequency = 1380;
@@ -1954,6 +2083,8 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/tradeport/pads)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "gX" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/crate,
@@ -2038,6 +2169,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+<<<<<<< HEAD
 "hm" = (
 /obj/machinery/camera{
 	dir = 8
@@ -2045,6 +2177,8 @@
 /obj/structure/catwalk,
 /turf/simulated/floor,
 /area/tradeport/pads)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "hn" = (
 /obj/effect/shuttle_landmark{
 	base_area = /area/space;
@@ -2103,22 +2237,40 @@
 /obj/machinery/vending/coffee,
 /turf/simulated/floor/tiled/old_tile/gray,
 /area/shuttle/trade_ship/general)
+"hC" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump1b";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "hD" = (
 /obj/structure/cryofeed{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tradeport/commons)
+"hF" = (
+/obj/structure/table/steel_reinforced,
+/obj/fiftyspawner/wmarble,
+/obj/fiftyspawner/bmarble,
+/turf/simulated/floor/tiled/dark,
+/area/tradeport/facility)
 "hJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/facility)
+<<<<<<< HEAD
 "hK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "hL" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/machinery/light,
@@ -2302,6 +2454,16 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/commons)
+"it" = (
+/obj/effect/shuttle_landmark{
+	base_area = /area/tradeport/pads;
+	base_turf = /turf/simulated/floor/reinforced;
+	docking_controller = "nebula_pump3d";
+	landmark_tag = "nebula_pad_3d";
+	name = "Nebula Pad 3d"
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "iu" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -2339,12 +2501,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/tradeport/cafeteria)
+<<<<<<< HEAD
 "iz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "iA" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -3018,12 +3183,15 @@
 	},
 /turf/simulated/shuttle/floor/white,
 /area/tradeport/commons)
+<<<<<<< HEAD
 "kI" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "kJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3353,6 +3521,13 @@
 	},
 /turf/simulated/floor,
 /area/tradeport/pads)
+"lN" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 8
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "lO" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 8
@@ -3432,6 +3607,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/cockpit)
+<<<<<<< HEAD
 "md" = (
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 4;
@@ -3441,6 +3617,8 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/old_tile/blue,
 /area/tradeport)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "mf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/old_tile/purple,
@@ -3476,6 +3654,15 @@
 	},
 /turf/simulated/floor/tiled/old_tile/yellow,
 /area/tradeport/safari)
+"mj" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump5b";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "ml" = (
 /obj/structure/cable/green{
 	icon_state = "1-4"
@@ -3575,6 +3762,11 @@
 /obj/random/paintkit,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+"mE" = (
+/obj/machinery/door/firedoor,
+/obj/structure/catwalk,
+/turf/simulated/floor,
+/area/tradeport/pads)
 "mF" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/syndie/c4explosive,
@@ -3606,6 +3798,15 @@
 	},
 /turf/simulated/floor/tiled/old_tile/red,
 /area/tradeport)
+"mI" = (
+/obj/machinery/vending/sovietsoda{
+	contraband = list(/obj/item/reagent_containers/food/drinks/cans/crystalgibb = 20);
+	desc = "An old sweet water vending machine. It looks like someone crossed out the D and replaced it with an F.";
+	name = "BOFA";
+	products = list(/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 20)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "mJ" = (
 /turf/simulated/floor/tiled/hydro,
 /area/tradeport/cyndishow)
@@ -3714,6 +3915,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+"nc" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump1a";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "nd" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4
@@ -3793,6 +4006,7 @@
 /obj/structure/flora/tree/jungle_small,
 /turf/simulated/floor/outdoors/grass/heavy/interior,
 /area/tradeport/safarizoo)
+<<<<<<< HEAD
 "ns" = (
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 4;
@@ -3801,6 +4015,8 @@
 	},
 /turf/simulated/floor/tiled/old_tile/red,
 /area/tradeport)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "nt" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 4
@@ -3824,18 +4040,25 @@
 /obj/item/reagent_containers/food/condiment/enzyme,
 /turf/simulated/floor/wmarble,
 /area/tradeport/cafeteria)
+"nv" = (
+/obj/effect/paint/purple,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "nw" = (
 /obj/structure/closet/walllocker/autolok_wall{
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/cockpit)
+<<<<<<< HEAD
 "nB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "nC" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/largecrate/vehicle/bike,
@@ -3889,12 +4112,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/tradeport)
+<<<<<<< HEAD
 "nM" = (
 /obj/machinery/holosign/bar{
 	id = "tradersign"
 	},
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "nO" = (
 /obj/machinery/atmospherics/component/binary/pump/high_power/on{
 	dir = 8;
@@ -3979,6 +4205,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+<<<<<<< HEAD
 "og" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3990,6 +4217,8 @@
 	},
 /turf/simulated/floor/tiled/old_tile/red,
 /area/tradeport)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "oj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -4009,6 +4238,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/tradeport/atmospherics)
+"ol" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/map_helper/airlock/door/int_door,
+/obj/machinery/door/airlock/glass_external{
+	name = "Ship Hatch"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "on" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/reinforced/airmix,
@@ -4023,6 +4263,15 @@
 "op" = (
 /turf/simulated/wall/r_wall,
 /area/tradeport/cyndi)
+"ot" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump2b";
+	name = "Nebula Pump Controller";
+	pixel_x = -25
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "ou" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 8;
@@ -4046,6 +4295,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/red,
+/area/shuttle/trade_ship/general)
+"ox" = (
+/obj/machinery/door/airlock/glass_external{
+	name = "Ship Hatch"
+	},
+/obj/map_helper/airlock/door/ext_door,
+/turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "oy" = (
 /obj/structure/table/glass,
@@ -4318,6 +4574,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+"pE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 6
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "pG" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 4
@@ -4461,6 +4724,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/tradeport)
+"qi" = (
+/obj/map_helper/airlock/door/int_door,
+/obj/machinery/door/airlock/glass_external{
+	name = "Ship Hatch"
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1380;
+	master_tag = "tradeport_hangar_docker";
+	pixel_x = -25;
+	pixel_y = 5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "qj" = (
 /obj/structure/sign/warning/docking_area,
 /turf/simulated/wall/r_wall,
@@ -4776,6 +5052,22 @@
 	},
 /turf/simulated/floor/airless,
 /area/space)
+"rl" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/map_helper/airlock/door/ext_door,
+/obj/machinery/door/airlock/glass_external{
+	name = "Ship Hatch"
+	},
+/obj/machinery/access_button/airlock_exterior{
+	frequency = 1380;
+	master_tag = "tradeport_hangar_docker";
+	pixel_x = 25;
+	pixel_y = -5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "rm" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/neutral,
@@ -5111,12 +5403,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+<<<<<<< HEAD
 "sO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "sP" = (
 /turf/simulated/wall/r_wall,
 /area/tradeport/facility)
@@ -5381,6 +5676,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/tradeport/dock)
+<<<<<<< HEAD
 "tP" = (
 /obj/machinery/door/airlock/glass_external{
 	frequency = null;
@@ -5389,6 +5685,8 @@
 /obj/map_helper/airlock/door/ext_door,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "tR" = (
 /obj/machinery/light{
 	dir = 4
@@ -5558,6 +5856,7 @@
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+<<<<<<< HEAD
 "uE" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 4
@@ -5567,6 +5866,8 @@
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "uF" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -5860,6 +6161,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+"vt" = (
+/obj/machinery/atmospherics/component/unary/outlet_injector{
+	dir = 4;
+	frequency = 1445;
+	id = "burn_in";
+	volume_rate = 700
+	},
+/turf/simulated/mineral/floor/vacuum,
+/area/tradeport/atmospherics)
 "vv" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/silencer,
@@ -5899,6 +6209,30 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/atmospherics)
+"vz" = (
+/obj/machinery/vending/cigarette{
+	name = "Cigarette machine";
+	prices = list();
+	products = list(/obj/item/storage/fancy/cigarettes = 10, /obj/item/storage/box/matches = 10, /obj/item/flame/lighter/zippo = 4, /obj/item/clothing/mask/smokable/cigarette/cigar/havana = 2)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/cockpit)
+"vA" = (
+/obj/machinery/atmospherics/component/unary/vent_pump{
+	dir = 4;
+	external_pressure_bound = 0;
+	external_pressure_bound_default = 0;
+	frequency = null;
+	icon_state = "map_vent_in";
+	initialize_directions = 1;
+	internal_pressure_bound = 4000;
+	internal_pressure_bound_default = 4000;
+	pressure_checks = 2;
+	pressure_checks_default = 2;
+	pump_direction = 0
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/tradeport/atmospherics)
 "vC" = (
 /obj/structure/closet/jcloset,
 /obj/random/soap,
@@ -5919,6 +6253,7 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/cafeteria)
+<<<<<<< HEAD
 "vE" = (
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 4;
@@ -5929,6 +6264,8 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/old_tile/blue,
 /area/tradeport/commhall)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "vF" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -5965,12 +6302,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/tradeport/cyndishow)
+<<<<<<< HEAD
 "vO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "vP" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on,
 /obj/map_helper/airlock/atmos/chamber_pump,
@@ -6098,12 +6438,15 @@
 	},
 /turf/simulated/floor/tiled/old_tile/beige,
 /area/tradeport/safari)
+<<<<<<< HEAD
 "wl" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "wn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6461,6 +6804,13 @@
 	},
 /turf/simulated/floor/tiled/old_tile/blue,
 /area/tradeport)
+"xy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "xz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6756,6 +7106,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+"yy" = (
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 4;
+	name = "Nebula Commercial District"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/old_tile/blue,
+/area/tradeport/commhall)
 "yB" = (
 /obj/machinery/light{
 	dir = 1
@@ -6863,6 +7222,12 @@
 	},
 /turf/simulated/floor/tiled/old_tile/gray,
 /area/shuttle/trade_ship/general)
+"yS" = (
+/obj/structure/table/steel_reinforced,
+/obj/fiftyspawner/wood,
+/obj/fiftyspawner/wood,
+/turf/simulated/floor/tiled/dark,
+/area/tradeport/facility)
 "yT" = (
 /obj/structure/undies_wardrobe,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -7094,6 +7459,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+<<<<<<< HEAD
 "zH" = (
 /obj/machinery/access_button{
 	command = "cycle_ext";
@@ -7119,6 +7485,8 @@
 	},
 /turf/simulated/mineral/floor/vacuum,
 /area/tradeport/atmospherics)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "zK" = (
 /obj/machinery/vending/hydronutrients,
 /turf/simulated/floor/grass,
@@ -7215,6 +7583,19 @@
 	},
 /turf/simulated/floor/tiled/old_tile/beige,
 /area/tradeport/commhall)
+"Ae" = (
+/obj/machinery/camera{
+	dir = 8
+	},
+/obj/structure/catwalk,
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump4d";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/turf/simulated/floor,
+/area/tradeport/pads)
 "Ah" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 1
@@ -7291,6 +7672,7 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+<<<<<<< HEAD
 "AA" = (
 /obj/machinery/light{
 	dir = 1
@@ -7300,6 +7682,13 @@
 /obj/fiftyspawner/steel,
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+=======
+"AB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "AD" = (
 /turf/simulated/floor/tiled/asteroid_steel/airless,
 /area/tradeport/pads)
@@ -7326,10 +7715,13 @@
 /obj/structure/catwalk,
 /turf/simulated/floor,
 /area/tradeport/pads)
+<<<<<<< HEAD
 "AJ" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "AK" = (
 /obj/effect/debris/cleanable/blood,
 /obj/item/bone/skull,
@@ -7361,6 +7753,7 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/tradeport/medical)
+<<<<<<< HEAD
 "AS" = (
 /obj/machinery/light{
 	dir = 1
@@ -7371,6 +7764,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "AT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -7403,20 +7798,6 @@
 	},
 /turf/simulated/floor/tiled/old_tile/blue,
 /area/tradeport)
-"AV" = (
-/mob/living/bot/cleanbot/edCLN{
-	desc = "A large cleaning robot. It's nametag reads 'Jim'.";
-	move_speed = 6;
-	name = "Jim"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/old_cargo/beige,
-/area/tradeport/atmospherics)
 "AW" = (
 /obj/structure/inflatable,
 /turf/simulated/floor/airless,
@@ -7553,6 +7934,7 @@
 /obj/structure/window/phoronreinforced/full,
 /turf/simulated/floor/plating,
 /area/tradeport/atmospherics)
+<<<<<<< HEAD
 "Bq" = (
 /obj/machinery/access_button{
 	command = "cycle_int";
@@ -7568,6 +7950,8 @@
 /obj/map_helper/airlock/door/int_door,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "Bs" = (
 /obj/machinery/vending/loadout/clothing,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -7605,6 +7989,11 @@
 /obj/structure/lightpost,
 /turf/simulated/floor/outdoors/grass/heavy/interior,
 /area/tradeport/safarizoo)
+"By" = (
+/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "Bz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/wood,
@@ -7672,6 +8061,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/cockpit)
+"BL" = (
+/obj/structure/shuttle/engine/heater{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "BM" = (
 /obj/structure/grille,
 /obj/structure/window/phoronreinforced/full,
@@ -7698,6 +8097,7 @@
 /obj/machinery/washing_machine,
 /turf/simulated/shuttle/floor/white,
 /area/tradeport/commons)
+<<<<<<< HEAD
 "BU" = (
 /obj/map_helper/airlock/door/int_door,
 /obj/machinery/door/airlock/glass_external{
@@ -7712,6 +8112,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "BV" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -7756,9 +8158,12 @@
 	},
 /turf/simulated/floor/snow,
 /area/tradeport/cyndishow)
+<<<<<<< HEAD
 "BZ" = (
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/cockpit)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "Ca" = (
 /obj/machinery/vending/loadout/overwear,
 /turf/simulated/floor/wood,
@@ -7769,6 +8174,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/tradeport/commons)
+"Cc" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/old_tile/red,
+/area/tradeport)
 "Cd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/dark,
@@ -7905,18 +8319,6 @@
 	},
 /turf/simulated/wall/r_wall,
 /area/tradeport/pads)
-"Cy" = (
-/obj/machinery/camera{
-	dir = 4
-	},
-/obj/machinery/vending/sovietsoda{
-	contraband = list(/obj/item/reagent_containers/food/drinks/cans/crystalgibb=20);
-	desc = "An old sweet water vending machine. It looks like someone crossed out the D and replaced it with an F.";
-	name = "BOFA";
-	products = list(/obj/item/reagent_containers/food/drinks/cans/thirteenloko=20)
-	},
-/turf/simulated/floor/tiled/old_tile/blue,
-/area/tradeport)
 "Cz" = (
 /obj/machinery/vending/loadout/overwear,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -8183,18 +8585,6 @@
 	},
 /turf/simulated/floor/tiled/old_tile/gray,
 /area/shuttle/trade_ship/general)
-"DI" = (
-/obj/machinery/vending/cigarette{
-	name = "Cigarette machine";
-	prices = list();
-	products = list(/obj/item/storage/fancy/cigarettes=10,/obj/item/storage/box/matches=10,/obj/item/flame/lighter/zippo=4,/obj/item/clothing/mask/smokable/cigarette/cigar/havana=2)
-	},
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/effect/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/carpet/bcarpet,
-/area/tradeport/commons)
 "DK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -8218,6 +8608,10 @@
 /mob/living/simple_mob/vore/redpanda,
 /turf/simulated/floor/outdoors/grass/heavy/interior,
 /area/tradeport/safarizoo)
+"DQ" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/old_tile/blue,
+/area/tradeport)
 "DR" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
@@ -8370,13 +8764,12 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/commons)
-"Er" = (
-/obj/machinery/vending/sovietsoda{
-	contraband = list(/obj/item/reagent_containers/food/drinks/cans/crystalgibb=20);
-	desc = "An old sweet water vending machine. It looks like someone crossed out the D and replaced it with an F.";
-	name = "BOFA";
-	products = list(/obj/item/reagent_containers/food/drinks/cans/thirteenloko=20)
+"Eq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/door/airlock/glass_external{
+	name = "Ship Hatch"
 	},
+/obj/map_helper/airlock/door/int_door,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "Et" = (
@@ -8498,12 +8891,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/cockpit)
+<<<<<<< HEAD
 "EQ" = (
 /obj/machinery/door/firedoor{
 	dir = 2
 	},
 /turf/simulated/floor/tiled/old_tile/blue,
 /area/tradeport)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "ER" = (
 /obj/effect/shuttle_landmark{
 	base_area = /area/tradeport/pads;
@@ -8548,6 +8944,20 @@
 	},
 /turf/simulated/floor/wood,
 /area/tradeport/cafeteria)
+"Fa" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/mob/living/bot/cleanbot/edCLN{
+	desc = "A large cleaning robot. It's nametag reads 'Jim'.";
+	move_speed = 6;
+	name = "Jim"
+	},
+/turf/simulated/floor/tiled/old_cargo/beige,
+/area/tradeport/atmospherics)
 "Fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/old_tile/beige,
@@ -8630,14 +9040,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/shuttle/trade_ship/general)
-"Fq" = (
-/obj/machinery/vending/cigarette{
-	name = "Cigarette machine";
-	prices = list();
-	products = list(/obj/item/storage/fancy/cigarettes=10,/obj/item/storage/box/matches=10,/obj/item/flame/lighter/zippo=4,/obj/item/clothing/mask/smokable/cigarette/cigar/havana=2)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/trade_ship/cockpit)
 "Fr" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/cell/hyper,
@@ -8687,6 +9089,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tradeport/dock)
+"FA" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump6b";
+	name = "Nebula Pump Controller";
+	pixel_x = -25
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "FC" = (
 /obj/structure/table/glass,
 /obj/item/radio/intercom/trader{
@@ -8712,6 +9123,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/trade_ship/general)
+"FE" = (
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 4;
+	name = "Nebula Commercial District"
+	},
+/turf/simulated/floor/tiled/old_tile/red,
+/area/tradeport)
 "FG" = (
 /obj/machinery/light,
 /turf/space,
@@ -8735,6 +9153,23 @@
 /obj/machinery/vending/loadout/accessory,
 /turf/simulated/floor/tiled/steel,
 /area/tradeport)
+"FM" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/atmospherics/component/unary/vent_pump/high_volume{
+	frequency = 8018;
+	id_tag = "trade_space_lock_pump"
+	},
+/obj/machinery/airlock_sensor{
+	frequency = 8018;
+	id_tag = "trade_space_lock";
+	pixel_x = 25
+	},
+/obj/map_helper/airlock/sensor/chamber_sensor,
+/obj/map_helper/airlock/atmos/chamber_pump,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "FN" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -8757,10 +9192,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+<<<<<<< HEAD
 "FP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "FQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -9029,6 +9467,15 @@
 /obj/machinery/portable_atmospherics/hydroponics,
 /turf/simulated/floor/grass,
 /area/tradeport)
+"GL" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump3b";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "GM" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -9058,6 +9505,7 @@
 	},
 /turf/simulated/floor/wood,
 /area/tradeport/cafeteria)
+<<<<<<< HEAD
 "GQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
 /obj/structure/cable/yellow{
@@ -9070,6 +9518,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "GR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9101,6 +9551,13 @@
 	},
 /turf/simulated/floor/tiled/old_tile/purple,
 /area/tradeport/spine)
+"GW" = (
+/obj/machinery/holosign/bar{
+	id = "tradersign"
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "GY" = (
 /obj/structure/window/reinforced,
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -9537,6 +9994,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/wood,
 /area/tradeport/cyndi)
+"IM" = (
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "IN" = (
 /obj/structure/table/woodentable,
 /obj/item/paper_bin{
@@ -9635,6 +10096,7 @@
 /obj/structure/catwalk,
 /turf/simulated/floor,
 /area/tradeport/pads)
+<<<<<<< HEAD
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -9648,6 +10110,8 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/tradeport)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "Ji" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/blast/shutters{
@@ -9781,6 +10245,7 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tradeport/dock)
+<<<<<<< HEAD
 "JJ" = (
 /obj/machinery/embedded_controller/radio/simple_docking_controller{
 	frequency = 1380;
@@ -9806,6 +10271,8 @@
 /obj/structure/catwalk,
 /turf/simulated/floor,
 /area/tradeport/pads)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "JN" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/warning,
@@ -9856,12 +10323,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tradeport/engineering)
+<<<<<<< HEAD
 "Ka" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "Kb" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
@@ -9908,6 +10378,16 @@
 "Kj" = (
 /turf/space,
 /area/tradeport/expansion)
+"Kk" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/table/steel_reinforced,
+/obj/fiftyspawner/glass,
+/obj/fiftyspawner/steel,
+/obj/fiftyspawner/plastic,
+/turf/simulated/floor/tiled/dark,
+/area/tradeport/facility)
 "Kn" = (
 /obj/structure/table/hardwoodtable,
 /obj/item/reagent_containers/food/drinks/shaker{
@@ -10021,6 +10501,18 @@
 	},
 /turf/simulated/shuttle/floor/white,
 /area/tradeport/commons)
+"KI" = (
+/obj/machinery/camera{
+	dir = 4
+	},
+/obj/machinery/vending/sovietsoda{
+	contraband = list(/obj/item/reagent_containers/food/drinks/cans/crystalgibb = 20);
+	desc = "An old sweet water vending machine. It looks like someone crossed out the D and replaced it with an F.";
+	name = "BOFA";
+	products = list(/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 20)
+	},
+/turf/simulated/floor/tiled/old_tile/blue,
+/area/tradeport)
 "KJ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -10048,6 +10540,7 @@
 	},
 /turf/simulated/floor/tiled/old_tile/purple,
 /area/tradeport/spine)
+<<<<<<< HEAD
 "KL" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -10065,6 +10558,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "KM" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4
@@ -10372,6 +10867,18 @@
 	},
 /turf/simulated/floor/tiled/old_tile/yellow,
 /area/tradeport/safari)
+"LV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/freezer{
+	name = "Nebula Gas - Freezer";
+	req_access = list(160)
+	},
+/obj/machinery/door/firedoor{
+	req_one_access = list(160)
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/tradeport)
 "LX" = (
 /obj/machinery/light{
 	dir = 8
@@ -10385,6 +10892,16 @@
 /obj/machinery/light,
 /turf/simulated/shuttle/floor/white,
 /area/tradeport/commons)
+"Mc" = (
+/obj/effect/shuttle_landmark{
+	base_area = /area/tradeport/pads;
+	base_turf = /turf/simulated/floor/reinforced;
+	docking_controller = "nebula_pump4d";
+	landmark_tag = "nebula_pad_4d";
+	name = "Nebula Pad 4d"
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "Md" = (
 /obj/structure/table/standard,
 /obj/item/clothing/gloves/sterile/latex,
@@ -10519,6 +11036,7 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/cyndishow)
+<<<<<<< HEAD
 "Mw" = (
 /obj/machinery/door/firedoor{
 	req_one_access = list(160)
@@ -10537,6 +11055,8 @@
 	},
 /turf/simulated/floor/tiled/old_tile/beige,
 /area/tradeport/safari)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "Mx" = (
 /turf/simulated/floor/plating,
 /area/tradeport/facility)
@@ -10544,6 +11064,7 @@
 /obj/structure/bed/chair/comfy/beige,
 /turf/simulated/floor/plating,
 /area/tradeport/facility)
+<<<<<<< HEAD
 "Mz" = (
 /obj/machinery/embedded_controller/radio/simple_docking_controller{
 	frequency = 1380;
@@ -10556,6 +11077,8 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/tradeport/pads)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "MA" = (
 /turf/simulated/wall/r_wall,
 /area/tradeport/expansion)
@@ -10687,9 +11210,12 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/cafeteria)
+<<<<<<< HEAD
 "MX" = (
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/shuttle/trade_ship/cockpit)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "MY" = (
 /obj/machinery/door/firedoor{
 	dir = 8;
@@ -11135,6 +11661,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/plating,
 /area/tradeport/engineering)
+<<<<<<< HEAD
 "OE" = (
 /obj/machinery/door/firedoor{
 	dir = 2
@@ -11142,6 +11669,8 @@
 /obj/structure/catwalk,
 /turf/simulated/floor,
 /area/tradeport/pads)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "OF" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
@@ -11251,6 +11780,23 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+"OW" = (
+/obj/machinery/door/firedoor{
+	req_one_access = list(160)
+	},
+/obj/machinery/door/airlock/sandstone{
+	frequency = 1382;
+	id_tag = "safari_access";
+	name = "John Safari's Adventure Emporium";
+	tag = "safari_door"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/old_tile/beige,
+/area/tradeport/safari)
 "OX" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -11510,9 +12056,12 @@
 	},
 /turf/simulated/floor/airless,
 /area/tradeport/exterior)
+<<<<<<< HEAD
 "PJ" = (
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "PL" = (
 /obj/machinery/light{
 	dir = 8;
@@ -11530,6 +12079,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/tradeport/pads)
+<<<<<<< HEAD
 "PO" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -11548,6 +12098,8 @@
 /obj/map_helper/airlock/atmos/chamber_pump,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "PP" = (
 /turf/simulated/floor/snow,
 /area/tradeport/cyndishow)
@@ -11588,6 +12140,20 @@
 /obj/item/clipboard,
 /turf/simulated/floor/carpet/bcarpet,
 /area/shuttle/trade_ship/general)
+"PW" = (
+/obj/machinery/access_button{
+	command = "cycle_ext";
+	frequency = 8018;
+	master_tag = "trade_space_lock";
+	pixel_x = 25;
+	pixel_y = 5
+	},
+/obj/machinery/door/airlock/glass_external{
+	name = "Ship Hatch"
+	},
+/obj/map_helper/airlock/door/ext_door,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/general)
 "PY" = (
 /obj/structure/table/hardwoodtable,
 /obj/machinery/reagentgrinder{
@@ -11596,6 +12162,18 @@
 /obj/item/reagent_containers/glass/rag,
 /turf/simulated/floor/wood,
 /area/tradeport)
+"PZ" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump5a";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "Qc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -11687,6 +12265,18 @@
 	},
 /turf/simulated/floor/outdoors/beach/sand/desert/indoors,
 /area/tradeport/safarizoo)
+"QA" = (
+/obj/machinery/vending/cigarette{
+	name = "Cigarette machine";
+	prices = list();
+	products = list(/obj/item/storage/fancy/cigarettes = 10, /obj/item/storage/box/matches = 10, /obj/item/flame/lighter/zippo = 4, /obj/item/clothing/mask/smokable/cigarette/cigar/havana = 2)
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/carpet/bcarpet,
+/area/tradeport/commons)
 "QB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
@@ -12060,6 +12650,7 @@
 /obj/structure/cable/yellow,
 /turf/simulated/floor/tiled/old_tile/beige,
 /area/tradeport/commhall)
+<<<<<<< HEAD
 "RJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/door/airlock/glass_external{
@@ -12069,6 +12660,8 @@
 /obj/map_helper/airlock/door/int_door,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "RL" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -12251,9 +12844,12 @@
 /obj/structure/sign/graffiti/pisoff,
 /turf/simulated/floor/plating,
 /area/tradeport)
+<<<<<<< HEAD
 "Su" = (
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "Sy" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 6
@@ -12404,6 +13000,22 @@
 	},
 /turf/simulated/floor/tiled/old_tile/purple,
 /area/tradeport/spine)
+<<<<<<< HEAD
+=======
+"SV" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump3a";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/atmospherics/portables_connector,
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "SY" = (
 /obj/structure/railing{
 	dir = 1
@@ -12515,6 +13127,18 @@
 /obj/structure/table/hardwoodtable,
 /turf/simulated/floor/tiled/old_tile/blue,
 /area/tradeport)
+"Tu" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump2a";
+	name = "Nebula Pump Controller";
+	pixel_x = -25
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "Tw" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/component/binary/pump/high_power/on{
@@ -12582,14 +13206,6 @@
 /obj/landmark/spawnpoint/job/trader,
 /turf/simulated/floor/carpet,
 /area/tradeport/commons)
-"TD" = (
-/obj/machinery/vending/assist{
-	contraband = null;
-	name = "Old Vending Machine";
-	products = list(/obj/item/assembly/prox_sensor=5,/obj/item/assembly/signaler=4,/obj/item/assembly/infra=4,/obj/item/assembly/prox_sensor=4,/obj/item/handcuffs=8,/obj/item/flash=4,/obj/item/cartridge/signal=4,/obj/item/clothing/glasses/sunglasses=4)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/trade_ship/cockpit)
 "TF" = (
 /obj/machinery/light{
 	dir = 1
@@ -12687,6 +13303,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+"Ua" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump6a";
+	name = "Nebula Pump Controller";
+	pixel_x = -25
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "Ub" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/yellow{
@@ -12697,12 +13325,15 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/facility)
+<<<<<<< HEAD
 "Uc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
 /turf/simulated/shuttle/wall/voidcraft,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "Ud" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -12867,6 +13498,7 @@
 /obj/structure/transit_tube,
 /turf/simulated/floor/plating,
 /area/tradeport/spine)
+<<<<<<< HEAD
 "Uz" = (
 /obj/machinery/embedded_controller/radio/simple_docking_controller{
 	frequency = 1380;
@@ -12879,6 +13511,8 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/tradeport/pads)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "UC" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
@@ -13034,6 +13668,14 @@
 "UZ" = (
 /turf/simulated/floor/wood,
 /area/shuttle/trade_ship/general)
+"Vb" = (
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 4;
+	name = "Nebula Commercial District"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/old_tile/blue,
+/area/tradeport)
 "Vc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13385,6 +14027,15 @@
 /obj/item/stolenpackage,
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
+"WJ" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "nebula_pump3c";
+	name = "Nebula Pump Controller";
+	pixel_x = 25
+	},
+/turf/simulated/floor/reinforced,
+/area/tradeport/pads)
 "WK" = (
 /turf/simulated/floor/wood,
 /area/tradeport/cyndishow)
@@ -13588,6 +14239,13 @@
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /turf/simulated/floor/plating,
 /area/tradeport/engineering)
+"Xy" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "Xz" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -13734,6 +14392,10 @@
 "XY" = (
 /turf/simulated/floor/airless,
 /area/tradeport/expansion)
+"Yb" = (
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/cockpit)
 "Yc" = (
 /obj/structure/closet/crate/secure{
 	name = "slime cores crate";
@@ -14056,6 +14718,7 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport)
+<<<<<<< HEAD
 "YX" = (
 /obj/machinery/atmospherics/component/unary/vent_pump{
 	dir = 4;
@@ -14073,6 +14736,8 @@
 	},
 /turf/simulated/floor/reinforced/airmix,
 /area/tradeport/atmospherics)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "YY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14082,6 +14747,13 @@
 	},
 /turf/simulated/floor/tiled/old_tile/beige,
 /area/tradeport/safari)
+"Za" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "Zb" = (
 /obj/structure/catwalk,
 /obj/machinery/light/small{
@@ -14239,6 +14911,7 @@
 /obj/structure/sign/vacuum,
 /turf/simulated/wall/r_wall,
 /area/tradeport/engineering)
+<<<<<<< HEAD
 "ZE" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
 	frequency = 8018;
@@ -14253,6 +14926,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
+=======
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 "ZF" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -14336,6 +15011,13 @@
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/commons)
+"ZW" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 1
+	},
+/obj/effect/paint/wallgunmetal,
+/turf/simulated/wall/rshull,
+/area/shuttle/trade_ship/general)
 "ZX" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -28401,7 +29083,7 @@ Ta
 Ta
 pd
 Ta
-Mw
+OW
 hA
 cf
 Sk
@@ -29568,7 +30250,7 @@ Dh
 pj
 pj
 bh
-vE
+yy
 pj
 pj
 Dh
@@ -35726,10 +36408,10 @@ Jv
 Jv
 Jv
 Jv
-PJ
+IM
 NP
 NP
-PJ
+IM
 Jv
 Jv
 Jv
@@ -35756,7 +36438,7 @@ wV
 wV
 wV
 wV
-zJ
+vt
 wV
 wV
 Dh
@@ -35806,7 +36488,11 @@ kf
 kf
 kf
 kf
+<<<<<<< HEAD
 kf
+=======
+it
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 kf
 kf
 kf
@@ -35919,12 +36605,21 @@ Jv
 Jv
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 Su
 EP
 aG
 Su
 PJ
+=======
+IM
+IM
+EP
+aG
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 Jv
 Jv
@@ -36501,12 +37196,21 @@ Jv
 Jv
 Jv
 Jv
+<<<<<<< HEAD
 Su
 BZ
 BZ
 vk
 BZ
 Su
+=======
+IM
+Yb
+Yb
+vk
+Yb
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 Jv
 Jv
@@ -36695,12 +37399,12 @@ Jv
 Jv
 Jv
 Jv
-PJ
+IM
 oV
 ZP
 Gb
-TD
-PJ
+fJ
+IM
 Jv
 Jv
 Jv
@@ -36884,22 +37588,28 @@ dA
 Jv
 Jv
 Jv
-PJ
+IM
 nm
 nm
-PJ
+IM
 Jv
+<<<<<<< HEAD
 PJ
 BZ
 MX
+=======
+IM
+Yb
+Yb
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 nw
 vG
-PJ
+IM
 Jv
-PJ
+IM
 NJ
 NJ
-PJ
+IM
 Jv
 Jv
 NQ
@@ -37077,24 +37787,38 @@ wV
 dA
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 Su
+=======
+nv
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 VQ
 KQ
-PJ
+IM
 Jv
-PJ
+IM
 gi
+<<<<<<< HEAD
 BZ
+=======
+Yb
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 mb
 Ra
-PJ
+IM
 Jv
-PJ
+IM
 uA
 UZ
+<<<<<<< HEAD
 Su
 PJ
+=======
+IM
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 NQ
 dA
@@ -37271,24 +37995,32 @@ wV
 dA
 Jv
 Jv
+<<<<<<< HEAD
 PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 hu
 CW
 vb
-PJ
+IM
 Jv
-PJ
+IM
 yH
 hg
 nt
 De
-PJ
+IM
 Jv
-PJ
+IM
 LK
 ah
 bB
+<<<<<<< HEAD
 PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 NQ
 dA
@@ -37465,24 +38197,36 @@ wV
 dA
 Jv
 Jv
+<<<<<<< HEAD
 PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Fd
 CW
 DG
-PJ
+IM
 Vd
-PJ
+IM
 Ut
+<<<<<<< HEAD
 BZ
+=======
+Yb
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Sa
 Gd
-PJ
+IM
 ek
-PJ
+IM
 qb
 UZ
 eS
+<<<<<<< HEAD
 PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 NQ
 dA
@@ -37659,17 +38403,23 @@ wV
 dA
 VO
 Jv
+<<<<<<< HEAD
 PJ
 PJ
+=======
+nv
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 DA
-PJ
-PJ
-PJ
-PJ
-MX
-Fq
+IM
+IM
+IM
+IM
+Yb
+vz
 jC
 BK
+<<<<<<< HEAD
 BZ
 Uc
 PJ
@@ -37677,6 +38427,15 @@ PJ
 cP
 PJ
 PJ
+=======
+Yb
+dQ
+IM
+IM
+cP
+IM
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 gM
 dA
@@ -37694,7 +38453,7 @@ yc
 Zh
 RP
 oO
-YX
+vA
 RP
 hZ
 ex
@@ -37853,24 +38612,37 @@ wV
 dA
 Jv
 Jv
+<<<<<<< HEAD
 PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 cg
 CW
 hB
 fw
-PJ
-PJ
-PJ
-PJ
+IM
+IM
+IM
+IM
 HX
 aZ
+<<<<<<< HEAD
 Su
 sO
+=======
+IM
+Za
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Fl
 UZ
 UZ
 jJ
+<<<<<<< HEAD
 PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 NQ
 dA
@@ -37910,7 +38682,7 @@ eD
 Cj
 eD
 QC
-ns
+FE
 eD
 Cj
 eD
@@ -38047,24 +38819,24 @@ wV
 dA
 Jv
 Jv
-Su
+nv
 lf
 CW
 CW
 rR
-PJ
+IM
 TK
 eL
-Er
+mI
 im
 Fv
 Ea
-sO
+Za
 oS
 UZ
 UZ
 jh
-Su
+nv
 Jv
 NQ
 dA
@@ -38473,7 +39245,7 @@ NX
 IB
 BX
 wo
-AV
+Fa
 hT
 eD
 eD
@@ -38634,14 +39406,14 @@ Fo
 Po
 XV
 yQ
-PJ
+IM
 LJ
 Ct
 UC
 bM
 wZ
 Me
-PJ
+IM
 yf
 HK
 mK
@@ -38823,24 +39595,42 @@ wV
 dA
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 PJ
 PJ
 PJ
 PJ
 Su
+=======
+IM
+IM
+IM
+IM
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 HT
 Ct
 MK
 xd
 wZ
 NO
+<<<<<<< HEAD
 Su
 PJ
 PJ
 PJ
 PJ
 PJ
+=======
+IM
+IM
+IM
+IM
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 NQ
 dA
@@ -39018,8 +39808,13 @@ dA
 Jv
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 Su
+=======
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 ab
 wD
 hN
@@ -39032,8 +39827,13 @@ zY
 dy
 FR
 Bu
+<<<<<<< HEAD
 Su
 PJ
+=======
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 Jv
 NQ
@@ -39643,7 +40443,7 @@ rG
 DX
 pS
 GI
-Cy
+KI
 dM
 xg
 Ns
@@ -39794,8 +40594,13 @@ dA
 Jv
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 Su
+=======
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Fr
 uS
 Yc
@@ -39808,8 +40613,13 @@ NO
 fh
 If
 HQ
+<<<<<<< HEAD
 Su
 PJ
+=======
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 Jv
 QS
@@ -39987,6 +40797,7 @@ Qp
 dA
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 PJ
 Su
@@ -39994,10 +40805,20 @@ aA
 aA
 aA
 Su
+=======
+IM
+IM
+IM
+aA
+aA
+aA
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Ax
 NC
 NC
 BG
+<<<<<<< HEAD
 Su
 aA
 aA
@@ -40005,6 +40826,15 @@ aA
 Su
 PJ
 PJ
+=======
+IM
+aA
+aA
+aA
+IM
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 FS
 dA
@@ -40057,8 +40887,13 @@ dX
 cB
 kZ
 Yn
+<<<<<<< HEAD
 kf
 Uz
+=======
+hC
+nc
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 ur
 kf
 DV
@@ -40067,21 +40902,29 @@ kf
 ia
 kf
 kf
+<<<<<<< HEAD
 kf
+=======
+GL
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 kf
 Ef
 ur
 kf
 kf
 ur
-gs
+SV
 np
 kf
 kf
 ur
 Ef
 kf
+<<<<<<< HEAD
 kf
+=======
+WJ
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 kf
 gP
 ia
@@ -40089,11 +40932,15 @@ kf
 kf
 kf
 kf
+<<<<<<< HEAD
 kf
+=======
+mj
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 yD
 np
 ur
-JJ
+PZ
 kf
 kf
 kf
@@ -40180,26 +41027,38 @@ sP
 sP
 dA
 VO
+<<<<<<< HEAD
 nM
 PJ
 Su
+=======
+GW
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 bI
 Dg
 xK
 xK
-PJ
+IM
 iE
 zE
 zE
 UQ
-PJ
+IM
 ge
 Ow
 uD
 nf
+<<<<<<< HEAD
 Su
 PJ
 nM
+=======
+IM
+IM
+GW
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 FS
 dA
 Jk
@@ -40238,7 +41097,7 @@ eD
 Cj
 eD
 Rk
-md
+Vb
 eD
 Cj
 eD
@@ -40374,9 +41233,9 @@ Yv
 Yv
 mZ
 Jv
-tP
-ZE
-Bq
+ox
+gb
+eH
 ep
 wg
 Aw
@@ -40391,9 +41250,9 @@ ms
 iR
 Oi
 ao
-BU
+qi
 LP
-tP
+ox
 qB
 GD
 Th
@@ -40415,7 +41274,7 @@ DC
 Et
 Uv
 Et
-gH
+gS
 td
 mS
 df
@@ -40433,7 +41292,7 @@ pA
 vw
 BF
 Ig
-og
+Cc
 Vx
 Hx
 YR
@@ -40452,7 +41311,7 @@ Rm
 le
 jy
 Rm
-JM
+bV
 Rm
 Rm
 Rm
@@ -40462,7 +41321,11 @@ Rm
 dn
 dn
 Rm
+<<<<<<< HEAD
 Rm
+=======
+eV
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 le
 dn
 dn
@@ -40568,9 +41431,9 @@ Yv
 Yv
 mZ
 Jv
-zH
-PO
-RJ
+PW
+FM
+Eq
 Rf
 wR
 iK
@@ -40585,9 +41448,9 @@ OV
 ri
 ic
 Ze
-GQ
+ol
 zP
-KL
+rl
 RX
 Uf
 IX
@@ -40627,7 +41490,7 @@ ul
 Bc
 Lq
 NY
-EQ
+DQ
 Wz
 ng
 ul
@@ -40646,7 +41509,7 @@ ur
 en
 Hr
 ur
-OE
+mE
 ur
 ur
 ur
@@ -40656,7 +41519,7 @@ ur
 ur
 ur
 ur
-hm
+Ae
 en
 ur
 ur
@@ -40762,26 +41625,42 @@ sP
 sP
 qj
 Jv
+<<<<<<< HEAD
 Su
 PJ
 Su
+=======
+IM
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 kq
 im
 rw
 ry
+<<<<<<< HEAD
 Su
+=======
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 aH
 mp
 eW
 fV
-nM
+GW
 Ch
 EM
 tH
 LG
+<<<<<<< HEAD
 Su
 PJ
 Su
+=======
+IM
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 NQ
 qj
 SO
@@ -40957,24 +41836,36 @@ Rz
 dA
 Jv
 Jv
-PJ
-PJ
-PJ
+IM
+IM
+IM
 gj
+<<<<<<< HEAD
 PJ
 Su
 Su
+=======
+IM
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 wh
 ZX
 NC
 lX
+<<<<<<< HEAD
 Su
 Su
 PJ
+=======
+IM
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 TZ
-Ka
-PJ
-PJ
+Xy
+IM
+IM
 Jv
 NQ
 dA
@@ -40997,7 +41888,7 @@ QQ
 ZK
 Sg
 Gi
-Jh
+LV
 qg
 Rx
 oU
@@ -41027,8 +41918,13 @@ ia
 vP
 bY
 ia
+<<<<<<< HEAD
 kf
 gW
+=======
+ot
+Tu
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 ur
 kf
 ZO
@@ -41059,11 +41955,15 @@ kf
 kf
 kf
 kf
+<<<<<<< HEAD
 kf
+=======
+FA
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Em
 qU
 ur
-Mz
+Ua
 kf
 kf
 kf
@@ -41156,14 +42056,14 @@ cQ
 ui
 im
 jK
-PJ
+IM
 fS
 lZ
 ze
 XO
 JO
 FD
-PJ
+IM
 sR
 ey
 oK
@@ -41350,14 +42250,14 @@ cQ
 Mh
 FO
 Pv
-PJ
+IM
 fS
 Mq
 NK
 Hn
 JO
 FD
-PJ
+IM
 uP
 II
 QU
@@ -41432,7 +42332,7 @@ kf
 kf
 kf
 kf
-kk
+kf
 kf
 kf
 kf
@@ -41539,6 +42439,7 @@ Rz
 dA
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 Su
 Bl
@@ -41546,10 +42447,20 @@ yv
 lH
 Su
 Su
+=======
+nv
+IM
+Bl
+yv
+lH
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 hs
 hl
 Yx
 BP
+<<<<<<< HEAD
 Su
 Su
 jX
@@ -41557,6 +42468,15 @@ js
 WT
 Su
 PJ
+=======
+IM
+IM
+jX
+js
+WT
+IM
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 NQ
 dA
@@ -41627,7 +42547,7 @@ kf
 kf
 kf
 kf
-kf
+kk
 kf
 kf
 kf
@@ -41732,26 +42652,36 @@ sP
 Rz
 dA
 Jv
+<<<<<<< HEAD
 PJ
 PJ
+=======
+nv
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 bJ
 NO
 NO
 NO
 Md
-iz
-wl
-cF
-cF
-wl
-br
+pE
+lN
+By
+By
+lN
+bb
 Gv
 Ks
 tt
 IC
 SR
+<<<<<<< HEAD
 PJ
 PJ
+=======
+IM
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 NQ
 nq
 tu
@@ -41926,26 +42856,36 @@ sP
 Rz
 dA
 Jv
+<<<<<<< HEAD
 PJ
 PJ
+=======
+nv
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 oR
 zG
 pC
 qt
 IP
-nB
-uE
-uE
-uE
-uE
-kI
+ev
+BL
+BL
+BL
+BL
+ZW
 eP
 Ce
 VX
 Pz
 QY
+<<<<<<< HEAD
 PJ
 PJ
+=======
+IM
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 NQ
 nq
 dw
@@ -42120,6 +43060,7 @@ sP
 Rz
 dA
 Jv
+<<<<<<< HEAD
 PJ
 iz
 wl
@@ -42128,10 +43069,21 @@ wl
 FP
 FP
 vO
+=======
+nv
+pE
+lN
+lN
+lN
+AB
+AB
+gf
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Iz
 Iz
 Iz
 Iz
+<<<<<<< HEAD
 hK
 FP
 FP
@@ -42140,6 +43092,16 @@ wl
 wl
 br
 PJ
+=======
+xy
+AB
+AB
+lN
+lN
+lN
+bb
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 NQ
 nq
 tu
@@ -42314,6 +43276,7 @@ sP
 sP
 dA
 VO
+<<<<<<< HEAD
 PJ
 uE
 uE
@@ -42321,12 +43284,22 @@ uE
 uE
 PJ
 PJ
+=======
+nv
+BL
+BL
+BL
+BL
+IM
+IM
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Jv
 Jv
 Jv
 Jv
 Jv
 Jv
+<<<<<<< HEAD
 PJ
 PJ
 uE
@@ -42334,6 +43307,15 @@ uE
 uE
 uE
 PJ
+=======
+IM
+IM
+BL
+BL
+BL
+BL
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 gM
 nq
 dw
@@ -42508,26 +43490,34 @@ dD
 sP
 dA
 Jv
+<<<<<<< HEAD
 PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 Iz
 Iz
 Iz
 Iz
+IM
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+IM
+Iz
+Iz
+Iz
+Iz
+<<<<<<< HEAD
 PJ
-Jv
-Jv
-Jv
-Jv
-Jv
-Jv
-Jv
-Jv
-PJ
-Iz
-Iz
-Iz
-Iz
-PJ
+=======
+nv
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 NQ
 nq
 tu
@@ -42536,7 +43526,7 @@ cA
 tu
 tu
 tu
-DI
+QA
 YQ
 qw
 wa
@@ -43861,7 +44851,7 @@ Dh
 wV
 wV
 sP
-AA
+Kk
 Ne
 of
 Ne
@@ -44055,7 +45045,11 @@ Dh
 wV
 wV
 sP
+<<<<<<< HEAD
 AJ
+=======
+yS
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 EH
 yp
 Yz
@@ -44249,7 +45243,7 @@ Dh
 wV
 wV
 sP
-AJ
+hF
 qE
 Ne
 lO
@@ -44637,7 +45631,7 @@ Dh
 wV
 wV
 sP
-AS
+gu
 Ne
 Ne
 na
@@ -44919,7 +45913,11 @@ kf
 kf
 kf
 kf
+<<<<<<< HEAD
 kf
+=======
+Mc
+>>>>>>> a380da74c (Replaces the Atlas EMT Shuttle with a new variant of the Triumph's EMT Dart (#6453))
 kf
 kf
 kf
