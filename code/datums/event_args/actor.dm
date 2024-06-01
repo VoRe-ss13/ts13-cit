@@ -11,6 +11,14 @@
 	src.performer = performer
 	src.initiator = isnull(initiator)? performer : initiator
 
+<<<<<<< HEAD
+=======
+/datum/event_args/actor/clone(include_contents)
+	return new /datum/event_args/actor(performer, initiator)
+
+// todo: reowrk these awful ass feedback/message procs wtf
+
+>>>>>>> 00807234b (refactors asset subsystem (#6459))
 /datum/event_args/actor/proc/chat_feedback(msg, atom/target)
 	performer.action_feedback(msg, target)
 	if(performer != initiator)

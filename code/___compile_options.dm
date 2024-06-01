@@ -76,13 +76,6 @@
  */
 // #define USE_BYOND_TRACY
 
-
-/**
- * If defined, we will NOT defer asset generation till later in the game, and will instead do it all at once, during initiialize.
- */
-//#define DO_NOT_DEFER_ASSETS
-
-
 /**
  * If this is uncommented, Autowiki will generate edits and shut down the server.
  * Prefer the autowiki build target instead.
@@ -190,7 +183,12 @@
 	#define ZAS_BREAKPOINT_HOOKS
 #endif
 
+// ## Assets
 
+/**
+ * If defined, we will NOT defer asset generation till later in the game, and will instead do it all at once, during initiialize.
+ */
+//#define DO_NOT_DEFER_ASSETS
 
 // ## Overlays
 /**

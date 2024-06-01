@@ -69,6 +69,7 @@
 
 	update_client_color()
 
+<<<<<<< HEAD
 	//Reload alternate appearances
 	for(var/v in GLOB.active_alternate_appearances)
 		if(!v)
@@ -79,6 +80,8 @@
 	if(!client.tooltips)
 		client.tooltips = new(client)
 
+=======
+>>>>>>> 00807234b (refactors asset subsystem (#6459))
 	var/turf/T = get_turf(src)
 	if(isturf(T))
 		update_client_z(T.z)
