@@ -48,39 +48,47 @@
 	buckle_allowed = TRUE
 	buckle_flags = BUCKLING_NO_DEFAULT_BUCKLE // Custom procs handle that.
 
+<<<<<<< HEAD
 //! ## Hair colour and style
+=======
+	//! LEGACY, TODO TO REMOVE
+	/// current head overlay pixel y offset
+	var/head_spriteacc_offset = 0
+
+	//* Hair colour and style
+>>>>>>> fd51eaf9a (linter fixes (#6486))
 	var/h_style = "Bald"
 	var/r_hair = 0
 	var/g_hair = 0
 	var/b_hair = 0
 
-//! ## Hair gradients
+	//* Hair gradients
 	var/grad_style = "None"
 	var/r_grad = 0
 	var/g_grad = 0
 	var/b_grad = 0
 
-//! ## Facial hair colour and style
+	//* Facial hair colour and style
 	var/f_style = "Shaved"
 	var/r_facial = 0
 	var/g_facial = 0
 	var/b_facial = 0
 
-//! ## Eye colour
+	//* Eye colour
 	var/r_eyes = 0
 	var/g_eyes = 0
 	var/b_eyes = 0
 	/// Skin tone
 	var/s_tone = 0
 
-//! ## Skin colour
+	//* Skin colour
 	/// Skin flag
 	var/skin_state = SKIN_NORMAL
 	var/r_skin = 238 // TODO: Set defaults for other races.
 	var/g_skin = 206
 	var/b_skin = 179
 
-//! ## ears, horns, tails, wings and custom species.
+	//* ears, horns, tails, wings and custom species.
 	var/datum/sprite_accessory/ears/ear_style = null
 	var/r_ears  = 30
 	var/g_ears  = 30
@@ -147,7 +155,7 @@
 
 	var/custom_species
 
-//! ## Synth colors
+	//* Synth colors
 	/// Lets normally uncolorable synth parts be colorable.
 	var/synth_color	= 0
 	// Used with synth_color to color synth parts that normaly can't be colored.
@@ -183,7 +191,7 @@
 	/// Which PDA type the player has chosen.
 	var/pdachoice = 1
 
-//! ## General information
+	//* General information
 	var/home_system = ""
 	var/citizenship = ""
 	var/personal_faction = ""
@@ -191,7 +199,7 @@
 	var/antag_faction = ""
 	var/antag_vis = ""
 
-//! ## Equipment slots
+	//* Equipment slots
 	var/obj/item/wear_suit = null
 	var/obj/item/w_uniform = null
 	var/obj/item/shoes = null
