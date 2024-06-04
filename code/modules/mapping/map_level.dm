@@ -3,7 +3,23 @@
  */
 /datum/map_level
 	/// id - must be globally unique across all possible maps
+<<<<<<< HEAD
 	var/id
+=======
+	/// if we are New()'d with a map, this is namespaced with that map automatically! you do not need
+	/// to namespace map levels yourself.
+	/// please use 'dashes-as-spacing' to format ids.
+	///
+	/// * if this is null, one will be assigned.
+	/// * this is used to generate mangling ID.
+	var/id
+	/// explicit mangling id
+	var/mangling_id
+	/// is this a hardcoded level? generally should be 'yes';
+	/// if it is, it's registered in the by-typepath lookup
+	var/hardcoded = FALSE
+
+>>>>>>> 6037dd194 (shuttles/storytellers - maploader injections and context (#6464))
 	/// friendly debug / code name of level
 	var/name
 	/// player visible id for technical displays - randomized if unset
