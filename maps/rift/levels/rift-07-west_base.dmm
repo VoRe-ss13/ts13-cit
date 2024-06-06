@@ -93,10 +93,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/underground3)
-"dj" = (
-/obj/effect/overlay/snow/floor,
-/turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
-/area/rift/facility/interior/core)
 "dk" = (
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/vault)
@@ -120,23 +116,30 @@
 /turf/simulated/mineral/cave,
 /area/rift/surfacebase/outside/west_base)
 "gJ" = (
-/obj/effect/overlay/snow/floor/edges{
-	dir = 8
+/obj/machinery/door/airlock/lift{
+	req_access = null
 	},
+<<<<<<< HEAD
 /obj/effect/overlay/snow/floor,
 /obj/random/junk,
+=======
+/obj/map_helper/access_helper/airlock/station/maintenance,
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 /turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
-/area/rift/facility/interior/core)
+/area/turbolift/rwest_mining/base)
 "hg" = (
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/vault)
+<<<<<<< HEAD
 "hl" = (
 /obj/random/trash,
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/underground3)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "hQ" = (
 /obj/effect/map_effect/radiation_emitter/chernobyl,
 /turf/simulated/floor/lythios43c/indoors,
@@ -217,12 +220,6 @@
 /obj/random/firstaid,
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/vault)
-"kC" = (
-/obj/effect/floor_decal/techfloor/orange/corner{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
-/area/rift/facility/interior/underground3)
 "kH" = (
 /obj/structure/girder/reinforced,
 /obj/effect/floor_decal/techfloor/orange{
@@ -257,9 +254,6 @@
 "lL" = (
 /obj/structure/sign/warning/falling,
 /turf/simulated/wall,
-/area/rift/surfacebase/outside/west_base)
-"mb" = (
-/turf/simulated/floor/outdoors/snow/lythios43c,
 /area/rift/surfacebase/outside/west_base)
 "my" = (
 /obj/structure/stairs/spawner/south,
@@ -302,15 +296,13 @@
 "nm" = (
 /turf/simulated/mineral/floor/icerock/lythios43c/indoors/ignore_cavegen,
 /area/rift/surfacebase/outside/west_base)
-"ns" = (
-/turf/simulated/floor/outdoors/snow/lythios43c,
-/area/rift/surfacebase/outside/west_base)
 "nO" = (
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/underground3)
+<<<<<<< HEAD
 "nQ" = (
 /obj/random/junk,
 /turf/simulated/floor/outdoors/snow/lythios43c,
@@ -322,6 +314,8 @@
 /obj/random/trash,
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/underground3)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "oo" = (
 /obj/structure/girder/reinforced,
 /obj/effect/floor_decal/techfloor/orange,
@@ -542,6 +536,7 @@
 /turf/unsimulated/mineral,
 /area/rift/surfacebase/outside/west_base)
 "Az" = (
+/obj/map_helper/access_helper/airlock/station/maintenance,
 /obj/machinery/door/airlock/lift,
 /turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
 /area/turbolift/rwest_mining/base)
@@ -604,10 +599,6 @@
 /obj/random/obstruction,
 /turf/simulated/floor/lythios43c/indoors,
 /area/rift/facility/interior/core)
-"Ei" = (
-/obj/effect/floor_decal/rust,
-/turf/simulated/floor/lythios43c/indoors,
-/area/rift/surfacebase/outside/west_base)
 "Ex" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -650,9 +641,6 @@
 /obj/effect/floor_decal/corner/beige/bordercorner,
 /turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
 /area/rift/facility/interior/barracks)
-"HA" = (
-/turf/simulated/floor/lythios43c/indoors,
-/area/rift/surfacebase/outside/west_base)
 "Id" = (
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 9
@@ -685,7 +673,7 @@
 /obj/item/bedsheet,
 /obj/machinery/power/apc/alarms_hidden/north_mount{
 	cell_type = null;
-	chargelevel = 0;
+	chargelevel = 0
 	},
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -695,6 +683,7 @@
 	},
 /turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
 /area/rift/facility/interior/barracks)
+<<<<<<< HEAD
 "JZ" = (
 /obj/effect/overlay/snow/floor/edges{
 	dir = 1
@@ -703,6 +692,8 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
 /area/rift/facility/interior/core)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "Kh" = (
 /turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
 /area/turbolift/rwest_mining/base)
@@ -771,10 +762,13 @@
 "NF" = (
 /turf/simulated/mineral/floor/ignore_cavegen/has_air,
 /area/rift/surfacebase/outside/west_base)
+<<<<<<< HEAD
 "NI" = (
 /obj/random/junk,
 /turf/simulated/floor/lythios43c/indoors,
 /area/rift/facility/interior/vault)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "NS" = (
 /turf/simulated/floor/tiled/steel_dirty/lythios43c/indoors,
 /area/rift/surfacebase/outside/west_base)
@@ -817,10 +811,6 @@
 	},
 /turf/simulated/floor/outdoors/snow/lythios43c,
 /area/rift/facility/interior/core)
-"PM" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/plating,
-/area/rift/surfacebase/outside/west_base)
 "PN" = (
 /obj/structure/closet,
 /obj/item/clothing/suit/tajaran/furs,
@@ -921,9 +911,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid/lythios43c/indoors,
 /area/rift/facility/interior/underground3)
-"TM" = (
-/turf/simulated/floor/outdoors/gravsnow/lythios43c,
-/area/rift/surfacebase/outside/west_base)
 "TT" = (
 /turf/simulated/floor/lythios43c/indoors,
 /area/rift/facility/interior/barracks)
@@ -2214,8 +2201,8 @@ Ae
 Ae
 aw
 aw
-PM
-PM
+yP
+yP
 aw
 aw
 Fo
@@ -5097,10 +5084,10 @@ RD
 LZ
 LA
 nO
-ok
+nO
 nO
 Te
-kC
+QO
 Mo
 pJ
 nO
@@ -5683,7 +5670,7 @@ Ad
 Ad
 AH
 rn
-hl
+Mo
 rp
 AH
 iB
@@ -6669,13 +6656,13 @@ Ad
 iB
 nm
 Fo
-HA
+MP
 MP
 xf
 CC
-HA
-HA
-HA
+MP
+MP
+MP
 my
 Fo
 DE
@@ -6852,10 +6839,10 @@ oo
 AH
 sk
 sk
-dj
+uB
 NV
 sY
-nQ
+vc
 vc
 vc
 SZ
@@ -6866,10 +6853,10 @@ Fo
 EZ
 zh
 Nf
-HA
-HA
+MP
+MP
 zh
-HA
+MP
 my
 Fo
 DE
@@ -7045,9 +7032,9 @@ Rw
 Zb
 SZ
 SZ
-dj
+uB
 sY
-nQ
+vc
 vc
 vc
 vc
@@ -7057,11 +7044,11 @@ SZ
 iB
 EZ
 EZ
-HA
+MP
 MP
 xf
 OB
-HA
+MP
 eM
 eM
 wc
@@ -7238,7 +7225,7 @@ Zb
 UC
 KC
 sk
-dj
+uB
 sY
 EP
 Px
@@ -7246,14 +7233,14 @@ Px
 vc
 EP
 vc
-JZ
-dj
+iu
+uB
 EZ
-HA
+MP
 xf
 xf
 EZ
-HA
+MP
 Fo
 Fo
 Fo
@@ -7423,7 +7410,7 @@ WD
 VN
 WD
 XG
-NI
+XG
 XG
 WD
 XG
@@ -7431,9 +7418,9 @@ WD
 KC
 UC
 Zb
-dj
+uB
 sY
-nQ
+vc
 vc
 Xw
 vc
@@ -7441,15 +7428,15 @@ vc
 AV
 vc
 iu
-dj
-HA
-HA
+uB
+MP
+MP
 EZ
-HA
+MP
 xf
-HA
+MP
 Nr
-HA
+MP
 xf
 Sk
 Fo
@@ -7615,19 +7602,19 @@ dk
 dk
 Ly
 Ly
-NI
 XG
 XG
 XG
-NI
+XG
+XG
 Ly
 Ly
 Zb
 Zb
 FI
-dj
+uB
 vc
-nQ
+vc
 vc
 vc
 yR
@@ -7635,17 +7622,17 @@ vc
 vc
 vc
 iu
-dj
+uB
 EZ
-HA
+MP
 xf
-HA
+MP
 EZ
-Ei
+Sk
 xf
 QC
 Nf
-HA
+MP
 Fo
 DE
 DE
@@ -7810,9 +7797,9 @@ mA
 tI
 WD
 hQ
-NI
 XG
-NI
+XG
+XG
 hQ
 XG
 WD
@@ -8006,7 +7993,7 @@ tI
 XG
 Ly
 WD
-NI
+XG
 WD
 tI
 tI
@@ -8021,7 +8008,7 @@ vc
 nk
 nk
 EP
-nQ
+vc
 iu
 SZ
 iB
@@ -8210,10 +8197,10 @@ Ad
 SZ
 sk
 vc
-nQ
 vc
 vc
-nQ
+vc
+vc
 vc
 vc
 iu
@@ -8406,13 +8393,13 @@ sk
 sk
 CO
 ut
-gJ
 ut
 ut
 ut
-dj
+ut
+uB
 xf
-HA
+MP
 nm
 nm
 nm
@@ -8792,13 +8779,13 @@ nm
 nm
 iB
 nm
-HA
-HA
+MP
+MP
 zh
-HA
-HA
+MP
+MP
 nm
-HA
+MP
 nm
 nm
 nm
@@ -33282,7 +33269,7 @@ DD
 DD
 NS
 NS
-Az
+gJ
 Kh
 Kh
 Kh
@@ -38062,192 +38049,192 @@ DE
 "}
 (192,1,1) = {"
 ws
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-TM
-TM
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-ns
-mb
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+DD
+DD
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
+py
 DE
 DE
 DE

@@ -190,28 +190,6 @@
 /obj/effect/overlay/snow/wall,
 /turf/simulated/floor/plating/lythios43c,
 /area/engineering/engine_eva)
-"afZ" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/research{
-	autoclose = 0;
-	frequency = 1382;
-	icon_state = "door_locked";
-	id_tag = "xenobiology_airlock_outer";
-	locked = 1;
-	name = "Xenobiology Exterior Airlock Doors";
-	req_one_access = list(47,55)
-	},
-/obj/machinery/access_button/airlock_interior{
-	command = "cycle_ext";
-	frequency = 1382;
-	master_tag = "xenobiology_airlock_control";
-	name = "Xenobiology Access Control";
-	pixel_x = 24;
-	pixel_y = 4;
-	req_one_access = list(47,55)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/rnd/outpost/xenobiology/outpost_south_airlock)
 "agE" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'HIGH VOLTAGE'";
@@ -434,18 +412,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/central_heating/surface_one)
-"apR" = (
-/obj/machinery/door/airlock/glass/research,
-/obj/machinery/door/blast/regular/open{
-	id = "main_ext_blast";
-	name = "Surface External Blast Door"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/glass,
-/turf/simulated/floor/tiled,
-/area/maintenance/evahallway)
 "aqb" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -491,20 +457,6 @@
 /obj/item/book/bundle/custom_library/fiction,
 /turf/simulated/floor/wood,
 /area/library)
-"aqK" = (
-/obj/machinery/door/airlock/glass/mining{
-	name = "Cargo Airlock";
-	req_one_access = list(31)
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/quartermaster/office)
 "ara" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/rift/stairwell/primary/surfaceone)
@@ -605,6 +557,26 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
+<<<<<<< HEAD
+=======
+"auN" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock{
+	name = "Internal Affairs"
+	},
+/obj/map_helper/access_helper/airlock/station/head_office/internal_affairs,
+/turf/simulated/floor/tiled/steel,
+/area/lawoffice)
+"auZ" = (
+/obj/structure/flora/ausbushes/fullgrass{
+	pixel_x = -8
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "avr" = (
 /obj/structure/bed/chair/comfy/beige{
 	dir = 8
@@ -834,6 +806,7 @@
 /obj/structure/cable/green{
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/plating,
 /area/maintenance/lowmedbaymaint)
 "aEB" = (
@@ -847,6 +820,17 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/plating,
 /area/medical/patient_wing)
+=======
+/obj/structure/disposalpipe/junction{
+	dir = 8;
+	icon_state = "pipe-j2"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/security/prison)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "aEC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -860,6 +844,21 @@
 "aEE" = (
 /turf/simulated/floor/tiled/monotile,
 /area/rnd/tankstorage)
+"aEF" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/glass/research{
+	name = "Telescience Wing";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled,
+/area/rnd/outpost/xenobiology/outpost_hallway)
 "aEG" = (
 /obj/effect/floor_decal/borderfloor/corner,
 /obj/effect/floor_decal/steeldecal/steel_decals5{
@@ -1391,26 +1390,6 @@
 "bbD" = (
 /turf/simulated/wall/wood/hardwood,
 /area/crew_quarters/game_room)
-"bbE" = (
-/obj/machinery/door/airlock/research{
-	name = "Xenobiology Autopsy Room";
-	req_one_access = list(55)
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/outpost/xenobiology/outpost_autopsy)
 "bcB" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
 	dir = 1
@@ -1608,6 +1587,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/tool_storage)
+<<<<<<< HEAD
 "biN" = (
 /obj/machinery/door/window/eastright,
 /obj/structure/table/rack/shelf/steel,
@@ -1627,6 +1607,8 @@
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "biY" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -1677,6 +1659,26 @@
 	},
 /turf/simulated/floor/plating,
 /area/tether/surfacebase/funny/clownoffice)
+"bjP" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/black,
+/obj/machinery/door/blast/regular/open{
+	id = "virolockdown";
+	name = "Virology Blast Door"
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance/medical{
+	name = "Virology Maintenance Tunnel";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/plating,
+/area/medical/virologytransiteast)
 "bkd" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on,
 /obj/machinery/air_alarm{
@@ -1765,6 +1767,7 @@
 /obj/item/flashlight/lamp,
 /turf/simulated/floor/carpet/bcarpet,
 /area/library)
+<<<<<<< HEAD
 "bmG" = (
 /obj/effect/floor_decal/rust,
 /obj/machinery/portable_atmospherics/hydroponics,
@@ -1773,6 +1776,25 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/prison)
+=======
+"bmh" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance/rnd{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/plating,
+/area/rnd/hallway)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "bmQ" = (
 /obj/structure/railing{
 	dir = 8
@@ -2203,15 +2225,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/rnd/outpost/xenobiology/outpost_hallway)
-"bzC" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/research{
-	id_tag = "researchdoor";
-	name = "Testing Room";
-	req_access = list(47)
-	},
-/turf/simulated/floor/tiled/monowhite,
-/area/rnd/testingroom)
 "bzV" = (
 /obj/structure/table/hardwoodtable,
 /obj/machinery/chemical_dispenser/catering/bar_coffee,
@@ -2326,6 +2339,17 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/wood,
 /area/maintenance/maint_bar)
+"bEt" = (
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/obj/machinery/door/airlock/security{
+	name = "Visitation";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/department,
+/turf/simulated/floor/tiled/monotile,
+/area/security/prison)
 "bEN" = (
 /obj/machinery/power/apc/north_mount,
 /obj/structure/cable/green{
@@ -2358,6 +2382,7 @@
 /obj/structure/table/bench/wooden,
 /turf/simulated/floor/wood,
 /area/rift/station/public_garden)
+<<<<<<< HEAD
 "bGu" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
@@ -2375,6 +2400,15 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/security_cell_hallway)
+=======
+"bGJ" = (
+/obj/machinery/door/airlock/maintenance/cargo{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/plating,
+/area/quartermaster/garage)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "bGX" = (
 /obj/structure/closet/secure_closet/personal/patient,
 /obj/machinery/light{
@@ -2563,12 +2597,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/outpost/xenobiology/outpost_main)
-"bND" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "Ground Defence Access"
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/rift/surfaceeva/aa/surface_south)
 "bNR" = (
 /obj/structure/railing{
 	dir = 8
@@ -3051,6 +3079,13 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/library)
+"cdE" = (
+/obj/machinery/door/airlock/lift{
+	req_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/maintenance,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/turbolift/rmine/surface)
 "cdH" = (
 /obj/machinery/fire_alarm/north_mount,
 /obj/effect/floor_decal/borderfloor{
@@ -3130,6 +3165,7 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenobiology/outpost_main)
+<<<<<<< HEAD
 "cfw" = (
 /obj/machinery/door/window/eastleft,
 /obj/structure/table/rack/shelf/steel,
@@ -3152,6 +3188,8 @@
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "cfy" = (
 /obj/structure/flora/ausbushes/reedbush,
 /turf/simulated/floor/water/deep/indoors,
@@ -3180,13 +3218,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/civilian_hallway_mid)
-"chz" = (
-/obj/machinery/door/airlock/maintenance/medical{
-	name = "Psychiatric Storage";
-	req_access = list(5)
-	},
-/turf/simulated/floor/plating,
-/area/medical/psych)
 "chK" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
@@ -3247,17 +3278,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/hallway)
-"cjZ" = (
-/obj/machinery/door/airlock/glass/research,
-/obj/machinery/door/blast/regular/open{
-	id = "main_ext_blast";
-	name = "Surface External Blast Door"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/rnd/outpost/xenobiology/outpost_hallway)
 "ckh" = (
 /obj/machinery/light{
 	dir = 8
@@ -3446,15 +3466,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/library)
-"crn" = (
-/obj/machinery/door/airlock/glass/medical{
-	name = "Xenobiology First Aid";
-	req_one_access = list(5,47)
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
-/area/rnd/outpost/xenobiology/outpost_first_aid)
 "csb" = (
 /obj/machinery/light{
 	dir = 8
@@ -3526,6 +3537,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/rift/station/fighter_bay/transport_tunnel_garage_maint)
+<<<<<<< HEAD
 "cvB" = (
 /obj/machinery/door/window{
 	dir = 8
@@ -3548,6 +3560,8 @@
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "cvM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -3609,20 +3623,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
-"cxQ" = (
-/obj/machinery/door/airlock/glass/security{
-	id_tag = "detdoor";
-	name = "Forensics Lab";
-	req_access = list(4)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/firedoor/glass,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/security/forensics)
 "cxT" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chemical_dispenser/full{
@@ -3835,6 +3835,7 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych)
+<<<<<<< HEAD
 "cCK" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/rust,
@@ -3847,6 +3848,25 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/prison)
+=======
+"cCB" = (
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/glass/research{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/hallway)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "cCS" = (
 /obj/machinery/door/airlock/glass_external/public{
 	name = "Public External Airlock"
@@ -3958,6 +3978,7 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
+<<<<<<< HEAD
 "cIf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -3969,6 +3990,8 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/security_cell_hallway)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "cIn" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -4049,6 +4072,21 @@
 "cKp" = (
 /turf/simulated/wall/wood/hardwood,
 /area/tether/surfacebase/entertainment/backstage)
+"cKt" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/mining{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/office)
 "cKz" = (
 /obj/structure/table/woodentable,
 /obj/machinery/newscaster{
@@ -4354,24 +4392,6 @@
 /obj/item/book/manual/resleeving,
 /turf/simulated/floor/wood,
 /area/tether/surfacebase/medical/mentalhealth)
-"cYs" = (
-/obj/machinery/door/airlock/research{
-	id_tag = "researchdoor";
-	name = "Testing Room";
-	req_access = list(47)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/testingroom)
 "cYM" = (
 /turf/simulated/wall/r_wall/prepainted/science,
 /area/rnd/testingroom)
@@ -4434,27 +4454,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/plating,
 /area/maintenance/tool_storage)
-"daj" = (
-/obj/machinery/atmospherics/pipe/simple/visible/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/black{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/machinery/door/airlock/maintenance/medical{
-	name = "Virology Maintenance Substation";
-	req_access = list(39);
-	req_one_access = null
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/medical/virologymaint)
 "dan" = (
 /obj/structure/bookcase{
 	name = "bookcase (Religious)"
@@ -4475,26 +4474,6 @@
 	},
 /turf/simulated/floor/reinforced/lythios43c,
 /area/rift/surfaceeva/aa/surface_south)
-"dbv" = (
-/obj/machinery/door/airlock{
-	name = "Custodial Closet";
-	req_access = list(26)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/janitor)
 "dbE" = (
 /obj/structure/bed/chair/wood{
 	dir = 8
@@ -4504,6 +4483,13 @@
 	},
 /turf/simulated/floor/wood,
 /area/tether/surfacebase/entertainment)
+"dca" = (
+/obj/machinery/door/airlock/maintenance/rnd{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/plating,
+/area/rnd/xenoarch_storage)
 "dcG" = (
 /obj/machinery/door/window/westleft{
 	dir = 4;
@@ -4561,22 +4547,6 @@
 	},
 /turf/simulated/floor/carpet/sblucarpet,
 /area/crew_quarters/medbreak)
-"ddN" = (
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 1
-	},
-/obj/machinery/door/airlock/glass/medical{
-	name = "Paramedic Storage"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/glass,
-/turf/simulated/floor/tiled/white,
-/area/medical/medbay_emt_bay)
 "ddT" = (
 /obj/machinery/seed_extractor,
 /obj/effect/floor_decal/borderfloor{
@@ -4590,14 +4560,6 @@
 "dee" = (
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenobiology/outpost_breakroom)
-"dem" = (
-/obj/machinery/door/airlock/research{
-	name = "Xenobiology Office";
-	req_one_access = list(55)
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel,
-/area/rnd/outpost/xenobiology/outpost_autopsy)
 "dfc" = (
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 8
@@ -4776,6 +4738,7 @@
 	},
 /turf/simulated/floor/lino,
 /area/security/detectives_office)
+<<<<<<< HEAD
 "dky" = (
 /obj/machinery/door/airlock{
 	name = "Internal Affairs";
@@ -4787,6 +4750,17 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/tiled/steel,
 /area/lawoffice)
+=======
+"dki" = (
+/obj/structure/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/turf/simulated/floor/plating,
+/area/maintenance/lowmedbaymaint)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "dkB" = (
 /obj/effect/floor_decal/borderfloorwhite,
 /obj/effect/floor_decal/corner/beige/border,
@@ -4888,6 +4862,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/central_heating/surface_one)
+"dlX" = (
+/obj/machinery/door/airlock/maintenance/medical{
+	name = "Medical Maintenance Access";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/plating,
+/area/medical/patient_wing)
 "dmC" = (
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/borderfloor{
@@ -5028,17 +5010,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/library)
-"dpZ" = (
-/obj/machinery/door/airlock/research{
-	name = "Toxins Storage";
-	req_access = list(8)
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/xenobiology/xenoflora/lab_atmos)
 "dqb" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/plating,
@@ -5174,6 +5145,24 @@
 /obj/structure/bed/chair/comfy/black,
 /turf/simulated/floor/carpet/bcarpet,
 /area/library)
+"duU" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/medical{
+	name = "Psychiatric Wing";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/medical/psych)
 "dvl" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -5184,17 +5173,26 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfaceone)
+"dvm" = (
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance/engi{
+	name = "Pump Station Access";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/engineering/department,
+/turf/simulated/floor/plating,
+/area/maintenance/engineering/pumpstation)
 "dvn" = (
 /turf/simulated/floor/plating,
 /area/maintenance/research/xenobio)
-"dwr" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock{
-	name = "Shop Storage";
-	req_one_access = list(160)
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rift/trade_shop)
 "dwt" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/lightgrey/border,
@@ -5317,6 +5315,19 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
+"dBw" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/forensics,
+/turf/simulated/floor/plating,
+/area/security/detectives_office)
 "dBA" = (
 /obj/machinery/light_construct/small,
 /turf/simulated/floor/wood/broken,
@@ -5454,6 +5465,18 @@
 "dGy" = (
 /turf/unsimulated/wall/planetary/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+"dGA" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/glass/medical{
+	name = "Science First Aid";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/hallway)
 "dHp" = (
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 4
@@ -5563,26 +5586,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/outpost/xenobiology/outpost_stairs)
-"dJJ" = (
-/obj/machinery/door/airlock/research{
-	name = "Xenobiology Office";
-	req_one_access = list(55)
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/outpost/xenobiology/outpost_office)
 "dJM" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -6530,7 +6533,18 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/steel,
+<<<<<<< HEAD
 /area/security/prison)
+=======
+/area/security/prison/upper)
+"ejY" = (
+/obj/map_helper/access_helper/airlock/station/service/entertainer,
+/obj/machinery/door/airlock{
+	name = "Entertainment Backroom"
+	},
+/turf/simulated/floor/plating,
+/area/tether/surfacebase/entertainment/backstage)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "ekr" = (
 /obj/machinery/light/small/emergency,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -6706,6 +6720,28 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenobiology/outpost_hallway)
+"eqU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/medical{
+	id_tag = "mentaldoor";
+	name = "Mental Health";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/psychiatry,
+/turf/simulated/floor/wood,
+/area/tether/surfacebase/medical/mentalhealth)
 "ern" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -6918,6 +6954,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych)
+"ewv" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	name = "Showers and Decontamination"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/outpost/xenobiology/outpost_decon)
 "ewO" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 9
@@ -6925,6 +6969,28 @@
 /obj/machinery/meter,
 /turf/simulated/floor/plating,
 /area/medical/virologymaint)
+<<<<<<< HEAD
+=======
+"exa" = (
+/obj/machinery/door/airlock/glass_external{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/external_airlock,
+/turf/simulated/floor/plating,
+/area/engineering/engine_eva)
+"exp" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 8
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals5{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/security/prison)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "exH" = (
 /obj/structure/flora/ausbushes/palebush,
 /obj/machinery/atmospherics/component/unary/vent_pump/high_volume,
@@ -6965,6 +7031,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/rift/surfaceeva/airlock/main/secondary)
+"ezQ" = (
+/obj/machinery/door/airlock/glass/medical{
+	name = "Paramedic Storage";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/steel_grid,
+/area/medical/medbay_emt_bay)
 "eAg" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/turbolift/rhammerhead/midpoint)
@@ -7288,6 +7362,17 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/patient_wing)
+"eKR" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/map_helper/access_helper/airlock/station/science/maintenance,
+/obj/machinery/door/airlock/engineering{
+	name = "Science Substation";
+	req_one_access = null
+	},
+/turf/simulated/floor/plating,
+/area/rnd/outpost/xenobiology/outpost_stairs)
 "eLT" = (
 /obj/machinery/door/window/eastleft{
 	dir = 8;
@@ -7301,6 +7386,17 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/tiled/steel,
 /area/janitor)
+"eMd" = (
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/map_helper/access_helper/airlock/station/science/toxins,
+/obj/machinery/door/airlock/research{
+	name = "Toxins Storage"
+	},
+/turf/simulated/floor/tiled/steel,
+/area/rnd/xenobiology/xenoflora/lab_atmos)
 "eMm" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/space_heater,
@@ -7341,6 +7437,7 @@
 /obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/lino,
 /area/security/detectives_office)
+<<<<<<< HEAD
 "eNr" = (
 /obj/machinery/door/airlock/maintenance/sec,
 /obj/structure/disposalpipe/segment{
@@ -7349,6 +7446,8 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/plating,
 /area/security/detectives_office)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "eNx" = (
 /obj/structure/railing,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -7376,14 +7475,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/medical/virologymaint)
-"ePi" = (
-/obj/machinery/door/airlock/research{
-	name = "Xenobiology Autopsy Room";
-	req_one_access = list(55)
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel,
-/area/rnd/outpost/xenobiology/outpost_autopsy)
 "ePm" = (
 /turf/simulated/wall/prepainted,
 /area/rift/station/public_garden)
@@ -7431,6 +7522,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/lowmedbaymaint)
+<<<<<<< HEAD
 "eTN" = (
 /obj/machinery/door/airlock/maintenance/medical{
 	name = "Medical Maintenance Access";
@@ -7445,6 +7537,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/medbreak)
+=======
+"eTk" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/red/border,
+/obj/effect/floor_decal/steeldecal/steel_decals5{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel,
+/area/security/prison)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "eUk" = (
 /obj/machinery/air_alarm{
 	dir = 4;
@@ -7453,6 +7558,21 @@
 /obj/machinery/vending/fishing,
 /turf/simulated/floor/tiled/steel,
 /area/rift/station/public_garden)
+"eUW" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance/medical{
+	name = "Medical Maintenance Access";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/plating,
+/area/crew_quarters/medbreak)
 "eVw" = (
 /obj/structure/bed/chair/wood{
 	dir = 4
@@ -7501,6 +7621,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/outpost/xenobiology/outpost_main)
+<<<<<<< HEAD
 "eWC" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Surface Services Substation";
@@ -7509,10 +7630,43 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor,
 /area/maintenance/starboard)
+=======
+"eWs" = (
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/lowmedbaymaint)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "eWI" = (
 /obj/structure/bed/psych,
 /turf/simulated/floor/carpet/blue,
 /area/tether/surfacebase/medical/mentalhealth)
+"eWL" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/security{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "shutter0";
+	id = "sfc_check_shutter_alt";
+	name = "Surface Checkpoint Shutter";
+	opacity = 0
+	},
+/obj/map_helper/access_helper/airlock/station/security/equipment,
+/turf/simulated/floor/tiled/steel,
+/area/security/checkpoint)
 "eWY" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -7678,22 +7832,6 @@
 "fds" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/library)
-"fdt" = (
-/obj/machinery/door/airlock/glass/medical{
-	name = "Psychiatric Wing"
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/psych)
 "fdY" = (
 /obj/structure/railing,
 /obj/structure/railing{
@@ -7733,6 +7871,16 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
+"ffQ" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "Ground Defence Access";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/equipment,
+/obj/map_helper/access_helper/airlock/station/engineering/department,
+/obj/map_helper/access_helper/airlock/station/command/bridge,
+/turf/simulated/floor/tiled/techmaint,
+/area/rift/surfaceeva/aa/surface_south)
 "fgE" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -7826,6 +7974,32 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/foyer)
+"fkE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/medical{
+	name = "Patient Psychiatric Ward A";
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "psyche-b-outer";
+	name = "Ward A";
+	opacity = 0
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/dark,
+/area/medical/psych/psych_1)
 "fkT" = (
 /obj/structure/bed/chair/sofa/beige{
 	dir = 8
@@ -7904,6 +8078,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/library)
+"fnG" = (
+/obj/machinery/door/airlock/maintenance/medical{
+	name = "Psychiatric Storage";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/plating,
+/area/medical/psych)
 "fnO" = (
 /obj/machinery/appliance/cooker/grill/stand,
 /turf/simulated/floor/outdoors/grass/heavy/interior,
@@ -7917,15 +8099,6 @@
 "foD" = (
 /turf/simulated/wall/r_wall/prepainted/science,
 /area/rnd/chemistry_lab)
-"foY" = (
-/obj/machinery/door/airlock/glass/mining{
-	name = "Mining Operations";
-	req_access = list(31);
-	req_one_access = list()
-	},
-/obj/machinery/door/firedoor/glass,
-/turf/simulated/floor/tiled/steel,
-/area/quartermaster/office)
 "fpd" = (
 /obj/structure/railing{
 	dir = 1
@@ -8015,27 +8188,6 @@
 /obj/effect/floor_decal/industrial/warning/full,
 /turf/simulated/floor/tiled,
 /area/medical/virologypurge)
-"fqb" = (
-/obj/machinery/door/airlock/glass_external{
-	name = "Cargo Airlock";
-	req_one_access = list(31)
-	},
-/obj/machinery/door/blast/regular/open{
-	id = "main_ext_blast";
-	name = "Surface External Blast Door"
-	},
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	dir = 4;
-	icon_state = "shutter0";
-	id = "cargo_shuttle_shutter";
-	name = "Cargo shuttle access shutter";
-	opacity = 0
-	},
-/obj/structure/fans/tiny,
-/obj/map_helper/airlock/door/simple,
-/turf/simulated/floor/tiled/steel_grid,
-/area/rift/surfaceeva/cargodock)
 "frd" = (
 /obj/structure/closet/firecloset,
 /obj/machinery/light/small,
@@ -8418,27 +8570,6 @@
 /obj/item/clothing/glasses/science,
 /turf/simulated/floor/tiled/steel,
 /area/rnd/chemistry_lab)
-"fGp" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/research{
-	autoclose = 0;
-	frequency = 1382;
-	icon_state = "door_locked";
-	id_tag = "xenobiology_airlock_inner";
-	locked = 1;
-	name = "Xenobiology Interior Airlock Doors";
-	req_one_access = list(47,55)
-	},
-/obj/machinery/access_button/airlock_interior{
-	frequency = 1382;
-	master_tag = "xenobiology_airlock_control";
-	name = "Xenobiology Access Control";
-	pixel_x = -24;
-	pixel_y = 4;
-	req_one_access = list(47,55)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/rnd/outpost/xenobiology/outpost_south_airlock)
 "fGz" = (
 /obj/machinery/computer/area_atmos/tag,
 /obj/effect/floor_decal/borderfloor{
@@ -8565,26 +8696,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
-"fLj" = (
-/obj/machinery/atmospherics/pipe/simple/visible/supply,
-/obj/machinery/atmospherics/pipe/simple/visible/black,
-/obj/machinery/door/blast/regular/open{
-	id = "virolockdown";
-	name = "Virology Blast Door"
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
-/obj/structure/catwalk,
-/obj/machinery/door/airlock/maintenance/medical{
-	name = "Virology Maintenance Tunnel";
-	req_access = list(39);
-	req_one_access = null
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/medical/virologytransiteast)
 "fLN" = (
 /obj/machinery/portable_atmospherics/powered/scrubber/huge/stationary/phoronlock{
 	on = 1
@@ -8972,6 +9083,26 @@
 "fYd" = (
 /turf/simulated/wall/prepainted,
 /area/rift/stairwell/primary/surfaceone)
+"fZb" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 4;
+	id_tag = "PsycheFoyer";
+	name = "Psychiatric Wing";
+	req_access = list()
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/medical/patient_wing)
 "fZh" = (
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 8
@@ -9049,18 +9180,34 @@
 /obj/item/book/bundle/custom_library/reference,
 /turf/simulated/floor/wood,
 /area/library)
-"gbq" = (
-/obj/machinery/door/airlock/maintenance/sec,
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	dir = 2;
-	icon_state = "shutter0";
-	id = "sfc_check_shutter";
-	name = "Surface Checkpoint Shutter";
-	opacity = 0
+"gbC" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
-/area/security/checkpoint)
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "virolockdown";
+	name = "Virology Blast Door"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/medical{
+	name = "Isolation";
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "virolockdown";
+	name = "Virology Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/tiled,
+/area/medical/virology)
 "gbL" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -9161,12 +9308,6 @@
 "ght" = (
 /turf/simulated/mineral/icerock/lythios43c,
 /area/maintenance/maint_bar)
-"ghF" = (
-/obj/machinery/door/airlock/glass/medical{
-	name = "Paramedic Storage"
-	},
-/turf/simulated/floor/tiled/steel_grid,
-/area/medical/medbay_emt_bay)
 "ghW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -9371,6 +9512,25 @@
 "gqp" = (
 /turf/simulated/floor/tiled/monowhite,
 /area/medical/exam_room)
+"gqA" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/purple/border,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/research{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/hallway)
 "gqN" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
@@ -9435,20 +9595,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/lowmedbaymaint)
-"gsT" = (
-/obj/machinery/door/airlock/maintenance/rnd,
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/supply{
-	dir = 8
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/rnd/hallway)
 "gtq" = (
 /obj/structure/table/glass,
 /obj/item/bodybag,
@@ -9705,6 +9851,24 @@
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /turf/simulated/floor/plating,
 /area/tether/station/public_meeting_room)
+"gDe" = (
+/obj/machinery/door/window/eastright,
+/obj/structure/table/rack/shelf/steel,
+/obj/effect/floor_decal/borderfloor{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/lightgrey/border{
+	dir = 10
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/item/clothing/suit/storage/hooded/wintercoat,
+/obj/item/clothing/mask/gas/clear,
+/turf/simulated/floor/tiled/steel,
+/area/storage/surface_eva)
 "gDI" = (
 /obj/structure/grille,
 /obj/structure/railing{
@@ -9879,14 +10043,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
-"gJK" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock{
-	name = "Showers and Decontamination";
-	req_one_access = list(47)
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/outpost/xenobiology/outpost_decon)
 "gKj" = (
 /obj/machinery/papershredder,
 /obj/structure/table/reinforced,
@@ -10391,21 +10547,6 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/library)
-"gWs" = (
-/obj/effect/floor_decal/borderfloorwhite,
-/obj/effect/floor_decal/corner/paleblue/border,
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 4;
-	name = "Medbay Breakroom";
-	req_access = list(5);
-	req_one_access = list(5)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/glass,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/medbreak)
 "gWw" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
@@ -10849,6 +10990,12 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfaceone)
+"hgw" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/maintenance/int,
+/obj/map_helper/access_helper/airlock/station/head_office/internal_affairs,
+/turf/simulated/floor/plating,
+/area/lawoffice)
 "hgE" = (
 /turf/simulated/mineral/icerock/lythios43c,
 /area/rift/surfacebase/outside/outside1)
@@ -10985,20 +11132,6 @@
 /obj/structure/bed/chair/comfy/beige,
 /turf/simulated/floor/carpet/bcarpet,
 /area/crew_quarters/game_room)
-"hjc" = (
-/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/supply{
-	dir = 8
-	},
-/obj/machinery/door/airlock/glass/research,
-/obj/structure/disposalpipe/segment{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/glass,
-/turf/simulated/floor/tiled/steel,
-/area/rnd/hallway)
 "hjN" = (
 /obj/machinery/light{
 	dir = 4
@@ -11048,18 +11181,18 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
-"hkz" = (
-/obj/machinery/door/airlock/glass_external{
-	name = "Cargo Airlock";
-	req_one_access = list(31)
+"hkB" = (
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/maintenance/medical{
+	name = "Medical Maintenance Access";
+	req_one_access = null
 	},
-/obj/machinery/door/blast/regular/open{
-	id = "main_ext_blast";
-	name = "Surface External Blast Door"
-	},
-/obj/map_helper/airlock/door/simple,
-/turf/simulated/floor/tiled/steel_grid,
-/area/rift/surfaceeva/cargodock)
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/plating,
+/area/medical/patient_wing)
 "hkM" = (
 /obj/structure/railing{
 	dir = 8
@@ -11289,6 +11422,25 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/testingroom)
+<<<<<<< HEAD
+=======
+"hsB" = (
+/obj/machinery/light,
+/turf/simulated/open,
+/area/security/prison/upper)
+"hsG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/silver{
+	name = "Mime's Office"
+	},
+/obj/map_helper/access_helper/airlock/station/service/mime,
+/turf/simulated/floor/carpet/bcarpet,
+/area/tether/surfacebase/funny/mimeoffice)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "htj" = (
 /obj/machinery/camera/network/medbay{
 	dir = 8
@@ -11370,6 +11522,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych)
+"hxi" = (
+/obj/machinery/door/airlock/maintenance/engi{
+	name = "Elevator Shaft Access";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/security/lower)
 "hyf" = (
 /obj/machinery/atmospherics/tvalve/digital/mirrored/bypass{
 	dir = 4
@@ -11428,23 +11588,6 @@
 /obj/item/bikehorn/rubberducky,
 /turf/simulated/floor/water/indoors,
 /area/rift/station/public_garden)
-"hAl" = (
-/obj/machinery/door/airlock/mining{
-	name = "Quartermaster";
-	req_access = list(41);
-	req_one_access = null
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/quartermaster/qm)
 "hBk" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/brown/border,
@@ -11616,10 +11759,33 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych_ward)
+"hFX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/command{
+	id_tag = "cmodoor";
+	name = "Chief Medical Officer";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/head_office/chief_medical_officer,
+/turf/simulated/floor/tiled/dark,
+/area/crew_quarters/heads/cmo)
 "hGd" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/tiled,
 /area/rnd/xenoarch_storage)
+<<<<<<< HEAD
 "hGg" = (
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/airlock/maintenance/sec,
@@ -11633,6 +11799,19 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/checkpoint)
+=======
+"hGe" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/red/border,
+/obj/machinery/camera/network/security{
+	dir = 1
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals5{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel,
+/area/security/prison)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "hGn" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -11725,6 +11904,15 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
+"hIn" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/glass/mining{
+	name = "Mining Operations";
+	req_one_access = list()
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/office)
 "hIo" = (
 /turf/simulated/wall/prepainted/medical,
 /area/medical/psych_ward)
@@ -11904,6 +12092,27 @@
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
+"hNv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/obj/machinery/door/airlock/glass/security{
+	name = "Prison Overwatch";
+	req_access = list();
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/department,
+/turf/simulated/floor/tiled/monodark,
+/area/security/prison/upper)
 "hNw" = (
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 8
@@ -12014,6 +12223,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_eva)
+"hRS" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/machinery/door/airlock/glass/mining{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/office)
 "hSd" = (
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/borderfloor,
@@ -12137,6 +12359,23 @@
 /obj/machinery/power/rtg,
 /turf/simulated/floor/tiled/techmaint,
 /area/rift/surfaceeva/aa/surface_north)
+"hUB" = (
+/obj/effect/floor_decal/borderfloorwhite,
+/obj/effect/floor_decal/corner/paleblue/border,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/medical{
+	name = "Paramedic Storage";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/medical/medbay_emt_bay)
 "hUH" = (
 /obj/machinery/camera/network/civilian{
 	dir = 8
@@ -12199,27 +12438,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
-"hWJ" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/research{
-	autoclose = 0;
-	frequency = 1382;
-	icon_state = "door_locked";
-	id_tag = "xenobiology_airlock_outer";
-	locked = 1;
-	name = "Xenobiology Exterior Airlock Doors";
-	req_one_access = list(47,55)
-	},
-/obj/machinery/access_button/airlock_interior{
-	command = "cycle_ext";
-	frequency = 1382;
-	master_tag = "xenobiology_airlock_control";
-	name = "Xenobiology Access Control";
-	pixel_x = -24;
-	pixel_y = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/rnd/outpost/xenobiology/outpost_south_airlock)
 "hWQ" = (
 /obj/structure/sign/department/medbay,
 /turf/simulated/wall/prepainted/science,
@@ -12432,14 +12650,24 @@
 /obj/random/soap,
 /turf/simulated/floor/tiled/white,
 /area/rnd/outpost/xenobiology/outpost_decon)
-"ibO" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock{
-	name = "Shop Hall";
-	req_one_access = list(160)
+"ibU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/research{
+	id_tag = "researchdoor";
+	name = "Testing Room"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
 /turf/simulated/floor/tiled/steel,
-/area/rift/trade_shop)
+/area/rnd/testingroom)
 "icL" = (
 /turf/simulated/floor/tiled/white,
 /area/rnd/chemistry_lab)
@@ -12557,6 +12785,7 @@
 	},
 /turf/simulated/floor/reinforced/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+<<<<<<< HEAD
 "igZ" = (
 /obj/machinery/door/window/eastright,
 /obj/structure/table/rack/shelf/steel,
@@ -12577,6 +12806,8 @@
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "iie" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -13316,6 +13547,7 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/simulated/floor/water/indoors,
 /area/rift/station/public_garden)
+<<<<<<< HEAD
 "iDO" = (
 /obj/machinery/door/airlock/maintenance/command,
 /turf/simulated/floor/plating,
@@ -13335,6 +13567,8 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/security_cell_hallway)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "iEH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -13405,25 +13639,12 @@
 	},
 /turf/simulated/floor/tiled/steel_grid/lythios43c,
 /area/rift/surfacebase/outside/outside1)
-"iFZ" = (
-/obj/machinery/door/airlock/maintenance/rnd,
-/turf/simulated/floor/plating,
-/area/rnd/xenoarch_storage)
 "iGc" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /turf/simulated/floor/wood,
 /area/maintenance/research/lower)
-"iGp" = (
-/obj/machinery/door/airlock/maintenance/cargo,
-/obj/machinery/door/firedoor/glass,
-/obj/structure/catwalk,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/cargo)
 "iGr" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
@@ -13434,6 +13655,26 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/steel,
 /area/rnd/xenobiology/xenoflora/lab_atmos)
+"iGE" = (
+/obj/machinery/door/window/westright,
+/obj/structure/table/rack/shelf/steel,
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/lightgrey/border{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/clothing/mask/warmer,
+/obj/item/clothing/suit/storage/hooded/wintercoat,
+/turf/simulated/floor/tiled/steel,
+/area/storage/surface_eva)
 "iGH" = (
 /obj/effect/floor_decal/borderfloorwhite,
 /obj/effect/floor_decal/corner/pink/border,
@@ -13444,6 +13685,7 @@
 /obj/item/flashlight/lamp,
 /turf/simulated/floor/wood/broken,
 /area/maintenance/library)
+<<<<<<< HEAD
 "iHk" = (
 /obj/machinery/vending/sovietsoda{
 	name = "Water Dispenser"
@@ -13464,6 +13706,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/psych_ward)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "iHL" = (
 /obj/machinery/power/apc/east_mount,
 /turf/simulated/floor,
@@ -13650,27 +13894,6 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/techmaint,
 /area/rift/surfaceeva/aa/surface_south)
-"iNl" = (
-/obj/machinery/door/airlock/command{
-	id_tag = "cmodoor";
-	name = "Chief Medical Officer";
-	req_access = list(40)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/cmo)
 "iNE" = (
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
@@ -13699,6 +13922,14 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/steel,
+/area/quartermaster/office)
+"iQa" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/maintenance/cargo{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/plating,
 /area/quartermaster/office)
 "iQn" = (
 /turf/simulated/floor/tiled/steel,
@@ -13770,22 +14001,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/hallway)
-"iRL" = (
-/obj/machinery/atmospherics/pipe/simple/visible/supply,
-/obj/machinery/atmospherics/pipe/simple/visible/black,
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
-/obj/structure/catwalk,
-/obj/machinery/door/airlock/maintenance/medical{
-	name = "Virology Maintenance Tunnel";
-	req_access = list(39);
-	req_one_access = null
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/medical/virologytransitwest)
 "iSw" = (
 /obj/machinery/fire_alarm/east_mount,
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
@@ -13940,6 +14155,26 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
+"iXD" = (
+/obj/machinery/door/window/eastleft,
+/obj/structure/table/rack/shelf/steel,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/lightgrey/border{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/item/clothing/suit/storage/hooded/wintercoat,
+/obj/item/clothing/mask/gas/clear,
+/turf/simulated/floor/tiled/steel,
+/area/storage/surface_eva)
 "iXH" = (
 /obj/machinery/door/airlock/multi_tile/glass,
 /obj/machinery/door/firedoor/glass,
@@ -14174,27 +14409,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/security/lower)
-"jeF" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/research{
-	autoclose = 0;
-	frequency = 1382;
-	icon_state = "door_locked";
-	id_tag = "xenobiology_airlock_inner";
-	locked = 1;
-	name = "Xenobiology Interior Airlock Doors";
-	req_one_access = list(47,55)
-	},
-/obj/machinery/access_button/airlock_interior{
-	frequency = 1382;
-	master_tag = "xenobiology_airlock_control";
-	name = "Xenobiology Access Control";
-	pixel_x = 24;
-	pixel_y = 4;
-	req_one_access = list(47,55)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/rnd/outpost/xenobiology/outpost_south_airlock)
 "jeG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -14464,27 +14678,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/xenoarch_storage)
-"jnz" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/maintenance/cargo,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/quartermaster/hallway)
-"jnU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/medical{
-	name = "Virology";
-	req_one_access = list(39)
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/virologyaccess)
 "jof" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -14641,6 +14834,7 @@
 /obj/structure/table/hardwoodtable,
 /turf/simulated/floor/wood/broken,
 /area/maintenance/maint_bar)
+<<<<<<< HEAD
 "jxb" = (
 /obj/machinery/door/airlock/glass/mining{
 	name = "Cargo Airlock";
@@ -14666,6 +14860,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/bathroom)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "jxt" = (
 /obj/structure/sign/mining{
 	pixel_y = 32
@@ -14879,13 +15075,6 @@
 /obj/item/material/knife,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
-"jEy" = (
-/obj/machinery/door/airlock/maintenance/rnd,
-/obj/effect/floor_decal/rust,
-/obj/machinery/door/firedoor/glass,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plating,
-/area/rnd/xenobiology/xenoflora)
 "jEE" = (
 /obj/machinery/light{
 	dir = 8
@@ -15088,6 +15277,31 @@
 	},
 /turf/simulated/floor/wood,
 /area/maintenance/maint_bar)
+"jKM" = (
+/obj/machinery/door/airlock/glass/security/polarized{
+	id_tag = "detdoor";
+	id_tint = "det_office";
+	name = "Detective's Office";
+	req_one_access = null
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/obj/map_helper/access_helper/airlock/station/security/forensics,
+/turf/simulated/floor/lino,
+/area/security/detectives_office)
 "jLa" = (
 /obj/structure/stairs/spawner/north,
 /turf/simulated/floor/plating,
@@ -15288,6 +15502,27 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/qm)
+"jRV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/research{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "main_ext_blast";
+	name = "Surface External Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled,
+/area/maintenance/evahallway)
 "jSu" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -15324,6 +15559,22 @@
 /obj/item/clothing/head/soft/sec,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
+"jSV" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/mining{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/delivery)
 "jTq" = (
 /obj/structure/railing{
 	dir = 8
@@ -15500,6 +15751,27 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/storage/tools)
+"kaz" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass_science{
+	name = "Break Room";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/outpost/xenobiology/outpost_breakroom)
 "kaE" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -15708,24 +15980,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
-"kgJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/black,
-/obj/machinery/door/blast/regular/open{
-	id = "virolockdown";
-	name = "Virology Blast Door"
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/medical{
-	name = "Virology Lab";
-	req_one_access = list(39)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/medical/virology)
 "khc" = (
 /obj/structure/catwalk,
 /obj/machinery/light/small{
@@ -15760,6 +16014,19 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfaceone)
+"kiD" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/research{
+	name = "Xenobiology Equipment Storage"
+	},
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/techmaint,
+/area/rnd/outpost/xenobiology/outpost_storage)
 "kiE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
@@ -15876,11 +16143,20 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/lowmedbaymaint)
-"kkQ" = (
-/obj/machinery/door/airlock/maintenance/rnd,
-/obj/structure/disposalpipe/segment,
+"kkO" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/obj/machinery/door/airlock/research{
+	name = "Toxins Storage"
+	},
+/obj/map_helper/access_helper/airlock/station/science/toxins,
 /turf/simulated/floor/plating,
-/area/maintenance/research/lower)
+/area/rnd/tankstorage)
 "klc" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 8
@@ -16145,6 +16421,28 @@
 	},
 /turf/simulated/floor/tiled/monowhite,
 /area/security/forensics)
+"ksP" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/access_button/airlock_interior{
+	command = "cycle_ext";
+	frequency = 1382;
+	master_tag = "xenobiology_airlock_control";
+	name = "Xenobiology Access Control";
+	pixel_x = -24;
+	pixel_y = 4
+	},
+/obj/machinery/door/airlock/research{
+	autoclose = 0;
+	frequency = 1382;
+	icon_state = "door_locked";
+	id_tag = "xenobiology_airlock_outer";
+	locked = 1;
+	name = "Xenobiology Exterior Airlock Doors"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/dark,
+/area/rnd/outpost/xenobiology/outpost_south_airlock)
 "ksR" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -16157,6 +16455,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenobiology/outpost_hallway)
+"kta" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Cargo Substation";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/substation/cargo)
 "ktw" = (
 /obj/structure/railing{
 	dir = 1
@@ -16274,6 +16583,17 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
+"kwP" = (
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance/cargo{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/plating,
+/area/quartermaster/hallway)
 "kwS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
@@ -16693,33 +17013,20 @@
 	},
 /turf/simulated/floor/wood,
 /area/lawoffice)
+"kJn" = (
+/obj/effect/floor_decal/rust,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/maintenance/rnd{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/service/botany,
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/plating,
+/area/rnd/xenobiology/xenoflora)
 "kJN" = (
 /turf/simulated/floor/carpet/bcarpet,
 /area/lawoffice)
-"kKb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/glass/medical{
-	name = "Patient Psychiatric Ward A"
-	},
-/obj/machinery/door/blast/regular{
-	density = 0;
-	dir = 4;
-	icon_state = "pdoor0";
-	id = "psyche-b-outer";
-	name = "Ward A";
-	opacity = 0
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/psych/psych_1)
 "kKk" = (
 /obj/machinery/botany/extractor,
 /obj/effect/floor_decal/borderfloor{
@@ -17164,6 +17471,19 @@
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/qm)
+"kXJ" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/glass/medical{
+	name = "Patient Psychiatric Isolation Cell";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/medical/psych_ward)
 "kYl" = (
 /turf/simulated/floor/reinforced/lythios43c,
 /area/rift/surfacebase/outside/outside1)
@@ -17221,6 +17541,17 @@
 	},
 /turf/simulated/floor/tiled/monowhite,
 /area/medical/virologyaccess)
+"kZA" = (
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/purple/border,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/glass/research{
+	name = "Telescience Wing";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled,
+/area/rnd/outpost/xenobiology/outpost_hallway)
 "kZG" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -17487,30 +17818,25 @@
 	},
 /turf/simulated/floor/wood/broken,
 /area/maintenance/maint_bar)
+"ljo" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/glass/security{
+	id_tag = "detdoor";
+	name = "Forensics Lab";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/forensics,
+/turf/simulated/floor/tiled/white,
+/area/security/forensics)
 "lkl" = (
 /obj/structure/bookcase/legal/combo,
 /turf/simulated/floor/wood,
 /area/maintenance/research/lower)
-"lkx" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 4;
-	id_tag = "PsycheFoyer";
-	name = "Psychiatric Wing";
-	req_access = list();
-	req_one_access = list(5)
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/patient_wing)
 "lkP" = (
 /obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -17700,22 +18026,6 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/crew_quarters/game_room)
-"ltg" = (
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/purple/border,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/door/airlock/glass/research,
-/obj/machinery/door/firedoor/glass,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/hallway)
 "ltv" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -17817,6 +18127,14 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/office)
+"lxa" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock{
+	name = "Shop Storage"
+	},
+/obj/map_helper/access_helper/airlock/disconnected/trader,
+/turf/simulated/floor/tiled/steel,
+/area/rift/trade_shop)
 "lxw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -17984,6 +18302,17 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/foyer)
+"lEW" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/map_helper/access_helper/airlock/station/science/external_airlock,
+/obj/machinery/door/airlock/glass_external{
+	req_one_access = null
+	},
+/turf/simulated/floor/lythios43c,
+/area/maintenance/evahallway)
 "lFk" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 10
@@ -18460,6 +18789,37 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/rnd/outpost/xenobiology/outpost_main)
+<<<<<<< HEAD
+=======
+"lUl" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/mining{
+	name = "Quartermaster";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/head_office/quartermaster,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/qm)
+"lUp" = (
+/obj/structure/flora/ausbushes/lavendergrass{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/structure/flora/ausbushes/lavendergrass{
+	pixel_x = 2;
+	pixel_y = 12
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "lUw" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Medbay Substation";
@@ -18537,6 +18897,7 @@
 	},
 /turf/simulated/mineral/icerock/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+<<<<<<< HEAD
 "maf" = (
 /obj/machinery/door/window/westright,
 /obj/structure/table/rack/shelf/steel,
@@ -18559,6 +18920,8 @@
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "mau" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -18663,6 +19026,19 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
+"mdi" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/glass/medical{
+	name = "Psychiatric Recreation Access";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/medical/psych)
 "mdj" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
@@ -18673,6 +19049,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
+"mdk" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/research{
+	name = "Toxins Storage"
+	},
+/obj/map_helper/access_helper/airlock/station/science/toxins,
+/turf/simulated/floor/tiled/steel_dirty,
+/area/rnd/tankstorage)
 "mdt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -19207,18 +19596,6 @@
 "mqK" = (
 /turf/simulated/wall/prepainted/science,
 /area/rnd/testingroom)
-"mqS" = (
-/obj/machinery/door/airlock/silver{
-	name = "Mime's Office";
-	req_one_access = list(138)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/carpet/bcarpet,
-/area/tether/surfacebase/funny/mimeoffice)
 "mrc" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 1
@@ -19879,6 +20256,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/lowmedbaymaint)
+"mNn" = (
+/obj/machinery/door/firedoor/glass,
+/obj/structure/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance/cargo{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/plating,
+/area/maintenance/cargo)
 "mNo" = (
 /obj/machinery/power/apc/north_mount,
 /obj/structure/catwalk,
@@ -19945,6 +20334,14 @@
 	},
 /turf/simulated/floor/carpet,
 /area/security/detectives_office)
+"mQt" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock{
+	name = "Shop Hall"
+	},
+/obj/map_helper/access_helper/airlock/disconnected/trader,
+/turf/simulated/floor/tiled/steel,
+/area/rift/trade_shop)
 "mQx" = (
 /obj/random/trash_pile,
 /obj/effect/floor_decal/rust,
@@ -19978,6 +20375,20 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/checkpoint)
+"mRH" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/multi_tile/glass{
+	id_tag = "PsycheFoyer";
+	name = "Psychiatric Processing";
+	req_access = list()
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/medical/psych_ward)
 "mRW" = (
 /obj/effect/floor_decal/industrial/warning/full,
 /obj/structure/window/reinforced/tinted/frosted{
@@ -20086,23 +20497,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
-"mSJ" = (
-/obj/machinery/door/airlock{
-	name = "Internal Affairs";
-	req_access = list(38)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/lawoffice)
 "mTl" = (
 /obj/structure/table/rack,
 /obj/fiftyspawner/wood,
@@ -20444,6 +20838,17 @@
 /obj/machinery/light/fairy,
 /turf/simulated/floor/water/indoors,
 /area/rift/station/public_garden)
+"ncJ" = (
+/obj/machinery/atmospherics/pipe/simple/visible/purple{
+	dir = 4
+	},
+/obj/machinery/door/airlock/glass/medical{
+	name = "Purge Chamber Fuel";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/plating,
+/area/medical/virologypurge)
 "ncK" = (
 /obj/machinery/holopad,
 /turf/simulated/floor/tiled/monotile,
@@ -20465,6 +20870,15 @@
 	},
 /turf/simulated/floor/carpet/blucarpet,
 /area/lawoffice)
+"ndk" = (
+/obj/machinery/door/airlock/command{
+	id_tag = "cmodoor";
+	name = "CMO's Quarters";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/head_office/chief_medical_officer,
+/turf/simulated/floor/tiled/dark,
+/area/crew_quarters/heads/cmo)
 "neh" = (
 /obj/machinery/shower{
 	dir = 4;
@@ -20583,19 +20997,6 @@
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /turf/simulated/floor/plating,
 /area/rift/surfaceeva/airlock/main)
-"niP" = (
-/obj/machinery/door/airlock/research{
-	name = "Toxins Storage";
-	req_access = list(8)
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel_dirty,
-/area/rnd/tankstorage)
 "niT" = (
 /obj/structure/disposalpipe/up{
 	dir = 1
@@ -20786,6 +21187,23 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/game_room)
+"nnO" = (
+/obj/machinery/door/window/eastright,
+/obj/structure/table/rack/shelf/steel,
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/lightgrey/border,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/item/clothing/mask/warmer,
+/obj/item/clothing/suit/storage/hooded/wintercoat,
+/turf/simulated/floor/tiled/steel,
+/area/storage/surface_eva)
 "noc" = (
 /obj/structure/grille,
 /obj/structure/railing,
@@ -20886,6 +21304,7 @@
 "nqs" = (
 /turf/simulated/wall/r_wall/prepainted/security,
 /area/security/detectives_office)
+<<<<<<< HEAD
 "nqB" = (
 /obj/machinery/door/window{
 	dir = 8
@@ -20907,6 +21326,8 @@
 /obj/item/clothing/mask/gas/clear,
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "nqL" = (
 /turf/simulated/wall/r_wall/prepainted/science,
 /area/rnd/hallway)
@@ -21037,30 +21458,24 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/quartermaster/garage)
-"nww" = (
+"nwB" = (
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 1
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/black{
-	dir = 4
-	},
-/obj/machinery/door/blast/regular/open{
-	id = "virolockdown";
-	name = "Virology Blast Door"
+	dir = 8
 	},
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/airlock/glass/medical{
-	name = "Isolation";
-	req_one_access = list(39)
+	name = "Paramedic Storage";
+	req_one_access = null
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/medical/virology)
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/medical/medbay_emt_bay)
 "nwZ" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -21462,6 +21877,7 @@
 /obj/structure/table/hardwoodtable,
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
+<<<<<<< HEAD
 "nIQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -21470,6 +21886,17 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/prison)
+=======
+"nIT" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/research{
+	name = "Xenobiology Lab"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/dark,
+/area/rnd/outpost/xenobiology/outpost_stairs)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "nJn" = (
 /obj/structure/disposalpipe/junction,
 /obj/structure/catwalk,
@@ -21945,13 +22372,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/exam_room)
-"nWC" = (
-/obj/machinery/door/airlock/maintenance/cargo,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/substation/cargo)
 "nXc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -21966,21 +22386,6 @@
 /obj/machinery/vending/fitness,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
-"nXP" = (
-/obj/effect/floor_decal/borderfloorwhite,
-/obj/effect/floor_decal/corner/paleblue/border,
-/obj/machinery/door/airlock/glass/medical{
-	name = "Paramedic Storage"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/medbay_emt_bay)
 "nXV" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
 	dir = 4
@@ -22144,6 +22549,22 @@
 /obj/machinery/vending/cola,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/surfaceone)
+"oca" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 8;
+	icon_state = "shutter0";
+	id = "sfc_check_shutter";
+	name = "Surface Checkpoint Shutter";
+	opacity = 0
+	},
+/obj/map_helper/access_helper/airlock/station/security/equipment,
+/turf/simulated/floor/tiled/steel,
+/area/security/checkpoint)
 "ocz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -22324,6 +22745,31 @@
 /obj/item/storage/belt/utility,
 /turf/simulated/floor/tiled/steel,
 /area/storage/tools)
+"ogg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/medical{
+	name = "Break Room";
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "virolockdown";
+	name = "Virology Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/tiled,
+/area/medical/virology)
 "ogX" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -22519,6 +22965,21 @@
 /obj/machinery/light/flamp/noshade,
 /turf/simulated/floor/plating/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+"olC" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/glass/research{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "main_ext_blast";
+	name = "Surface External Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled,
+/area/maintenance/evahallway)
 "omm" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/air/airlock,
@@ -22546,30 +23007,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/tether/surfacebase/medical/mentalhealth)
-"onA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/black{
-	dir = 4
-	},
-/obj/machinery/door/blast/regular/open{
-	id = "virolockdown";
-	name = "Virology Blast Door"
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/glass/medical{
-	name = "Break Room";
-	req_one_access = list(39)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/medical/virology)
 "onQ" = (
 /obj/machinery/light{
 	dir = 1
@@ -22814,6 +23251,7 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
+<<<<<<< HEAD
 "oxY" = (
 /obj/effect/floor_decal/rust,
 /obj/structure/table/rack,
@@ -22823,16 +23261,27 @@
 /obj/random/maintenance/cargo,
 /turf/simulated/floor/plating,
 /area/maintenance/security/lower)
+=======
+"oxA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/medical{
+	name = "Virology";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/tiled/white,
+/area/medical/virologyaccess)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "oyt" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/medical,
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/warehouse)
-"oyI" = (
-/obj/machinery/door/airlock/maintenance/rnd,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/engineering/engine_eva)
 "oyK" = (
 /obj/structure/sign/warning/nosmoking_2,
 /turf/simulated/wall/r_wall/prepainted/science,
@@ -22871,6 +23320,18 @@
 /obj/machinery/atmospherics/component/unary/vent_pump/on,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
+"oBp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/glass/security{
+	layer = 2.8;
+	name = "Visitation";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/department,
+/turf/simulated/floor/tiled/monotile,
+/area/security/prison)
 "oBu" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
 	dir = 4
@@ -23119,13 +23580,6 @@
 /obj/landmark/spawnpoint/job/assistant,
 /turf/simulated/floor/tiled/steel,
 /area/tether/station/public_meeting_room)
-"oIL" = (
-/obj/machinery/door/airlock/maintenance/medical{
-	name = "Medical Maintenance Access";
-	req_access = list(5)
-	},
-/turf/simulated/floor/plating,
-/area/medical/patient_wing)
 "oIR" = (
 /obj/random/trash_pile,
 /obj/structure/railing{
@@ -23291,6 +23745,22 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/outpost/xenobiology/outpost_decon)
+"oOm" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/machinery/atmospherics/pipe/simple/visible/black,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance/medical{
+	name = "Virology Maintenance Tunnel";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/plating,
+/area/medical/virologytransitwest)
 "oOO" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
@@ -23412,12 +23882,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/patient_wing)
-"oRd" = (
-/obj/machinery/door/airlock/glass_external{
-	req_one_access = list(10,47)
-	},
-/turf/simulated/floor/plating,
-/area/engineering/engine_eva)
 "oRe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -23500,6 +23964,13 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/rift/surfaceeva/cargodock)
+"oTM" = (
+/obj/map_helper/access_helper/airlock/station/command/bridge,
+/obj/machinery/door/airlock/maintenance/command{
+	req_one_access = null
+	},
+/turf/simulated/floor/plating,
+/area/rift/surfaceeva/aa/surface_south)
 "oTN" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
@@ -23525,6 +23996,18 @@
 /obj/item/storage/fancy/cigar/taj,
 /turf/simulated/floor,
 /area/rift/surfacebase/outside/outside1)
+"oUV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/silver{
+	name = "Entertainment Backroom"
+	},
+/obj/map_helper/access_helper/airlock/station/service/entertainer,
+/turf/simulated/floor/lino,
+/area/tether/surfacebase/entertainment/backstage)
 "oVa" = (
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/blast/regular{
@@ -23642,32 +24125,6 @@
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/simulated/floor/tiled/dark,
 /area/medical/recoveryrestroom)
-"oYo" = (
-/obj/machinery/access_button{
-	command = "cycle_int";
-	frequency = 1379;
-	master_tag = "virology_airlock_control";
-	name = "Virology Access Button";
-	pixel_x = 26;
-	req_access = list(39)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/medical{
-	autoclose = 0;
-	frequency = 1379;
-	icon_state = "door_locked";
-	id_tag = "virology_airlock_interior";
-	locked = 1;
-	name = "Virology Interior Airlock";
-	req_access = list(39)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/virologyaccess)
 "oYs" = (
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
@@ -23865,6 +24322,26 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/library)
+"pcz" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/research{
+	name = "Xenobiology Office"
+	},
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/outpost/xenobiology/outpost_office)
 "pcA" = (
 /obj/structure/railing{
 	dir = 4
@@ -24223,19 +24700,6 @@
 	},
 /turf/simulated/floor/grass,
 /area/hallway/primary/surfaceone)
-"pmY" = (
-/obj/machinery/door/airlock/research{
-	name = "Xenobiology Equipment Storage";
-	req_one_access = list(55)
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/rnd/outpost/xenobiology/outpost_storage)
 "pnt" = (
 /obj/effect/floor_decal/borderfloor/corner{
 	dir = 4
@@ -24438,16 +24902,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/rift/surfaceeva/airlock/main)
-"ptB" = (
-/obj/machinery/door/airlock/glass_external{
-	req_one_access = list(10,47)
-	},
-/obj/machinery/door/blast/regular/open{
-	id = "main_ext_blast";
-	name = "Surface External Blast Door"
-	},
-/turf/simulated/floor/tiled/steel_grid,
-/area/engineering/engine_eva)
 "ptI" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 4
@@ -24580,6 +25034,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/library)
+<<<<<<< HEAD
 "pwU" = (
 /obj/machinery/door/airlock/glass/medical{
 	name = "Psychiatric Recreation Access"
@@ -24591,6 +25046,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/psych)
+=======
+"pwW" = (
+/obj/structure/table/reinforced,
+/obj/item/flashlight/lamp,
+/turf/simulated/floor/tiled/monodark,
+/area/security/prison/upper)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "pxL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -24772,6 +25234,17 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+"pEm" = (
+/obj/effect/floor_decal/techfloor/orange/corner{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/multi_tile/metal{
+	name = "Cargo Garage"
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/techfloor,
+/area/quartermaster/garage)
 "pEF" = (
 /obj/machinery/vending/assist,
 /obj/effect/floor_decal/borderfloor{
@@ -24792,6 +25265,23 @@
 /obj/machinery/fire_alarm/east_mount,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/rnd/xenoarch_storage)
+"pEX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	name = "Internal Affairs"
+	},
+/obj/map_helper/access_helper/airlock/station/head_office/internal_affairs,
+/turf/simulated/floor/tiled/steel,
+/area/lawoffice)
 "pFz" = (
 /obj/machinery/power/apc/west_mount,
 /mob/living/simple_mob/animal/passive/mimepet,
@@ -24809,20 +25299,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/outpost/xenobiology/outpost_stairs)
-"pFY" = (
-/obj/machinery/door/airlock/research{
-	name = "Toxins Storage";
-	req_access = list(8)
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/supply{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/area/rnd/tankstorage)
 "pGv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
@@ -25787,10 +26263,6 @@
 /obj/map_helper/airlock/atmos/chamber_pump,
 /turf/simulated/floor/plating,
 /area/rift/surfaceeva/airlock/main/secondary)
-"qmG" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/turbolift/rmine/surface)
 "qnr" = (
 /obj/machinery/computer/med_data/laptop,
 /obj/structure/table/reinforced,
@@ -26351,21 +26823,79 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenobiology/outpost_hallway)
-"qEU" = (
-/obj/machinery/door/airlock/multi_tile/metal{
-	name = "Cargo Garage";
-	req_one_access = list(31)
+"qEm" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1382;
+	master_tag = "xenobiology_airlock_control";
+	name = "Xenobiology Access Control";
+	pixel_x = 24;
+	pixel_y = 4;
+	req_one_access = list(47,55)
 	},
-/obj/effect/floor_decal/techfloor/orange/corner{
-	dir = 8
+/obj/machinery/door/airlock/research{
+	autoclose = 0;
+	frequency = 1382;
+	icon_state = "door_locked";
+	id_tag = "xenobiology_airlock_inner";
+	locked = 1;
+	name = "Xenobiology Interior Airlock Doors"
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techfloor,
-/area/quartermaster/garage)
+/obj/map_helper/access_helper/airlock/station/science/department,
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/dark,
+/area/rnd/outpost/xenobiology/outpost_south_airlock)
 "qFN" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/outdoors/gravsnow/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+<<<<<<< HEAD
+=======
+"qFO" = (
+/obj/structure/railing/grey{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals5,
+/turf/simulated/floor/tiled/steel,
+/area/security/prison/upper)
+"qGg" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1382;
+	master_tag = "xenobiology_airlock_control";
+	name = "Xenobiology Access Control";
+	pixel_x = -24;
+	pixel_y = 4;
+	req_one_access = list(47,55)
+	},
+/obj/machinery/door/airlock/research{
+	autoclose = 0;
+	frequency = 1382;
+	icon_state = "door_locked";
+	id_tag = "xenobiology_airlock_inner";
+	locked = 1;
+	name = "Xenobiology Interior Airlock Doors"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/dark,
+/area/rnd/outpost/xenobiology/outpost_south_airlock)
+"qGN" = (
+/obj/structure/railing/grey{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/security/prison/upper)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "qGS" = (
 /turf/simulated/wall/wood/hardwood,
 /area/library/study)
@@ -26902,23 +27432,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
-"qXo" = (
-/obj/machinery/door/airlock/glass/mining{
-	name = "Cargo Airlock";
-	req_one_access = list(31)
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/quartermaster/office)
 "qXs" = (
 /obj/machinery/light{
 	dir = 1
@@ -26996,6 +27509,23 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych)
+<<<<<<< HEAD
+=======
+"qZc" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/security/prison/upper)
+"qZs" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/research{
+	name = "Xenobiology Office"
+	},
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/outpost/xenobiology/outpost_autopsy)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "qZu" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
@@ -27099,18 +27629,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/tether/surfacebase/entertainment)
-"rdT" = (
-/obj/machinery/door/airlock/mining{
-	name = "Cargo Airlock";
-	req_one_access = list(31)
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/steel,
-/area/quartermaster/office)
 "rdW" = (
 /obj/machinery/vending/cola,
 /turf/simulated/floor/tiled,
@@ -27216,6 +27734,29 @@
 /obj/item/stool/padded,
 /turf/simulated/floor/wood/broken,
 /area/maintenance/maint_bar)
+"rkn" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/techfloor,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/command{
+	name = "Server Room";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/command/bridge,
+/obj/map_helper/access_helper/airlock/station/head_office/research_director,
+/turf/simulated/floor/tiled/techfloor,
+/area/server)
 "rku" = (
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 1
@@ -27350,6 +27891,7 @@
 /obj/machinery/door/airlock/maintenance/common,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
+<<<<<<< HEAD
 "roa" = (
 /obj/machinery/door/airlock/glass/security{
 	name = "Confinement Processing";
@@ -27361,6 +27903,8 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/tiled/steel,
 /area/security/security_cell_hallway)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "roQ" = (
 /obj/structure/railing{
 	dir = 8
@@ -27370,6 +27914,14 @@
 	},
 /turf/simulated/floor/tiled/steel_grid/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+"rpb" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance/rnd{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/plating,
+/area/engineering/engine_eva)
 "rpn" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -27444,6 +27996,7 @@
 "rrk" = (
 /turf/simulated/wall/prepainted/medical,
 /area/medical/exam_room)
+<<<<<<< HEAD
 "rrt" = (
 /obj/item/reagent_containers/glass/bucket/wood,
 /obj/structure/sink/kitchen{
@@ -27452,6 +28005,41 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/prison)
+=======
+"rsa" = (
+/obj/machinery/embedded_controller/radio/airlock/access_controller{
+	id_tag = "virology_airlock_control";
+	name = "Virology Access Console";
+	pixel_x = -28;
+	tag_exterior_door = "virology_airlock_exterior";
+	tag_interior_door = "virology_airlock_interior"
+	},
+/obj/machinery/access_button{
+	command = "cycle_ext";
+	frequency = 1379;
+	master_tag = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = 26;
+	req_access = list(39)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/medical{
+	autoclose = 0;
+	frequency = 1379;
+	icon_state = "door_locked";
+	id_tag = "virology_airlock_exterior";
+	locked = 1;
+	name = "Virology Exterior Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/tiled/white,
+/area/medical/virologyaccess)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "rsj" = (
 /turf/simulated/floor/plating,
 /area/maintenance/tool_storage)
@@ -28290,13 +28878,6 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/open,
 /area/maintenance/security/lower)
-"rPl" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "Ground Defence Access";
-	req_one_access = list(1,10,15)
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/rift/surfaceeva/aa/surface_south)
 "rPq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -28750,6 +29331,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/lowmedbaymaint)
+<<<<<<< HEAD
 "shs" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/purple/border,
@@ -28759,6 +29341,43 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenobiology/outpost_hallway)
+=======
+"she" = (
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	id = "cell_lock_2";
+	name = "Cell 2 Lock";
+	pixel_x = -24;
+	pixel_y = -8;
+	req_access = list(1,2,4,38)
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/red/bordercorner2{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red/bordercorner2{
+	dir = 10
+	},
+/obj/machinery/camera/network/security{
+	dir = 4
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals5{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/security/prison/upper)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "shK" = (
 /obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
 	dir = 1
@@ -28838,6 +29457,20 @@
 	},
 /turf/simulated/floor/tiled,
 /area/medical/virology)
+"sjn" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/machinery/door/airlock/glass/research{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "main_ext_blast";
+	name = "Surface External Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled,
+/area/rnd/outpost/xenobiology/outpost_hallway)
 "sjB" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 6
@@ -28939,6 +29572,7 @@
 /obj/random/maintenance/security,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/library)
+<<<<<<< HEAD
 "sku" = (
 /obj/machinery/door/airlock/glass/security/polarized{
 	id_tag = "detdoor";
@@ -28961,6 +29595,8 @@
 	},
 /turf/simulated/floor/lino,
 /area/security/detectives_office)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "skw" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
 	dir = 1
@@ -29038,6 +29674,19 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych_ward)
+"slY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/glass/research{
+	name = "Xenoflora Research";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/service/botany,
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/xenobiology/xenoflora/lab_atmos)
 "smJ" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9
@@ -29066,6 +29715,7 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/foyer)
+<<<<<<< HEAD
 "smQ" = (
 /obj/machinery/door/airlock/maintenance/int{
 	req_one_access = list(38)
@@ -29100,6 +29750,8 @@
 /obj/effect/debris/cleanable/spiderling_remains,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "snj" = (
 /obj/machinery/atmospherics/pipe/simple/visible/supply,
 /obj/machinery/atmospherics/pipe/simple/visible/black,
@@ -29595,6 +30247,17 @@
 "sBD" = (
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
+"sBH" = (
+/obj/machinery/door/airlock/glass_external{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "main_ext_blast";
+	name = "Surface External Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/science/external_airlock,
+/turf/simulated/floor/tiled/steel_grid,
+/area/engineering/engine_eva)
 "sCX" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
@@ -29636,14 +30299,14 @@
 "sDY" = (
 /turf/simulated/wall/prepainted/medical,
 /area/medical/psych)
-"sEE" = (
-/obj/machinery/door/airlock/research{
-	name = "Xenobiology Lab";
-	req_one_access = list(47,55)
-	},
+"sEH" = (
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
-/area/rnd/outpost/xenobiology/outpost_stairs)
+/obj/machinery/door/airlock/research{
+	name = "Xenobiology Autopsy Room"
+	},
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/outpost/xenobiology/outpost_autopsy)
 "sEL" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -29705,30 +30368,28 @@
 	},
 /turf/simulated/floor/wood,
 /area/maintenance/research/lower)
-"sGj" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/door/airlock/glass/research{
-	name = "Xenoflora Research";
-	req_one_access = list(30,35,47,77)
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/xenobiology/xenoflora)
 "sGn" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+"sGI" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/mining{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/office)
 "sHk" = (
 /obj/item/stack/rods,
 /obj/item/stack/rods,
@@ -30132,6 +30793,25 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/outdoors/grass/heavy/interior,
 /area/rift/station/fighter_bay/transport_tunnel_garage_maint)
+"sRS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/medical{
+	name = "Virology Lab";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/obj/machinery/door/blast/regular/open{
+	id = "virolockdown";
+	name = "Virology Blast Door"
+	},
+/turf/simulated/floor/tiled,
+/area/medical/virology)
 "sSl" = (
 /obj/structure/railing{
 	dir = 4
@@ -30171,6 +30851,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/medical/virologyisolation)
+"sSL" = (
+/obj/machinery/door/airlock/maintenance/engi{
+	name = "Elevator Shaft Access";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/maintenance,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/turbolift/rmine/surface)
 "sSY" = (
 /obj/machinery/door/airlock/maintenance/common,
 /obj/structure/catwalk,
@@ -30409,20 +31097,19 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/chemistry_lab)
+"tcf" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/engineering{
+	name = "Surface Services Substation";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/department,
+/obj/map_helper/access_helper/airlock/station/engineering/department,
+/turf/simulated/floor,
+/area/maintenance/starboard)
 "tcr" = (
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfaceone)
-"tct" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/glass/medical{
-	name = "Patient Psychiatric Isolation Cell"
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/psych_ward)
 "tcx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -30486,24 +31173,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
-"tep" = (
-/obj/machinery/door/airlock/glass/research,
-/obj/machinery/door/blast/regular/open{
-	id = "main_ext_blast";
-	name = "Surface External Blast Door"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/maintenance/evahallway)
 "teC" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -30596,6 +31265,45 @@
 	},
 /turf/simulated/floor/plating,
 /area/rift/trade_shop)
+<<<<<<< HEAD
+=======
+"tif" = (
+/obj/machinery/camera/network/security{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/prison/upper)
+"tij" = (
+/obj/machinery/access_button{
+	command = "cycle_int";
+	frequency = 1379;
+	master_tag = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = 26;
+	req_access = list(39)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/medical{
+	autoclose = 0;
+	frequency = 1379;
+	icon_state = "door_locked";
+	id_tag = "virology_airlock_interior";
+	locked = 1;
+	name = "Virology Interior Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/tiled/white,
+/area/medical/virologyaccess)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "tim" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/effect/floor_decal/spline/plain{
@@ -30790,11 +31498,6 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled,
 /area/medical/virologypurge)
-"tmT" = (
-/obj/machinery/door/airlock/maintenance/cargo,
-/obj/machinery/door/firedoor/glass,
-/turf/simulated/floor/plating,
-/area/quartermaster/office)
 "tna" = (
 /obj/effect/floor_decal/rust,
 /obj/structure/table/woodentable,
@@ -30971,6 +31674,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/delivery)
+"tts" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/glass/security{
+	name = "Genpop";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/department,
+/turf/simulated/floor/tiled/monotile,
+/area/security/prison)
 "ttw" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -30983,6 +31695,23 @@
 /obj/effect/floor_decal/corner/lightgrey/border,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
+"ttP" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/medical{
+	name = "Virology Purge Chamber";
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "virolockdown";
+	name = "Virology Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/tiled,
+/area/medical/virologyisolation)
 "tuj" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/tinted/frosted{
@@ -31349,6 +32078,20 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/tether/surfacebase/medical/mentalhealth)
+"tDL" = (
+/obj/effect/floor_decal/borderfloorwhite,
+/obj/effect/floor_decal/corner/paleblue/border,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 4;
+	name = "Medbay Breakroom"
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/medbreak)
 "tDQ" = (
 /obj/structure/sign/poster{
 	pixel_y = -32
@@ -31945,18 +32688,6 @@
 /obj/structure/bookcase/legal/corpreg,
 /turf/simulated/floor/wood,
 /area/lawoffice)
-"tWv" = (
-/obj/machinery/door/airlock/silver{
-	name = "Clown's Office";
-	req_one_access = list(136)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/carpet/gaycarpet,
-/area/tether/surfacebase/funny/clownoffice)
 "tXa" = (
 /obj/machinery/door/airlock/maintenance/common,
 /obj/structure/catwalk,
@@ -32023,6 +32754,16 @@
 	},
 /turf/simulated/floor/outdoors/snow/noblend/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+"tYw" = (
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/glass/medical{
+	name = "Xenobiology First Aid";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/infirmary,
+/turf/simulated/floor/tiled,
+/area/rnd/outpost/xenobiology/outpost_first_aid)
 "tYL" = (
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -32245,21 +32986,27 @@
 /obj/structure/musician/piano,
 /turf/simulated/floor/wood,
 /area/maintenance/starboard)
+"ugg" = (
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/glass/research{
+	name = "Xenoarch Storage";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/obj/map_helper/access_helper/airlock/station/science/xenoarcheology,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/xenoarch_storage)
 "ugv" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/maintenance/library)
-"ugN" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/obj/machinery/door/airlock/glass_external{
-	req_one_access = list(10,47)
-	},
-/turf/simulated/floor/lythios43c,
-/area/maintenance/evahallway)
 "uhR" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 10
@@ -32666,16 +33413,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/rift/surfaceeva)
-"uqR" = (
-/obj/machinery/door/airlock/glass/medical{
-	name = "Science First Aid";
-	req_one_access = list(5,47)
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel,
-/area/rnd/hallway)
 "urm" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -32711,30 +33448,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/virologyisolation)
-"uru" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/glass/medical{
-	name = "Patient Psychiatric Ward B"
-	},
-/obj/machinery/door/blast/regular{
-	density = 0;
-	dir = 4;
-	icon_state = "pdoor0";
-	id = "psyche-a-outer";
-	name = "Ward A";
-	opacity = 0
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/psych/psych_2)
 "urz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -32942,6 +33655,26 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cmo)
+"uxl" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/research{
+	name = "Xenobiology Autopsy Room"
+	},
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/steel,
+/area/rnd/outpost/xenobiology/outpost_autopsy)
 "uxC" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -33096,6 +33829,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
+<<<<<<< HEAD
 "uBj" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 1
@@ -33117,6 +33851,40 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/server)
+=======
+"uBa" = (
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	id = "cell_lock_3";
+	name = "Cell 3 Lock";
+	pixel_x = -24;
+	pixel_y = -8;
+	req_access = list(1,2,4,38)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/red/bordercorner2{
+	dir = 10
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals5{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/security/prison/upper)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "uBl" = (
 /obj/machinery/shower{
 	dir = 4
@@ -33163,12 +33931,35 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/xenobiology/xenoflora)
+<<<<<<< HEAD
 "uCg" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/prison)
+=======
+"uCf" = (
+/obj/machinery/door/window{
+	dir = 8
+	},
+/obj/structure/table/rack/shelf/steel,
+/obj/effect/floor_decal/borderfloor{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/lightgrey/border{
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/clothing/mask/warmer,
+/obj/item/clothing/suit/storage/hooded/wintercoat,
+/turf/simulated/floor/tiled/steel,
+/area/storage/surface_eva)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "uCt" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -33409,13 +34200,6 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
-"uKu" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Custodial Maintenance";
-	req_access = list(26)
-	},
-/turf/simulated/floor/tiled/steel,
-/area/janitor)
 "uKI" = (
 /obj/machinery/atmospherics/pipe/tank/chlorine{
 	dir = 4
@@ -33439,6 +34223,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/evahallway)
+"uLn" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/maintenance/engi{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/maintenance,
+/turf/simulated/floor/plating,
+/area/engineering/engine_eva)
 "uLP" = (
 /obj/machinery/air_alarm{
 	dir = 8;
@@ -33594,6 +34386,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/outpost/xenobiology/outpost_south_airlock)
+"uQZ" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Custodial Maintenance"
+	},
+/obj/map_helper/access_helper/airlock/station/service/janitor,
+/turf/simulated/floor/tiled/steel,
+/area/janitor)
 "uRv" = (
 /turf/simulated/floor/tiled/monowhite,
 /area/rnd/chemistry_lab)
@@ -33723,12 +34522,6 @@
 "uWy" = (
 /turf/simulated/wall/prepainted,
 /area/quartermaster/foyer)
-"uXr" = (
-/obj/machinery/door/airlock/maintenance/engi{
-	name = "Elevator Shaft Access"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/security/lower)
 "uXB" = (
 /obj/machinery/atmospherics/component/unary/vent_pump/on{
 	dir = 8
@@ -33813,23 +34606,21 @@
 "uZm" = (
 /turf/simulated/wall/prepainted/science,
 /area/rnd/outpost/xenobiology/outpost_stairs)
-"uZR" = (
-/obj/machinery/door/airlock/silver{
-	name = "Entertainment Backroom";
-	req_one_access = list(72,20,57)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/lino,
-/area/tether/surfacebase/entertainment/backstage)
 "van" = (
 /obj/structure/table/hardwoodtable,
 /obj/item/stool/padded,
 /turf/simulated/floor/wood,
 /area/maintenance/starboard)
+"vaq" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance/cargo{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/plating,
+/area/maintenance/substation/cargo)
 "vaO" = (
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
@@ -33844,38 +34635,6 @@
 /obj/structure/railing,
 /turf/simulated/floor/plating,
 /area/quartermaster/hallway)
-"vaW" = (
-/obj/machinery/embedded_controller/radio/airlock/access_controller{
-	id_tag = "virology_airlock_control";
-	name = "Virology Access Console";
-	pixel_x = -28;
-	tag_exterior_door = "virology_airlock_exterior";
-	tag_interior_door = "virology_airlock_interior"
-	},
-/obj/machinery/access_button{
-	command = "cycle_ext";
-	frequency = 1379;
-	master_tag = "virology_airlock_control";
-	name = "Virology Access Button";
-	pixel_x = 26;
-	req_access = list(39)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/medical{
-	autoclose = 0;
-	frequency = 1379;
-	icon_state = "door_locked";
-	id_tag = "virology_airlock_exterior";
-	locked = 1;
-	name = "Virology Exterior Airlock";
-	req_access = list(39)
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/virologyaccess)
 "vbg" = (
 /obj/structure/railing{
 	dir = 1
@@ -33965,6 +34724,27 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/primary/surfaceone)
+"vdF" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/research{
+	name = "Chemical Research";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/white,
+/area/rnd/chemistry_lab)
 "vdS" = (
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 8
@@ -34031,6 +34811,22 @@
 /obj/effect/paint/purplegray,
 /turf/simulated/floor/plating,
 /area/rift/surfacebase/outside/outside1)
+"vgd" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/obj/map_helper/access_helper/airlock/station/security/department,
+/turf/simulated/floor/plating,
+/area/security/prison)
 "vgp" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
@@ -34178,6 +34974,7 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/civilian_hallway_mid)
+<<<<<<< HEAD
 "vky" = (
 /obj/random/junk,
 /turf/simulated/floor/plating,
@@ -34192,6 +34989,8 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/cargo)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "vly" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -34254,6 +35053,26 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych_ward)
+"vqP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	name = "Custodial Closet"
+	},
+/obj/map_helper/access_helper/airlock/station/service/janitor,
+/turf/simulated/floor/tiled/steel,
+/area/janitor)
 "vrs" = (
 /obj/structure/table/standard,
 /obj/machinery/cell_charger,
@@ -34560,6 +35379,29 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/wood,
 /area/maintenance/maint_bar)
+"vCs" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/access_button/airlock_interior{
+	command = "cycle_ext";
+	frequency = 1382;
+	master_tag = "xenobiology_airlock_control";
+	name = "Xenobiology Access Control";
+	pixel_x = 24;
+	pixel_y = 4;
+	req_one_access = list(47,55)
+	},
+/obj/machinery/door/airlock/research{
+	autoclose = 0;
+	frequency = 1382;
+	icon_state = "door_locked";
+	id_tag = "xenobiology_airlock_outer";
+	locked = 1;
+	name = "Xenobiology Exterior Airlock Doors"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/obj/map_helper/access_helper/airlock/station/science/xenobiology,
+/turf/simulated/floor/tiled/dark,
+/area/rnd/outpost/xenobiology/outpost_south_airlock)
 "vCB" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -34572,6 +35414,16 @@
 	},
 /turf/simulated/floor/reinforced/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+"vDk" = (
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/visible/supply,
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/department,
+/turf/simulated/floor/plating,
+/area/security/prison)
 "vDR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -34589,18 +35441,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenobiology/outpost_main)
-"vDU" = (
-/obj/machinery/door/airlock/glass/mining{
-	name = "Cargo Airlock";
-	req_one_access = list(31)
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/steel,
-/area/quartermaster/office)
 "vEh" = (
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /turf/simulated/floor/plating,
@@ -34669,11 +35509,35 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/garage)
+"vHM" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/research{
+	id_tag = "researchdoor";
+	name = "Testing Room"
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/tiled/monowhite,
+/area/rnd/testingroom)
 "vIa" = (
 /obj/structure/table/wooden_reinforced,
 /obj/machinery/reagentgrinder,
 /turf/simulated/floor/wood,
 /area/rnd/outpost/xenobiology/outpost_office)
+"vIc" = (
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id = "sfc_check_shutter";
+	name = "Surface Checkpoint Shutter";
+	opacity = 0
+	},
+/obj/map_helper/access_helper/airlock/station/security/equipment,
+/turf/simulated/floor/tiled/steel,
+/area/security/checkpoint)
 "vIk" = (
 /obj/structure/bookcase{
 	name = "bookcase (Fiction)"
@@ -34698,17 +35562,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/medical/virology)
-"vJJ" = (
-/obj/machinery/door/airlock/glass/research{
-	name = "Xenoflora Research";
-	req_one_access = list(30,35,47,77)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/xenobiology/xenoflora/lab_atmos)
 "vKv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -34868,11 +35721,30 @@
 /obj/spawner/window/reinforced/full,
 /turf/simulated/floor/plating,
 /area/rift/surfacebase/outside/outside1)
+<<<<<<< HEAD
 "vPL" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/steel,
 /area/security/prison)
+=======
+"vPC" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/glass/mining{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/delivery)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "vPN" = (
 /obj/machinery/button/remote/blast_door{
 	dir = 1;
@@ -34931,16 +35803,6 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/plating,
 /area/engineering/engine_eva)
-"vRq" = (
-/obj/machinery/door/airlock/engineering{
-	name = "Science Substation";
-	req_one_access = list(11,24,47)
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/rnd/outpost/xenobiology/outpost_stairs)
 "vRu" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -35002,25 +35864,6 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating,
 /area/maintenance/starboard)
-"vTs" = (
-/obj/machinery/door/airlock/glass_science{
-	name = "Break Room"
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/outpost/xenobiology/outpost_breakroom)
 "vTw" = (
 /obj/machinery/vending/snack,
 /obj/effect/floor_decal/borderfloor{
@@ -35124,6 +35967,7 @@
 /obj/structure/railing,
 /turf/simulated/floor/tiled/steel_grid/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+<<<<<<< HEAD
 "vWP" = (
 /obj/machinery/door/airlock/glass/research{
 	name = "Chemical Research"
@@ -35143,6 +35987,23 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/chemistry_lab)
+=======
+"vWS" = (
+/obj/machinery/door/firedoor/glass{
+	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/eastright{
+	id = "isolation";
+	name = "Isolation"
+	},
+/obj/machinery/door/window/brigdoor/westleft{
+	id = "isolation";
+	name = "Isolation"
+	},
+/obj/structure/curtain/open/black,
+/turf/simulated/floor/tiled/monodark,
+/area/security/prison/upper)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "vWY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 5
@@ -35173,11 +36034,63 @@
 	dir = 8;
 	pixel_x = 24
 	},
+<<<<<<< HEAD
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/bathroom)
+=======
+/turf/simulated/floor/tiled/monodark,
+/area/security/prison/upper)
+"vYf" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/door/airlock/maintenance/sec{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/security/department,
+/turf/simulated/floor/plating,
+/area/security/prison/upper)
+"vYw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/medical{
+	name = "Patient Psychiatric Ward B";
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "psyche-a-outer";
+	name = "Ward A";
+	opacity = 0
+	},
+/obj/map_helper/access_helper/airlock/station/medical/department,
+/turf/simulated/floor/tiled/dark,
+/area/medical/psych/psych_2)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "vYy" = (
 /turf/simulated/floor/wood,
 /area/lawoffice)
+"vYO" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 1
+	},
+/obj/machinery/door/airlock/mining{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel,
+/area/quartermaster/office)
 "vYQ" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 10
@@ -35306,6 +36219,28 @@
 /obj/machinery/fire_alarm/east_mount,
 /turf/simulated/floor/tiled,
 /area/medical/virologyaccess)
+"wcT" = (
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/map_helper/access_helper/airlock/station/service/botany,
+/obj/map_helper/access_helper/airlock/station/science/department,
+/obj/machinery/door/airlock/glass/research{
+	name = "Xenoflora Research";
+	req_one_access = null
+	},
+/turf/simulated/floor/tiled/steel,
+/area/rnd/xenobiology/xenoflora)
 "wdf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -35482,6 +36417,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych_ward)
+<<<<<<< HEAD
+=======
+"wiQ" = (
+/obj/structure/bed/padded,
+/turf/simulated/floor/tiled/monodark,
+/area/security/prison/upper)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "wjj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -35520,19 +36462,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/quartermaster/hallway)
-"wjW" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/purple/border{
-	dir = 1
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/glass/research{
-	name = "Telescience Wing"
-	},
-/turf/simulated/floor/tiled,
-/area/rnd/outpost/xenobiology/outpost_hallway)
 "wkd" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 4
@@ -36120,14 +37049,6 @@
 /obj/machinery/papershredder,
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/office)
-"wBs" = (
-/obj/machinery/door/airlock/command{
-	id_tag = "cmodoor";
-	name = "CMO's Quarters";
-	req_access = list(40)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/cmo)
 "wBu" = (
 /obj/effect/floor_decal/rust,
 /obj/effect/floor_decal/industrial/halfstair,
@@ -36569,6 +37490,7 @@
 	},
 /turf/simulated/floor/tiled/steel_dirty,
 /area/rnd/tankstorage)
+<<<<<<< HEAD
 "wMZ" = (
 /obj/machinery/door/airlock/maintenance/engi{
 	name = "Elevator Shaft Access"
@@ -36580,6 +37502,8 @@
 /obj/effect/debris/cleanable/liquid_fuel,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "wOB" = (
 /obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
@@ -36607,6 +37531,14 @@
 /obj/effect/overlay/snow/floor,
 /turf/simulated/floor/plating/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+"wQd" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/maintenance/rnd{
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/science/department,
+/turf/simulated/floor/plating,
+/area/maintenance/research/lower)
 "wQk" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 5
@@ -36667,16 +37599,6 @@
 /obj/machinery/door/window/northleft,
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/garage)
-"wRu" = (
-/obj/machinery/atmospherics/pipe/simple/visible/purple{
-	dir = 4
-	},
-/obj/machinery/door/airlock/glass/medical{
-	name = "Purge Chamber Fuel";
-	req_one_access = list(39)
-	},
-/turf/simulated/floor/plating,
-/area/medical/virologypurge)
 "wRP" = (
 /turf/simulated/wall/prepainted/cargo,
 /area/quartermaster/hallway)
@@ -36954,6 +37876,25 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/patient_wing)
+"xbM" = (
+/obj/machinery/door/window{
+	dir = 8
+	},
+/obj/structure/table/rack/shelf/steel,
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/lightgrey/border,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/clothing/suit/storage/hooded/wintercoat,
+/obj/item/clothing/mask/gas/clear,
+/turf/simulated/floor/tiled/steel,
+/area/storage/surface_eva)
 "xbW" = (
 /obj/machinery/door/firedoor/glass{
 	dir = 8
@@ -37025,13 +37966,6 @@
 /mob/living/simple_mob/animal/passive/cat/runtime,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cmo)
-"xcD" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/maintenance/engi{
-	req_one_access = list(10,47)
-	},
-/turf/simulated/floor/plating,
-/area/engineering/engine_eva)
 "xcX" = (
 /obj/machinery/air_alarm{
 	pixel_y = 22
@@ -37446,6 +38380,25 @@
 	},
 /turf/simulated/floor/wood,
 /area/lawoffice)
+<<<<<<< HEAD
+=======
+"xnz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/silver{
+	name = "Clown's Office"
+	},
+/obj/map_helper/access_helper/airlock/station/service/clown,
+/turf/simulated/floor/carpet/gaycarpet,
+/area/tether/surfacebase/funny/clownoffice)
+"xnE" = (
+/obj/structure/flora/bush,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "xnJ" = (
 /obj/spawner/window/low_wall/full/nogrille/firelocks,
 /obj/effect/paint/beastybrown,
@@ -37480,21 +38433,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid/lythios43c,
 /area/rift/surfacebase/outside/outside1)
-"xqe" = (
-/obj/machinery/door/airlock/maintenance/engi{
-	name = "Pump Station Access"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/supply{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/engineering/pumpstation)
 "xqn" = (
 /turf/simulated/floor/wood,
 /area/maintenance/lowmedbaymaint)
@@ -37537,21 +38475,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych)
-"xsn" = (
-/obj/machinery/door/airlock/mining{
-	name = "Cargo Airlock";
-	req_one_access = list(31)
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 1
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/quartermaster/delivery)
 "xsw" = (
 /obj/structure/cable/green{
 	icon_state = "1-4"
@@ -37609,14 +38532,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/virologyisolation)
-"xuj" = (
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/door/airlock/engineering{
-	name = "Surface Services Substation";
-	req_one_access = list(11,24,50)
-	},
-/turf/simulated/floor,
-/area/maintenance/starboard)
 "xve" = (
 /obj/structure/railing{
 	dir = 4
@@ -37680,20 +38595,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor,
 /area/quartermaster/garage)
-"xvW" = (
-/obj/machinery/door/airlock/glass/research{
-	name = "Xenoarch Storage";
-	req_access = list(65)
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel,
-/area/rnd/xenoarch_storage)
 "xvX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -38105,6 +39006,7 @@
 	},
 /turf/simulated/floor/concrete/rng/indoors,
 /area/rift/station/fighter_bay/transport_tunnel_garage_maint)
+<<<<<<< HEAD
 "xMn" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "mentaldoor";
@@ -38145,6 +39047,8 @@
 /obj/effect/debris/cleanable/blood,
 /turf/simulated/floor/wood,
 /area/maintenance/lowmedbaymaint)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "xMJ" = (
 /obj/machinery/atmospherics/component/unary/vent_scrubber/on{
 	dir = 1
@@ -38519,19 +39423,13 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/rnd/outpost/xenobiology/outpost_storage)
-"xWW" = (
-/obj/machinery/door/airlock{
-	name = "Entertainment Backroom";
-	req_access = list(72,20,57)
-	},
-/turf/simulated/floor/plating,
-/area/tether/surfacebase/entertainment/backstage)
 "xWX" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/simulated/floor/reinforced/lythios43c,
 /area/rift/surfacebase/outside/outside1)
+<<<<<<< HEAD
 "xXG" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 6
@@ -38555,6 +39453,30 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/security_cell_hallway)
+=======
+"xXS" = (
+/obj/structure/fans/tiny,
+/obj/map_helper/airlock/door/simple,
+/obj/machinery/door/airlock/glass_external{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "shutter0";
+	id = "cargo_shuttle_shutter";
+	name = "Cargo shuttle access shutter";
+	opacity = 0
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "main_ext_blast";
+	name = "Surface External Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel_grid,
+/area/rift/surfaceeva/cargodock)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "xXX" = (
 /obj/effect/blocker,
 /turf/simulated/open/lythios43c,
@@ -38611,22 +39533,6 @@
 	},
 /turf/simulated/open,
 /area/rift/trade_shop)
-"ybI" = (
-/obj/machinery/door/blast/regular/open{
-	id = "virolockdown";
-	name = "Virology Blast Door"
-	},
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/obj/machinery/door/airlock/medical{
-	name = "Virology Purge Chamber";
-	req_one_access = list(39)
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/medical/virologyisolation)
 "yco" = (
 /obj/machinery/light{
 	dir = 8
@@ -38639,6 +39545,27 @@
 	},
 /turf/simulated/floor/tiled,
 /area/medical/virologyaccess)
+"ycQ" = (
+/obj/machinery/atmospherics/pipe/simple/visible/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/black{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance/medical{
+	name = "Virology Maintenance Substation";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/medical/virology,
+/turf/simulated/floor/plating,
+/area/medical/virologymaint)
 "yda" = (
 /obj/structure/grille,
 /obj/structure/railing{
@@ -38678,6 +39605,7 @@
 /obj/structure/sign/securearea,
 /turf/simulated/wall/r_wall/prepainted/science,
 /area/rnd/outpost/xenobiology/outpost_hallway)
+<<<<<<< HEAD
 "yeC" = (
 /obj/structure/table/steel,
 /obj/item/clothing/gloves/sterile/latex,
@@ -38686,6 +39614,21 @@
 /obj/item/tool/wirecutters,
 /turf/simulated/floor/tiled/dark,
 /area/maintenance/security/lower)
+=======
+"yec" = (
+/obj/map_helper/airlock/door/simple,
+/obj/machinery/door/airlock/glass_external{
+	name = "Cargo Airlock";
+	req_one_access = null
+	},
+/obj/machinery/door/blast/regular/open{
+	id = "main_ext_blast";
+	name = "Surface External Blast Door"
+	},
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+/turf/simulated/floor/tiled/steel_grid,
+/area/rift/surfaceeva/cargodock)
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "yeH" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -38709,6 +39652,7 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/office)
+<<<<<<< HEAD
 "yfX" = (
 /obj/machinery/door/airlock/maintenance/cargo,
 /turf/simulated/floor/plating,
@@ -38716,6 +39660,17 @@
 "ygW" = (
 /obj/effect/floor_decal/rust,
 /obj/machinery/portable_atmospherics/hydroponics,
+=======
+"ygq" = (
+/obj/structure/bed/chair/sofa/beige,
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 1
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals5,
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 /turf/simulated/floor/tiled/steel,
 /area/security/prison)
 "ygX" = (
@@ -38760,6 +39715,7 @@
 	},
 /turf/simulated/floor/wood,
 /area/rnd/outpost/xenobiology/outpost_office)
+<<<<<<< HEAD
 "yiU" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -38769,6 +39725,8 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/security_cell_hallway)
+=======
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 "yja" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 8
@@ -45195,11 +46153,11 @@ tSj
 fNl
 beV
 tSj
-dem
+qZs
 eMK
 oOX
 eMK
-ePi
+sEH
 xEd
 hGn
 bUk
@@ -45396,7 +46354,7 @@ qPI
 iUb
 wIJ
 efz
-crn
+tYw
 mtL
 lLD
 kqi
@@ -45759,8 +46717,8 @@ nNX
 nNX
 vgp
 qqW
-wjW
-shs
+aEF
+kZA
 qqW
 eqx
 eit
@@ -45773,13 +46731,13 @@ kUL
 ykF
 hZu
 ykF
-dJJ
+pcz
 ykF
 ykF
 ykF
 iUb
 dRx
-bbE
+uxl
 iUb
 wrm
 dzt
@@ -45959,11 +46917,11 @@ eZK
 aJo
 euC
 tYL
-hWJ
+ksP
 mYX
 mYX
 mYX
-fGp
+qGg
 jdT
 aZN
 lUd
@@ -45978,7 +46936,7 @@ csb
 xQq
 iUf
 uqe
-sEE
+nIT
 cRN
 pFA
 dJG
@@ -46177,7 +47135,7 @@ aPh
 fgE
 fgE
 fgE
-vRq
+eKR
 jBG
 dvn
 dvn
@@ -46238,10 +47196,10 @@ cPn
 pBb
 pBb
 pBb
-dwr
+lxa
 pBb
 pBb
-ibO
+mQt
 pBb
 pBb
 mTG
@@ -46347,11 +47305,11 @@ lun
 ksR
 vBx
 tYL
-afZ
+vCs
 oNs
 mYX
 aoR
-jeF
+qEm
 xQj
 bNv
 iSw
@@ -46366,7 +47324,7 @@ mWZ
 xQq
 lxw
 skw
-sEE
+nIT
 vja
 jLP
 aQc
@@ -46549,7 +47507,7 @@ kUL
 lqT
 vOH
 jPz
-vTs
+kaz
 jPz
 jPz
 jPz
@@ -47135,14 +48093,14 @@ xTz
 thh
 thh
 dee
-gJK
+ewv
 iUi
 uIn
 iUi
 lht
 ulQ
 pqX
-pmY
+kiD
 xWS
 caD
 pOV
@@ -47889,7 +48847,7 @@ ivS
 mJs
 kMx
 pXg
-cjZ
+sjn
 peC
 fjP
 xmK
@@ -48083,7 +49041,7 @@ nDp
 rKJ
 ufU
 uth
-cjZ
+sjn
 peC
 fjP
 xmK
@@ -49209,8 +50167,8 @@ nBa
 uiH
 iTr
 iTr
-hkz
-hkz
+yec
+yec
 iTr
 uiH
 nBa
@@ -49791,8 +50749,8 @@ hgE
 hgE
 iTr
 lJv
-fqb
-fqb
+xXS
+xXS
 iTr
 oFp
 oFp
@@ -49865,7 +50823,7 @@ hgE
 hgE
 bRs
 bgv
-rPl
+ffQ
 bRs
 bRs
 hgE
@@ -50181,7 +51139,7 @@ pUa
 wjJ
 sQa
 gxR
-qEU
+pEm
 fWU
 fWU
 qDh
@@ -50253,7 +51211,7 @@ bRs
 prs
 bRs
 bRs
-bND
+ffQ
 bRs
 bRs
 bRs
@@ -50580,13 +51538,13 @@ oFp
 oFp
 oFp
 oFp
-yfX
+bGJ
 oFp
 fNL
 phu
 kaF
 kaF
-hGg
+oca
 kaF
 wBV
 uzb
@@ -50607,7 +51565,7 @@ oYD
 cEL
 cEL
 wes
-ugN
+lEW
 qqW
 wqA
 lTj
@@ -50635,7 +51593,7 @@ rZY
 rZY
 oXj
 oXj
-iDO
+oTM
 wdU
 bRs
 waV
@@ -50944,8 +51902,8 @@ cVJ
 cVJ
 cVJ
 fUY
-ghF
-ghF
+ezQ
+ezQ
 fUY
 cVJ
 cVJ
@@ -50960,7 +51918,7 @@ pgt
 did
 wrP
 kMQ
-vls
+kta
 juk
 rQu
 vPf
@@ -50997,11 +51955,11 @@ hNF
 hNF
 aom
 cEL
-apR
-tep
+olC
+jRV
 euZ
 qvB
-oRd
+exa
 qvB
 qvB
 qvB
@@ -51011,7 +51969,7 @@ qvB
 qvB
 qvB
 qvB
-ptB
+sBH
 qvB
 qvB
 lCB
@@ -51151,7 +52109,7 @@ wRP
 vaP
 ebQ
 esp
-nWC
+vaq
 ccB
 djn
 lvy
@@ -51554,7 +52512,7 @@ bXZ
 hNd
 cBa
 iJi
-gbq
+vIc
 ylL
 duq
 rOA
@@ -51568,8 +52526,8 @@ wuu
 vZx
 sHX
 fzs
-cfw
-igZ
+iXD
+gDe
 vZx
 shM
 wLW
@@ -51583,7 +52541,7 @@ bCH
 vVs
 qvB
 qvB
-oRd
+exa
 qvB
 qvB
 xme
@@ -51593,7 +52551,7 @@ qvB
 xme
 qvB
 qvB
-ptB
+sBH
 qvB
 woJ
 aeZ
@@ -51779,13 +52737,13 @@ nLt
 dfe
 dfe
 gON
-xcD
+uLn
 teV
 aGL
 kcE
 aGL
 teV
-xcD
+uLn
 bwN
 bwN
 bwN
@@ -51904,7 +52862,7 @@ wkH
 dXv
 ixH
 dfn
-wBs
+ndk
 gtv
 mJU
 jSG
@@ -51944,7 +52902,7 @@ osC
 eAF
 kaF
 kaF
-smW
+eWL
 kaF
 kaF
 kaF
@@ -51957,7 +52915,7 @@ hrN
 jxu
 qZT
 aXF
-nqB
+xbM
 vZx
 shM
 lJs
@@ -52151,7 +53109,7 @@ hrN
 aLa
 dTO
 pNv
-biN
+nnO
 vZx
 hSs
 lJs
@@ -52161,8 +53119,8 @@ cEL
 cEL
 cEL
 paX
-hjc
-ltg
+cCB
+gqA
 paX
 paX
 paX
@@ -52286,7 +53244,7 @@ flS
 flS
 flS
 fVw
-xMn
+eqU
 flS
 fVw
 dXv
@@ -52295,15 +53253,15 @@ dXv
 dXv
 dXv
 aFU
-iNl
+hFX
 aFU
 dXv
 fUY
 wHT
 xDd
 wHT
-ddN
-nXP
+nwB
+hUB
 fUY
 fUY
 fUY
@@ -52373,8 +53331,13 @@ bwN
 bwN
 sSY
 oXj
+<<<<<<< HEAD
 wFV
 iFZ
+=======
+kpd
+dca
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 tmg
 oal
 syn
@@ -52538,8 +53501,8 @@ rCU
 vZx
 tQY
 wtc
-maf
-cvB
+iGE
+uCf
 vZx
 oRR
 lJs
@@ -52640,24 +53603,24 @@ lHl
 pyH
 qUi
 qsP
-iRL
+oOm
 mXX
 mwN
 pSn
 hix
 oaT
-oYo
+tij
 cNJ
 iAP
 ueT
 tCu
 qcT
 jFr
-vaW
+rsa
 qjo
 kZl
 vLk
-jnU
+oxA
 cZF
 qkU
 qkU
@@ -52704,7 +53667,7 @@ vaP
 uPk
 pgt
 qkC
-iGp
+mNn
 qkC
 esZ
 qtA
@@ -53051,11 +54014,11 @@ dIS
 dIS
 dIS
 bdv
-lkx
+fZb
 dIS
 dIS
 dIS
-oIL
+dlX
 dwP
 dwP
 kek
@@ -53084,7 +54047,7 @@ uyU
 idM
 fpj
 oQp
-aEB
+hkB
 kVA
 gDL
 wRP
@@ -53094,13 +54057,13 @@ okx
 iRI
 sfF
 pDh
-jxb
+vPC
 lfK
 kYK
 ucs
 wvp
 skZ
-xsn
+jSV
 mvQ
 abg
 qLz
@@ -53432,7 +54395,7 @@ nLD
 ivG
 lzE
 iLe
-iHI
+mRH
 iLe
 rkH
 mpt
@@ -53470,7 +54433,7 @@ qRr
 qRr
 bKN
 oOT
-gWs
+tDL
 mUU
 mUU
 kjp
@@ -53680,7 +54643,7 @@ esZ
 xTe
 gmT
 gmT
-aqK
+cKt
 xTe
 xTe
 sOh
@@ -53714,7 +54677,7 @@ kDP
 bQA
 cAs
 bjG
-uqR
+dGA
 vly
 laJ
 wAv
@@ -53826,9 +54789,9 @@ jXM
 iNX
 gkg
 gkg
-kKb
+fkE
 gkg
-uru
+vYw
 oGF
 oGF
 buH
@@ -53916,12 +54879,12 @@ lQP
 lQP
 lQP
 lQP
-uBj
+rkn
 lQP
 lQP
 lQP
 lQP
-oyI
+rpb
 adg
 uBP
 uBP
@@ -54313,12 +55276,12 @@ pxL
 gNt
 tMA
 lPD
-xvW
+ugg
 omx
 eaI
 jdA
 jdA
-kkQ
+wQd
 kPf
 fLU
 vky
@@ -54402,7 +55365,7 @@ hgE
 twG
 xcX
 ggH
-tct
+kXJ
 iLe
 rit
 ylE
@@ -54436,7 +55399,7 @@ sZk
 eXL
 cKY
 mUU
-eTN
+eUW
 mUU
 jbK
 mUU
@@ -54690,7 +55653,7 @@ pXG
 wAv
 foD
 foD
-vWP
+vdF
 foD
 qRP
 rmE
@@ -54698,7 +55661,7 @@ rmE
 foD
 cYM
 mqK
-cYs
+ibU
 mqK
 cYM
 cYM
@@ -54792,7 +55755,7 @@ twG
 twG
 wVZ
 mEV
-fdt
+duU
 mEV
 sDY
 jyG
@@ -54844,7 +55807,7 @@ xTe
 xTe
 gmT
 gmT
-qXo
+sGI
 xTe
 xTe
 sOh
@@ -55084,7 +56047,7 @@ wau
 wau
 nAA
 uRv
-bzC
+vHM
 gOa
 oYH
 hsz
@@ -55191,6 +56154,7 @@ fJW
 sDY
 gTC
 nQl
+<<<<<<< HEAD
 tdI
 tdI
 tdI
@@ -55219,6 +56183,36 @@ pOR
 pOR
 pOR
 pOR
+=======
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+pnT
+hFE
+hFE
+hFE
+hFE
+hFE
+hFE
+yaq
+hFE
+vgd
+aml
+aml
+aml
+aml
+aml
+aml
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 mNj
 eBp
 eBp
@@ -55422,13 +56416,13 @@ qeY
 qkC
 quZ
 jHt
-vDU
+hRS
 bQK
 klT
 oVJ
 lIR
 jeI
-rdT
+vYO
 phI
 eRF
 swF
@@ -55461,9 +56455,9 @@ haw
 haw
 haw
 haw
-sGj
+wcT
 haw
-gsT
+bmh
 foD
 foD
 foD
@@ -55594,6 +56588,7 @@ lLp
 lLp
 lLp
 hFE
+<<<<<<< HEAD
 hFE
 hFE
 hFE
@@ -55608,6 +56603,23 @@ aml
 aml
 aml
 uHe
+=======
+eaO
+rSd
+lfB
+oBp
+sXD
+rSd
+elP
+xlo
+rSd
+mWf
+rSd
+eZl
+oGP
+vDk
+jGC
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 dMX
 dMX
 ouV
@@ -55808,7 +56820,7 @@ ouV
 bXZ
 bXZ
 qkC
-jnz
+kwP
 wRP
 xTe
 okn
@@ -55842,7 +56854,7 @@ oWj
 klA
 aJp
 fbq
-jEy
+kJn
 gLW
 qpi
 kTI
@@ -55980,7 +56992,24 @@ qcH
 ecn
 vXz
 hzO
+<<<<<<< HEAD
 lLp
+=======
+hFE
+hFE
+bEt
+hFE
+hFE
+gcn
+rSd
+rSd
+seH
+hGe
+hFE
+wva
+eTk
+hFE
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 aml
 yiU
 rSV
@@ -56129,7 +57158,7 @@ hgE
 hgE
 lHl
 lHl
-daj
+ycQ
 lHl
 lHl
 lHl
@@ -56161,6 +57190,7 @@ toa
 sDY
 pOR
 buH
+<<<<<<< HEAD
 tdI
 pZn
 iTF
@@ -56182,6 +57212,29 @@ lBS
 aml
 hFE
 ulr
+=======
+pnT
+xJP
+bKl
+rIK
+uBa
+tGS
+snM
+she
+tGS
+snM
+pUI
+tGS
+iFA
+tgm
+qOe
+bKl
+tts
+rSd
+dWU
+rSd
+rSd
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 seH
 kSK
 uPa
@@ -56244,7 +57297,7 @@ tHa
 tHa
 tHa
 xWb
-pFY
+kkO
 xWb
 pVU
 pVU
@@ -56355,6 +57408,7 @@ gKx
 sDY
 pOR
 buH
+<<<<<<< HEAD
 tdI
 pZn
 iTF
@@ -56376,6 +57430,29 @@ eZl
 pma
 iQT
 jBw
+=======
+pnT
+lbY
+xPa
+hPd
+xyy
+gQC
+gQC
+snU
+gQC
+gQC
+gGC
+tnA
+pys
+bKl
+bKl
+bKl
+tts
+lJl
+dWU
+vrP
+vwu
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 nUE
 qIr
 hFE
@@ -56592,7 +57669,7 @@ rvG
 oxg
 bvj
 guy
-hAl
+lUl
 ghW
 iJb
 gZK
@@ -56764,7 +57841,7 @@ aml
 aml
 nqs
 nqs
-sku
+jKM
 nqs
 nqs
 nqs
@@ -57173,7 +58250,7 @@ xTe
 xTe
 xTe
 xTe
-foY
+hIn
 dNx
 dNx
 dNx
@@ -57208,15 +58285,15 @@ tHM
 jVC
 cbV
 nDl
-vJJ
+slY
 usP
 rnP
 tBf
-dpZ
+eMd
 nSE
 itJ
 jgH
-niP
+mdk
 wMO
 qiy
 tuV
@@ -57316,7 +58393,7 @@ sDY
 qoh
 oeG
 fhl
-pwU
+mdi
 dQi
 wkp
 egd
@@ -57487,7 +58564,7 @@ hgE
 hgE
 lHl
 lHl
-daj
+ycQ
 lHl
 lHl
 hBP
@@ -57545,7 +58622,7 @@ djR
 lkP
 mTE
 mTE
-cxQ
+ljo
 klQ
 rnz
 jtX
@@ -57564,7 +58641,7 @@ xPm
 vRV
 vRV
 qzJ
-tmT
+iQa
 cPs
 cPs
 cPs
@@ -57705,7 +58782,7 @@ sDY
 sDY
 sDY
 sDY
-chz
+fnG
 sDY
 sDY
 sDY
@@ -57754,7 +58831,7 @@ nzD
 qlA
 cLy
 cLy
-qmG
+cdE
 jxt
 vRV
 oEx
@@ -57776,7 +58853,7 @@ qTH
 spy
 spy
 eFp
-xqe
+dvm
 eFp
 eFp
 klW
@@ -57943,9 +59020,9 @@ dHp
 dMX
 dMX
 ouV
-uXr
+hxi
 dMw
-wMZ
+sSL
 cLy
 cLy
 xPm
@@ -58098,8 +59175,13 @@ upJ
 upJ
 upJ
 upJ
+<<<<<<< HEAD
 chz
 pOR
+=======
+fnG
+mBD
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 buH
 tdI
 pZn
@@ -58316,7 +59398,7 @@ tdI
 tdI
 nqs
 nqs
-eNr
+dBw
 nqs
 nqs
 nqs
@@ -58489,6 +59571,7 @@ sDY
 sDY
 pOR
 buH
+<<<<<<< HEAD
 tdI
 pZn
 iTF
@@ -58510,6 +59593,29 @@ tdI
 dMX
 dMX
 dMX
+=======
+pnT
+iwn
+bKl
+bKl
+ejz
+cVb
+gcW
+gcW
+gcW
+gcW
+gcW
+gcW
+hsB
+cSI
+qzy
+qzy
+qzy
+uhV
+xJK
+vYf
+vFf
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 mpF
 dMX
 dMX
@@ -58683,6 +59789,7 @@ hgE
 gTC
 pOR
 buH
+<<<<<<< HEAD
 tdI
 pZn
 pZn
@@ -58704,6 +59811,29 @@ tdI
 dMX
 cFW
 cFW
+=======
+pnT
+wuy
+bKl
+bKl
+ejz
+cVb
+gcW
+gcW
+gcW
+gcW
+gcW
+gcW
+gcW
+wgs
+sPu
+sPu
+sPu
+pnT
+hNv
+pnT
+pnT
+>>>>>>> 22c5950dd (Replaces airlocks access vars with access helpers on Rift (1/3) (#6462))
 lUJ
 jAY
 jAY
@@ -58720,7 +59850,7 @@ rPj
 cjy
 cjy
 cjy
-uKu
+uQZ
 cjy
 cjy
 lDv
@@ -59252,7 +60382,7 @@ jLF
 jLF
 jLF
 lCp
-wRu
+ncJ
 lCp
 lCp
 lCp
@@ -59638,7 +60768,7 @@ stV
 xfE
 eXs
 pmT
-ybI
+ttP
 xjW
 pYJ
 mkq
@@ -59703,7 +60833,7 @@ wnn
 rku
 iYi
 kIO
-smQ
+hgw
 rmO
 tFN
 mKA
@@ -59712,9 +60842,9 @@ iNE
 hdi
 tXc
 agE
-eWC
+tcf
 kbe
-xuj
+tcf
 agE
 kbe
 kbe
@@ -60020,7 +61150,7 @@ hgE
 hgE
 jYF
 aGS
-nww
+gbC
 aGS
 aGS
 aGS
@@ -60079,16 +61209,16 @@ cjy
 cjy
 eLT
 cjy
-dbv
+vqP
 cjy
 lDv
 cdW
 cdW
-mSJ
+pEX
 lDv
 cdW
 lDv
-dky
+auN
 cdW
 cdW
 lDv
@@ -60982,13 +62112,13 @@ lHl
 fwd
 snj
 qsP
-fLj
+bjP
 fVl
 gVB
 ipj
 iJl
 jAn
-kgJ
+sRS
 gYT
 ohd
 pKb
@@ -61378,7 +62508,7 @@ heY
 heY
 jYF
 aGS
-onA
+ogg
 aGS
 jYF
 jYF
@@ -61818,7 +62948,7 @@ cKp
 xbC
 wsO
 wxH
-uZR
+oUV
 xlJ
 usp
 tBB
@@ -62199,7 +63329,7 @@ uBo
 gZL
 jTL
 nXc
-tWv
+xnz
 jfO
 ipb
 cKp
@@ -62590,7 +63720,7 @@ xZM
 xZM
 tXv
 pwQ
-xWW
+ejY
 oNz
 oNz
 iyk
@@ -62975,7 +64105,7 @@ xZM
 hdL
 aLs
 xPY
-mqS
+hsG
 jfO
 akp
 cKp
