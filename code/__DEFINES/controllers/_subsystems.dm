@@ -89,6 +89,7 @@ DEFINE_BITFIELD(runlevels, list(
 #define INIT_ORDER_CHARACTERS      140
 #define INIT_ORDER_SOUNDS          130
 #define INIT_ORDER_GARBAGE         120
+<<<<<<< HEAD
 #define INIT_ORDER_VIS             80
 #define INIT_ORDER_SERVER_MAINT    65
 #define INIT_ORDER_INSTRUMENTS     50
@@ -103,6 +104,22 @@ DEFINE_BITFIELD(runlevels, list(
 #define INIT_ORDER_LOBBY           22
 #define INIT_ORDER_PLANTS          19
 #define INIT_ORDER_ALARMS          18
+=======
+#define INIT_ORDER_VIS             90
+#define INIT_ORDER_SERVER_MAINT    75
+#define INIT_ORDER_INSTRUMENTS     70
+#define INIT_ORDER_MEDIA_TRACKS    65
+#define INIT_ORDER_CHEMISTRY       60
+#define INIT_ORDER_MATERIALS       55
+#define INIT_ORDER_PHOTOGRAPHY     50
+#define INIT_ORDER_MAPPING         45
+#define INIT_ORDER_GAME_WORLD      40
+#define INIT_ORDER_LEGACY_ATC      37
+#define INIT_ORDER_LEGACY_LORE     35
+#define INIT_ORDER_LOBBY           30
+#define INIT_ORDER_PLANTS          25
+#define INIT_ORDER_ALARMS          20
+>>>>>>> 1270722e8 (storytellers: world system + very slight codebase reorganization (#6490))
 #define INIT_ORDER_RESEARCH        17
 #define INIT_ORDER_ATOMS           15
 #define INIT_ORDER_MACHINES        10
