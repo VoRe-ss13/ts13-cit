@@ -192,6 +192,23 @@
 	ASSERT(!level_or_path.loaded)
 	if(level_or_path.id && !isnull(keyed_levels[level_or_path.id]))
 		CRASH("fatal id collision on [level_or_path.id]")
+<<<<<<< HEAD
+=======
+
+	// register level in lookup lists
+	if(!level_or_path.id)
+		// levels must have an ID
+		do
+			level_or_path.id = "gen-[copytext(md5("[rand(1, 1024 ** 2)]"), 1, 5)]"
+		while(keyed_levels[level_or_path.id])
+	ASSERT(!keyed_levels[level_or_path.id])
+	keyed_levels[level_or_path.id] = level_or_path
+	if(level_or_path.hardcoded)
+		ASSERT(!typed_levels[level_or_path.type])
+		typed_levels[level_or_path.type] = level_or_path
+
+	// allocate the zlevel for the level
+>>>>>>> 615c08671 (fixes infinite loop in map system (#6494))
 	var/z_index = allocate_z_index()
 	ASSERT(z_index)
 	var/datum/map_level/existing = ordered_levels[z_index]
