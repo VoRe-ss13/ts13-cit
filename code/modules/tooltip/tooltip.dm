@@ -48,6 +48,12 @@ Notes:
 
 	..()
 
+<<<<<<< HEAD
+=======
+/datum/tooltip/proc/init()
+	SSassets.send_asset_pack(owner, /datum/asset_pack/simple/jquery)
+	owner << browse(file2text('code/modules/tooltip/tooltip.html'), "window=[control]")
+>>>>>>> 9eb95e5f6 (fixes tooltips & iv drips (#6496))
 
 /datum/tooltip/proc/show(atom/movable/thing, params = null, title = null, content = null, theme = "default", special = "none")
 	if (!thing || !params || (!title && !content) || !owner || !isnum(world.icon_size))
