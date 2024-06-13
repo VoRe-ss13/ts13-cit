@@ -104,7 +104,12 @@
 
 		if(M.dirties_floor())
 			// Dirt overlays.
+<<<<<<< HEAD
 			update_dirt()
+=======
+			// todo: currently nerfed
+			update_dirt(1.5)
+>>>>>>> 02019b5fa (Buff floor dirtying to take 75 steps instead of 500. (#6512))
 
 		if(istype(M, /mob/living/carbon/human))
 			var/mob/living/carbon/human/H = M
