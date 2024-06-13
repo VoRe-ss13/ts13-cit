@@ -192,6 +192,10 @@
 			/datum/reagent/nutriment/flour,
 			/datum/reagent/drink/ice,
 			/datum/reagent/drink/milk,
+<<<<<<< HEAD
+=======
+			/datum/reagent/sugar,
+>>>>>>> 01a1e57ff (fixes ice cream being unfillable, marks minitest as no-random-draw, adds more CI logging (#6503))
 		),
 	)
 	if(!units_transferred)
