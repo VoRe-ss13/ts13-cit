@@ -251,9 +251,16 @@
 			C.brand = brand
 			C.desc += " This one is \a [brand]."
 
+<<<<<<< HEAD
 /obj/item/storage/fancy/cigarettes/update_icon()
 	icon_state = "[initial(icon_state)][contents.len]"
 	return
+=======
+/obj/item/storage/fancy/cigarettes/update_icon_state()
+	. = ..()
+	if(overlay_amount)
+		icon_state = "[initial(icon_state)][min(length(contents), overlay_amount)]"
+>>>>>>> 80d934858 (Fixes icons: clown dufflebag, cigboxes, trashbags (#6499))
 
 /obj/item/storage/fancy/cigarettes/Exited(atom/movable/AM, atom/newLoc)
 	. = ..()
