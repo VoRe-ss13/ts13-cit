@@ -2180,6 +2180,10 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
+=======
+/obj/map_helper/access_helper/airlock/station/science/research_lab,
+>>>>>>> 51a35880a (Replaces airlocks access vars with access helpers on Triumph (2/3) (#6497))
 /turf/simulated/floor/tiled/steel,
 /area/rnd/research)
 "bns" = (
