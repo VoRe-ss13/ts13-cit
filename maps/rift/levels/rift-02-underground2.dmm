@@ -7138,10 +7138,15 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/machinery/door/airlock/maintenance/cargo{
 	req_access = list(50);
 	req_one_access = list(48)
 	},
+=======
+/obj/machinery/door/airlock/maintenance/cargo,
+/obj/map_helper/access_helper/airlock/station/supply/department,
+>>>>>>> 62bb17ee8 (Adds Cargo-only permission to the entrance into Mining Refinery on Atlas (#6509))
 /turf/simulated/floor/plating,
 /area/quartermaster/miningdock)
 "wV" = (
@@ -9547,10 +9552,15 @@
 	dir = 8
 	},
 /obj/machinery/door/firedoor/glass,
+<<<<<<< HEAD
 /obj/machinery/door/airlock/maintenance/cargo{
 	req_access = list(50);
 	req_one_access = list(48)
 	},
+=======
+/obj/machinery/door/airlock/maintenance/cargo,
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+>>>>>>> 62bb17ee8 (Adds Cargo-only permission to the entrance into Mining Refinery on Atlas (#6509))
 /turf/simulated/floor/tiled,
 /area/quartermaster/miningdock)
 "Gn" = (
@@ -11227,10 +11237,15 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor/glass,
+<<<<<<< HEAD
 /obj/machinery/door/airlock/maintenance/cargo{
 	req_access = list(50);
 	req_one_access = list(48)
 	},
+=======
+/obj/machinery/door/airlock/maintenance/cargo,
+/obj/map_helper/access_helper/airlock/station/supply/cargo_bay,
+>>>>>>> 62bb17ee8 (Adds Cargo-only permission to the entrance into Mining Refinery on Atlas (#6509))
 /turf/simulated/floor/tiled,
 /area/quartermaster/belterdock/refinery)
 "MC" = (
@@ -13722,10 +13737,14 @@
 /turf/simulated/floor/wood,
 /area/chapel/observation)
 "VC" = (
+<<<<<<< HEAD
 /obj/machinery/door/airlock/maintenance/cargo{
 	req_access = list(50);
 	req_one_access = list(48)
 	},
+=======
+/obj/machinery/door/airlock/maintenance/cargo,
+>>>>>>> 62bb17ee8 (Adds Cargo-only permission to the entrance into Mining Refinery on Atlas (#6509))
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/plating,
 /area/maintenance/lower/atmos)
