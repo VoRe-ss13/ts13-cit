@@ -158,9 +158,15 @@
 
 
 /**
- * ## Modules follow
+ * ## Sections follow
  */
 
+// ## Assets
+
+/**
+ * If defined, we will NOT defer asset generation till later in the game, and will instead do it all at once, during initiialize.
+ */
+//#define DO_NOT_DEFER_ASSETS
 
 // ## Atmospherics
 
@@ -190,7 +196,13 @@
 	#define ZAS_BREAKPOINT_HOOKS
 #endif
 
+<<<<<<< HEAD
 
+=======
+// ## Lighting
+
+// #define AO_USE_LIGHTING_OPACITY
+>>>>>>> 8706a097e (maybe fixes timer issues, tweaks world fps, timers, etc (#6505))
 
 // ## Overlays
 /**
@@ -199,12 +211,6 @@
  */
 #define MAX_ATOM_OVERLAYS 100
 
-
 // ## Timers
 
 // #define TIMER_LOOP_DEBUGGING
-
-
-// ## Lighting
-
-// #define AO_USE_LIGHTING_OPACITY
