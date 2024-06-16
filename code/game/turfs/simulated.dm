@@ -104,7 +104,12 @@
 
 		if(M.dirties_floor())
 			// Dirt overlays.
+<<<<<<< HEAD
 			update_dirt()
+=======
+			// todo: currently nerfed
+			update_dirt(0.8)
+>>>>>>> 6c7c30fc0 (Nerf floor scuffs to 125 steps to dirty. (#6519))
 
 		if(istype(M, /mob/living/carbon/human))
 			var/mob/living/carbon/human/H = M
