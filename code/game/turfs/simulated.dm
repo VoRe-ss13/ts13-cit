@@ -26,8 +26,6 @@
 
 /turf/simulated/Initialize(mapload)
 	. = ..()
-	if(mapload)
-		levelupdate()
 	if(outdoors)
 		SSplanets.addTurf(src)
 
