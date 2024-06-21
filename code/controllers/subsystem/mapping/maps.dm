@@ -223,6 +223,11 @@
 			var/datum/map/map = keyed_maps[id]
 			if(!istype(map, /datum/map/station))
 				continue
+<<<<<<< HEAD
+=======
+			if(!map.allow_random_draw)
+				continue
+>>>>>>> 57eec77eb (Fixes bad maps being picked in CI (real) (#6534))
 			valid += map
 		instance = pick(valid)
 	ASSERT(istype(instance))
