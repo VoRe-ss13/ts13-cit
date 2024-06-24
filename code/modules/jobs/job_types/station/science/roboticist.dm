@@ -27,15 +27,13 @@
 	alt_titles = list(
 		"Biomechanical Engineer" = /datum/prototype/struct/alt_title/biomech,
 		"Mechatronic Engineer" = /datum/prototype/struct/alt_title/mech_tech,
+<<<<<<< HEAD
 		"Artificer-Biotechnicist" = /datum/prototype/struct/alt_title/artificer_biotechnicist
+=======
+		"Junior Roboticist" = /datum/prototype/struct/alt_title/junior_roboticist,
+>>>>>>> e9dd4a889 (factions cleanup - removes most factions from station (#6531))
 		)
 
-/datum/prototype/struct/alt_title/artificer_biotechnicist
-	title = "Artificer-Biotechnicist"
-	background_allow = list(
-		/datum/lore/character_background/faction/naramadiguilds
-	)
-	background_enforce = TRUE
 
 /datum/prototype/struct/alt_title/biomech
 	title = "Biomechanical Engineer"
