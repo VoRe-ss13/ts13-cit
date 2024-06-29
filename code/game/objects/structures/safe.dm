@@ -172,6 +172,10 @@ FLOOR SAFES
 	level = 1	//underfloor
 	plane = TURF_PLANE
 	layer = BELOW_TURF_LAYER
+<<<<<<< HEAD
+=======
+	hides_underfloor = OBJ_UNDERFLOOR_UNLESS_PLACED_ONTOP
+>>>>>>> f117ff729 (fixes underfloor + atmos pipe placement (#6542))
 
 /obj/structure/safe/floor/Initialize(mapload)
 	. = ..()

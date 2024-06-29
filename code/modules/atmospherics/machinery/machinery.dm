@@ -22,6 +22,15 @@ Pipelines + Other Objects -> Pipe network
 	atom_colouration_system = FALSE
 	climb_allowed = FALSE
 	depth_projected = FALSE
+<<<<<<< HEAD
+=======
+	hides_underfloor = OBJ_UNDERFLOOR_UNLESS_PLACED_ONTOP
+	hides_underfloor_defaulting = FALSE
+
+	//* Underfloor *//
+	/// automatically update_underlays() during update_underfloor
+	var/hides_underfloor_underlays = FALSE
+>>>>>>> f117ff729 (fixes underfloor + atmos pipe placement (#6542))
 
 	///The color of the pipe
 	var/pipe_color

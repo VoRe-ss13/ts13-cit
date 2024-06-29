@@ -779,3 +779,95 @@
 		otherwise_self = SPAN_NOTICE("You remove the cell from [src]."),
 	)
 	return CLICKCHAIN_DID_SOMETHING | CLICKCHAIN_DO_NOT_PROPAGATE
+<<<<<<< HEAD
+=======
+
+//* Underfloor *//
+
+/**
+ * sets our hides_underfloor
+ */
+/obj/proc/set_hides_underfloor(new_value, mapload)
+	switch(new_value)
+		if(OBJ_UNDERFLOOR_IF_CREATED_UNCOVERED, OBJ_UNDERFLOOR_UNLESS_PLACED_ONTOP)
+			var/turf/where_we_are = loc
+			if(istype(where_we_are) && where_we_are.hides_underfloor_objects())
+				new_value = OBJ_UNDERFLOOR_ALWAYS
+			else
+				new_value = OBJ_UNDERFLOOR_NEVER
+	hides_underfloor = new_value
+	reconsider_hiding_underfloor()
+
+/**
+ * called to inform us we should / shouldn't be underfloor
+ *
+ * * this must be idempotent. we can get called at will by reconsider_hiding_underfloor() as we do not track if we are currently underfloor.
+ * * we are assumed to not be underfloor when we are first made
+ * * that means this is called during Initialize() if and only if we need to be hiding underfloor
+ */
+/obj/proc/update_hiding_underfloor(new_value)
+	if(hides_underfloor_defaulting)
+		invisibility = new_value? (hides_underfloor_invisibility_abstract? INVISIBILITY_ABSTRACT : INVISIBILITY_UNDERFLOOR) : 0
+	if(hides_underfloor_update_icon)
+		update_icon()
+	return TRUE
+
+/**
+ * **guesses** if we're hidden underfloor
+ * this is not the actual state!
+ */
+/obj/proc/is_probably_hidden_underfloor()
+	switch(hides_underfloor)
+		if(OBJ_UNDERFLOOR_ALWAYS)
+			var/turf/where_we_are = loc
+			return where_we_are.hides_underfloor_objects()
+		if(OBJ_UNDERFLOOR_NEVER)
+			return FALSE
+	return FALSE
+
+/**
+ * called at init
+ *
+ * todo: should this be called from obj init? we can probably shave a few centiseconds off init if it was on turf
+ *       as we wouldn't need to keep calling hides_underfloor_objects()
+ */
+/obj/proc/initialize_hiding_underfloor(mapload)
+	switch(hides_underfloor)
+		if(OBJ_UNDERFLOOR_IF_CREATED_UNCOVERED, OBJ_UNDERFLOOR_UNLESS_PLACED_ONTOP)
+			var/turf/where_we_are = loc
+			var/hide_anyways = (hides_underfloor == OBJ_UNDERFLOOR_UNLESS_PLACED_ONTOP) && mapload
+			var/we_are_hidden = where_we_are?.hides_underfloor_objects()
+			if(istype(where_we_are) && (hide_anyways || !we_are_hidden))
+				hides_underfloor = OBJ_UNDERFLOOR_ALWAYS
+				if(!mapload && we_are_hidden)
+					update_hiding_underfloor(TRUE)
+			else
+				hides_underfloor = OBJ_UNDERFLOOR_NEVER
+		if(OBJ_UNDERFLOOR_ALWAYS)
+			var/turf/where_we_are = loc
+			if(!mapload && istype(where_we_are) && where_we_are.hides_underfloor_objects())
+				update_hiding_underfloor(TRUE)
+
+/**
+ * called to re-call update_hiding_underfloor
+ */
+/obj/proc/reconsider_hiding_underfloor()
+	var/turf/where_we_are = loc
+	var/turf_will_cover = istype(where_we_are) && where_we_are.hides_underfloor_objects()
+	switch(hides_underfloor)
+		if(OBJ_UNDERFLOOR_ALWAYS)
+			update_hiding_underfloor(turf_will_cover)
+		if(OBJ_UNDERFLOOR_NEVER)
+			update_hiding_underfloor(FALSE)
+		else
+			// we're way beyond initialize, so..
+			hides_underfloor = OBJ_UNDERFLOOR_DISABLED
+
+//* VV hooks *//
+
+/obj/vv_edit_var(var_name, var_value, mass_edit, raw_edit)
+	. = ..()
+	switch(var_name)
+		if(NAMEOF(src, hides_underfloor))
+			set_hides_underfloor(var_value)
+>>>>>>> f117ff729 (fixes underfloor + atmos pipe placement (#6542))

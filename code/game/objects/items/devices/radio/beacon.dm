@@ -45,7 +45,11 @@ GLOBAL_LIST_BOILERPLATE(all_beacons, /obj/item/radio/beacon)
 	desc = "A beacon used by a teleporter. This one appears to be bolted to the ground."
 	anchored = TRUE
 	w_class = WEIGHT_CLASS_HUGE
+<<<<<<< HEAD
 	//randpixel = 0
+=======
+	hides_underfloor = OBJ_UNDERFLOOR_UNLESS_PLACED_ONTOP
+>>>>>>> f117ff729 (fixes underfloor + atmos pipe placement (#6542))
 
 	var/repair_fail_chance = 35
 

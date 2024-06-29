@@ -16,6 +16,11 @@
 	initialize_directions = SOUTH
 	pipe_flags = PIPING_DEFAULT_LAYER_ONLY
 	density = TRUE
+<<<<<<< HEAD
+=======
+	hides_underfloor_underlays = TRUE
+	hides_underfloor_defaulting = FALSE
+>>>>>>> f117ff729 (fixes underfloor + atmos pipe placement (#6542))
 
 	var/start_pressure = 75*ONE_ATMOSPHERE
 

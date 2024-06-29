@@ -9,6 +9,11 @@ var/global/list/navbeacons = list()	// no I don't like putting this in, but it w
 	name = "navigation beacon"
 	desc = "A beacon used for bot navigation."
 	plane = TURF_PLANE
+<<<<<<< HEAD
+=======
+	hides_underfloor = OBJ_UNDERFLOOR_UNLESS_PLACED_ONTOP
+	hides_underfloor_update_icon = TRUE
+>>>>>>> f117ff729 (fixes underfloor + atmos pipe placement (#6542))
 	anchored = TRUE
 	/// TRUE if cover is open.
 	var/open = FALSE
