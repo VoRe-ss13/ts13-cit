@@ -1968,11 +1968,13 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/excursion/general)
 "agr" = (
-/obj/structure/table/steel,
-/obj/item/multitool,
-/obj/machinery/fire_alarm/north_mount,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/beige/border,
 /turf/simulated/floor/tiled/steel,
-/area/exploration/explorer_prep)
+/area/exploration)
 "agt" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
@@ -2282,7 +2284,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/rift/surfaceeva/aa/cliff_north)
 "ahq" = (
-/obj/machinery/suit_cycler/exploration,
 /obj/effect/floor_decal/steeldecal/steel_decals9,
 /obj/effect/floor_decal/steeldecal/steel_decals9{
 	dir = 4
@@ -2294,6 +2295,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline,
+/obj/machinery/suit_cycler/exploration,
 /turf/simulated/floor/tiled/steel,
 /area/exploration/explorer_prep)
 "ahr" = (
@@ -3365,15 +3367,19 @@
 /turf/simulated/floor/tiled/steel,
 /area/crew_quarters/locker/laundry_arrival)
 "akc" = (
+<<<<<<< HEAD
 /obj/machinery/power/smes/buildable/power_shuttle{
 	name = "Courser Charging Port";
 	RCon_tag = "Courser Charging Port"
+=======
+/obj/effect/floor_decal/borderfloor{
+	dir = 9
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 	},
-/obj/structure/catwalk,
-/obj/structure/cable/pink{
-	icon_state = "0-2"
+/obj/effect/floor_decal/corner/mauve/border{
+	dir = 9
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/steel_grid,
 /area/exploration/explorer_prep)
 "akd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4743,9 +4749,11 @@
 /area/crew_quarters/bar)
 "anQ" = (
 /obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "1-2"
 	},
-/obj/machinery/power/terminal,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/exploration/explorer_prep)
@@ -7137,6 +7145,9 @@
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/explorer,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration/explorer_prep)
 "aum" = (
@@ -9915,8 +9926,6 @@
 /obj/machinery/light,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/beige/border,
-/obj/effect/floor_decal/borderfloor/corner2,
-/obj/effect/floor_decal/corner/beige/bordercorner2,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -11321,20 +11330,10 @@
 /turf/simulated/floor/wood,
 /area/exploration/pilot_Office)
 "aFY" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/mauve/border{
-	dir = 10
-	},
 /obj/landmark/spawnpoint/job/explorer,
-/obj/machinery/air_alarm{
-	dir = 4;
-	pixel_x = -24
-	},
-/obj/machinery/camera/network/exploration{
-	dir = 4
-	},
+/obj/effect/floor_decal/corner/mauve/border,
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/mauve/border,
 /turf/simulated/floor/tiled/steel_grid,
 /area/exploration/explorer_prep)
 "aGa" = (
@@ -12529,6 +12528,9 @@
 	},
 /obj/effect/floor_decal/corner/mauve/border{
 	dir = 6
+	},
+/obj/machinery/camera/network/exploration{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/exploration/explorer_prep)
@@ -16088,15 +16090,8 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/kitchen)
 "aTd" = (
-/obj/machinery/power/apc/west_mount,
 /obj/structure/cable/green{
-	icon_state = "0-4"
-	},
-/obj/effect/floor_decal/borderfloor{
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/mauve/border{
-	dir = 8
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/exploration/explorer_prep)
@@ -18558,9 +18553,16 @@
 /obj/machinery/air_alarm/east_mount,
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
+<<<<<<< HEAD
 "brl" = (
 /obj/machinery/door/airlock/glass_external{
 	req_one_access = list(19,43,67)
+=======
+"brC" = (
+/obj/structure/cable/cyan{
+	dir = 8;
+	icon_state = "0-4"
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 	},
 /obj/map_helper/airlock/sensor/ext_sensor,
 /obj/map_helper/airlock/door/ext_door,
@@ -19547,11 +19549,14 @@
 /turf/simulated/floor/tiled/steel,
 /area/exploration/courser_dock)
 "ebe" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/machinery/power/terminal,
+/obj/structure/cable,
 /obj/structure/catwalk,
+/obj/machinery/light/small{
+	brightness_color = "#da7c02";
+	color = "#da7c02";
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/exploration/explorer_prep)
 "ebz" = (
@@ -20374,12 +20379,17 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
 "fMp" = (
-/obj/spawner/window/low_wall/full/nogrille/firelocks,
-/obj/structure/cable/pink{
-	icon_state = "1-2"
+/obj/machinery/power/apc/west_mount,
+/obj/structure/cable/green{
+	icon_state = "0-4"
 	},
-/obj/effect/paint/violet,
-/turf/simulated/floor/plating,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/mauve/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel_grid,
 /area/exploration/explorer_prep)
 "fMP" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -21261,6 +21271,14 @@
 "hXj" = (
 /turf/simulated/wall/prepainted/exploration,
 /area/exploration/explorer_prep)
+"hYC" = (
+/obj/spawner/window/low_wall/full/nogrille/firelocks,
+/obj/structure/cable/pink{
+	icon_state = "1-2"
+	},
+/obj/effect/paint/violet,
+/turf/simulated/floor/plating,
+/area/exploration/explorer_prep)
 "hYK" = (
 /obj/machinery/fire_alarm/south_mount{
 	pixel_y = -24
@@ -21295,6 +21313,21 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
+=======
+"iav" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable/green{
+	dir = 1;
+	icon_state = "0-8"
+	},
+/obj/machinery/air_alarm/alarms_hidden{
+	pixel_y = 22;
+	req_one_access = list(160)
+	},
+/turf/simulated/floor,
+/area/shuttle/emt/general)
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 "iay" = (
 /obj/item/modular_computer/console/preset/civilian,
 /obj/effect/floor_decal/spline/fancy{
@@ -22306,9 +22339,7 @@
 /obj/machinery/camera/network/exploration{
 	dir = 1
 	},
-/obj/structure/bed/chair/backed_grey{
-	dir = 4
-	},
+/obj/structure/closet/radiation,
 /turf/simulated/floor/tiled/steel,
 /area/exploration/excursion_dock)
 "knj" = (
@@ -23109,6 +23140,7 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/blueshield)
+<<<<<<< HEAD
 "msZ" = (
 /obj/machinery/door/airlock/glass_external,
 /obj/map_helper/airlock/door/ext_door,
@@ -23119,6 +23151,23 @@
 	master_tag = "civvie_docker";
 	pixel_x = 24;
 	pixel_y = -8
+=======
+"msd" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/outdoors/snow/noblend/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"mty" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/cable/pink{
+	icon_state = "1-4"
+	},
+/obj/structure/stasis_cage,
+/turf/simulated/floor/tiled/steel,
+/area/exploration/courser_dock)
+"muH" = (
+/obj/structure/railing{
+	dir = 4
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 	},
 /obj/structure/fans/tiny,
 /obj/structure/cable/green{
@@ -24234,7 +24283,11 @@
 /area/shuttle/civvie/general)
 "pkZ" = (
 /obj/machinery/air_alarm/west_mount,
-/obj/structure/closet/radiation,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/item/storage/toolbox/electrical,
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/steel,
 /area/exploration/explorer_prep)
 "ply" = (
@@ -24754,6 +24807,14 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/steel,
 /area/hallway/secondary/docking_hallway)
+"qCM" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/cable/pink{
+	icon_state = "2-8"
+	},
+/obj/structure/stasis_cage,
+/turf/simulated/floor/tiled/steel,
+/area/exploration/courser_dock)
 "qDi" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -25157,9 +25218,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bar/lower)
 "rKC" = (
-/obj/structure/bed/chair/backed_grey{
-	dir = 8
-	},
 /obj/effect/floor_decal/borderfloor{
 	dir = 6
 	},
@@ -25173,6 +25231,9 @@
 	},
 /obj/effect/floor_decal/corner/beige/bordercorner2{
 	dir = 6
+	},
+/obj/structure/bed/chair/backed_grey{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/steel,
 /area/exploration/excursion_dock)
@@ -25779,9 +25840,20 @@
 /turf/simulated/open,
 /area/maintenance/commandmaint)
 "tHH" = (
-/obj/structure/table/steel,
-/obj/item/storage/toolbox/electrical,
-/turf/simulated/floor/tiled/steel,
+/obj/machinery/air_alarm{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/effect/floor_decal/borderfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/borderfloor{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/mauve/border{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/steel_grid,
 /area/exploration/explorer_prep)
 "tHQ" = (
 /obj/effect/floor_decal/borderfloor/corner{
@@ -25836,8 +25908,20 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/rift/surfaceeva/airlock/arrivals/secondary)
 "tIR" = (
+<<<<<<< HEAD
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/steel,
+=======
+/obj/machinery/power/smes/buildable/power_shuttle{
+	RCon_tag = "Courser Charging Port";
+	name = "Courser Charging Port"
+	},
+/obj/structure/cable/pink{
+	icon_state = "0-2"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 /area/exploration/explorer_prep)
 "tKy" = (
 /obj/machinery/door/blast/shutters{
@@ -26100,7 +26184,9 @@
 /turf/simulated/wall/r_wall/prepainted/command,
 /area/bridge)
 "uAA" = (
-/obj/structure/closet/firecloset/full,
+/obj/machinery/fire_alarm/north_mount,
+/obj/structure/table/steel,
+/obj/item/multitool,
 /turf/simulated/floor/tiled/steel,
 /area/exploration/explorer_prep)
 "uCG" = (
@@ -26318,12 +26404,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/surface_three)
 "vdt" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
+/obj/machinery/power/terminal,
+/obj/structure/cable,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/exploration/explorer_prep)
@@ -26518,6 +26600,16 @@
 /obj/machinery/holopad,
 /turf/simulated/floor/tiled/steel_grid,
 /area/bridge/bunker)
+"vvo" = (
+/obj/effect/floor_decal/steeldecal/steel_decals9{
+	dir = 1
+	},
+/obj/structure/table/steel,
+/obj/item/gun/energy/hardlight_bow,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/machinery/door/window/northleft,
+/turf/simulated/floor/tiled/monotile,
+/area/exploration/explorer_prep)
 "vwM" = (
 /obj/structure/table/rack,
 /obj/item/storage/toolbox/mechanical,
@@ -26775,13 +26867,16 @@
 /turf/simulated/floor/wood,
 /area/exploration/pilot_Office)
 "vUc" = (
+/obj/machinery/suit_storage_unit/exploration,
+/obj/effect/floor_decal/corner/mauve/border{
+	dir = 1
+	},
 /obj/effect/floor_decal/borderfloor{
-	dir = 9
+	dir = 1
 	},
 /obj/effect/floor_decal/corner/mauve/border{
-	dir = 9
+	dir = 1
 	},
-/obj/machinery/suit_storage_unit/exploration,
 /turf/simulated/floor/tiled/steel_grid,
 /area/exploration/explorer_prep)
 "vUJ" = (
@@ -27227,12 +27322,6 @@
 	},
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/beige/border,
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/beige/bordercorner2{
-	dir = 9
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -27256,6 +27345,55 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/telescience_lab)
+<<<<<<< HEAD
+=======
+"xbv" = (
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"xeg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 6
+	},
+/turf/simulated/shuttle/wall/voidcraft/blue,
+/area/shuttle/emt/cockpit)
+"xfm" = (
+/obj/structure/flora/grass/green{
+	pixel_x = -13
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside3)
+"xfK" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/effect/debris/cleanable/dirt,
+/obj/effect/debris/cleanable/dirt,
+/obj/machinery/computer/ship/navigation/telescreen{
+	pixel_x = 32
+	},
+/turf/simulated/floor/carpet/patterened/green,
+/area/shuttle/oldcentury)
+"xgd" = (
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/obj/machinery/power/apc/east_mount{
+	old_wall = 1
+	},
+/obj/structure/cable/cyan{
+	dir = 4;
+	icon_state = "0-4"
+	},
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/emt/cockpit)
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 "xgk" = (
 /obj/structure/bed/chair/comfy/brown{
 	dir = 1
@@ -45710,11 +45848,11 @@ aOp
 arC
 ajT
 aLw
-aLw
+anQ
 vdt
 tIR
-hXj
-aHv
+hYC
+mty
 aHv
 asg
 oqb
@@ -45903,12 +46041,12 @@ aiZ
 aeh
 aiY
 hXj
-agr
-tHH
-anQ
-akc
-fMp
-uxD
+hXj
+hXj
+hXj
+hXj
+hXj
+qCM
 uxD
 apG
 fUe
@@ -46097,10 +46235,10 @@ awO
 agW
 xbb
 hXj
-hXj
-hXj
-hXj
-hXj
+akc
+fMp
+tHH
+vvo
 hXj
 aZW
 aZW
@@ -46289,8 +46427,8 @@ aFV
 sON
 awO
 agW
-arf
-hXj
+agr
+dIa
 vUc
 aTd
 aFY

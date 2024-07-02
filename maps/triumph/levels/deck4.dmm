@@ -800,6 +800,9 @@
 	},
 /obj/structure/table/bench/steel,
 /obj/landmark/spawnpoint/job/field_medic,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/exploration/explorer_prep)
 "aCt" = (
@@ -2196,7 +2199,9 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/exploration/meeting)
 "bzR" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/table/standard,
+/obj/machinery/door/window/northleft,
+/obj/item/gun/energy/hardlight_bow,
 /turf/simulated/floor/tiled,
 /area/exploration/explorer_prep)
 "bAb" = (
@@ -2931,6 +2936,10 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Security Substation";
+<<<<<<< HEAD
+=======
+	req_one_access = null;
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -16997,6 +17006,16 @@
 /obj/item/book/manual/anomaly_testing,
 /turf/simulated/floor/wood,
 /area/maintenance/security/starboard)
+"lIQ" = (
+/obj/structure/table/rack/shelf,
+/obj/item/tank/oxygen,
+/obj/item/suit_cooling_unit,
+/obj/item/storage/backpack/parachute,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/exploration/explorer_prep)
 "lJc" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/techfloor{
@@ -26392,6 +26411,10 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Security Substation";
+<<<<<<< HEAD
+=======
+	req_one_access = null;
+>>>>>>> 2c9c05ca1 (explo equipment stuff no 1: emp bow / hardlight bow (#6523))
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -48882,7 +48905,7 @@ nkp
 mQw
 rdz
 ili
-liL
+lIQ
 meE
 pul
 pul
