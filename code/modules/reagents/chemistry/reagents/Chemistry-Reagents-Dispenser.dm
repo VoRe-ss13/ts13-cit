@@ -133,8 +133,13 @@
 		M.bodytemperature = min(targ_temp, M.bodytemperature - (adj_temp * TEMPERATURE_DAMAGE_COEFFICIENT))
 
 	if(halluci)
+<<<<<<< HEAD
 		M.hallucination = max(M.hallucination, halluci)
 	return effective_dose
+=======
+		M.setHallucination(max(M.hallucination, halluci))
+	return
+>>>>>>> 1d30175fb (Fixes relating to hallucinations, and prommie blobform (#6564))
 
 /datum/reagent/ethanol/touch_obj(obj/O)
 	if(istype(O, /obj/item/paper))
