@@ -68,7 +68,11 @@
 	damage_type = BRUTE
 	damage_flag = ARMOR_MELEE
 	armor_penetration = 30
+<<<<<<< HEAD
 	speed = 2
+=======
+	speed = 7.5 * WORLD_ICON_SIZE
+>>>>>>> 3a32603c1 (misc projectiles raycasting tweaks, makes projectiles faster (#6578))
 	icon_scale_x = 2 // It hits like a truck.
 	icon_scale_y = 2
 	sharp = TRUE

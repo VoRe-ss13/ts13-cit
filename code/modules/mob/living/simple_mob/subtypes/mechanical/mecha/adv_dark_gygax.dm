@@ -124,6 +124,11 @@
 	damage = 20
 	damage_type = BURN
 	damage_flag = ARMOR_LASER
+<<<<<<< HEAD
+=======
+	speed = 5 * WORLD_ICON_SIZE
+	homing_turn_speed = 85
+>>>>>>> 3a32603c1 (misc projectiles raycasting tweaks, makes projectiles faster (#6578))
 
 /obj/projectile/energy/homing_bolt/launch_projectile(atom/target, target_zone, mob/user, params, angle_override, forced_spread = 0)
 	..()

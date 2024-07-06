@@ -9,7 +9,11 @@
 	var/beam_state = "b_beam"
 
 	damage = 5
+<<<<<<< HEAD
 	speed = 2
+=======
+	speed = 7.5 * WORLD_ICON_SIZE
+>>>>>>> 3a32603c1 (misc projectiles raycasting tweaks, makes projectiles faster (#6578))
 	damage_type = BURN
 	damage_flag = ARMOR_ENERGY
 	armor_penetration = 15
