@@ -50,7 +50,7 @@
 /obj/machinery/holopad,
 /obj/landmark/spawnpoint/job/cyborg,
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "aal" = (
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/corner/lightorange{
@@ -157,7 +157,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "aaw" = (
 /obj/item/storage/secure/safe{
 	pixel_x = 36;
@@ -774,7 +774,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "acF" = (
 /obj/structure/metal_edge,
 /obj/structure/catwalk,
@@ -1143,7 +1143,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "adL" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -2054,7 +2054,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "agH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -2531,6 +2531,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/techfloor,
+<<<<<<< HEAD
 /area/ai_server_room)
 "ahZ" = (
 /obj/machinery/door/airlock/hatch{
@@ -2559,6 +2560,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/hop)
+=======
+/area/ai_cyborg_station)
+>>>>>>> 6316b3c97 (Swaps Riftmap's AI Uplink areas to the correct configuration and replaces the engineering sign in atmospherics to atmospherics (#6554))
 "aib" = (
 /obj/machinery/recharge_station,
 /obj/effect/floor_decal/borderfloorblack,
@@ -4096,7 +4100,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "amb" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
@@ -4414,7 +4418,7 @@
 /obj/item/pen,
 /obj/item/paper/monitorkey,
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "amW" = (
 /obj/machinery/cryopod/robot/door/gateway,
 /obj/effect/floor_decal/corner/lightgrey{
@@ -6854,7 +6858,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "atA" = (
 /obj/structure/closet,
 /obj/item/clothing/suit/tajaran/furs,
@@ -7008,7 +7012,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "atZ" = (
 /obj/machinery/door/airlock/glass_external/public{
 	name = "Public External Airlock"
@@ -8487,7 +8491,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "axx" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
@@ -9685,7 +9689,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "aBc" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 5
@@ -10668,7 +10672,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "aEl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
@@ -11253,7 +11257,7 @@
 	},
 /obj/machinery/blackbox_recorder,
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "aFN" = (
 /obj/machinery/space_heater,
 /turf/simulated/floor/tiled/techmaint,
@@ -11690,7 +11694,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "aHd" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/lythios43c,
@@ -13848,7 +13852,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "aMZ" = (
 /obj/machinery/door/airlock/research{
 	name = "Charging Station"
@@ -17218,7 +17222,7 @@
 "aWx" = (
 /obj/machinery/holopad,
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_cyborg_station)
+/area/ai_server_room)
 "aWz" = (
 /obj/structure/railing{
 	dir = 4
@@ -22478,6 +22482,30 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration)
+<<<<<<< HEAD
+=======
+"kQT" = (
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 8;
+	icon_state = "shutter0";
+	id = "bridge";
+	layer = 3.1;
+	name = "Bridge Lockdown Shutters";
+	opacity = 0
+	},
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
+/obj/effect/paint/commandblue,
+/turf/simulated/floor/plating,
+/area/bridge)
+"kQV" = (
+/obj/machinery/atmospherics/pipe/tank/air{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/turf/simulated/floor,
+/area/shuttle/emt/general)
+>>>>>>> 6316b3c97 (Swaps Riftmap's AI Uplink areas to the correct configuration and replaces the engineering sign in atmospherics to atmospherics (#6554))
 "kRX" = (
 /turf/simulated/wall/r_wall/prepainted/security,
 /area/security/checkpoint2)
@@ -23531,7 +23559,7 @@
 	name = "JoinLateRobotic"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/ai_server_room)
+/area/ai_cyborg_station)
 "nms" = (
 /obj/structure/table/rack/steel,
 /obj/random/maintenance/medical,
@@ -46658,9 +46686,15 @@ aDk
 tAo
 tAo
 hMC
+<<<<<<< HEAD
 tSU
 jrU
 fFo
+=======
+mCE
+kQT
+kfS
+>>>>>>> 6316b3c97 (Swaps Riftmap's AI Uplink areas to the correct configuration and replaces the engineering sign in atmospherics to atmospherics (#6554))
 hMC
 tAo
 tAo
@@ -50727,18 +50761,18 @@ dDI
 hBp
 dDI
 oJN
-gGW
-gGW
-gGW
-gGW
+iJw
+iJw
+iJw
+iJw
 jZP
 jZP
 aSt
 mRT
 jZP
-iJw
-iJw
-iJw
+gGW
+gGW
+gGW
 owP
 owP
 owP
@@ -50921,7 +50955,7 @@ taq
 bRh
 eEa
 lzf
-gGW
+iJw
 atz
 aFM
 acE
@@ -51115,7 +51149,7 @@ eIs
 xgH
 lcP
 fGK
-gGW
+iJw
 axv
 aWx
 ama
@@ -51309,7 +51343,7 @@ jbR
 qjW
 fOF
 tnY
-gGW
+iJw
 amV
 aBb
 aEk
@@ -51503,18 +51537,18 @@ vpd
 eIk
 rJB
 kTT
-gGW
-gGW
-gGW
-gGW
+iJw
+iJw
+iJw
+iJw
 jZP
 jZP
 aiK
 jZP
 jZP
-iJw
-iJw
-iJw
+gGW
+gGW
+gGW
 owP
 aEn
 aJd

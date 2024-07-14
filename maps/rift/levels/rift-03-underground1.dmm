@@ -3422,6 +3422,14 @@
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/airlock/glass/engineering,
 /obj/structure/disposalpipe/segment,
+<<<<<<< HEAD
+=======
+/obj/machinery/door/airlock/glass/engineering{
+	req_one_access = null;
+	name = "Atmospherics Airlock"
+	},
+/obj/map_helper/access_helper/airlock/station/engineering/department,
+>>>>>>> 6316b3c97 (Swaps Riftmap's AI Uplink areas to the correct configuration and replaces the engineering sign in atmospherics to atmospherics (#6554))
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/atmos/hallway)
 "jU" = (
@@ -4103,7 +4111,7 @@
 /turf/simulated/floor/tiled,
 /area/rnd/secure_storage/upper)
 "mr" = (
-/obj/structure/sign/department/eng{
+/obj/structure/sign/department/atmos{
 	pixel_y = -32
 	},
 /obj/machinery/light,
