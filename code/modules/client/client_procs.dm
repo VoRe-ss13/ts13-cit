@@ -209,7 +209,19 @@
 	// Instantiate tgui panel
 	tgui_panel = new(src, "browseroutput")
 	// Instantiate cutscene system
+<<<<<<< HEAD
 	addtimer(CALLBACK(src, PROC_REF(init_cutscene_system)), 0)
+=======
+	spawn(1)
+		init_cutscene_system()
+	// instantiate tooltips
+	tooltips = new(src)
+	// start action drawer
+	action_drawer = new(src)
+	// make action holder
+	action_holder = new /datum/action_holder/client_actor(src)
+	action_drawer.register_holder(action_holder)
+>>>>>>> 48e5ea649 (Action button refactor (#6557))
 
 	//* Setup admin tooling
 	GLOB.ahelp_tickets.ClientLogin(src)
@@ -412,6 +424,17 @@
 	cleanup_cutscene_system()
 	// cleanup tgui panel
 	QDEL_NULL(tgui_panel)
+<<<<<<< HEAD
+=======
+	// cleanup tooltips
+	QDEL_NULL(tooltips)
+	// cleanup actions
+	QDEL_NULL(action_holder)
+	QDEL_NULL(action_drawer)
+
+	//* logout
+	mob?.pre_logout(src)
+>>>>>>> 48e5ea649 (Action button refactor (#6557))
 
 	. = ..() //Even though we're going to be hard deleted there are still some things that want to know the destroy is happening
 	return QDEL_HINT_HARDDEL_NOW

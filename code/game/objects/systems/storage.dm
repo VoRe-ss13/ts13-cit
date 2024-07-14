@@ -282,19 +282,19 @@
 	if(!isnull(action_mode_switch))
 		return
 	action_mode_switch = new(src)
-	action_mode_switch.button_overlay = parent
-	action_mode_switch.update_button()
+	action_mode_switch.button_additional_only = TRUE
+	action_mode_switch.button_additional_overlay = parent
 
 /datum/object_system/storage/proc/grant_buttons(mob/wearer)
 	ensure_buttons()
 	if(allow_mass_gather && allow_mass_gather_mode_switch)
-		action_mode_switch.grant(wearer)
+		action_mode_switch.grant(wearer.inventory.actions)
 
 /datum/object_system/storage/proc/revoke_buttons(mob/wearer)
-	action_mode_switch?.remove(wearer)
+	action_mode_switch?.revoke(wearer.inventory.actions)
 
-/datum/object_system/storage/ui_action_click(datum/action/action, mob/user)
-	switch_gathering_modes(user)
+/datum/object_system/storage/ui_action_click(datum/action/action, datum/event_args/actor/actor)
+	switch_gathering_modes(actor.performer)
 
 //* Caches *//
 
@@ -732,8 +732,13 @@
 
 /datum/object_system/storage/proc/update_icon()
 	parent.update_icon()
+<<<<<<< HEAD
 	action_mode_switch?.button_overlay = parent
 	dangerously_redirect_contents_calls?.update_icon()
+=======
+	action_mode_switch?.button_additional_overlay = parent
+	action_mode_switch?.update_buttons(TRUE)
+>>>>>>> 48e5ea649 (Action button refactor (#6557))
 
 //* Transfer *//
 

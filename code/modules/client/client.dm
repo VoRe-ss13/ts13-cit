@@ -52,7 +52,11 @@
 	/// panic bunker is still resolving
 	var/panic_bunker_pending = FALSE
 
-	//? Context Menus
+	//* Actions *//
+	/// our action holder
+	var/datum/action_holder/action_holder
+
+	//* Context Menus *//
 	/// open context menu
 	var/datum/radial_menu/context_menu/context_menu
 
@@ -129,6 +133,13 @@
 	/// since byond is deranged and will send winsets and browse calls out of order sometimes.
 	var/cutscene_lockout = FALSE
 
+	//* UI *//
+	/// Our action drawer
+	var/datum/action_drawer/action_drawer
+	/// our tooltips system
+	var/datum/tooltip/tooltips
+
+
 		////////////////
 		//ADMIN THINGS//
 		////////////////
@@ -156,7 +167,6 @@
 	var/area = null
 	///when the client last died as a mouse
 	var/time_died_as_mouse = null
-	var/datum/tooltip/tooltips 	= null
 
 	var/adminhelped = 0
 
@@ -246,3 +256,63 @@
  */
 /client/proc/is_staff()
 	return !isnull(holder)
+<<<<<<< HEAD
+=======
+
+//* Atom HUDs *//
+
+/client/proc/add_atom_hud(datum/atom_hud/hud, source)
+	ASSERT(istext(source))
+	if(isnull(atom_hud_providers))
+		atom_hud_providers = list()
+	var/list/datum/atom_hud_provider/providers = hud.resolve_providers()
+	for(var/datum/atom_hud_provider/provider as anything in providers)
+		var/already_there = atom_hud_providers[provider]
+		if(already_there)
+			atom_hud_providers[provider] |= source
+		else
+			atom_hud_providers[provider] = list(source)
+			provider.add_client(src)
+
+/client/proc/remove_atom_hud(datum/atom_hud/hud, source)
+	ASSERT(istext(source))
+	if(!length(atom_hud_providers))
+		return
+	if(!hud)
+		// remove all of source
+		for(var/datum/atom_hud_provider/provider as anything in atom_hud_providers)
+			if(!(source in atom_hud_providers[provider]))
+				continue
+			atom_hud_providers[provider] -= source
+			if(!length(atom_hud_providers[provider]))
+				atom_hud_providers -= provider
+				provider.remove_client(src)
+		return
+	hud = fetch_atom_hud(hud)
+	var/list/datum/atom_hud_provider/providers = hud.resolve_providers()
+	for(var/datum/atom_hud_provider/provider as anything in providers)
+		if(!length(atom_hud_providers[provider]))
+			continue
+		atom_hud_providers[provider] -= source
+		if(!length(atom_hud_providers[provider]))
+			atom_hud_providers -= provider
+			provider.remove_client(src)
+
+// todo: add_atom_hud_provider, remove_atom_hud_provider
+
+/client/proc/clear_atom_hud_providers()
+	for(var/datum/atom_hud_provider/provider as anything in atom_hud_providers)
+		provider.remove_client(src)
+	atom_hud_providers = null
+
+//* Transfer *//
+
+/**
+ * transfers us to a mob
+ *
+ * **never directly set ckey on a client or mob!**
+ */
+/client/proc/transfer_to(mob/moving_to)
+	var/mob/moving_from = mob
+	return moving_from.transfer_client_to(moving_to)
+>>>>>>> 48e5ea649 (Action button refactor (#6557))

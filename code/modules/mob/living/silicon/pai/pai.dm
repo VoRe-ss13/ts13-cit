@@ -455,12 +455,47 @@
 /mob/living/silicon/pai/proc/generate_actions()
 	for(var/path in actions_to_grant)
 		var/datum/action/pai/A = new path()
-		A.grant(src)
+		A.grant(actions_innate)
 		if(A.update_on_grant)
-			A.update_button()
+			A.update_buttons()
 
 /mob/living/silicon/pai/proc/update_chassis_actions()
 	for(var/datum/action/pai/A in actions)
 		if(A.update_on_chassis_change)
+<<<<<<< HEAD
 			A.update_button()
 	update_action_buttons()
+=======
+			A.update_buttons()
+
+/mob/living/silicon/pai/proc/handle_hologram_destroy(var/obj/effect/pai_hologram/hologram)
+	active_holograms -= hologram
+
+/mob/living/silicon/pai/proc/place_hologram(var/scanned_object_name)
+	var/image/I = scanned_objects[scanned_object_name]
+	var/obj/effect/pai_hologram/hologram = new(get_turf(src))
+	hologram.icon = I
+	hologram.name = scanned_object_name
+	hologram.desc = "It's a holographic [scanned_object_name]."
+	hologram.owner = src
+	active_holograms += hologram
+
+/mob/living/silicon/pai/proc/delete_all_holograms()
+	for(var/obj/effect/pai_hologram/hologram in active_holograms)
+		QDEL_NULL(hologram)
+
+/mob/living/silicon/pai/proc/prompt_hologram_placement()
+	if(length(active_holograms) >= MAX_HOLOGRAMS)
+		to_chat(src, SPAN_NOTICE("You cannot have more than [MAX_HOLOGRAMS] holograms active!"))
+		return
+
+	var/scanned_item_to_show = tgui_input_list(usr, "Select Scanned Object", "Scanned Objects", scanned_objects)
+	if(scanned_item_to_show)
+		place_hologram(scanned_item_to_show)
+
+/mob/living/silicon/pai/UnarmedAttack(var/atom/A, var/proximity_flag)
+	if(istype(A, /obj/effect/pai_hologram))
+		A.attack_hand(src)
+
+#undef MAX_HOLOGRAMS
+>>>>>>> 48e5ea649 (Action button refactor (#6557))

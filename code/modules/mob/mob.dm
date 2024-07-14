@@ -15,11 +15,10 @@
  */
 /mob/Initialize(mapload)
 	// mob lists
-	GLOB.mob_list += src
-	if(stat == DEAD)
-		dead_mob_list += src
-	else
-		living_mob_list += src
+	mob_list_register(stat)
+	// actions
+	actions_controlled = new /datum/action_holder/mob_actor(src)
+	actions_innate = new /datum/action_holder/mob_actor(src)
 	// physiology
 	init_physiology()
 	// atom HUDs
@@ -83,6 +82,9 @@
 			mind = null
 	// abilities
 	dispose_abilities()
+	// actions
+	QDEL_NULL(actions_controlled)
+	QDEL_NULL(actions_innate)
 	// this kicks out client
 	ghostize()
 	// get rid of our shit and nullspace everything first..
@@ -91,10 +93,8 @@
 	if(hud_used)
 		QDEL_NULL(hud_used)
 	dispose_rendering()
-	// perspective
-	using_perspective?.remove_mobs(src, TRUE)
-	if(self_perspective)
-		QDEL_NULL(self_perspective)
+	// perspective; it might be gone now because self perspective is destroyed in ..()
+	using_perspective?.remove_mob(src, TRUE)
 	// physiology
 	QDEL_NULL(physiology)
 	physiology_modifiers = null
@@ -103,6 +103,8 @@
 	// actionspeed
 	actionspeed_modification = null
 	return QDEL_HINT_HARDDEL
+
+//* Mob List Registration *//
 
 /mob/proc/mob_list_register(for_stat)
 	GLOB.mob_list += src
@@ -598,7 +600,7 @@
 		qdel(M)
 		return
 
-	M.key = key
+	transfer_client_to(M)
 	if(M.mind)
 		M.mind.reset()
 	return
