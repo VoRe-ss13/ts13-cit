@@ -10,8 +10,19 @@
 /datum/turf_reservation
 	/// are we allocated?
 	var/tmp/allocated = FALSE
+<<<<<<< HEAD
 	/// reserved turfs - set when allocated
 	var/list/turf/reserved_turfs
+=======
+	/// border turfs - just the first layer / the immediate border
+	///
+	///  todo: this shouldn't be a var, make it a proc
+	///
+	/// * does not include the rest of the border
+	/// * you shouldn't need to initialize more than one layer of turfs.
+	var/list/turf/border_turfs
+
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
 	/// width
 	var/width = 0
 	/// height
@@ -19,7 +30,31 @@
 	/// list(x, y, z) - set when allocated
 	var/bottom_left_coords
 	/// list(x, y, z) - set when allocated
+<<<<<<< HEAD
 	var/top_right_coords
+=======
+	var/list/top_right_coords
+	/// list(x, y, z) - set when allocated
+	/// this includes border
+	var/list/bottom_left_border_coords
+	/// list(x, y, z) - set when allocated
+	var/list/top_right_border_coords
+
+	/// callback to use when something crosses border
+	///
+	/// * called with (turf/border)
+	/// * only used if border is custom-initalized, otherwise we use selflooping transition borders
+	/// * specifying this makes us put a reservation border component on the turfs as needed.
+	var/datum/callback/border_handler
+	/// if using another initializer, do we still do the standard mirages?
+	var/border_mirage_anyways = FALSE
+	/// border initializer to call with every turf on the border to init them
+	///
+	/// * called with (turf/border, datum/turf_reservation/reservation)
+	/// * if border is specified but initializer isn't, we just make them transition borders.
+	var/datum/callback/border_initializer
+
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
 	/// type of our turf - null for default
 	var/turf_type
 	/// type of our border - null to default to turf_type
@@ -27,6 +62,21 @@
 	/// type of our area - null for default
 	var/area_type
 
+<<<<<<< HEAD
+=======
+	/// our border area instance if needed
+	var/area/reservation_border/border_area
+	/// our area instance
+	var/area/reservation_area
+
+	//* spatial lookup *//
+	var/spatial_bl_x
+	var/spatial_bl_y
+	var/spatial_tr_x
+	var/spatial_tr_y
+	var/spatial_z
+
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
 /datum/turf_reservation/New()
 	if(isnull(turf_type))
 		turf_type = RESERVED_TURF_TYPE
@@ -38,12 +88,50 @@
 	return ..()
 
 /datum/turf_reservation/proc/release()
+<<<<<<< HEAD
 	SSmapping.reserve_turfs(reserved_turfs)
 	reserved_turfs = null
+=======
+	if(border)
+		SSmapping.reserve_turfs(block(locate(
+			bottom_left_border_coords[1], bottom_left_border_coords[2], bottom_left_border_coords[3]
+			), locate(
+			top_right_border_coords[1], top_right_border_coords[2], top_right_border_coords[3])
+		))
+	else
+		SSmapping.reserve_turfs(block(locate(
+			bottom_left_coords[1], bottom_left_coords[2], bottom_left_coords[3]
+			), locate(
+			top_right_coords[1], top_right_coords[2], top_right_coords[3])
+		))
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
 	allocated = FALSE
 	SSmapping.reservations -= src
 
+<<<<<<< HEAD
 /datum/turf_reservation/proc/reserve(width, height, z_override)
+=======
+	// unegister from lookup
+	var/list/spatial_lookup = SSmapping.reservation_spatial_lookups[spatial_z]
+	var/spatial_width = ceil(world.maxx / TURF_CHUNK_RESOLUTION)
+	for(var/spatial_x in spatial_bl_x to spatial_tr_x)
+		for(var/spatial_y in spatial_bl_y to spatial_tr_y)
+			var/index = spatial_x + (spatial_y - 1) * spatial_width
+			if(spatial_lookup[index] != src)
+				stack_trace("index [index] wasn't self, what happened?")
+				continue
+			spatial_lookup[index] = null
+
+	spatial_bl_x = spatial_tr_x = spatial_bl_y = spatial_tr_y = spatial_z = null
+
+	if(!reservation_area.unique)
+		qdel(reservation_area)
+	reservation_area = null
+
+	return TRUE
+
+/datum/turf_reservation/proc/reserve(width, height, border, z_override)
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
 	if(width > world.maxx || height > world.maxy || width < 1 || height < 1)
 		CRASH("invalid request")
 	if(!length(SSmapping.reserve_levels))
@@ -85,8 +173,15 @@
 						break
 				if(!passing)
 					continue
+<<<<<<< HEAD
 				BL = locate(1 + RESERVED_TURF_RESOLUTION * (outer_x - 1), 1 + RESERVED_TURF_RESOLUTION * (outer_y - 1), level_index)
 				TR = locate(BL.x + width - 1, BL.y + height - 1, BL.z)
+=======
+
+				// calculate non-bordered
+				BL = locate(1 + TURF_CHUNK_RESOLUTION * (outer_x - 1) + border, 1 + TURF_CHUNK_RESOLUTION * (outer_y - 1) + border, level_index)
+				TR = locate(BL.x + width - 1, BL.y + height - 1, level_index)
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
 				final = block(BL, TR)
 				found_a_spot = TRUE
 				break
@@ -106,14 +201,153 @@
 			T.ChangeTurf(border_type, border_type)
 		else if(T.type != turf_type)
 			T.ChangeTurf(turf_type, turf_type)
+<<<<<<< HEAD
 	// todo: area.assimilate_turfs?
 	area_instance.contents.Add(final)
 	src.reserved_turfs = final.Copy()
 	src.bottom_left_coords = list(BL.x, BL.y, BL.z)
 	src.top_right_coords = list(TR.x, TR.y, TR.z)
+=======
+
+	src.bottom_left_coords = list(BL.x, BL.y, BL.z)
+	src.top_right_coords = list(TR.x, TR.y, TR.z)
+
+	if(border)
+		var/mirage_range = max(min(width - 3, height - 3, 9), 0)
+		var/should_mirage = (border_mirage_anyways || !border_initializer) && mirage_range
+		var/needs_component = border_handler || (should_mirage && !border_initializer)
+
+		src.border_area = new
+		src.border_area.reservation = src
+		// todo: take_turfs
+		src.border_area.contents.Add(final_border)
+		for(var/turf/T as anything in final_border)
+			T.turf_flags &= ~UNUSED_RESERVATION_TURF
+		// get just the first layer, but also init them at the same time
+		var/list/turf/final_immediate_border
+		// left
+		var/list/turf/immediate_left = block(
+			locate(bottom_left_coords[1] - 1, bottom_left_coords[2], bottom_left_coords[3]),
+			locate(bottom_left_coords[1] - 1, top_right_coords[2], bottom_left_coords[3]),
+		)
+		for(var/turf/T as anything in immediate_left)
+			border_initializer?.Invoke(T, src)
+			if(needs_component)
+				T.AddComponent(/datum/component/reservation_border, mirage_range, WEST, should_mirage, locate(top_right_coords[1], T.y, T.z), border_handler)
+		// right
+		var/list/turf/immediate_right = block(
+			locate(top_right_coords[1] + 1, bottom_left_coords[2], bottom_left_coords[3]),
+			locate(top_right_coords[1] + 1, top_right_coords[2], bottom_left_coords[3]),
+		)
+		for(var/turf/T as anything in immediate_right)
+			border_initializer?.Invoke(T, src)
+			if(needs_component)
+				T.AddComponent(/datum/component/reservation_border, mirage_range, EAST, should_mirage, locate(bottom_left_coords[1], T.y, T.z), border_handler)
+		// up
+		var/list/turf/immediate_up = block(
+			locate(bottom_left_coords[1], top_right_coords[2] + 1, bottom_left_coords[3]),
+			locate(top_right_coords[1], top_right_coords[2] + 1, bottom_left_coords[3]),
+		)
+		for(var/turf/T as anything in immediate_up)
+			border_initializer?.Invoke(T, src)
+			if(needs_component)
+				T.AddComponent(/datum/component/reservation_border, mirage_range, NORTH, should_mirage, locate(T.x, bottom_left_coords[2], T.z), border_handler)
+		// down
+		var/list/turf/immediate_down = block(
+			locate(bottom_left_coords[1], bottom_left_coords[2] - 1, bottom_left_coords[3]),
+			locate(top_right_coords[1], bottom_left_coords[2] - 1, bottom_left_coords[3]),
+		)
+		for(var/turf/T as anything in immediate_down)
+			border_initializer?.Invoke(T, src)
+			if(needs_component)
+				T.AddComponent(/datum/component/reservation_border, mirage_range, SOUTH, should_mirage, locate(T.x, top_right_coords[2], T.z), border_handler)
+
+		var/list/immediate_corners = list()
+		var/turf/corner
+		// top left
+		corner = locate(bottom_left_coords[1] - 1, top_right_coords[2] + 1, bottom_left_coords[3])
+		border_initializer?.Invoke(corner, src)
+		if(needs_component)
+			corner.AddComponent(/datum/component/reservation_border, mirage_range, NORTHWEST, should_mirage, locate(top_right_coords[1], bottom_left_coords[2], bottom_left_coords[3]), border_handler)
+		immediate_corners += corner
+		// top right
+		corner = locate(top_right_coords[1] + 1, top_right_coords[2] + 1, bottom_left_coords[3])
+		border_initializer?.Invoke(corner, src)
+		if(needs_component)
+			corner.AddComponent(/datum/component/reservation_border, mirage_range, NORTHEAST, should_mirage, locate(bottom_left_coords[1], bottom_left_coords[2], bottom_left_coords[3]), border_handler)
+		immediate_corners += corner
+		// bottom left
+		corner = locate(bottom_left_coords[1] - 1, bottom_left_coords[2] - 1, bottom_left_coords[3])
+		border_initializer?.Invoke(corner, src)
+		if(needs_component)
+			corner.AddComponent(/datum/component/reservation_border, mirage_range, SOUTHWEST, should_mirage, locate(top_right_coords[1], top_right_coords[2], bottom_left_coords[3]), border_handler)
+		immediate_corners += corner
+		// bottom right
+		corner = locate(top_right_coords[1] + 1, bottom_left_coords[2] - 1, bottom_left_coords[3])
+		border_initializer?.Invoke(corner, src)
+		if(needs_component)
+			corner.AddComponent(/datum/component/reservation_border, mirage_range, SOUTHEAST, should_mirage, locate(bottom_left_coords[1], top_right_coords[2], bottom_left_coords[3]), border_handler)
+		immediate_corners += corner
+
+		final_immediate_border = \
+			immediate_left + \
+			immediate_right + \
+			immediate_up + \
+			immediate_down + \
+			immediate_corners
+		src.border_turfs = final_immediate_border
+
+	// todo: area.assimilate_turfs?
+	area_instance.contents.Add(final)
+	src.reservation_area = area_instance
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
 	src.width = width
 	src.height = height
 	allocated = TRUE
 	SSmapping.reservation_blocking_op = FALSE
 	SSmapping.reservations += src
 	return TRUE
+<<<<<<< HEAD
+=======
+
+/**
+ * gets an unordered list of all inner (non-border) turfs
+ */
+/datum/turf_reservation/proc/unordered_inner_turfs()
+	return block(
+		locate(bottom_left_coords[1], bottom_left_coords[2], bottom_left_coords[3]),
+		locate(top_right_coords[1], top_right_coords[2], top_right_coords[3]),
+	)
+
+/**
+ * gets an unordered list of all outer (border) turfs
+ */
+/datum/turf_reservation/proc/unordered_border_turfs()
+	if(!border)
+		return list()
+	return border_turfs.Copy()
+
+/**
+ * gets an unordered list of all immediate (1-outside) turfs
+ */
+/datum/turf_reservation/proc/unordered_immediate_border_turfs()
+	if(!border)
+		return list()
+	// todo: implement this
+	CRASH("unimplemented")
+
+//* Reservation Border Area *//
+
+/area/reservation_border
+	name = "Reservation Border Area"
+	unique = FALSE
+	always_unpowered = TRUE
+	has_gravity = FALSE
+
+	/// the reservation that owns us
+	var/datum/turf_reservation/reservation
+
+/area/reservation_border/Destroy()
+	reservation = null
+	return ..()
+>>>>>>> b0cec39d8 (overmaps 1 - generation & spatial (#6550))
