@@ -398,8 +398,13 @@
 
 	return INITIALIZE_HINT_QDEL
 
+<<<<<<< HEAD
 /obj/structure/stairs/spawner/preloading_dir(datum/map_preloader/preloader)
 	dir = turn(dir, preloader.turn_angle)
+=======
+/obj/structure/stairs/spawner/preloading_dir(datum/dmm_context/context)
+	dir = turn(dir, context.loaded_orientation_turn_angle)
+>>>>>>> 98436ee38 (Fix hovering fire alarms, refactor DMM rotation code (#6589))
 	return FALSE
 
 // For ease of spawning. While you *can* spawn the base type and set its dir, this is useful for adminbus and a little bit quicker to map in

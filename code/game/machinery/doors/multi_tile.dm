@@ -19,7 +19,11 @@
 	stripe_file = 'icons/obj/doors/double/stripe.dmi'
 	stripe_fill_file = 'icons/obj/doors/double/fill_stripe.dmi'
 
+<<<<<<< HEAD
 /obj/machinery/door/airlock/multi_tile/preloading_dir(datum/map_preloader/preloader)
+=======
+/obj/machinery/door/airlock/multi_tile/preloading_dir(datum/dmm_context/context)
+>>>>>>> 98436ee38 (Fix hovering fire alarms, refactor DMM rotation code (#6589))
 	. = ..()
 	SetBounds()
 

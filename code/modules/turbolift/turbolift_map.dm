@@ -18,9 +18,13 @@
 	// rotated
 	var/got_rotated_by_maploader
 
+<<<<<<< HEAD
 /obj/turbolift_map_holder/preloading_dir(datum/map_preloader/preloader)
+=======
+/obj/turbolift_map_holder/preloading_dir(datum/dmm_context/context)
+>>>>>>> 98436ee38 (Fix hovering fire alarms, refactor DMM rotation code (#6589))
 	. = ..()
-	got_rotated_by_maploader = preloader.loading_orientation
+	got_rotated_by_maploader = context.loaded_orientation
 
 /obj/turbolift_map_holder/Initialize(mapload)
 	. = ..()

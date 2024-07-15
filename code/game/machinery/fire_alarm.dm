@@ -30,11 +30,15 @@ CREATE_WALL_MOUNTING_TYPES_SHIFTED(/obj/machinery/fire_alarm/alarms_hidden, 21)
 /obj/machinery/fire_alarm/alarms_hidden
 	alarms_hidden = TRUE
 
+<<<<<<< HEAD
 /obj/machinery/fire_alarm/preloading_dir(datum/map_preloader/preloader)
 	dir = turn(dir, -preloader.turn_angle)
 	return FALSE
 
 /obj/machinery/fire_alarm/Initialize(mapload)
+=======
+/obj/machinery/fire_alarm/Initialize(mapload, dir = src.dir)
+>>>>>>> 98436ee38 (Fix hovering fire alarms, refactor DMM rotation code (#6589))
 	. = ..()
 	if(z in (LEGACY_MAP_DATUM).contact_levels)
 		set_security_level(GLOB.security_level ? get_security_level() : "green")
