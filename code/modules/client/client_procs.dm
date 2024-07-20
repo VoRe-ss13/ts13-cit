@@ -138,6 +138,9 @@
 		if(QDELETED(real_src))
 			return
 
+	if(href_list["month"] && !(player.player_flags & PLAYER_FLAG_AGE_VERIFIED))
+		handle_age_gate(href_list["month"], href_list["year"])
+
 	..()	//redirect to hsrc.Topic()
 
 
