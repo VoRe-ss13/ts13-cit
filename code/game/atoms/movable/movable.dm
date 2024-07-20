@@ -26,7 +26,11 @@
 	/// movable flags - see [code/__DEFINES/_flags/atoms.dm]
 	var/movable_flags = NONE
 
-	//? Movement
+	//* Movement *//
+
+	/// DING DING DING BE CAREFUL WITH THIS
+	/// Set this to TRUE if we are not a [TILE_MOVER]!
+	var/pixel_movement = FALSE
 	/// Whatever we're pulling.
 	var/atom/movable/pulling
 	/// Who's currently pulling us

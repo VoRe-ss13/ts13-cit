@@ -11,6 +11,7 @@
 	var/map_is_to_my
 	var/turf/overmap/edge/wrap_buddy
 
+<<<<<<< HEAD
 /turf/overmap/edge/Initialize(mapload)
 	..()
 	return INITIALIZE_HINT_LATELOAD
@@ -34,6 +35,21 @@
 
 /turf/overmap/edge/Destroy()
 	wrap_buddy = null
+=======
+	/// stores a reference to our overmap for wrap purposes
+	///
+	/// todo: is this a good method? it works for now but i hate storing turf vars...
+	var/datum/overmap/overmap
+
+	/// used for collisions
+	var/wrap_sign_x
+	/// used for collisions
+	var/wrap_sign_y
+
+/turf/overmap/edge/initialize_overmap(datum/overmap/map)
+	name = "border"
+	overmap = map
+>>>>>>> b8c5f9db2 (overmaps - physics (#6594))
 	return ..()
 
 /turf/overmap/edge/Bumped(var/atom/movable/AM)
@@ -54,6 +70,7 @@
 	if(y == 1 || y == (LEGACY_MAP_DATUM).overmap_size)
 		numbers += list("[round(x/10)]","[round(x%10)]")
 
+<<<<<<< HEAD
 	for(var/i = 1 to numbers.len)
 		var/image/I = image('icons/effects/numbers.dmi',numbers[i])
 		I.pixel_x = 5*i - 2
@@ -69,6 +86,58 @@
 		if(x == (LEGACY_MAP_DATUM).overmap_size)
 			I.pixel_x = 5*i + 2
 		add_overlay(I)
+=======
+	if(x == lower_left_x - 1)
+		if(y == lower_left_y - 1)
+			wrap_sign_y = 1
+		wrap_sign_x = 1
+	else if(x == upper_right_x + 1)
+		if(y == upper_right_y + 1)
+			wrap_sign_y = -1
+		wrap_sign_x = -1
+	if(y == lower_left_y - 1)
+		if(x == upper_right_x + 1)
+			wrap_sign_x = -1
+		wrap_sign_y = 1
+	else if(y == upper_right_y + 1)
+		if(x == lower_left_x - 1)
+			wrap_sign_x = 1
+		wrap_sign_y = -1
+
+	if(number)
+		maptext = MAPTEXT_CENTER("[number]")
+
+/turf/overmap/edge/Enter(atom/movable/mover, atom/oldloc)
+	if(istype(mover, /obj/overmap))
+		return FALSE
+	return ..()
+
+/turf/overmap/edge/Bumped(atom/movable/bumped_atom)
+	. = ..()
+	if(istype(bumped_atom, /obj/overmap/entity))
+		var/obj/overmap/entity/entity = bumped_atom
+		// bounce them off
+		elastic_collision(entity)
+
+/turf/overmap/edge/proc/elastic_collision(obj/overmap/entity/entity)
+	if(wrap_sign_x != 0 && (wrap_sign_x > 0 != entity.vel_x > 0))
+		if(wrap_sign_y != 0 && (wrap_sign_y > 0 != entity.vel_y > 0))
+			entity.set_velocity(-entity.vel_x, -entity.vel_y)
+			entity.bump_handled = TRUE
+		else
+			entity.set_velocity(-entity.vel_x, null)
+			entity.bump_handled = TRUE
+	else if(wrap_sign_y != 0 && (wrap_sign_y > 0 != entity.vel_y > 0))
+		entity.set_velocity(null, -entity.vel_y)
+		entity.bump_handled = TRUE
+
+//! LEGACY BELOW
+>>>>>>> b8c5f9db2 (overmaps - physics (#6594))
+
+/turf/overmap/Destroy()
+	for(var/obj/overmap/entity/visitable/ship/entity in loc)
+		Exited(entity)
+	return ..()
 
 /turf/overmap/Entered(var/atom/movable/O, var/atom/oldloc)
 	..()
