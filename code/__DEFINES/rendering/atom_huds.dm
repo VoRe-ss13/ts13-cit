@@ -34,6 +34,7 @@ GLOBAL_LIST_INIT(hud_icon_files, list(
 	ID_HUD = 'icons/screen/atom_hud/job.dmi'
 ))
 
+<<<<<<< HEAD
 // constant list lookup of hud to layer
 GLOBAL_LIST_INIT(hud_icon_layers, list(
 	BIOLOGY_HUD = 1	// render above default
@@ -60,3 +61,13 @@ GLOBAL_LIST_INIT(hud_icon_layers, list(
 //alternate appearance flags
 #define AA_TARGET_SEE_APPEARANCE (1<<0)
 #define AA_MATCH_TARGET_OVERLAYS (1<<1)
+=======
+#define ATOM_HUD_SOURCE_SILICON_SENSOR_AUGMENT "silicon-sensor-augment"
+#define ATOM_HUD_SOURCE_FOR_HUD_GRANTER_ON_EQUIPMENT_SLOT(SLOT) "equip-[SLOT]-granter"
+#define ATOM_HUD_SOURCE_OBSERVER "observer"
+#define ATOM_HUD_SOURCE_NIF "nif"
+#define ATOM_HUD_SOURCE_AUTOGRANT "autogrant"
+
+/// pass in atom ref to vehicle
+#define ATOM_HUD_SOURCE_VEHICLE(ENTITY) "mech-[ref(ENTITY)]"
+>>>>>>> 912e379ff (vehicle mechs - preliminary (#6606))

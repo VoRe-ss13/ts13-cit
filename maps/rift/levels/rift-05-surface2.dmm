@@ -9743,7 +9743,11 @@
 /area/medical/medbay_primary_storage)
 "grT" = (
 /obj/machinery/mech_recharger,
+<<<<<<< HEAD
 /obj/machinery/atmospherics/portables_connector{
+=======
+/obj/vehicle/sealed/mecha/combat/fighter/baron/sec/loaded{
+>>>>>>> 912e379ff (vehicle mechs - preliminary (#6606))
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -14342,6 +14346,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/tactical)
+<<<<<<< HEAD
+=======
+"jmy" = (
+/obj/machinery/mech_recharger,
+/obj/vehicle/sealed/mecha/combat/fighter/baron/sec/loaded{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/shuttle/hammerhead/general)
+>>>>>>> 912e379ff (vehicle mechs - preliminary (#6606))
 "jmA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4

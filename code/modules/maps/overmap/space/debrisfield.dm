@@ -201,8 +201,12 @@
 	shuttle_tag = "Debris Carrier"
 	req_one_access = list()
 
+<<<<<<< HEAD
 
 /obj/mecha/combat/fighter/baron/loaded/busted
+=======
+/obj/vehicle/sealed/mecha/combat/fighter/baron/loaded/busted
+>>>>>>> 912e379ff (vehicle mechs - preliminary (#6606))
 /*
 	starting_components = list(
 		/obj/item/mecha_parts/component/hull/lightweight,
@@ -212,7 +216,7 @@
 		/obj/item/mecha_parts/component/electrical/high_current
 		)
 
-/obj/mecha/combat/fighter/baron/loaded/busted/Initialize(mapload)
+/obj/vehicle/sealed/mecha/combat/fighter/baron/loaded/busted/Initialize(mapload)
 	. = ..()
 	health = round(rand(50,120))
 	cell?.charge = 0
