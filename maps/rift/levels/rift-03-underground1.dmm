@@ -5808,13 +5808,6 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor/tiled,
 /area/engineering/atmos)
-"tm" = (
-/obj/structure/grille,
-/obj/machinery/power/apc/east_mount{
-	alarms_hidden = 1
-	},
-/turf/simulated/floor/outdoors/snow/lythios43c,
-/area/rift/surfacebase/underground/under1)
 "tn" = (
 /obj/structure/railing{
 	dir = 8
@@ -22194,7 +22187,7 @@ WR
 sV
 es
 es
-tm
+sV
 WR
 WR
 WR
@@ -22388,7 +22381,7 @@ aa
 sV
 es
 es
-tm
+sV
 WR
 Zl
 WR
