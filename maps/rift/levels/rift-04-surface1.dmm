@@ -1184,6 +1184,18 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/plating,
 /area/engineering/engine_eva)
+"aTS" = (
+/obj/structure/closet/crate,
+/obj/item/target/basic,
+/obj/item/target/basic,
+/obj/item/target/basic,
+/obj/item/target/basic,
+/obj/item/target/humanoid,
+/obj/item/target/humanoid,
+/obj/item/target/humanoid,
+/obj/item/target/humanoid,
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "aTU" = (
 /obj/item/radio/intercom{
 	dir = 1;
@@ -1192,6 +1204,9 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/tether/surfacebase/medical/mentalhealth)
+"aUB" = (
+/turf/simulated/wall/r_wall/prepainted/security,
+/area/rift/surfacebase/outside/outside1)
 "aUS" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 6
@@ -5155,7 +5170,7 @@
 /area/rnd/testingroom)
 "dtp" = (
 /obj/structure/symbol/sa,
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/wall/r_wall/prepainted/security,
 /area/rift/surfacebase/outside/outside1)
 "dtv" = (
 /obj/machinery/light,
@@ -7376,6 +7391,7 @@
 	},
 /turf/simulated/floor/plating,
 /area/medical/virologymaint)
+<<<<<<< HEAD
 "ePi" = (
 /obj/machinery/door/airlock/research{
 	name = "Xenobiology Autopsy Room";
@@ -7384,6 +7400,14 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel,
 /area/rnd/outpost/xenobiology/outpost_autopsy)
+=======
+"ePh" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "ePm" = (
 /turf/simulated/wall/prepainted,
 /area/rift/station/public_garden)
@@ -12469,6 +12493,7 @@
 	},
 /turf/simulated/floor/tiled/monowhite,
 /area/medical/patient_wing)
+<<<<<<< HEAD
 "idS" = (
 /obj/machinery/shower{
 	dir = 1
@@ -12482,6 +12507,14 @@
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/bathroom)
+=======
+"iej" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "ier" = (
 /obj/structure/bed/chair/sofa/black/right{
 	dir = 8
@@ -16379,6 +16412,22 @@
 /obj/spawner/window/low_wall/reinforced/full/firelocks,
 /turf/simulated/floor/plating,
 /area/rnd/tankstorage)
+"kBW" = (
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 4
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10,
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "kCu" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/medical,
@@ -16488,6 +16537,21 @@
 /obj/machinery/portable_atmospherics/canister/phoron,
 /turf/simulated/floor/tiled/steel_dirty,
 /area/rnd/tankstorage)
+"kFq" = (
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 4
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 5
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 6
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10,
+/obj/structure/window/wooden,
+/obj/machinery/light/flamp/noshade,
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "kFr" = (
 /obj/structure/table/wooden_reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -17491,6 +17555,7 @@
 /obj/structure/bookcase/legal/combo,
 /turf/simulated/floor/wood,
 /area/maintenance/research/lower)
+<<<<<<< HEAD
 "lkx" = (
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 4;
@@ -17511,6 +17576,19 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/patient_wing)
+=======
+"lky" = (
+/obj/structure/table/standard,
+/obj/item/binoculars/spyglass,
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "lkP" = (
 /obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18355,6 +18433,12 @@
 /obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/steel_dirty,
 /area/maintenance/maint_bar)
+"lQp" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "lQs" = (
 /obj/structure/table/woodentable,
 /obj/item/flashlight/lamp/green{
@@ -19149,6 +19233,10 @@
 	},
 /turf/simulated/floor/tiled/monowhite,
 /area/medical/psych_ward)
+"mpA" = (
+/obj/structure/undies_wardrobe,
+/turf/simulated/wall/r_wall/prepainted,
+/area/rift/surfacebase/outside/outside1)
 "mpD" = (
 /obj/machinery/atmospherics/component/unary/outlet_injector{
 	id = "violet_protocol";
@@ -22537,6 +22625,33 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/rnd/xenoarch_storage)
+<<<<<<< HEAD
+=======
+"omD" = (
+/obj/structure/flora/ausbushes/lavendergrass{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/turf/simulated/floor/outdoors/snow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+"omU" = (
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 1
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 5
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 6
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 8
+	},
+/obj/structure/window/wooden,
+/obj/machinery/light/flamp/noshade,
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "onl" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -24350,6 +24465,7 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/rift/surfaceeva/aa/surface_south)
+<<<<<<< HEAD
 "prD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -24359,10 +24475,21 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/security/security_cell_hallway)
+=======
+"prz" = (
+/obj/structure/target_stake,
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "prO" = (
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/wood,
 /area/maintenance/research/lower)
+"prQ" = (
+/obj/structure/grille,
+/obj/structure/foamedmetal,
+/turf/simulated/floor/plating,
+/area/rift/surfacebase/outside/outside1)
 "prY" = (
 /obj/machinery/vending/coffee,
 /obj/machinery/light{
@@ -25918,6 +26045,20 @@
 "qqZ" = (
 /turf/simulated/open,
 /area/turbolift/rhammerhead/midpoint)
+"qrm" = (
+/obj/structure/fence/end{
+	dir = 8
+	},
+/obj/machinery/light/flamp/noshade,
+/obj/structure/table/standard,
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "qro" = (
 /obj/machinery/air_alarm{
 	dir = 8;
@@ -25952,6 +26093,20 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/janitor)
+"qsO" = (
+/obj/structure/fence/end{
+	dir = 4
+	},
+/obj/machinery/light/flamp/noshade,
+/obj/structure/table/standard,
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "qsP" = (
 /obj/machinery/atmospherics/pipe/simple/visible/supply,
 /obj/machinery/atmospherics/pipe/simple/visible/black,
@@ -26525,6 +26680,30 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
+<<<<<<< HEAD
+=======
+"qMD" = (
+/obj/machinery/computer/secure_data,
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 5
+	},
+/obj/item/radio/intercom{
+	dir = 1;
+	pixel_y = 24
+	},
+/obj/item/radio/intercom/department/security{
+	dir = 1;
+	pixel_y = 35
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/prison/upper)
+"qNu" = (
+/obj/structure/fence/door{
+	dir = 4
+	},
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "qNR" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate,
@@ -30801,6 +30980,16 @@
 /obj/item/gps/dataknife,
 /turf/simulated/floor/plating,
 /area/maintenance/lowmedbaymaint)
+"tnm" = (
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 5
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 6
+	},
+/obj/structure/window/wooden,
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "tnt" = (
 /obj/structure/table/standard,
 /obj/item/tape_recorder,
@@ -32666,6 +32855,7 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/rift/surfaceeva)
+<<<<<<< HEAD
 "uqR" = (
 /obj/machinery/door/airlock/glass/medical{
 	name = "Science First Aid";
@@ -32676,6 +32866,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/steel,
 /area/rnd/hallway)
+=======
+"uqx" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "urm" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
@@ -33548,6 +33746,16 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/quartermaster/hallway)
+"uPP" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "uPS" = (
 /obj/structure/railing,
 /obj/structure/disposalpipe/segment{
@@ -33617,6 +33825,7 @@
 /obj/effect/floor_decal/corner/red/bordercorner2{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/pelletguns,
 /turf/simulated/floor/tiled/steel,
 /area/security/checkpoint)
 "uSe" = (
@@ -34310,6 +34519,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_eva)
+"vuA" = (
+/obj/structure/fence/door,
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "vuC" = (
 /obj/structure/window/wooden{
 	dir = 8
@@ -35383,6 +35596,10 @@
 "wes" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/evahallway)
+"wey" = (
+/obj/structure/flora/rock/ice,
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "weE" = (
 /obj/machinery/holopad,
 /obj/machinery/camera/network/research/xenobio{
@@ -35863,6 +36080,10 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/storage/surface_eva)
+"wtm" = (
+/obj/structure/fence,
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "wtn" = (
 /obj/structure/closet/secure_closet/medical2,
 /obj/item/clothing/suit/straight_jacket,
@@ -35994,6 +36215,24 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/virologytransitwest)
+"wwb" = (
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 1
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 8
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "wwn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -36288,6 +36527,7 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/security/forensics)
+<<<<<<< HEAD
 "wFV" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -36296,6 +36536,12 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/research/lower)
+=======
+"wFB" = (
+/obj/structure/flora/rock/ice/alternative_1,
+/turf/simulated/floor/outdoors/gravsnow/lythios43c,
+/area/rift/surfacebase/outside/outside1)
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 "wGa" = (
 /obj/machinery/light/fairy{
 	dir = 8
@@ -37980,6 +38226,12 @@
 /obj/effect/floor_decal/corner/green/bordercorner2,
 /turf/simulated/floor/tiled/white,
 /area/medical/virologyisolation)
+"xEF" = (
+/obj/structure/bed/chair/bay{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel_grid/lythios43c,
+/area/rift/surfacebase/outside/outside1)
 "xEV" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -44900,7 +45152,7 @@ iFN
 iFN
 iFN
 iFN
-vUA
+mpA
 vUA
 vUA
 iFN
@@ -47418,9 +47670,9 @@ kAb
 uxH
 iFN
 iFN
-iFN
-iFN
-iFN
+oFG
+oFG
+oFG
 iFN
 iFN
 iFN
@@ -47597,8 +47849,8 @@ omm
 vmW
 buC
 kAb
-dER
-iFN
+kAb
+kAb
 kAb
 kAb
 rQq
@@ -47610,7 +47862,22 @@ kAb
 kAb
 kAb
 dER
+<<<<<<< HEAD
 iFN
+=======
+oFG
+oFG
+oFG
+oFG
+hgE
+hgE
+hgE
+iFN
+iFN
+iFN
+iFN
+lxF
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -47791,7 +48058,24 @@ kAb
 kAb
 kAb
 kAb
-dER
+kAb
+aUB
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+vuA
+oFG
+oFG
+oFG
+oFG
+iFN
+<<<<<<< HEAD
 iFN
 iFN
 iFN
@@ -47810,7 +48094,11 @@ iFN
 iFN
 iFN
 iFN
-iFN
+=======
+hgE
+hgE
+jEQ
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -47973,6 +48261,7 @@ iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
 iFN
 iFN
 iFN
@@ -48001,6 +48290,23 @@ iFN
 iFN
 iFN
 iFN
+=======
+aUB
+oFG
+oFG
+wey
+oFG
+oFG
+wFB
+oFG
+oFG
+oFG
+wwb
+jPV
+jPV
+jPV
+omU
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -48169,13 +48475,41 @@ iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
+=======
+lxF
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
 iFN
+=======
+xJx
+iFN
+iFN
+iFN
+aUB
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+qrm
+ubp
+ubp
+ubp
+tnm
+iFN
+efb
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -48373,22 +48707,22 @@ iFN
 iFN
 iFN
 iFN
-vUA
-vUA
-vUA
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
+aUB
+aUB
+aUB
+oFG
+oFG
+oFG
+oFG
+prz
+oFG
+oFG
+oFG
+uPP
+xEF
+ubp
+ubp
+tnm
 iFN
 iFN
 iFN
@@ -48567,6 +48901,7 @@ iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
 vUA
 vUA
 vUA
@@ -48583,6 +48918,24 @@ iFN
 iFN
 iFN
 iFN
+=======
+aUB
+prQ
+aUB
+uqx
+oFG
+prz
+oFG
+oFG
+oFG
+oFG
+oFG
+lky
+ubp
+ubp
+ubp
+tnm
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -48761,22 +49114,22 @@ iFN
 iFN
 iFN
 iFN
-vUA
-vUA
-vUA
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
-iFN
+aUB
+aUB
+aUB
+oFG
+prz
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+uPP
+ubp
+ubp
+ubp
+tnm
 iFN
 iFN
 iFN
@@ -48955,6 +49308,7 @@ iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
 iFN
 iFN
 iFN
@@ -48965,6 +49319,23 @@ iFN
 iFN
 iFN
 iFN
+=======
+aUB
+oFG
+oFG
+oFG
+oFG
+prz
+oFG
+oFG
+oFG
+oFG
+uPP
+xEF
+ubp
+ubp
+tnm
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -49133,6 +49504,11 @@ iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
+=======
+lxF
+iFN
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -49148,6 +49524,21 @@ iFN
 iFN
 iFN
 iFN
+aUB
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+qsO
+aTS
+ubp
+ubp
+tnm
 iFN
 iFN
 iFN
@@ -49332,6 +49723,7 @@ iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
 iFN
 iFN
 iFN
@@ -49359,6 +49751,23 @@ iFN
 iFN
 iFN
 iFN
+=======
+aUB
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+oFG
+kBW
+kWH
+kWH
+kWH
+kFq
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -49536,6 +49945,7 @@ iFN
 iFN
 iFN
 iFN
+<<<<<<< HEAD
 iFN
 iFN
 iFN
@@ -49552,6 +49962,22 @@ iFN
 iFN
 iFN
 iFN
+=======
+aUB
+oFG
+oFG
+oFG
+wey
+oFG
+oFG
+lQp
+oFG
+oFG
+vuA
+oFG
+oFG
+oFG
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -49731,8 +50157,9 @@ iFN
 iFN
 iFN
 iFN
-vUA
+aUB
 dtp
+<<<<<<< HEAD
 vUA
 iFN
 iFN
@@ -49744,6 +50171,19 @@ vUA
 iFN
 iFN
 iFN
+=======
+aUB
+oFG
+oFG
+oFG
+oFG
+aUB
+aUB
+aUB
+oFG
+ePh
+oFG
+>>>>>>> e4e31a035 (A Pellet Gun! A Recreational rifle for Civilians.  (#6628))
 iFN
 iFN
 iFN
@@ -49925,18 +50365,18 @@ iFN
 iFN
 iFN
 iFN
-vUA
+aUB
 oUd
-vUA
-iFN
-iFN
-iFN
-iFN
-vUA
-vUA
-vUA
-iFN
-iFN
+aUB
+qNu
+wtm
+wtm
+wtm
+aUB
+prQ
+aUB
+oFG
+ePh
 iFN
 iFN
 hgE
@@ -50119,16 +50559,16 @@ iFN
 iFN
 iFN
 iFN
-vUA
-vUA
-vUA
-iFN
-iFN
-iFN
-iFN
-vUA
-vUA
-vUA
+aUB
+dtp
+aUB
+oFG
+oFG
+oFG
+oFG
+aUB
+aUB
+aUB
 hgE
 hgE
 hgE
@@ -50314,11 +50754,11 @@ iFN
 iFN
 iFN
 iFN
-iFN
-iFN
-iFN
-iFN
-iFN
+iej
+oFG
+oFG
+oFG
+oFG
 hgE
 hgE
 hgE
@@ -50508,8 +50948,8 @@ iFN
 iFN
 iFN
 iFN
-iFN
-iFN
+oFG
+oFG
 hgE
 hgE
 hgE
