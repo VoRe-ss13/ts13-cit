@@ -275,7 +275,10 @@
 /obj/item/integrated_circuit/input/beaker_connector/ask_for_input(obj/item/I, mob/living/user, a_intent)
 	if(!isobj(I))
 		return FALSE
-	attackby_react(I, user, a_intent)
+	if(!current_beaker)
+		attack_self(user)
+	else
+		attackby_react(I, user, a_intent)
 
 /obj/item/integrated_circuit/input/beaker_connector/attackby_react(var/obj/item/reagent_containers/I, var/mob/living/user)
 	//Check if it truly is a reagent container
@@ -302,11 +305,6 @@
 	push_data()
 	activate_pin(1)
 	activate_pin(3)
-
-
-/obj/item/integrated_circuit/input/beaker_connector/ask_for_input(mob/user)
-	attack_self(user)
-
 
 /obj/item/integrated_circuit/input/beaker_connector/attack_self(mob/user)
 	. = ..()

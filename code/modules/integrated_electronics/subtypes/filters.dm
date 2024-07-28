@@ -19,16 +19,23 @@
 	inputs = list( "input" = IC_PINTYPE_REF )
 	outputs = list("result" = IC_PINTYPE_BOOLEAN)
 
+<<<<<<< HEAD
 /obj/item/integrated_circuit/filter/ref/may_pass(var/weakref/data)
 	if(!(filter_type && isweakref(data)))
 		return FALSE
 	var/weakref/wref = data
 	return istype(wref.resolve(), filter_type)
+=======
+/obj/item/integrated_circuit/filter/ref/may_pass(var/datum/data)
+	if(!(filter_type && data))
+		return FALSE
+	return istype(data, filter_type)
+>>>>>>> 90418b298 (A variety of circuit fucky wuckys fixes. (#6623))
 
 /obj/item/integrated_circuit/filter/ref/do_work()
-	var/datum/integrated_io/A = inputs[1]
-	var/datum/integrated_io/O = outputs[1]
-	O.data = may_pass(A.data) ? TRUE : FALSE
+	var/A = get_pin_data(IC_INPUT, 1)
+	get_pin_data(IC_INPUT, 1)
+	set_pin_data(IC_OUTPUT, 1, may_pass(A) ? TRUE : FALSE)
 
 	if(get_pin_data(IC_OUTPUT, 1))
 		activate_pin(2)
@@ -74,8 +81,9 @@
 
 /obj/item/integrated_circuit/filter/ref/custom
 	name = "custom filter"
-	desc = "Allows custom filtering.  It will match type against a stored reference."
+	desc = "Allows custom filtering.  It will match type against a stored reference; it will also take a type string."
 	icon_state = "filter_custom"
+<<<<<<< HEAD
 	inputs = list( "input" = IC_PINTYPE_REF, "expected type" = IC_PINTYPE_REF )
 
 /obj/item/integrated_circuit/filter/ref/custom/may_pass(var/weakref/data, var/weakref/typedata)
@@ -86,12 +94,19 @@
 	var/atom/A = wref.resolve()
 	var/atom/B = wref2.resolve()
 	return (A && B && (istype(A, B.type)))
+=======
+	inputs = list( "input" = IC_PINTYPE_REF, "expected type" = IC_PINTYPE_ANY)
+	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
+
+/obj/item/integrated_circuit/filter/ref/custom/may_pass(var/datum/data, var/datum/typedata)
+	if(!istype(typedata) && !istext(typedata)) return FALSE
+	return (data && typedata && (istype(data, typedata)))
+>>>>>>> 90418b298 (A variety of circuit fucky wuckys fixes. (#6623))
 
 /obj/item/integrated_circuit/filter/ref/custom/do_work()
-	var/datum/integrated_io/A = inputs[1]
-	var/datum/integrated_io/T = inputs[2]
-	var/datum/integrated_io/O = outputs[1]
-	O.data = may_pass(A.data, T.data) ? TRUE : FALSE
+	var/A = get_pin_data(IC_INPUT, 1)
+	var/T = get_pin_data(IC_INPUT, 2)
+	set_pin_data(IC_OUTPUT, 1, may_pass(A, T) ? TRUE : FALSE)
 
 	if(get_pin_data(IC_OUTPUT, 1))
 		activate_pin(2)
@@ -112,13 +127,12 @@
 	outputs = list("result" = IC_PINTYPE_BOOLEAN)
 
 /obj/item/integrated_circuit/filter/string/may_pass(var/datum/integrated_io/A, var/datum/integrated_io/B)
-	return A.data == B.data
+	return A == B
 
 /obj/item/integrated_circuit/filter/string/do_work()
-	var/datum/integrated_io/A = inputs[1]
-	var/datum/integrated_io/B = inputs[2]
-	var/datum/integrated_io/O = outputs[1]
-	O.data = may_pass(A, B) ? TRUE : FALSE
+	var/A = get_pin_data(IC_INPUT, 1)
+	var/B = get_pin_data(IC_INPUT, 2)
+	set_pin_data(IC_OUTPUT, 1, may_pass(A, B) ? TRUE : FALSE)
 
 	if(get_pin_data(IC_OUTPUT, 1))
 		activate_pin(2)
