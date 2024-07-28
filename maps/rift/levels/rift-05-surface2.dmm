@@ -37199,6 +37199,9 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
 /turf/simulated/floor,
 /area/maintenance/substation/cafeteria_dock)
 "yfi" = (
