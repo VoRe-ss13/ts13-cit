@@ -10895,8 +10895,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/glass/mining{
 	name = "Mining Operations";
+<<<<<<< HEAD
 	req_access = list(31);
 	req_one_access = list()
+=======
+	req_one_access = list(47,48)
+>>>>>>> 9ace3f610 (Ore Silo door accessible by Science :3 (#6626))
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/miningdock)
