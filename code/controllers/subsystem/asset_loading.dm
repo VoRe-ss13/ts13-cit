@@ -6,7 +6,12 @@
 SUBSYSTEM_DEF(asset_loading)
 	name = "Asset Loading"
 	priority = FIRE_PRIORITY_ASSET_LOADING
+<<<<<<< HEAD
 	subsystem_flags = SS_NO_INIT
+=======
+	// todo: hibernation
+	subsystem_flags = SS_NO_INIT | SS_BACKGROUND
+>>>>>>> c007c1aab (MC: subsystem time dilation tracking, scheduling tweaks (#6601))
 	runlevels = RUNLEVEL_LOBBY | RUNLEVELS_DEFAULT
 	var/list/datum/asset/generate_queue = list()
 
