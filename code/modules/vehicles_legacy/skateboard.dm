@@ -89,7 +89,20 @@
 			H.throw_at_old(T2, 1, 1, src)
 			var/head_slot = SLOT_HEAD
 			if(!head_slot || !(istype(head_slot,/obj/item/clothing/head/helmet) || istype(head_slot,/obj/item/clothing/head/hardhat)))
+<<<<<<< HEAD
 				H.setBrainLoss(2,5)
+=======
+				//5% chance to suffer severe head trauma because you weren't wearing a helmet
+				if(prob(5))
+					var/obj/item/organ/external/egg = H.get_organ(BP_HEAD)
+					egg?.fracture()
+					H.adjustBrainLoss(rand(5, 10))
+					visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying! They land on their head, that doesn't look good...</span>")
+				else
+					//Minor brain injury from hitting your head
+					H.adjustBrainLoss(rand(1, 2))
+					visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying!</span>")
+>>>>>>> 5134116de (supply: supply pack datums, some reworks (#6599))
 				H.update_health()
 			visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying!</span>")
 			H.afflict_paralyze(20 * 12)
@@ -100,7 +113,18 @@
 			H.throw_at_old(T2, 1, 1, src)
 			var/head_slot = SLOT_HEAD
 			if(!head_slot || !(istype(head_slot,/obj/item/clothing/head/helmet) || istype(head_slot,/obj/item/clothing/head/hardhat)))
+<<<<<<< HEAD
 				H.setBrainLoss(2,5)
+=======
+				if(prob(5))
+					var/obj/item/organ/external/egg = H.get_organ(BP_HEAD)
+					egg?.fracture()
+					H.adjustBrainLoss(rand(5, 10))
+					visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying! They land on their head, that doesn't look good...</span>")
+				else
+					H.adjustBrainLoss(rand(1, 2))
+					visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying!</span>")
+>>>>>>> 5134116de (supply: supply pack datums, some reworks (#6599))
 				H.update_health()
 			visible_message("<span class='danger'>[src] crashes into [A], sending [H] flying!</span>")
 			H.afflict_paralyze(20 * 12)
@@ -206,6 +230,7 @@
 	board_item_type = /obj/item/melee/skateboard/improv
 	icon_state = "skateboard"
 	board_icon = "skateboard"
+	worth_intrinsic = 75
 
 /obj/vehicle_old/skateboard/beginner
 	name = "skateboard"
@@ -213,6 +238,7 @@
 	board_item_type = /obj/item/melee/skateboard/beginner
 	icon_state = "skateboard"
 	board_icon = "skateboard"
+	worth_intrinsic = 125
 
 /obj/vehicle_old/skateboard/pro
 	name = "skateboard"
@@ -221,6 +247,7 @@
 	icon_state = "skateboard2"
 	board_icon = "skateboard2"
 	move_delay = 1
+	worth_intrinsic = 200
 
 /*
 /obj/vehicle_old/skateboard/pro/Bump(atom/A)
@@ -267,6 +294,7 @@
 	icon_state = "hoverboard_red"
 	board_icon = "hoverboard_red"
 	move_delay = 0
+	worth_intrinsic = 275
 
 /obj/vehicle_old/skateboard/hoverboard/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/rods))

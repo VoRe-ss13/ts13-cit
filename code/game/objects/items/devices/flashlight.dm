@@ -8,6 +8,7 @@
 	materials_base = list(MAT_STEEL = 50, MAT_GLASS = 20)
 	action_button_name = "Toggle Flashlight"
 	light_wedge = LIGHT_WIDE
+	worth_intrinsic = 25
 
 	var/on = FALSE
 	/// Luminosity when on

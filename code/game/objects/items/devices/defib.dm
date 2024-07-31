@@ -15,7 +15,12 @@
 	preserve_item = 1
 	w_class = WEIGHT_CLASS_BULKY
 	origin_tech = list(TECH_BIO = 4, TECH_POWER = 2)
+<<<<<<< HEAD
 	action_button_name = "Remove/Replace Paddles"
+=======
+	item_action_name = "Remove/Replace Paddles"
+	worth_intrinsic = 300
+>>>>>>> 5134116de (supply: supply pack datums, some reworks (#6599))
 
 	var/obj/item/shockpaddles/linked/paddles
 	var/obj/item/cell/bcell = null
@@ -165,6 +170,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = SLOT_BELT
 	origin_tech = list(TECH_BIO = 5, TECH_POWER = 3)
+	worth_intrinsic = 500
 
 /obj/item/defib_kit/compact/loaded
 	bcell = /obj/item/cell/high
@@ -627,6 +633,7 @@
 	item_state = "defibunit"
 //	item_state = "jumperunit"
 	paddles = /obj/item/shockpaddles/linked/jumper
+	worth_intrinsic = 150
 
 /obj/item/defib_kit/jumper_kit/loaded
 	bcell = /obj/item/cell/high

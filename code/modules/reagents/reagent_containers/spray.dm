@@ -122,6 +122,7 @@
 	item_state = "pepperspray"
 	possible_transfer_amounts = null
 	volume = 40
+	worth_intrinsic = 85
 	var/safety = TRUE
 
 /obj/item/reagent_containers/spray/pepper/Initialize(mapload)
