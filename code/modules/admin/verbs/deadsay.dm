@@ -26,13 +26,18 @@ GLOBAL_LIST_INIT(stealthmin_nicknames, world.file2list("[global.config.directory
 		return
 
 	var/key
+<<<<<<< HEAD
 	if(holder.fakekey)
 		if(is_preference_enabled(/datum/client_preference/holder/obfuscate_stealth_dsay))
 			key = pick(GLOB.stealthmin_nicknames)
 		else
 			key = holder.fakekey
+=======
+	if(is_under_stealthmin() && get_preference_toggle(/datum/game_preference_toggle/admin/obfuscate_stealth_dsay))
+		key = pick(GLOB.stealthmin_nicknames)
+>>>>>>> edcd2e52a (admin stealth mode now works while deadminned (#6630))
 	else
-		key = src.key
+		key = get_public_key()
 
 	msg = emoji_parse(msg)
 

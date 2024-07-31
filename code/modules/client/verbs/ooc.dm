@@ -115,7 +115,7 @@
 		return
 
 	var/ooc_style = "everyone"
-	if(holder && !holder.fakekey)
+	if(holder && !is_under_stealthmin())
 		ooc_style = "elevated"
 		if(holder.rights & R_EVENT)
 			ooc_style = "event_manager"
@@ -133,6 +133,7 @@
 		if(target.is_preference_enabled(/datum/client_preference/show_ooc))
 			if(target.is_key_ignored(key)) // If we're ignored by this person, then do nothing.
 				continue
+<<<<<<< HEAD
 			var/display_name = src.key
 			if(holder)
 				if(holder.fakekey)
@@ -142,6 +143,15 @@
 						display_name = holder.fakekey
 			if(holder && !holder.fakekey && (holder.rights & R_ADMIN) && CONFIG_GET(flag/allow_admin_ooccolor)) // keeping this for the badmins
 				to_chat(target, "<span class='prefix [ooc_style]'><span class='ooc'><font color='[prefs.ooccolor]'>" + "OOC: " + "<EM>[display_name]: </EM><span class='linkify'>[msg]</span></span></span></font>")
+=======
+			var/display_name
+			if(target.holder || target == src)
+				display_name = get_revealed_key()
+			else
+				display_name = get_public_key()
+			if(effective_color) // keeping this for the badmins
+				to_chat(target, "<span class='prefix [ooc_style]'><span class='ooc'><font color='[effective_color]'>" + "OOC: " + "<EM>[display_name]: </EM><span class='linkify'>[msg]</span></span></span></font>")
+>>>>>>> edcd2e52a (admin stealth mode now works while deadminned (#6630))
 			else
 				to_chat(target, "<span class='ooc'><span class='[ooc_style]'><span class='message'>OOC: <EM>[display_name]: </EM><span class='linkify'>[msg]</span></span></span></span>")
 
@@ -208,9 +218,7 @@
 	var/list/receivers = list() //Clients, not mobs.
 	var/list/r_receivers = list()
 
-	var/display_name = key
-	if(holder && holder.fakekey)
-		display_name = holder.fakekey
+	var/display_name = get_public_key()
 	if(mob.stat != DEAD)
 		display_name = mob.name
 	// Resleeving shenanigan prevention.
