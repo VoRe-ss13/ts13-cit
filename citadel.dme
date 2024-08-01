@@ -179,7 +179,11 @@
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_throwing.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_visuals.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_x_act.dm"
+<<<<<<< HEAD
 #include "code\__DEFINES\dcs\signals\signals_atom\tool_system.dm"
+=======
+#include "code\__DEFINES\dcs\signals\signals_item\signals_item-interaction.dm"
+>>>>>>> 64ec2547e (inhand interaction refactor (#6633))
 #include "code\__DEFINES\dcs\signals\signals_item\signals_item_economy.dm"
 #include "code\__DEFINES\dcs\signals\signals_item\signals_item_inventory.dm"
 #include "code\__DEFINES\dcs\signals\signals_item\signals_item_mouse.dm"
@@ -1443,6 +1447,7 @@
 #include "code\game\objects\empulse.dm"
 #include "code\game\objects\explosion.dm"
 #include "code\game\objects\explosion_recursive.dm"
+#include "code\game\objects\items-interaction.dm"
 #include "code\game\objects\items.dm"
 #include "code\game\objects\materials.dm"
 #include "code\game\objects\misc.dm"
@@ -3339,6 +3344,7 @@
 #include "code\modules\mob\life.dm"
 #include "code\modules\mob\login.dm"
 #include "code\modules\mob\logout.dm"
+#include "code\modules\mob\mob-keybind-triggers.dm"
 #include "code\modules\mob\mob.dm"
 #include "code\modules\mob\mob_defines.dm"
 #include "code\modules\mob\mob_helpers.dm"

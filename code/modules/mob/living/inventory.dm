@@ -219,6 +219,7 @@
 				return L.container
 	return
 
+<<<<<<< HEAD
 /mob/living/mode()
 	set name = "Activate Held Object"
 	set category = "Object"
@@ -234,6 +235,8 @@
 
 	get_active_held_item()?.attack_self(src)
 
+=======
+>>>>>>> 64ec2547e (inhand interaction refactor (#6633))
 /mob/living/abiotic(full_body)
 	if(full_body)
 		if(item_considered_abiotic(wear_mask))

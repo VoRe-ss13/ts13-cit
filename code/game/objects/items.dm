@@ -874,6 +874,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	return ..()
 
 /**
+<<<<<<< HEAD
  * Called when the item is in the active hand, and clicked; alternately, there is an 'activate held object' verb or you can hit pagedown.
  *
  * You should do . = ..() and check ., if it's TRUE, it means a parent proc requested the call chain to stop.
@@ -920,6 +921,8 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	return FALSE
 
 /**
+=======
+>>>>>>> 64ec2547e (inhand interaction refactor (#6633))
  * Hitsound override when successfully melee attacking someone for melee_hit()
  *
  * We get final say by returning a sound here.

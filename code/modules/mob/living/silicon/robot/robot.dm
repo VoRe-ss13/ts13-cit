@@ -1218,6 +1218,7 @@
 	lockcharge = state
 	update_mobility()
 
+<<<<<<< HEAD
 /mob/living/silicon/robot/mode()
 	set name = "Activate Held Object"
 	set category = "IC"
@@ -1234,6 +1235,8 @@
 
 	return
 
+=======
+>>>>>>> 64ec2547e (inhand interaction refactor (#6633))
 /mob/living/silicon/robot/proc/choose_icon(var/triesleft, var/list/module_sprites)
 	if(!module_sprites.len)
 		to_chat(src, "Something is badly wrong with the sprite selection. Harass a coder.")

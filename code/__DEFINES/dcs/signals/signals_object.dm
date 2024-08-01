@@ -328,6 +328,7 @@
 	////#define COMPONENT_CANCEL_EQUIPMENT_CLICK (1<<0)
 
 #define COMSIG_ITEM_ATTACK "item_attack"
+<<<<<<< HEAD
 /// From base of obj/item/attack_self(): (/mob)
 #define COMSIG_ITEM_ATTACK_SELF "item_attack_self"
 /// From base of obj/item/attack_self_secondary(): (/mob)
@@ -359,3 +360,5 @@
 /// From base of /obj/item/slimepotion/speed/afterattack(atom/target, mob/user, clickchain_flags, list/params)
 ////#define COMSIG_SPEED_POTION_APPLIED "speed_potion"
 	////#define SPEED_POTION_STOP (1<<0)
+=======
+>>>>>>> 64ec2547e (inhand interaction refactor (#6633))

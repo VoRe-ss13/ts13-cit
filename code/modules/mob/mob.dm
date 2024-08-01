@@ -435,6 +435,7 @@
 	return
 
 /**
+<<<<<<< HEAD
  * Verb to activate the object in your held hand
  *
  * Calls attack self on the item and updates the inventory hud for hands
@@ -447,6 +448,8 @@
 	return
 
 /**
+=======
+>>>>>>> 64ec2547e (inhand interaction refactor (#6633))
  * Get the notes of this mob
  *
  * This actually gets the mind datums notes
