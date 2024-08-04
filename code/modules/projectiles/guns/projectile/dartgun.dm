@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /obj/projectile/bullet/chemdart
 	name = "dart"
 	icon_state = "dart"
@@ -40,6 +41,8 @@
 	max_ammo = 5
 	multiple_sprites = 1
 
+=======
+>>>>>>> 002dda4bf (projectiles v8 - ammo & magazines (#6637))
 /obj/item/gun/ballistic/dartgun
 	name = "dart gun"
 	desc = "Zeng-Hu Pharmaceutical's entry into the arms market, the Z-H P Artemis is a gas-powered dart gun capable of delivering chemical cocktails swiftly across short distances."
@@ -50,7 +53,7 @@
 	var/base_state = "dartgun"
 	origin_tech = list(TECH_COMBAT = 7, TECH_MATERIAL = 6, TECH_BIO = 5, TECH_MAGNET = 2, TECH_ILLEGAL = 3)
 
-	caliber = "dart"
+	regex_this_caliber = /datum/ammo_caliber/dart
 	fire_sound = 'sound/weapons/empty.ogg'
 	fire_sound_text = "a metallic click"
 	recoil = 0
@@ -84,12 +87,12 @@
 		icon_state = "[base_state]-empty"
 		return 1
 	if(track_magazine)
-		if(!ammo_magazine.stored_ammo || ammo_magazine.stored_ammo.len == 0)
+		if(ammo_magazine.amount_remaining() == 0)
 			icon_state = "[base_state]-0"
-		else if(ammo_magazine.stored_ammo.len > default_magazine_casing_count)
+		else if(ammo_magazine.amount_remaining() > default_magazine_casing_count)
 			icon_state = "[base_state]-[default_magazine_casing_count]"
 		else
-			icon_state = "[base_state]-[ammo_magazine.stored_ammo.len]"
+			icon_state = "[base_state]-[ammo_magazine.amount_remaining()]"
 		return 1
 	else
 		icon_state = "[base_state]"
@@ -162,8 +165,8 @@
 		dat += "There are no beakers inserted!<br><br>"
 
 	if(ammo_magazine)
-		if(ammo_magazine.stored_ammo && ammo_magazine.stored_ammo.len)
-			dat += "The dart cartridge has [ammo_magazine.stored_ammo.len] shots remaining."
+		if(ammo_magazine.amount_remaining())
+			dat += "The dart cartridge has [ammo_magazine.amount_remaining()] shots remaining."
 		else
 			dat += "<font color='red'>The dart cartridge is empty!</font>"
 		dat += " \[<A href='?src=\ref[src];eject_cart=1'>Eject</A>\]"
@@ -221,24 +224,18 @@
 	max_beakers = 2
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 4, TECH_BIO = 4, TECH_MAGNET = 2, TECH_ILLEGAL = 1)
 
-/obj/item/ammo_casing/chemdart/small
-	name = "short chemical dart"
-	desc = "A casing containing a small hardened, hollow dart."
-	icon_state = "dartcasing"
-	caliber = "dart"
-	projectile_type = /obj/projectile/bullet/chemdart/small
+/obj/item/gun/ballistic/dartgun/tranq
+	name = "tranquilizer gun"
+	desc = "A gas-powered dart gun designed by the National Armory of Gaia. This gun is used primarily by United Federation special forces for Tactical Espionage missions. Don't forget your bandana."
+	icon = 'icons/vore/custom_guns_vr.dmi'
+	icon_state = "tranqgun"
+	item_state = null
 
-/obj/item/ammo_magazine/chemdart/small
-	name = "small dart cartridge"
-	desc = "A rack of hollow darts."
-	icon_state = "darts_small"
-	item_state = "rcdammo"
-	origin_tech = list(TECH_MATERIAL = 2)
-	mag_type = MAGAZINE
-	caliber = "dart"
-	ammo_type = /obj/item/ammo_casing/chemdart/small
-	max_ammo = 3
-	multiple_sprites = 1
-
-/obj/projectile/bullet/chemdart/small
-	reagent_amount = 10
+	fire_sound = 'sound/weapons/empty.ogg'
+	fire_sound_text = "a metallic click"
+	recoil = 0
+	silenced = 1
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/chemdart
+	allowed_magazines = list(/obj/item/ammo_magazine/chemdart)
+	auto_eject = 0

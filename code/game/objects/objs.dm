@@ -16,8 +16,15 @@
 
 	//? Access - see [modules/jobs/access.dm]
 	/// If set, all of these accesses are needed to access this object.
+<<<<<<< HEAD
 	var/list/req_access
 	/// If set, at least one of these accesses are needed to access this object.
+=======
+	//  todo: getter / setter, enforced cached & deduped lists
+	var/list/req_access
+	/// If set, at least one of these accesses are needed to access this object.
+	//  todo: getter / setter, enforced cached & deduped lists
+>>>>>>> 002dda4bf (projectiles v8 - ammo & magazines (#6637))
 	var/list/req_one_access
 
 	//? Climbing
