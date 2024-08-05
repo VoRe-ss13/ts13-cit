@@ -11,7 +11,11 @@
 	load_method = SINGLE_CASING
 
 	max_shells = 1
+<<<<<<< HEAD
 	caliber = "musket"
+=======
+	caliber = /datum/ammo_caliber/musket
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 
 	slot_flags = SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
@@ -138,6 +142,10 @@
 	icon_state = "blunderbuss"
 	item_state = "blunderbuss"
 	wielded_item_state = "blunderbuss-wielded"
+<<<<<<< HEAD
 	caliber = "blunderbuss"
+=======
+	caliber = /datum/ammo_caliber/blunderbuss
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 
 	ammo_type = /obj/item/ammo_casing/musket/blunderbuss

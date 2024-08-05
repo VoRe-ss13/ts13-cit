@@ -20,7 +20,11 @@
 	icon_state = "advanced_smg"
 	w_class = WEIGHT_CLASS_NORMAL
 	load_method = MAGAZINE
+<<<<<<< HEAD
 	caliber = "9mm"
+=======
+	caliber = /datum/ammo_caliber/a9mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	magazine_type = null // R&D builds this. Starts unloaded.
@@ -41,7 +45,11 @@
 	item_state = "c20r"
 	w_class = WEIGHT_CLASS_NORMAL
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "10mm"
+=======
+	caliber = /datum/ammo_caliber/a10mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	slot_flags = SLOT_BELT|SLOT_BACK
 	load_method = MAGAZINE
@@ -69,7 +77,11 @@
 	item_state = null
 	w_class = WEIGHT_CLASS_BULKY
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "5.56mm"
+=======
+	caliber = /datum/ammo_caliber/a5_56mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -103,7 +115,11 @@
 	icon_state = "wt550"
 	item_state = "wt550"
 	w_class = WEIGHT_CLASS_NORMAL
+<<<<<<< HEAD
 	caliber = "9mm"
+=======
+	caliber = /datum/ammo_caliber/a9mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	ammo_type = "/obj/item/ammo_casing/a9mmr"
@@ -130,7 +146,11 @@
 	wielded_item_state = "z8carbine-wielded"
 	w_class = WEIGHT_CLASS_BULKY
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "7.62mm"
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -205,7 +225,11 @@
 	damage_force = 10
 	slot_flags = 0
 	max_shells = 50
+<<<<<<< HEAD
 	caliber = "5.56mm"
+=======
+	caliber = /datum/ammo_caliber/a5_56mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -291,7 +315,11 @@
 	icon_state = "mg42closed50"
 	item_state = "mg42closed"
 	max_shells = 50
+<<<<<<< HEAD
 	caliber = "7.62mm"
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	magazine_type = /obj/item/ammo_magazine/m762_mg42
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_mg42)
@@ -308,9 +336,15 @@
 	icon_state = "M60closed75"
 	item_state = "M60closed"
 	max_shells = 75
+<<<<<<< HEAD
 	caliber = "7.62mm"
 	magazine_type = /obj/item/ammo_magazine/m762_m60
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_m60)
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+	magazine_type = /obj/item/ammo_magazine/a7_62mm/m60
+	allowed_magazines = list(/obj/item/ammo_magazine/a7_62mm/m60)
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	projectile_type = /obj/projectile/bullet/rifle/a762
 	one_handed_penalty = 100
 
@@ -332,7 +366,11 @@
 	item_state = "ashot"
 	w_class = WEIGHT_CLASS_BULKY
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "12g"
+=======
+	caliber = /datum/ammo_caliber/a12g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -365,7 +403,11 @@
 	icon_state = "mini-uzi"
 	w_class = WEIGHT_CLASS_NORMAL
 	load_method = MAGAZINE
+<<<<<<< HEAD
 	caliber = ".45"
+=======
+	caliber = /datum/ammo_caliber/a45
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 5)
 	magazine_type = /obj/item/ammo_magazine/m45uzi
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
@@ -416,7 +458,11 @@
 	icon_state = "p90smg"
 	item_state = "p90"
 	w_class = WEIGHT_CLASS_NORMAL
+<<<<<<< HEAD
 	caliber = "5.7x28mm"
+=======
+	caliber = /datum/ammo_caliber/a5_7mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	fire_sound = 'sound/weapons/gunshot/gunshot_uzi.wav'
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT // ToDo: Belt sprite.
@@ -450,7 +496,11 @@
 	desc = "This weapon was made famous by gangsters in the 20th century. Cybersun Industries is currently reproducing these for a target market of historic gun collectors and classy criminals. Uses .45 rounds."
 	icon_state = "tommygun"
 	w_class = WEIGHT_CLASS_NORMAL
+<<<<<<< HEAD
 	caliber = ".45"
+=======
+	caliber = /datum/ammo_caliber/a45
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 5)
 	slot_flags = SLOT_BELT // ToDo: Belt sprite.
 	load_method = MAGAZINE
@@ -474,7 +524,11 @@
 	item_state = "bullpup"
 	w_class = WEIGHT_CLASS_BULKY
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "7.62mm"
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -505,7 +559,11 @@
 	item_state = "fal"
 	w_class = WEIGHT_CLASS_BULKY
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "7.62mm"
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -534,7 +592,11 @@
 	fire_anim = "automat_fire"
 	w_class = WEIGHT_CLASS_BULKY
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "7.62mm"
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	heavy = TRUE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3) //A real work around to a automatic rifle.
 	slot_flags = SLOT_BACK
@@ -567,7 +629,11 @@
 	w_class = WEIGHT_CLASS_BULKY
 	heavy = TRUE
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "12g"
+=======
+	caliber = /datum/ammo_caliber/a12g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -599,7 +665,11 @@
 	w_class = WEIGHT_CLASS_BULKY
 	heavy = TRUE
 	damage_force = 10
+<<<<<<< HEAD
 	caliber = "organic"
+=======
+	caliber = /datum/ammo_caliber/biomatter
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -629,7 +699,11 @@
 	icon_state = "wt274"
 	item_state = "gun"
 	load_method = MAGAZINE
+<<<<<<< HEAD
 	caliber = ".45"
+=======
+	caliber = /datum/ammo_caliber/a45
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 5)
 	magazine_type = /obj/item/ammo_magazine/m45uzi/wt274
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi/wt274)
@@ -654,7 +728,11 @@
 	icon_state = "combatsmg"
 	item_state = "combatsmg"
 	w_class = WEIGHT_CLASS_NORMAL
+<<<<<<< HEAD
 	caliber = "5.7x28mm"
+=======
+	caliber = /datum/ammo_caliber/a5_7mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	fire_sound = 'sound/weapons/gunshot/gunshot_uzi.wav'
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
@@ -679,7 +757,11 @@
 	description_fluff = "The HI-GP mk 8 'Ballistae' is a bulky weapon designed to fire an obscenely robust .75 caliber gyrojet round with an explosive payload. The original design was sourced from Old Earth speculative documentation, and developed to test its efficacy. Although the weapon itself is undeniably powerful, its logistical demands, the recoil of the three-stage ammunition system, and its hefty size make it untenable on the modern battlefield."
 	icon_state = "bolter"
 	item_state = "bolter"
+<<<<<<< HEAD
 	caliber = ".75"
+=======
+	caliber = /datum/ammo_caliber/a75
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 5, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
 	fire_sound = 'sound/weapons/gunshot/gunshot_bolter.ogg'
@@ -724,9 +806,15 @@
 	desc = "The existence of this DONKsoft toy has instigated allegations of corporate espionage from NanoTrasen."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "toy_smg"
+<<<<<<< HEAD
 	caliber = "foamdart"
 	magazine_type = /obj/item/ammo_magazine/mfoam/smg
 	allowed_magazines = list(/obj/item/ammo_magazine/mfoam/smg)
+=======
+	caliber = /datum/ammo_caliber/foam
+	magazine_type = /obj/item/ammo_magazine/foam/smg
+	allowed_magazines = list(/obj/item/ammo_magazine/foam/smg)
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	fire_sound = 'sound/items/syringeproj.ogg'
 
 /obj/item/gun/ballistic/automatic/advanced_smg/foam/update_icon_state()
@@ -751,9 +839,15 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "toy_c20"
 	damage_force = 5
+<<<<<<< HEAD
 	caliber = "foamdart"
 	magazine_type = /obj/item/ammo_magazine/mfoam/c20
 	allowed_magazines = list(/obj/item/ammo_magazine/mfoam/c20)
+=======
+	caliber = /datum/ammo_caliber/foam
+	magazine_type = /obj/item/ammo_magazine/foam/smg
+	allowed_magazines = list(/obj/item/ammo_magazine/foam/smg)
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	projectile_type = /obj/projectile/bullet/reusable/foam
 	one_handed_penalty = 5
 	fire_sound = 'sound/items/syringeproj.ogg'
@@ -776,9 +870,15 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "toy_lmgclosed100"
 	damage_force = 5
+<<<<<<< HEAD
 	caliber = "foamdart"
 	magazine_type = /obj/item/ammo_magazine/mfoam/lmg
 	allowed_magazines = list(/obj/item/ammo_magazine/mfoam/lmg)
+=======
+	caliber = /datum/ammo_caliber/foam
+	magazine_type = /obj/item/ammo_magazine/foam/lmg
+	allowed_magazines = list(/obj/item/ammo_magazine/foam/lmg)
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	projectile_type = /obj/projectile/bullet/reusable/foam
 	one_handed_penalty = 45 //It's plastic.
 	fire_sound = 'sound/items/syringeproj.ogg'

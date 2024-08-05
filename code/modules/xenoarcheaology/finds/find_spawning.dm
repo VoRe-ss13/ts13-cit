@@ -323,7 +323,11 @@
 
 			//33% chance to be able to reload the gun with human ammunition
 			if(prob(66))
+<<<<<<< HEAD
 				new_gun.caliber = "999"
+=======
+				new_gun.caliber = null
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 
 			//33% chance to fill it with a random amount of bullets
 			new_gun.max_shells = rand(1,12)

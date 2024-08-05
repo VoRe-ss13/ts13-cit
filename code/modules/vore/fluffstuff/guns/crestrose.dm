@@ -17,9 +17,15 @@
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	attack_sound = null
+<<<<<<< HEAD:code/modules/vore/fluffstuff/guns/crestrose.dm
 	caliber = "s762"
 	magazine_type = /obj/item/ammo_magazine/m762
 	allowed_magazines = list(/obj/item/ammo_magazine/m762)
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+	magazine_type = /obj/item/ammo_magazine/a7_62mm
+	allowed_magazines = list(/obj/item/ammo_magazine/a7_62mm)
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645)):code/modules/projectiles/guns/legacy_vr_guns/crestrose.dm
 
 	firemodes = list(
 	list(mode_name="fold", icon_state="crestrose_fold",item_state = "laser",damage_force=3),

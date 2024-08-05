@@ -5,7 +5,11 @@
 	item_state = "boltaction"
 	w_class = WEIGHT_CLASS_BULKY
 	heavy = TRUE
+<<<<<<< HEAD
 	caliber = "7.62mm"
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BACK
 	//fire_sound = 'sound/weapons/rifleshot.ogg'
@@ -47,7 +51,11 @@
 	item_state = "speargun"
 	w_class = WEIGHT_CLASS_BULKY
 	heavy = TRUE
+<<<<<<< HEAD
 	caliber = "apidean"
+=======
+	caliber = /datum/ammo_caliber/biomatter/wax
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 3, TECH_BIO = 7)
 	slot_flags = SLOT_BACK
 	fire_sound = 'sound/weapons/rifleshot.ogg'

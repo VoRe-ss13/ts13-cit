@@ -6,7 +6,11 @@
 	w_class = WEIGHT_CLASS_BULKY
 	damage_force = 5
 	load_method = SINGLE_CASING
+<<<<<<< HEAD
 	caliber = "arrow"
+=======
+	caliber = /datum/ammo_caliber/arrow
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	max_shells = 1
 	fire_sound = 'sound/weapons/bowfire.wav'
 	slot_flags = SLOT_BACK
@@ -27,7 +31,11 @@
 /obj/item/gun/ballistic/bow/load_ammo(var/obj/item/A, mob/user)
 	if(istype(A, /obj/item/ammo_casing))
 		var/obj/item/ammo_casing/C = A
+<<<<<<< HEAD
 		if(!(load_method & SINGLE_CASING) || caliber != C.caliber)
+=======
+		if(!(load_method & SINGLE_CASING) || !accepts_caliber(C.caliber))
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 			return //incompatible
 		if(loaded.len >= max_shells)
 			to_chat(user, "<span class='warning'>[src] is full.</span>")

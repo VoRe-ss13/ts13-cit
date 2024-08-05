@@ -50,7 +50,11 @@
 	var/base_state = "dartgun"
 	origin_tech = list(TECH_COMBAT = 7, TECH_MATERIAL = 6, TECH_BIO = 5, TECH_MAGNET = 2, TECH_ILLEGAL = 3)
 
+<<<<<<< HEAD
 	caliber = "dart"
+=======
+	caliber = /datum/ammo_caliber/dart
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	fire_sound = 'sound/weapons/empty.ogg'
 	fire_sound_text = "a metallic click"
 	recoil = 0

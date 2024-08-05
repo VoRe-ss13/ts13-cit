@@ -6,7 +6,11 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/m45)
 	projectile_type = /obj/projectile/bullet/pistol/medium
 	icon_state = "colt"
+<<<<<<< HEAD
 	caliber = ".45"
+=======
+	caliber = /datum/ammo_caliber/a45
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 
@@ -88,7 +92,11 @@
 	magazine_type = /obj/item/ammo_magazine/m45/rubber
 	allowed_magazines = list(/obj/item/ammo_magazine/m45/rubber, /obj/item/ammo_magazine/m45/flash, /obj/item/ammo_magazine/m45/practice)
 	projectile_type = /obj/projectile/bullet/pistol/medium
+<<<<<<< HEAD
 	caliber = ".45"
+=======
+	caliber = /datum/ammo_caliber/a45
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 
@@ -106,7 +114,11 @@
 	desc = "A small, quiet,  easily concealable gun. Uses .45 rounds."
 	icon_state = "silenced_pistol"
 	w_class = WEIGHT_CLASS_NORMAL
+<<<<<<< HEAD
 	caliber = ".45"
+=======
+	caliber = /datum/ammo_caliber/a45
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	silenced = 1
 	fire_delay = 1
 	recoil = 0
@@ -122,7 +134,11 @@
 	icon_state = "deagle"
 	item_state = "deagle"
 	damage_force = 14.0
+<<<<<<< HEAD
 	caliber = ".44"
+=======
+	caliber = /datum/ammo_caliber/a44
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	fire_sound = 'sound/weapons/Gunshot_deagle.ogg'
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/m44
@@ -148,7 +164,11 @@
 	desc = "Speak softly, and carry a big gun. Fires rare .75 caliber self-propelled exploding bolts--because fuck you and everything around you."
 	icon_state = "gyropistol"
 	max_shells = 8
+<<<<<<< HEAD
 	caliber = ".75"
+=======
+	caliber = /datum/ammo_caliber/a75
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	fire_sound = 'sound/weapons/railgun.ogg'
 	origin_tech = list(TECH_COMBAT = 3)
 	ammo_type = "/obj/item/ammo_casing/a75"
@@ -191,7 +211,11 @@
 	icon_state = "pistol"
 	item_state = null
 	w_class = WEIGHT_CLASS_SMALL
+<<<<<<< HEAD
 	caliber = "9mm"
+=======
+	caliber = /datum/ammo_caliber/a9mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	suppressible = TRUE
 	silenced_icon = "pistol_silencer"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
@@ -297,7 +321,11 @@
 	desc = "Not some cheap scheisse Martian knockoff! This Luger is an authentic reproduction by RauMauser. Accuracy, easy handling, and its signature appearance make it popular among historic gun collectors. Uses 9mm rounds."
 	icon_state = "p08"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
+<<<<<<< HEAD
 	caliber = "9mm"
+=======
+	caliber = /datum/ammo_caliber/a9mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/m9mm/compact
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mm/compact)
@@ -311,7 +339,11 @@
 	desc = "A widespread sidearm called the P92X which is used by military, police, and security forces across the galaxy. Uses 9mm rounds."
 	icon_state = "p92x"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
+<<<<<<< HEAD
 	caliber = "9mm"
+=======
+	caliber = /datum/ammo_caliber/a9mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/m9mm
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mm) // Can accept illegal large capacity magazines, or compact magazines.
@@ -342,7 +374,11 @@
 	desc = "A variation on the Mauser C-96, remade for a modern day. A Glithari Exports product, for gun collectors and private militaries alike. Uses 9mm stripper clips."
 	icon_state = "r9"
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL =1) //VERY OLD
+<<<<<<< HEAD
 	caliber = "9mm"
+=======
+	caliber = /datum/ammo_caliber/a9mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = SPEEDLOADER
 	max_shells = 10
 	ammo_type = /obj/item/ammo_casing/a9mm
@@ -358,7 +394,11 @@
 	desc = "This curious weapon feeds from a compressed biomatter cartridge, and seems to fabricate its ammunition from that supply."
 	icon_state = "clownpistol"
 	item_state = "revolver"
+<<<<<<< HEAD
 	caliber = "organic"
+=======
+	caliber = /datum/ammo_caliber/biomatter
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	w_class = WEIGHT_CLASS_SMALL
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 3)
@@ -374,7 +414,11 @@
 	icon_state = "konigin"
 	item_state = null
 	w_class = WEIGHT_CLASS_SMALL
+<<<<<<< HEAD
 	caliber = "9mm"
+=======
+	caliber = /datum/ammo_caliber/a9mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	suppressible = TRUE
 	silenced_icon = "konigin_silencer"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2, TECH_ILLEGAL = 3)
@@ -432,7 +476,11 @@
 	desc = "The NT-57 'LES' (Light Expeditionary Sidearm) is a tried and tested pistol often issued to Pathfinders. Featuring a polymer frame, collapsible stock, and integrated optics, the LES is lightweight and reliably functions in nearly any hazardous environment, including vacuum."
 	icon_state = "ntles"
 	item_state = "pistol"
+<<<<<<< HEAD
 	caliber = "5.7x28mm"
+=======
+	caliber = /datum/ammo_caliber/a5_7mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	magazine_type = /obj/item/ammo_magazine/m57x28mm/ntles
@@ -478,7 +526,11 @@
 	desc = "This classic sidearm design utilizes an adaptable round considered by some to be superior to 9mm parabellum. Favored amongst sheild bearers in tactical units for its stability in one-handed use, and high capacity magazines."
 	icon_state = "fiveseven"
 	item_state = "pistol"
+<<<<<<< HEAD
 	caliber = "5.7x28mm"
+=======
+	caliber = /datum/ammo_caliber/a5_7mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	w_class = WEIGHT_CLASS_SMALL
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
@@ -497,7 +549,11 @@
 	desc = "Used by Hive-guards to detain deviants."
 	icon_state = "apipistol"
 	item_state = "florayield"
+<<<<<<< HEAD
 	caliber = "apidean"
+=======
+	caliber = /datum/ammo_caliber/biomatter/wax
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	w_class = WEIGHT_CLASS_SMALL
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_BIO = 5)
@@ -530,7 +586,11 @@
 	icon_state = "toy_pistol"
 	item_state = null
 	w_class = WEIGHT_CLASS_SMALL
+<<<<<<< HEAD
 	caliber = "foamdart"
+=======
+	caliber = /datum/ammo_caliber/foam
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mfoam/pistol
 	allowed_magazines = list(/obj/item/ammo_magazine/mfoam/pistol)

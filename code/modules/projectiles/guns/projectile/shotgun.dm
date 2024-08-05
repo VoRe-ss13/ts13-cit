@@ -8,7 +8,11 @@
 	heavy = TRUE
 	damage_force = 10
 	slot_flags = SLOT_BACK
+<<<<<<< HEAD
 	caliber = "12g"
+=======
+	caliber = /datum/ammo_caliber/a12g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	load_method = SINGLE_CASING|SPEEDLOADER
 	ammo_type = /obj/item/ammo_casing/a12g/beanbag
@@ -123,7 +127,11 @@
 	desc = "This exotic ten gauge shotgun sports a custom paint job and a cylinder choke. At close ranges, it packs quite the punch."
 	icon_state = "grit"
 	item_state = "grit"
+<<<<<<< HEAD
 	caliber = "10g"
+=======
+	caliber = /datum/ammo_caliber/a10g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	ammo_type = /obj/item/ammo_casing/a10g/pellet/grit
 	fire_sound = 'sound/weapons/gunshot/musket.ogg'
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 4)
@@ -157,7 +165,11 @@
 	heavy = TRUE
 	damage_force = 10
 	slot_flags = SLOT_BACK
+<<<<<<< HEAD
 	caliber = "12g"
+=======
+	caliber = /datum/ammo_caliber/a12g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
 	ammo_type = /obj/item/ammo_casing/a12g/beanbag
 
@@ -243,7 +255,11 @@
 	accuracy = 40
 	slot_flags = SLOT_BACK
 	ammo_type = /obj/item/ammo_casing/a12g/pellet
+<<<<<<< HEAD
 	caliber = "12g"
+=======
+	caliber = /datum/ammo_caliber/a12g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
 	ammo_type = /obj/item/ammo_casing/a12g/pellet
 
@@ -258,7 +274,11 @@
 	desc = "Rip and tear, until it is done."
 	icon_state = "supershotgun"
 	item_state = "supershotgun"
+<<<<<<< HEAD
 	caliber = "10g"
+=======
+	caliber = /datum/ammo_caliber/a10g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	recoil = 0
 	accuracy = 80
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
@@ -279,7 +299,11 @@
 	w_class = WEIGHT_CLASS_SMALL
 	damage_force = 5
 	slot_flags = SLOT_BELT
+<<<<<<< HEAD
 	caliber = "12g"
+=======
+	caliber = /datum/ammo_caliber/a12g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	accuracy = -15 //Its a flaregun and you expected accuracy?
 	ammo_type = /obj/item/ammo_casing/a12g/flare
 	projectile_type = /obj/projectile/energy/flash
@@ -329,7 +353,11 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 1
 	w_class = WEIGHT_CLASS_TINY
+<<<<<<< HEAD
 	caliber = "12g"
+=======
+	caliber = /datum/ammo_caliber/a12g
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	ammo_type = /obj/item/ammo_casing/a12g
 	one_handed_penalty = 0
 	safety_state = GUN_SAFETY_OFF
@@ -342,7 +370,11 @@
 	icon_state = "toy_shotgun"
 	max_shells = 8
 	damage_force = 5
+<<<<<<< HEAD
 	caliber = "foamdart"
+=======
+	caliber = /datum/ammo_caliber/foam
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	ammo_type = /obj/item/ammo_casing/foam
 	projectile_type = /obj/projectile/bullet/reusable/foam
 	one_handed_penalty = 5

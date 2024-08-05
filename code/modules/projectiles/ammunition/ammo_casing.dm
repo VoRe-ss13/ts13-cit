@@ -16,6 +16,15 @@
 	var/casing_flags = NONE
 	/// projectile type
 	var/projectile_type
+<<<<<<< HEAD
+=======
+	/// caliber - set to typepath of datum for compile checking
+	///
+	/// * may be typepath of caliber (recommended)
+	/// * may be instance of caliber (not recommended, but allowable for special cases)
+	/// * may NOT be string of caliber, currently
+	var/caliber
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	/// stored projectile - either null for un-init'd, FALSE for empty, or an instance
 	VAR_PRIVATE/obj/projectile/stored
 
@@ -129,3 +138,21 @@
 		mag.quick_gather(get_turf(src), user)
 		return CLICKCHAIN_DID_SOMETHING | CLICKCHAIN_DO_NOT_PROPAGATE
 	return ..()
+<<<<<<< HEAD
+=======
+
+//* Caliber *//
+
+/obj/item/ammo_casing/proc/get_caliber_string()
+	return resolve_caliber(caliber)?.caliber
+
+/obj/item/ammo_casing/proc/get_caliber()
+	RETURN_TYPE(/datum/ammo_caliber)
+	return resolve_caliber(caliber)
+
+//* Generic - Spent Subtype *//
+
+/obj/item/ammo_casing/spent
+	icon_state = /obj/item/ammo_casing::icon_state + "-spent"
+	stored = FALSE
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))

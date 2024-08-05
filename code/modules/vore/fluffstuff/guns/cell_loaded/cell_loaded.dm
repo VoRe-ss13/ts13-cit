@@ -20,7 +20,12 @@
 
 	load_method = MAGAZINE //Nyeh heh hehhh.
 	magazine_type = null
+<<<<<<< HEAD:code/modules/vore/fluffstuff/guns/cell_loaded/cell_loaded.dm
 	allowed_magazines = list(/obj/item/ammo_magazine/cell_mag)
+=======
+	allowed_magazines = list(/obj/item/ammo_magazine/microbattery)
+	caliber = /datum/ammo_caliber/microbattery
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645)):code/modules/projectiles/guns/ballistic/microbattery/microbattery.dm
 	handle_casings = HOLD_CASINGS //Don't eject batteries!
 	recoil = 0
 	var/charge_left = 0

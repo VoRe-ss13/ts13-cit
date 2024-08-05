@@ -3,7 +3,11 @@
 	desc = "MAGGOT."
 	icon_state = "rocket"
 	item_state = "rocket"
+<<<<<<< HEAD
 	caliber = "rocket"
+=======
+	caliber = /datum/ammo_caliber/rocket
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	max_shells = 1
 	load_method = SINGLE_CASING
 	w_class = WEIGHT_CLASS_BULKY

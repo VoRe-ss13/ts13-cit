@@ -11,7 +11,11 @@
 	heavy = TRUE
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+<<<<<<< HEAD
 	caliber = "12.7mm"
+=======
+	caliber = /datum/ammo_caliber/a12_7mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	recoil = 5 //extra kickback
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING
@@ -86,7 +90,11 @@
 	damage_force = 10
 	slot_flags = SLOT_BACK // Needs a sprite.
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+<<<<<<< HEAD
 	caliber = "7.62mm"
+=======
+	caliber = /datum/ammo_caliber/a7_62mm
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	load_method = MAGAZINE
 	accuracy = -45 //shooting at the hip
 	scoped_accuracy = 95

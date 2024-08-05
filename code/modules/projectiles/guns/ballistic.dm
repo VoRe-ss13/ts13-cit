@@ -9,7 +9,17 @@
 	recoil = 0
 	projectile_type = /obj/projectile/bullet/pistol/strong	//Only used for chameleon guns
 
+<<<<<<< HEAD
 	var/caliber = ".357"		//determines which casings will fit
+=======
+	//* Configuration *//
+
+	/// If set, accepts ammo and magazines of this caliber.
+	var/caliber = /datum/ammo_caliber/a357
+
+	//! LEGACY BELOW
+
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 	var/handle_casings = EJECT_CASINGS	//determines how spent casings should be handled
 	var/load_method = SINGLE_CASING|SPEEDLOADER //1 = Single shells, 2 = box or quick loader, 3 = magazine
 
@@ -44,6 +54,14 @@
 			allowed_magazines += /obj/item/ammo_magazine/smart
 	update_icon()
 
+<<<<<<< HEAD
+=======
+	if(load_method & SPEEDLOADER)
+		load_method_converted |= MAGAZINE_TYPE_SPEEDLOADER | MAGAZINE_TYPE_CLIP
+	else if(load_method & MAGAZINE)
+		load_method_converted |= MAGAZINE_TYPE_NORMAL
+
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 /obj/item/gun/ballistic/update_icon_state()
 	. = ..()
 	var/silenced_state = silenced ? silenced_icon : initial(icon_state)
@@ -154,6 +172,7 @@
 				if(!user.attempt_insert_item_for_installation(AM, src))
 					return
 				ammo_magazine = AM
+<<<<<<< HEAD
 				user.visible_message("[user] inserts [AM] into [src].", "<span class='notice'>You insert [AM] into [src].</span>")
 				playsound(src.loc, mag_insert_sound, 50, 1)
 			if(SPEEDLOADER)
@@ -176,6 +195,37 @@
 	else if(istype(A, /obj/item/ammo_casing))
 		var/obj/item/ammo_casing/C = A
 		if(!(load_method & SINGLE_CASING) || caliber != C.caliber)
+=======
+				playsound(loc, mag_insert_sound, 75, 1)
+				update_icon()
+				AM.update_icon()
+			if(!user.attempt_insert_item_for_installation(AM, src))
+				return
+			ammo_magazine = AM
+			user.visible_message("[user] inserts [AM] into [src].", "<span class='notice'>You insert [AM] into [src].</span>")
+			playsound(src.loc, mag_insert_sound, 50, 1)
+		else if(AM.magazine_type & (MAGAZINE_TYPE_SPEEDLOADER | MAGAZINE_TYPE_CLIP))
+			if(loaded.len >= max_shells)
+				to_chat(user, "<span class='warning'>[src] is full!</span>")
+				return
+			var/count = 0
+			while(length(loaded) < max_shells)
+				var/obj/item/ammo_casing/inserting = AM.peek()
+				if(!accepts_casing(inserting))
+					break
+				inserting = AM.pop(src)
+				if(inserting.loc != src)
+					inserting.forceMove(src)
+				loaded += inserting
+				count++
+			if(count)
+				user.visible_message("[user] reloads [src].", "<span class='notice'>You load [count] round\s into [src].</span>")
+				playsound(src.loc, 'sound/weapons/empty.ogg', 50, 1) //Kind of the opposite of empty but the "click" sound fits a speedloader nicely.
+		AM.update_icon()
+	else if(istype(A, /obj/item/ammo_casing))
+		var/obj/item/ammo_casing/C = A
+		if(!(load_method & SINGLE_CASING) || !accepts_caliber(C.caliber))
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 			return //incompatible
 		if(loaded.len >= max_shells)
 			to_chat(user, "<span class='warning'>[src] is full.</span>")
@@ -194,7 +244,11 @@
 		to_chat(user, "<span class='notice'>You start loading \the [src].</span>")
 		sleep(1 SECOND)
 		for(var/obj/item/ammo_casing/ammo in storage.contents)
+<<<<<<< HEAD
 			if(caliber != ammo.caliber)
+=======
+			if(!accepts_caliber(ammo.caliber))
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
 				continue
 
 			load_ammo(ammo, user)
@@ -325,3 +379,32 @@
 
 	unload_ammo(usr)
 */
+<<<<<<< HEAD
+=======
+
+//* Ammo *//
+
+/**
+ * Can accept an ammo casing
+ */
+/obj/item/gun/ballistic/proc/accepts_casing(obj/item/ammo_casing/casing)
+	if(!accepts_caliber(casing.caliber))
+		return FALSE
+	return TRUE
+
+//* Caliber *//
+
+/**
+ * Accepts:
+ *
+ * * Text caliber string
+ * * Caliber path
+ * * Caliber instance
+ *
+ * @return TRUE / FALSE
+ */
+/obj/item/gun/ballistic/proc/accepts_caliber(datum/ammo_caliber/caliberlike)
+	var/datum/ammo_caliber/ours = resolve_caliber(caliber)
+	var/datum/ammo_caliber/theirs = resolve_caliber(caliberlike)
+	return ours.equivalent(theirs)
+>>>>>>> c0fd997d3 (fixes some ammo issues (#6645))
