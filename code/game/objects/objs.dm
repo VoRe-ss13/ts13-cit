@@ -157,6 +157,11 @@
 		// init material parts only if it wasn't initialized already
 		if(!(obj_flags & OBJ_MATERIAL_INITIALIZED))
 			init_material_parts()
+<<<<<<< HEAD
+=======
+	if(hides_underfloor != OBJ_UNDERFLOOR_NEVER && isturf(loc))
+		initialize_hiding_underfloor(mapload)
+>>>>>>> 352193ae0 (fixes some runtimes (#6643))
 	if (set_obj_flags)
 		var/flagslist = splittext(set_obj_flags,";")
 		var/list/string_to_objflag = GLOB.bitfields["obj_flags"]
