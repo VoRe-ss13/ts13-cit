@@ -214,7 +214,6 @@
 					teleport_cost += MI.w_class*BASE_ITEM_KJ_COST
 
 	if(istype(teleporting, /mob/))
-		var/mob/M = teleporting
 		teleport_cost += BASE_MOB_KJ_COST
 		if(M.contents) //uh oh, it contains something!
 			for(var/obj/I in recursive_content_check(M))
