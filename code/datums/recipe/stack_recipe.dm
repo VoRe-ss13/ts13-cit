@@ -8,7 +8,11 @@
  *
  * why? because this is easier to regex later if it turns out silicons code design(tm) was terrible
  */
+<<<<<<< HEAD
 /proc/create_stack_recipe_datum(name, product, cost, amount = 1, sanity_checks = TRUE, time = 0, recipe_type = /datum/stack_recipe, category, exclusitivity)
+=======
+/proc/create_stack_recipe_datum(name, product, cost = 1, amount = 1, sanity_checks = TRUE, time = 0, recipe_type = /datum/stack_recipe, category, exclusitivity, list/recipe_args)
+>>>>>>> d3055b141 (stack recipes are now defaulting to cost 1 instead of null (#6640))
 	// check this isn't being misused
 	ASSERT(!ispath(recipe_type, /datum/stack_recipe/material))
 	var/datum/stack_recipe/creating = new recipe_type
