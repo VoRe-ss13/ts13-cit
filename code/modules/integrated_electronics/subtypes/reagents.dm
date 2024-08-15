@@ -272,14 +272,24 @@
 
 	var/obj/item/reagent_containers/glass/beaker/current_beaker
 
+<<<<<<< HEAD
 /obj/item/integrated_circuit/input/beaker_connector/ask_for_input(obj/item/I, mob/living/user, a_intent)
 	if(!isobj(I))
 		return FALSE
 	attackby_react(I, user, a_intent)
+=======
+/obj/item/integrated_circuit/input/beaker_connector/ask_for_input(mob/living/user, obj/item/I,  a_intent)
+	if(!current_beaker)
+		if(!isobj(I))
+			return FALSE
+		attackby_react(I, user, a_intent)
+	else
+		attack_self(user)
+>>>>>>> f0e1f92fd (fix IC fire sound, beaker slot, clothing light (#6653))
 
 /obj/item/integrated_circuit/input/beaker_connector/attackby_react(var/obj/item/reagent_containers/I, var/mob/living/user)
 	//Check if it truly is a reagent container
-	if(!istype(I,/obj/item/reagent_containers/glass/beaker))
+	if(!(istype(I,/obj/item/reagent_containers/glass/beaker) || istype(I,/obj/item/reagent_containers/glass/hypovial)))
 		to_chat(user,"<span class='warning'>The [I.name] doesn't seem to fit in here.</span>")
 		return
 
