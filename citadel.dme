@@ -1219,7 +1219,6 @@
 #include "code\game\machinery\oxygen_pump.dm"
 #include "code\game\machinery\pda_multicaster.dm"
 #include "code\game\machinery\pointdefense.dm"
-#include "code\game\machinery\portable_turret.dm"
 #include "code\game\machinery\recharger.dm"
 #include "code\game\machinery\rechargestation.dm"
 #include "code\game\machinery\recipe_lookup.dm"
@@ -1234,8 +1233,11 @@
 #include "code\game\machinery\syndicatebeacon.dm"
 #include "code\game\machinery\transportpod.dm"
 #include "code\game\machinery\turnstile.dm"
+<<<<<<< HEAD
 #include "code\game\machinery\turret_control.dm"
 #include "code\game\machinery\vending.dm"
+=======
+>>>>>>> 89a97c439 (adds shielded turrets (#6666))
 #include "code\game\machinery\vitals_monitor.dm"
 #include "code\game\machinery\wall_frames.dm"
 #include "code\game\machinery\washing_machine.dm"
@@ -1339,6 +1341,23 @@
 #include "code\game\machinery\teleporter\console.dm"
 #include "code\game\machinery\teleporter\pad.dm"
 #include "code\game\machinery\teleporter\projector.dm"
+<<<<<<< HEAD
+=======
+#include "code\game\machinery\turrets\portable_turret.dm"
+#include "code\game\machinery\turrets\shielded_turret.dm"
+#include "code\game\machinery\turrets\turret_control.dm"
+#include "code\game\machinery\vending\drinks.dm"
+#include "code\game\machinery\vending\engineering.dm"
+#include "code\game\machinery\vending\loadout.dm"
+#include "code\game\machinery\vending\medical.dm"
+#include "code\game\machinery\vending\misc.dm"
+#include "code\game\machinery\vending\plants.dm"
+#include "code\game\machinery\vending\research.dm"
+#include "code\game\machinery\vending\security.dm"
+#include "code\game\machinery\vending\service.dm"
+#include "code\game\machinery\vending\snacks.dm"
+#include "code\game\machinery\vending\vending.dm"
+>>>>>>> 89a97c439 (adds shielded turrets (#6666))
 #include "code\game\machinery\virtual_reality\ar_console.dm"
 #include "code\game\machinery\virtual_reality\vr_console.dm"
 #include "code\game\machinery\vitruvius\anti_heater.dm"
