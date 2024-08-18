@@ -25,6 +25,7 @@
 	var/mode = 1
 	w_class = WEIGHT_CLASS_NORMAL
 
+<<<<<<< HEAD
 /obj/item/soap
 	name = "soap"
 	desc = "A cheap bar of soap. Doesn't smell."
@@ -102,6 +103,8 @@
 		M.emote("flip")
 	flip_cooldown = world.time + 7
 */
+=======
+>>>>>>> 14779ba8d (slip refactor (#6665))
 
 /obj/item/c_tube
 	name = "cardboard tube"
