@@ -6,8 +6,13 @@ TGS_DEFINE_AND_SET_GLOBAL(tgs, null)
 
 	var/list/warned_deprecated_command_runs
 
+<<<<<<< HEAD
 /datum/tgs_api/New(datum/tgs_event_handler/event_handler, datum/tgs_version/version)
 	. = ..()
+=======
+/datum/tgs_api/New(datum/tgs_event_handler/event_handler, datum/tgs_version/version, datum/tgs_http_handler/http_handler)
+	..()
+>>>>>>> b0b46685e (Automatic TGS DMAPI Update (#6654))
 	src.event_handler = event_handler
 	src.version = version
 

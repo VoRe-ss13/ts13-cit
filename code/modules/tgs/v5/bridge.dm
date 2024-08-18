@@ -77,25 +77,38 @@
 /datum/tgs_api/v5/proc/PerformBridgeRequest(bridge_request)
 	WaitForReattach(FALSE)
 
+<<<<<<< HEAD
 	// This is an infinite sleep until we get a response
 	var/export_response = world.Export(bridge_request)
 	if(!export_response)
 		TGS_ERROR_LOG("Failed bridge request: [bridge_request]")
+=======
+	TGS_DEBUG_LOG("Bridge request start")
+	var/datum/tgs_http_result/result = http_handler.PerformGet(bridge_request)
+	TGS_DEBUG_LOG("Bridge request complete")
+
+	if(isnull(result))
+		TGS_ERROR_LOG("Failed bridge request, handler returned null!")
+>>>>>>> b0b46685e (Automatic TGS DMAPI Update (#6654))
 		return
 
-	var/content = export_response["CONTENT"]
-	if(!content)
-		TGS_ERROR_LOG("Failed bridge request, missing content!")
+	if(!istype(result) || result.type != /datum/tgs_http_result)
+		TGS_ERROR_LOG("Failed bridge request, handler returned non-[/datum/tgs_http_result]!")
 		return
 
+<<<<<<< HEAD
 	var/response_json = file2text(content)
 	if(!response_json)
 		TGS_ERROR_LOG("Failed bridge request, failed to load content!")
+=======
+	if(!result.success)
+		TGS_DEBUG_LOG("Failed bridge request, HTTP request failed!")
+>>>>>>> b0b46685e (Automatic TGS DMAPI Update (#6654))
 		return
 
-	var/list/bridge_response = json_decode(response_json)
+	var/list/bridge_response = json_decode(result.response_text)
 	if(!bridge_response)
-		TGS_ERROR_LOG("Failed bridge request, bad json: [response_json]")
+		TGS_ERROR_LOG("Failed bridge request, bad json: [result.response_text]")
 		return
 
 	var/error = bridge_response[DMAPI5_RESPONSE_ERROR_MESSAGE]
