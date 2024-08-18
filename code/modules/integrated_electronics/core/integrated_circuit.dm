@@ -271,7 +271,11 @@ a creative player the means to solve many problems.  Circuits are held inside an
 					examined.ui_interact(usr)
 
 		if("remove")
+<<<<<<< HEAD
 			remove(usr, index = params["index"])
+=======
+			remove(usr, FALSE)
+>>>>>>> a7135e1ec (Circuit bug fixes & data untyping (#6658))
 			return
 	return FALSE
 
@@ -287,6 +291,11 @@ a creative player the means to solve many problems.  Circuits are held inside an
 
 	power_fail()
 	disconnect_all()
+
+	// in case we can't easily get the index, we want to be able to get it still.
+	if(!index && A)
+		index = A.ui_circuit_props.Find(src)
+
 	// Remove from helper and TGUI lists
 	A.ui_circuit_props.Cut(index, index + 1)
 	A.assembly_components.Cut(index, index + 1)
