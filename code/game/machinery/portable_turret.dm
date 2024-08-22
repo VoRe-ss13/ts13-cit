@@ -526,7 +526,13 @@
 		return 1
 
 /obj/machinery/porta_turret/power_change()
+<<<<<<< HEAD:code/game/machinery/portable_turret.dm
 	if(powered())
+=======
+	// todo: machinery/proc/on_online(), machinery/proc/on_offline()?
+	if(powered() && !is_integrity_broken())
+		ai_holder?.set_enabled(TRUE)
+>>>>>>> bd2102a9f (fixes turrets (#6673)):code/game/machinery/turrets/turret.dm
 		machine_stat &= ~NOPOWER
 		update_icon()
 	else
@@ -661,6 +667,13 @@
 	. = ..()
 	spark_system.start()	//creates some sparks because they look cool
 	update_icon()
+	// todo: ugh this shouldn't work this way
+	power_change()
+
+/obj/machinery/porta_turret/atom_fix()
+	. = ..()
+	// todo: ugh this shouldn't work this way
+	power_change()
 
 /obj/machinery/porta_turret/process(delta_time)
 	//the main machinery process
@@ -819,9 +832,36 @@
 	raising = incoming_raising
 	density = raised || raising
 
+<<<<<<< HEAD:code/game/machinery/portable_turret.dm
 /obj/machinery/porta_turret/proc/target(mob/living/target)
 	if(disabled)
 		return
+=======
+/**
+ * @return TRUE on success
+ */
+/obj/machinery/porta_turret/proc/try_fire_at(atom/target, angle)
+	if(disabled || is_integrity_broken())
+		return FALSE
+	if(is_on_cooldown())
+		return FALSE
+	return fire_at(target, angle)
+
+/obj/machinery/porta_turret/proc/fire_at(atom/target, angle)
+	// are we raised?
+	if(!raised)
+		return FALSE
+	// do we even have a target
+	if(isnull(target) && isnull(angle))
+		return FALSE
+	// are they on turf on our level?
+	if(target && (!target.x || target.z != z))
+		return FALSE
+	// do we need to resolve angle?
+	if(isnull(angle))
+		angle = arctan(y - target.y, x - target.x)
+	// face
+>>>>>>> bd2102a9f (fixes turrets (#6673)):code/game/machinery/turrets/turret.dm
 	if(target)
 		last_target = target
 		spawn()
