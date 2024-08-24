@@ -53,11 +53,61 @@
 			M.add_chemical_effect(CE_ALCOHOL_TOXIC, 1)
 		M.adjustToxLoss(effective_dose/10)
 		return 0
+<<<<<<< HEAD
 	if(effective_dose >= strength) // Early warning
 		M.make_dizzy(18) // It is decreased at the speed of 3 per tick
 	if(effective_dose >= strength * 2) // Slurring
 		M.slurring = max(M.slurring, 90)
 	if(effective_dose >= strength * 3) // Confusion - walking in random directions
+=======
+	#define DOSE_LEVEL 6
+	var/effect_level=round(effective_dose/DOSE_LEVEL)
+	if(effect_level != data)
+		var/lowering=(data>effect_level)
+		data=effect_level
+		if(lowering)
+			switch(effect_level)
+				if(0)
+					to_chat(M,SPAN_NOTICE("You no longer feel under the influence."))
+				if(1)
+					to_chat(M,SPAN_DANGER("You are no longer slurring your words as much."))
+				if(2)
+					to_chat(M,SPAN_DANGER("You're not seeing double anymore."))
+				if(3)
+					to_chat(M,SPAN_DANGER("You can walk straight again."))
+				if(4)
+					to_chat(M,SPAN_DANGER("You no longer feel like you're going to puke."))
+				if(5)
+					to_chat(M,SPAN_DANGER("You don't feel like you're going to pass out anymore."))
+				if(6)
+					to_chat(M,SPAN_DANGER("You feel like you're out of the danger zone."))
+		else
+			var/hydration_str=""
+			if(M.hydration<250)
+				hydration_str=" You're feeling a little dehydrated, too."
+			switch(effect_level)
+				if(1)
+					to_chat(M,SPAN_DANGER("You're starting to feel a little tipsy.[hydration_str]"))
+					M.dizziness=max(M.dizziness,150)
+				if(2)
+					to_chat(M,SPAN_DANGER("You're getting drunk.[hydration_str] Use the Feign Impairment verb if you want slurring."))
+				if(3)
+					to_chat(M,SPAN_DANGER("You're seeing double![hydration_str]"))
+					M.eye_blurry=max(M.eye_blurry,30)
+				if(4)
+					to_chat(M,SPAN_DANGER("You can barely walk straight![hydration_str]"))
+				if(5)
+					to_chat(M,SPAN_USERDANGER("You feel like you might puke...[hydration_str]"))
+				if(6)
+					to_chat(M,SPAN_USERDANGER("Your eyelids feel heavy![hydration_str]"))
+				if(7)
+					to_chat(M,SPAN_USERDANGER("You are getting dangerously drunk![hydration_str]"))
+	var/hydration_removal=(clamp((M.hydration-150)/300,0,1)*effect_level) + max(0,(M.hydration-450)/300)
+	if(hydration_removal>0)
+		M.adjust_hydration(-hydration_removal)
+		volume-=removed*hydration_removal*3
+	if(effect_level>=4 && prob(effect_level-2))
+>>>>>>> 7f7ea4651 (Voluntary slurring; confusion bumped to later (#6674))
 		M.Confuse(60)
 	if(effective_dose >= strength * 4) // Blurry vision
 		M.eye_blurry = max(M.eye_blurry, 30)
