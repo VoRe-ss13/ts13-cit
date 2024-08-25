@@ -85,8 +85,13 @@
 	name = ".45 pistol"
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. This one is a less-lethal variant that only accepts .45 rubber or flash magazines."
 	icon_state = "secguncomp"
+<<<<<<< HEAD
 	magazine_type = /obj/item/ammo_magazine/m45/rubber
 	allowed_magazines = list(/obj/item/ammo_magazine/m45/rubber, /obj/item/ammo_magazine/m45/flash, /obj/item/ammo_magazine/m45/practice)
+=======
+	magazine_type = /obj/item/ammo_magazine/a45/rubber
+//	allowed_magazines = list(/obj/item/ammo_magazine/a45/rubber, /obj/item/ammo_magazine/a45/flash, /obj/item/ammo_magazine/a45/practice)
+>>>>>>> 2a24d082c (Removes magazine locks from Security's ballistic sidearms (#6669))
 	projectile_type = /obj/projectile/bullet/pistol/medium
 	caliber = ".45"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
@@ -318,8 +323,13 @@
 
 /obj/item/gun/ballistic/p92x/sec
 	desc = "A widespread sidearm called the P92X which is used by military, police, and security forces across the galaxy. This one is a less-lethal variant that only accepts 9mm rubber or flash magazines."
+<<<<<<< HEAD
 	magazine_type = /obj/item/ammo_magazine/m9mm/rubber
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mm/rubber, /obj/item/ammo_magazine/m9mm/flash)
+=======
+	magazine_type = /obj/item/ammo_magazine/a9mm/rubber
+//	allowed_magazines = list(/obj/item/ammo_magazine/a9mm/rubber, /obj/item/ammo_magazine/a9mm/flash)
+>>>>>>> 2a24d082c (Removes magazine locks from Security's ballistic sidearms (#6669))
 
 //Ported this over from the _vr before deletion. Commenting them out because I'm not sure we want these in.
 /*
