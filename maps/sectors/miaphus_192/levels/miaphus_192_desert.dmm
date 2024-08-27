@@ -3,6 +3,34 @@
 /obj/random/outcrop,
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/tether_away/beach/desert/explored)
+"bz" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/outdoors/beach/sand/desert,
+/area/tether_away/beach/desert/explored)
+"cL" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/area/tether_away/beach/desert/explored)
+"cQ" = (
+/obj/structure/table/woodentable,
+/obj/item/clothing/accessory/badge/sheriff,
+/obj/item/handcuffs,
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
+"cU" = (
+/obj/item/reagent_containers/glass/bucket/wood,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/area/tether_away/beach/desert/explored)
+"dO" = (
+/obj/structure/table/woodentable,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
 "eI" = (
 /turf/simulated/floor/water/shoreline{
 	dir = 8
@@ -25,13 +53,44 @@
 "iL" = (
 /turf/simulated/floor/water/shoreline,
 /area/tether_away/beach/desert/explored)
+"js" = (
+/obj/structure/sandbag,
+/turf/simulated/floor/outdoors/beach/sand/desert,
+/area/tether_away/beach/desert/explored)
 "jD" = (
 /turf/simulated/floor/water/shoreline/classh{
 	dir = 6
 	},
 /area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
 "lf" = (
 /turf/simulated/mineral/ignore_mapgen,
+=======
+"ke" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
+"kF" = (
+/obj/machinery/light/small,
+/obj/random/trash,
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
+"lf" = (
+/turf/simulated/mineral/ignore_mapgen,
+/area/tether_away/beach/desert/explored)
+"lv" = (
+/obj/machinery/light/flamp/noshade,
+/turf/simulated/mineral/floor/cave{
+	name = "dirt";
+	outdoors = 1
+	},
+/area/tether_away/beach/desert/explored)
+"nk" = (
+/obj/structure/bed/padded,
+/turf/simulated/floor/wood/classh,
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 /area/tether_away/beach/desert/explored)
 "no" = (
 /turf/simulated/floor/water/shoreline{
@@ -57,15 +116,29 @@
 	dir = 8
 	},
 /area/tether_away/beach/desert/explored)
+"pI" = (
+/obj/effect/floor_decal/tracks{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/tether_away/beach/desert/explored)
 "qu" = (
 /turf/simulated/floor/water/shoreline/classh{
 	dir = 5
 	},
 /area/tether_away/beach/desert/explored)
+"rJ" = (
+/obj/structure/sandbag,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/area/tether_away/beach/desert/explored)
 "se" = (
 /turf/simulated/floor/water/shoreline/classh{
 	dir = 9
 	},
+/area/tether_away/beach/desert/explored)
+"tI" = (
+/obj/random/trash,
+/turf/simulated/mineral/ignore_mapgen,
 /area/tether_away/beach/desert/explored)
 "uY" = (
 /turf/simulated/floor/water/shoreline{
@@ -101,12 +174,12 @@
 	outdoors = 1
 	},
 /area/tether_away/beach/desert/explored)
-"wg" = (
-/turf/unsimulated/mineral/outdoors,
-/area/tether_away/beach/desert/explored)
 "wH" = (
 /obj/item/pickaxe,
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/area/tether_away/beach/desert/explored)
+"xd" = (
+/turf/simulated/wall/wood,
 /area/tether_away/beach/desert/explored)
 "xw" = (
 /obj/structure/closet/crate/miningcar,
@@ -152,6 +225,23 @@
 	outdoors = 1
 	},
 /area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
+=======
+"Ad" = (
+/obj/structure/sink/puddle,
+/turf/simulated/mineral/ignore_mapgen,
+/area/tether_away/beach/desert/explored)
+"Ap" = (
+/obj/machinery/door/window/brigdoor/southleft{
+	dir = 4
+	},
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
+"Ar" = (
+/obj/spawner/window/low_wall/reinforced/full,
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 "BS" = (
 /obj/effect/debris/cleanable/blood,
 /turf/simulated/mineral/floor/classh,
@@ -173,12 +263,35 @@
 "Ev" = (
 /turf/simulated/floor/wood/classh,
 /area/tether_away/beach/desert/explored)
+"EA" = (
+/obj/machinery/light/small/flicker{
+	dir = 4
+	},
+/turf/simulated/mineral/ignore_mapgen,
+/area/tether_away/beach/desert/explored)
 "EJ" = (
 /obj/random/trash,
 /turf/simulated/floor/wood/classh,
 /area/tether_away/beach/desert/explored)
 "FM" = (
 /obj/random/fishing_junk,
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
+"Hi" = (
+/obj/structure/simple_door/wood,
+/turf/simulated/mineral/ignore_mapgen,
+/area/tether_away/beach/desert/explored)
+"HN" = (
+/obj/structure/table/rack/shelf/steel,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/item/storage/firstaid/regular,
 /turf/simulated/floor/wood/classh,
 /area/tether_away/beach/desert/explored)
 "Iw" = (
@@ -193,6 +306,7 @@
 /obj/random/trash,
 /turf/simulated/floor/wood/classh,
 /area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
 "Js" = (
 /obj/item/bone/skull,
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
@@ -209,9 +323,19 @@
 "Kt" = (
 /obj/item/bone/skull/tajaran,
 /turf/simulated/floor/plating/external,
+=======
+"JW" = (
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/area/tether_away/beach/desert/unexplored)
+"KA" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 /area/tether_away/beach/desert/explored)
 "LF" = (
-/turf/simulated/floor/plating/external,
+/turf/simulated/floor/plating/outdoors,
 /area/tether_away/beach/desert/explored)
 "Mc" = (
 /obj/machinery/light/small/flicker{
@@ -219,6 +343,7 @@
 	},
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
 "Ms" = (
 /obj/item/ammo_casing/spent,
 /obj/item/ammo_casing/spent{
@@ -235,11 +360,31 @@
 /obj/random/humanoidremains,
 /obj/effect/debris/cleanable/blood,
 /turf/simulated/floor/tiled/external,
+=======
+"Mn" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/outdoors,
+/area/tether_away/beach/desert/explored)
+"NU" = (
+/obj/structure/table/rack/steel,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/obj/random/maintenance/security,
+/turf/simulated/mineral/ignore_mapgen,
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 /area/tether_away/beach/desert/explored)
 "NW" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
 "Ov" = (
 /obj/item/ammo_casing/spent{
 	pixel_y = -5
@@ -250,9 +395,12 @@
 	},
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/tether_away/beach/desert/explored)
+=======
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 "OI" = (
-/turf/simulated/floor/tiled/external,
+/turf/simulated/floor/tiled/outdoors,
 /area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
 "OO" = (
 /obj/random/humanoidremains,
 /obj/effect/debris/cleanable/blood,
@@ -269,27 +417,69 @@
 	},
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/tether_away/beach/desert/explored)
+=======
+"QY" = (
+/obj/random/trash,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/area/tether_away/beach/desert/explored)
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 "Rm" = (
 /obj/structure/sign/graffiti/pisoff,
 /turf/simulated/wall/sandstone/classh,
 /area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
 "SE" = (
 /obj/machinery/light/small/flicker{
 	dir = 4
+=======
+"SP" = (
+/obj/structure/bed/chair{
+	dir = 8
 	},
-/turf/simulated/floor/plating/external,
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
+"Ul" = (
+/obj/machinery/light/small{
+	dir = 8
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
+	},
+/turf/simulated/floor/wood/classh,
 /area/tether_away/beach/desert/explored)
 "UP" = (
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/tether_away/beach/desert/explored)
+"Vd" = (
+/obj/effect/floor_decal/tracks{
+	dir = 8
+	},
+/turf/simulated/floor/outdoors/beach/sand/desert,
+/area/tether_away/beach/desert/explored)
+<<<<<<< HEAD
+=======
+"VG" = (
+/obj/structure/fence/cut/medium{
+	dir = 4
+	},
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/area/tether_away/beach/desert/explored)
+"WA" = (
+/obj/structure/reagent_dispensers,
+/turf/simulated/mineral/ignore_mapgen,
+/area/tether_away/beach/desert/explored)
 "WT" = (
 /turf/level_border,
 /area/tether_away/beach/desert/explored)
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 "XZ" = (
 /turf/simulated/mineral/ignore_mapgen/classh,
 /area/tether_away/beach/desert/explored)
+"YZ" = (
+/obj/structure/barricade,
+/turf/simulated/floor/wood/classh,
+/area/tether_away/beach/desert/explored)
 
 (1,1,1) = {"
+<<<<<<< HEAD
 wg
 wg
 wg
@@ -467,6 +657,185 @@ wg
 wg
 wg
 wg
+=======
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+gz
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 gz
 gz
@@ -484,7 +853,7 @@ gz
 gz
 "}
 (2,1,1) = {"
-wg
+gz
 UP
 UP
 UP
@@ -678,7 +1047,7 @@ XZ
 gz
 "}
 (3,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -872,7 +1241,7 @@ XZ
 gz
 "}
 (4,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -1066,7 +1435,7 @@ XZ
 gz
 "}
 (5,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -1260,7 +1629,7 @@ XZ
 gz
 "}
 (6,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -1454,7 +1823,7 @@ XZ
 gz
 "}
 (7,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -1648,7 +2017,7 @@ XZ
 gz
 "}
 (8,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -1842,7 +2211,7 @@ XZ
 gz
 "}
 (9,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -2036,7 +2405,7 @@ XZ
 gz
 "}
 (10,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -2230,7 +2599,7 @@ XZ
 gz
 "}
 (11,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -2424,7 +2793,7 @@ XZ
 gz
 "}
 (12,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -2618,7 +2987,7 @@ XZ
 gz
 "}
 (13,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -2812,7 +3181,7 @@ XZ
 gz
 "}
 (14,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -3006,7 +3375,7 @@ XZ
 gz
 "}
 (15,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -3200,7 +3569,7 @@ XZ
 gz
 "}
 (16,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -3394,7 +3763,7 @@ XZ
 gz
 "}
 (17,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -3588,7 +3957,7 @@ XZ
 gz
 "}
 (18,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -3782,7 +4151,7 @@ XZ
 gz
 "}
 (19,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -3976,7 +4345,7 @@ XZ
 gz
 "}
 (20,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -4170,7 +4539,7 @@ XZ
 gz
 "}
 (21,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -4364,7 +4733,7 @@ XZ
 gz
 "}
 (22,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -4558,7 +4927,7 @@ XZ
 gz
 "}
 (23,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -4752,7 +5121,7 @@ XZ
 gz
 "}
 (24,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -4946,7 +5315,7 @@ XZ
 gz
 "}
 (25,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -5140,7 +5509,7 @@ XZ
 gz
 "}
 (26,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -5334,7 +5703,7 @@ XZ
 gz
 "}
 (27,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -5528,7 +5897,7 @@ XZ
 gz
 "}
 (28,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -5722,7 +6091,7 @@ XZ
 gz
 "}
 (29,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -5916,7 +6285,7 @@ XZ
 gz
 "}
 (30,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -6110,7 +6479,7 @@ XZ
 gz
 "}
 (31,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -6304,7 +6673,7 @@ XZ
 gz
 "}
 (32,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -6498,7 +6867,7 @@ XZ
 gz
 "}
 (33,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -6692,7 +7061,7 @@ XZ
 gz
 "}
 (34,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -6886,7 +7255,7 @@ XZ
 gz
 "}
 (35,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -7080,7 +7449,7 @@ XZ
 gz
 "}
 (36,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -7274,7 +7643,7 @@ XZ
 gz
 "}
 (37,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -7468,7 +7837,7 @@ XZ
 gz
 "}
 (38,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -7662,7 +8031,7 @@ XZ
 gz
 "}
 (39,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -7856,7 +8225,7 @@ XZ
 gz
 "}
 (40,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -8050,7 +8419,7 @@ XZ
 gz
 "}
 (41,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -8244,7 +8613,7 @@ XZ
 gz
 "}
 (42,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -8438,7 +8807,7 @@ XZ
 gz
 "}
 (43,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -8632,7 +9001,7 @@ XZ
 gz
 "}
 (44,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -8826,7 +9195,7 @@ XZ
 gz
 "}
 (45,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -9020,7 +9389,7 @@ XZ
 gz
 "}
 (46,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -9214,7 +9583,7 @@ XZ
 gz
 "}
 (47,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -9408,7 +9777,7 @@ XZ
 gz
 "}
 (48,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -9602,7 +9971,7 @@ XZ
 gz
 "}
 (49,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -9796,7 +10165,7 @@ XZ
 gz
 "}
 (50,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -9990,7 +10359,7 @@ XZ
 gz
 "}
 (51,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -10184,7 +10553,7 @@ XZ
 gz
 "}
 (52,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -10378,7 +10747,7 @@ XZ
 gz
 "}
 (53,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -10572,7 +10941,7 @@ XZ
 gz
 "}
 (54,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -10766,7 +11135,7 @@ XZ
 gz
 "}
 (55,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -10960,7 +11329,7 @@ XZ
 gz
 "}
 (56,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -11154,7 +11523,7 @@ XZ
 gz
 "}
 (57,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -11348,7 +11717,7 @@ XZ
 gz
 "}
 (58,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -11542,7 +11911,7 @@ XZ
 gz
 "}
 (59,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -11736,7 +12105,7 @@ XZ
 gz
 "}
 (60,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -11930,7 +12299,7 @@ XZ
 gz
 "}
 (61,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -12124,7 +12493,7 @@ XZ
 gz
 "}
 (62,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -12318,7 +12687,7 @@ XZ
 gz
 "}
 (63,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -12512,7 +12881,7 @@ XZ
 gz
 "}
 (64,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -12706,7 +13075,7 @@ XZ
 gz
 "}
 (65,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -12900,7 +13269,7 @@ XZ
 gz
 "}
 (66,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -13094,7 +13463,7 @@ XZ
 gz
 "}
 (67,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -13288,7 +13657,7 @@ XZ
 gz
 "}
 (68,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -13482,7 +13851,7 @@ XZ
 gz
 "}
 (69,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -13676,7 +14045,7 @@ XZ
 gz
 "}
 (70,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -13870,7 +14239,7 @@ XZ
 gz
 "}
 (71,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -14064,7 +14433,7 @@ XZ
 gz
 "}
 (72,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -14258,7 +14627,7 @@ XZ
 gz
 "}
 (73,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -14452,7 +14821,7 @@ XZ
 gz
 "}
 (74,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -14646,7 +15015,7 @@ XZ
 gz
 "}
 (75,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -14840,7 +15209,7 @@ XZ
 gz
 "}
 (76,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -15034,7 +15403,7 @@ XZ
 gz
 "}
 (77,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -15228,7 +15597,7 @@ XZ
 gz
 "}
 (78,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -15422,7 +15791,7 @@ XZ
 gz
 "}
 (79,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -15616,7 +15985,7 @@ XZ
 gz
 "}
 (80,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -15810,7 +16179,7 @@ XZ
 gz
 "}
 (81,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -16004,7 +16373,7 @@ XZ
 gz
 "}
 (82,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -16198,7 +16567,7 @@ XZ
 gz
 "}
 (83,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -16392,7 +16761,7 @@ XZ
 gz
 "}
 (84,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -16586,7 +16955,7 @@ XZ
 gz
 "}
 (85,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -16780,7 +17149,7 @@ XZ
 gz
 "}
 (86,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -16974,7 +17343,7 @@ XZ
 gz
 "}
 (87,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -17168,7 +17537,7 @@ XZ
 gz
 "}
 (88,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -17362,7 +17731,7 @@ XZ
 gz
 "}
 (89,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -17556,7 +17925,7 @@ XZ
 gz
 "}
 (90,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -17750,7 +18119,7 @@ XZ
 gz
 "}
 (91,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -17944,7 +18313,7 @@ XZ
 gz
 "}
 (92,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -18138,7 +18507,7 @@ XZ
 gz
 "}
 (93,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -18332,7 +18701,7 @@ XZ
 gz
 "}
 (94,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -18526,7 +18895,7 @@ XZ
 gz
 "}
 (95,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -18720,7 +19089,7 @@ XZ
 gz
 "}
 (96,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -18914,7 +19283,7 @@ XZ
 gz
 "}
 (97,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -19108,7 +19477,7 @@ XZ
 gz
 "}
 (98,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -19302,7 +19671,7 @@ XZ
 gz
 "}
 (99,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -19496,7 +19865,7 @@ XZ
 gz
 "}
 (100,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -19690,7 +20059,7 @@ XZ
 gz
 "}
 (101,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -19884,7 +20253,7 @@ XZ
 gz
 "}
 (102,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -20078,7 +20447,7 @@ XZ
 gz
 "}
 (103,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -20272,7 +20641,7 @@ XZ
 gz
 "}
 (104,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -20466,7 +20835,7 @@ XZ
 gz
 "}
 (105,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -20660,7 +21029,7 @@ XZ
 gz
 "}
 (106,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -20854,7 +21223,7 @@ XZ
 gz
 "}
 (107,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -21048,7 +21417,7 @@ XZ
 gz
 "}
 (108,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -21242,7 +21611,7 @@ XZ
 gz
 "}
 (109,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -21436,7 +21805,7 @@ XZ
 gz
 "}
 (110,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -21630,7 +21999,7 @@ XZ
 gz
 "}
 (111,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -21824,7 +22193,7 @@ XZ
 gz
 "}
 (112,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -22018,7 +22387,7 @@ XZ
 gz
 "}
 (113,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -22212,7 +22581,7 @@ XZ
 gz
 "}
 (114,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -22406,7 +22775,7 @@ XZ
 gz
 "}
 (115,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -22600,7 +22969,7 @@ XZ
 gz
 "}
 (116,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -22794,7 +23163,7 @@ XZ
 gz
 "}
 (117,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -22988,7 +23357,7 @@ XZ
 gz
 "}
 (118,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -23182,7 +23551,7 @@ XZ
 gz
 "}
 (119,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -23376,7 +23745,7 @@ XZ
 gz
 "}
 (120,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -23570,7 +23939,7 @@ XZ
 gz
 "}
 (121,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -23764,7 +24133,7 @@ XZ
 gz
 "}
 (122,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -23958,7 +24327,7 @@ XZ
 gz
 "}
 (123,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -24152,7 +24521,7 @@ XZ
 gz
 "}
 (124,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -24346,7 +24715,7 @@ XZ
 gz
 "}
 (125,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -24540,7 +24909,7 @@ XZ
 gz
 "}
 (126,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -24734,7 +25103,7 @@ XZ
 gz
 "}
 (127,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -24928,7 +25297,7 @@ XZ
 gz
 "}
 (128,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -25122,7 +25491,7 @@ XZ
 gz
 "}
 (129,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -25316,7 +25685,7 @@ XZ
 gz
 "}
 (130,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -25510,7 +25879,7 @@ XZ
 gz
 "}
 (131,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -25704,7 +26073,7 @@ XZ
 gz
 "}
 (132,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -25898,7 +26267,7 @@ XZ
 gz
 "}
 (133,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -26092,7 +26461,7 @@ XZ
 gz
 "}
 (134,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -26286,7 +26655,7 @@ XZ
 gz
 "}
 (135,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -26480,7 +26849,7 @@ XZ
 gz
 "}
 (136,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -26674,7 +27043,7 @@ XZ
 gz
 "}
 (137,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -26868,7 +27237,7 @@ XZ
 gz
 "}
 (138,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -27062,7 +27431,7 @@ XZ
 gz
 "}
 (139,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -27256,7 +27625,7 @@ XZ
 gz
 "}
 (140,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -27450,7 +27819,7 @@ XZ
 gz
 "}
 (141,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -27644,7 +28013,7 @@ XZ
 gz
 "}
 (142,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -27838,7 +28207,7 @@ XZ
 gz
 "}
 (143,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -28032,7 +28401,7 @@ XZ
 gz
 "}
 (144,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -28226,7 +28595,7 @@ XZ
 gz
 "}
 (145,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -28420,7 +28789,7 @@ XZ
 gz
 "}
 (146,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -28614,7 +28983,7 @@ XZ
 gz
 "}
 (147,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -28808,7 +29177,7 @@ XZ
 gz
 "}
 (148,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -29002,7 +29371,7 @@ XZ
 gz
 "}
 (149,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -29196,7 +29565,7 @@ XZ
 gz
 "}
 (150,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -29390,7 +29759,7 @@ XZ
 gz
 "}
 (151,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -29584,7 +29953,7 @@ XZ
 gz
 "}
 (152,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -29778,7 +30147,7 @@ XZ
 gz
 "}
 (153,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -29972,7 +30341,7 @@ XZ
 gz
 "}
 (154,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -30166,7 +30535,7 @@ XZ
 gz
 "}
 (155,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -30360,7 +30729,7 @@ XZ
 gz
 "}
 (156,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -30554,7 +30923,7 @@ XZ
 gz
 "}
 (157,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -30748,7 +31117,7 @@ XZ
 gz
 "}
 (158,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -30942,7 +31311,7 @@ XZ
 gz
 "}
 (159,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -31136,7 +31505,7 @@ XZ
 gz
 "}
 (160,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -31330,7 +31699,7 @@ XZ
 gz
 "}
 (161,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -31524,7 +31893,7 @@ XZ
 gz
 "}
 (162,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -31718,7 +32087,7 @@ XZ
 gz
 "}
 (163,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -31912,7 +32281,7 @@ XZ
 gz
 "}
 (164,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -32106,7 +32475,7 @@ XZ
 gz
 "}
 (165,1,1) = {"
-wg
+gz
 UP
 JW
 JW
@@ -34038,11 +34407,14 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 XZ
 XZ
 XZ
 XZ
 XZ
+=======
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (175,1,1) = {"
@@ -34231,12 +34603,21 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 XZ
 XZ
 XZ
 XZ
 XZ
 XZ
+=======
+Dc
+EJ
+Ul
+ke
+Dc
+XZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (176,1,1) = {"
@@ -34420,6 +34801,7 @@ UP
 UP
 UP
 UP
+<<<<<<< HEAD
 Js
 UP
 XZ
@@ -34431,6 +34813,19 @@ XZ
 XZ
 XZ
 XZ
+=======
+rJ
+rJ
+XZ
+XZ
+XZ
+Dc
+nk
+EJ
+Ev
+Dc
+XZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (177,1,1) = {"
@@ -34615,6 +35010,7 @@ UP
 UP
 CM
 CM
+<<<<<<< HEAD
 UP
 UP
 XZ
@@ -34625,6 +35021,20 @@ XZ
 XZ
 XZ
 XZ
+=======
+CM
+rJ
+UP
+UP
+XZ
+Dc
+Dc
+Ar
+Ap
+Ar
+Dc
+XZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (178,1,1) = {"
@@ -34813,12 +35223,15 @@ CM
 NW
 Dc
 XZ
+<<<<<<< HEAD
 Dc
 XZ
 XZ
 XZ
 XZ
 XZ
+=======
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (179,1,1) = {"
@@ -35004,6 +35417,7 @@ XZ
 UP
 UP
 CM
+<<<<<<< HEAD
 CM
 UP
 UP
@@ -35013,6 +35427,20 @@ XZ
 XZ
 XZ
 XZ
+=======
+UP
+rJ
+CM
+UP
+UP
+Dc
+cQ
+dO
+Ev
+kF
+Dc
+XZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (180,1,1) = {"
@@ -35194,6 +35622,7 @@ XZ
 UP
 UP
 UP
+<<<<<<< HEAD
 XZ
 XZ
 JR
@@ -35207,6 +35636,23 @@ lf
 XZ
 XZ
 XZ
+=======
+UP
+UP
+UP
+UP
+rJ
+UP
+NW
+Dc
+Dc
+HN
+SP
+Ev
+EJ
+Dc
+XZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (181,1,1) = {"
@@ -35388,6 +35834,7 @@ Dc
 Dc
 Df
 Dc
+<<<<<<< HEAD
 XZ
 XZ
 Dc
@@ -35400,6 +35847,22 @@ Js
 UP
 lf
 lf
+=======
+rJ
+UP
+CM
+rJ
+rJ
+UP
+bz
+Dc
+Dc
+Dc
+Dc
+Hi
+Dc
+Dc
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 gz
 "}
@@ -35573,9 +36036,13 @@ XZ
 UP
 UP
 UP
+<<<<<<< HEAD
 UP
 UP
 UP
+=======
+rJ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 Dc
 Dc
 Dc
@@ -35583,6 +36050,7 @@ EJ
 Eh
 Dc
 UP
+<<<<<<< HEAD
 UP
 UP
 Ms
@@ -35594,6 +36062,21 @@ CM
 UP
 UP
 UP
+=======
+CM
+CM
+CM
+rJ
+rJ
+js
+rJ
+KA
+cL
+UP
+lf
+NU
+lf
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 gz
 "}
@@ -35767,11 +36250,17 @@ XZ
 XZ
 UP
 UP
+<<<<<<< HEAD
 UP
 UP
 UP
 Dc
 Eh
+=======
+rJ
+Dc
+YZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 Ev
 FM
 Ev
@@ -35784,10 +36273,19 @@ LF
 UP
 UP
 UP
+CM
+UP
+KA
 UP
 UP
+<<<<<<< HEAD
 UP
 UP
+=======
+lf
+NU
+lf
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 gz
 "}
@@ -35961,16 +36459,23 @@ XZ
 XZ
 UP
 UP
+<<<<<<< HEAD
 UP
 UP
 UP
 Df
 Ev
+=======
+rJ
+Df
+YZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 Ev
 Ev
 Ev
 Dc
 UP
+<<<<<<< HEAD
 UP
 LF
 Mv
@@ -35982,6 +36487,18 @@ UP
 UP
 CM
 UP
+=======
+CM
+CM
+CM
+UP
+KA
+UP
+cU
+lf
+lf
+lf
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 gz
 "}
@@ -36155,17 +36672,24 @@ XZ
 XZ
 XZ
 UP
+<<<<<<< HEAD
 UP
 UP
 UP
 Dc
 EJ
+=======
+rJ
+Dc
+YZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 FM
 Iw
 II
 Dc
 UP
 UP
+<<<<<<< HEAD
 Mc
 Nx
 OO
@@ -36176,6 +36700,19 @@ UP
 UP
 CM
 CM
+=======
+UP
+CM
+UP
+QY
+UP
+VG
+lf
+lf
+Ad
+WA
+lf
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 gz
 "}
@@ -36350,9 +36887,13 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 XZ
 UP
 Dc
+=======
+UP
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 Dc
 Dc
 Dc
@@ -36369,7 +36910,20 @@ UP
 UP
 UP
 UP
+<<<<<<< HEAD
 UP
+=======
+CM
+Mc
+OI
+LF
+Mn
+EA
+tI
+lf
+lf
+lf
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 gz
 "}
@@ -36544,8 +37098,21 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 XZ
 XZ
+XZ
+XZ
+XZ
+XZ
+XZ
+=======
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
+UP
+UP
+UP
+UP
+<<<<<<< HEAD
 XZ
 XZ
 XZ
@@ -36556,15 +37123,25 @@ UP
 UP
 UP
 XZ
-XZ
-XZ
-XZ
-XZ
+=======
 UP
 UP
 UP
+zQ
+Vd
+CM
+zQ
 UP
+Dc
+Dc
+Dc
+lf
+lf
+lf
+lf
+lf
 XZ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (188,1,1) = {"
@@ -36739,26 +37316,44 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 XZ
 XZ
 XZ
 XZ
 XZ
+=======
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 UP
 UP
 UP
 UP
 UP
+<<<<<<< HEAD
+=======
+zQ
+zQ
+Vd
+zQ
+zQ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 XZ
 XZ
 XZ
 XZ
+lf
+lf
+lf
+lf
 XZ
+<<<<<<< HEAD
 UP
 UP
 UP
 XZ
+=======
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 gz
 "}
 (189,1,1) = {"
@@ -36934,15 +37529,26 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 XZ
 XZ
 XZ
 XZ
 UP
+=======
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 UP
 UP
 UP
 UP
+<<<<<<< HEAD
+=======
+zQ
+zQ
+Vd
+zQ
+lv
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 XZ
 XZ
@@ -37131,12 +37737,21 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 XZ
 UP
 UP
 UP
 UP
 UP
+=======
+UP
+xd
+zQ
+Vd
+zQ
+xd
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 XZ
 XZ
@@ -37326,11 +37941,19 @@ XZ
 XZ
 XZ
 XZ
+<<<<<<< HEAD
 UP
 UP
 UP
 UP
 UP
+=======
+zQ
+zQ
+pI
+zQ
+zQ
+>>>>>>> 09ca00334 ([IDB IGNORE] [MDB IGNORE] Poi template generation and some turf repathing (#5306))
 XZ
 XZ
 XZ
