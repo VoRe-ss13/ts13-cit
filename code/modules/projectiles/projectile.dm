@@ -613,6 +613,24 @@
 
 	if(A)
 		on_impact(A)
+<<<<<<< HEAD
+=======
+
+	if(hitscanning)
+		if(trajectory_moving_to)
+			// create tracers
+			var/datum/point/visual_impact_point = get_intersection_point(trajectory_moving_to)
+			if(visual_impact_point)
+				// kick it forwards a bit
+				visual_impact_point.shift_in_projectile_angle(angle, 2)
+				// draw
+				finalize_hitscan_tracers(visual_impact_point, impact_effect = TRUE)
+			else
+				finalize_hitscan_tracers(impact_effect = TRUE, kick_forwards = 32)
+		else
+			finalize_hitscan_tracers(impact_effect = TRUE, kick_forwards = 32)
+
+>>>>>>> d00b4e66b (fixes some bugs (#6679))
 	qdel(src)
 	return TRUE
 

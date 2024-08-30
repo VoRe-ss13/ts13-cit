@@ -596,7 +596,8 @@
 		else
 			to_chat(user, "<span class='notice'>Access denied.</span>")
 
-		..()
+	else
+		return ..()
 
 /obj/machinery/porta_turret/emag_act(remaining_charges, mob/user)
 	if(!emagged)
@@ -748,7 +749,11 @@
 		if(assess_perp(L) < 4)
 			return TURRET_NOT_TARGET	//if threat level < 4, keep going
 
+<<<<<<< HEAD:code/game/machinery/portable_turret.dm
 	if(L.lying)		//if the perp is lying down, it's still a target but a less-important target
+=======
+	if(L.stat != CONSCIOUS && (lethal || emagged))		//if the perp is lying down, it's still a target but a less-important target
+>>>>>>> d00b4e66b (fixes some bugs (#6679)):code/game/machinery/turrets/turret.dm
 		return check_down ? TURRET_SECONDARY_TARGET : TURRET_NOT_TARGET
 
 	return TURRET_PRIORITY_TARGET	//if the perp has passed all previous tests, congrats, it is now a "shoot-me!" nominee
@@ -819,9 +824,36 @@
 	raising = incoming_raising
 	density = raised || raising
 
+<<<<<<< HEAD:code/game/machinery/portable_turret.dm
 /obj/machinery/porta_turret/proc/target(mob/living/target)
 	if(disabled)
 		return
+=======
+/**
+ * @return TRUE on success
+ */
+/obj/machinery/porta_turret/proc/try_fire_at(atom/target, angle)
+	if(disabled || !enabled || is_integrity_broken())
+		return FALSE
+	if(is_on_cooldown())
+		return FALSE
+	return fire_at(target, angle)
+
+/obj/machinery/porta_turret/proc/fire_at(atom/target, angle)
+	// are we raised?
+	if(!raised)
+		return FALSE
+	// do we even have a target
+	if(isnull(target) && isnull(angle))
+		return FALSE
+	// are they on turf on our level?
+	if(target && (!target.x || target.z != z))
+		return FALSE
+	// do we need to resolve angle?
+	if(isnull(angle))
+		angle = arctan(y - target.y, x - target.x)
+	// face
+>>>>>>> d00b4e66b (fixes some bugs (#6679)):code/game/machinery/turrets/turret.dm
 	if(target)
 		last_target = target
 		spawn()
