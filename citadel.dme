@@ -165,7 +165,12 @@
 #include "code\__DEFINES\dcs\signals\datums\signals_perspective.dm"
 #include "code\__DEFINES\dcs\signals\elements\conflict.dm"
 #include "code\__DEFINES\dcs\signals\items\signals_inducer.dm"
+<<<<<<< HEAD
 #include "code\__DEFINES\dcs\signals\signals_atom\context_system.dm"
+=======
+#include "code\__DEFINES\dcs\signals\modules\signals_module_fishing.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-reachability.dm"
+>>>>>>> d1a4e379b (Shadekin and Crewkin changes (#6393))
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_appearance.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_attack.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_buckling.dm"
