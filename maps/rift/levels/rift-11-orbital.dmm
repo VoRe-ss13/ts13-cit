@@ -311,10 +311,38 @@
 	},
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_emptycourt)
+<<<<<<< HEAD
 "bh" = (
 /turf/space/basic,
 /turf/space/basic,
 /area/space)
+=======
+"bg" = (
+/obj/structure/bed/chair/shuttle,
+/obj/effect/floor_decal/borderfloor{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/lightgrey/border{
+	dir = 9
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/lightgrey/bordercorner2{
+	dir = 10
+	},
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/shuttle/escape)
+"bh" = (
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks{
+	id = "emergency_medical"
+	},
+/turf/simulated/floor,
+/area/shuttle/escape)
+>>>>>>> 5a36e02f5 (Triumph + Rift Departure Shuttle renovations & fixes (#6704))
 "bi" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -2280,7 +2308,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/keycard_auth{
 	pixel_x = -24;
-	pixel_y = -8
+	pixel_y = 10
 	},
 /obj/item/storage/secure/briefcase,
 /obj/item/multitool,
@@ -2322,7 +2350,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/keycard_auth{
 	pixel_x = 24;
-	pixel_y = -8
+	pixel_y = 11
 	},
 /obj/item/folder/blue,
 /obj/item/radio{
@@ -2525,10 +2553,13 @@
 /obj/structure/bed/chair/bay/comfy/black{
 	dir = 8
 	},
+/obj/structure/closet/walllocker/autolok_wall{
+	pixel_y = 30;
+	pixel_x = -24
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
 "hY" = (
-/obj/structure/closet/walllocker/autolok_wall,
 /obj/structure/handrail{
 	dir = 1
 	},
@@ -2540,6 +2571,10 @@
 "ib" = (
 /obj/structure/bed/chair/bay/comfy/black{
 	dir = 4
+	},
+/obj/structure/closet/walllocker/autolok_wall{
+	pixel_y = 30;
+	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
@@ -3314,6 +3349,7 @@
 "kw" = (
 /obj/structure/table/standard,
 /obj/item/material/ashtray/glass,
+/obj/random/action_figure,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape)
 "kx" = (
@@ -3610,6 +3646,10 @@
 /obj/effect/floor_decal/corner/lightgrey/bordercorner2{
 	dir = 8
 	},
+/obj/structure/closet/hydrant{
+	dir = 4;
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
 "lm" = (
@@ -3699,6 +3739,10 @@
 	},
 /obj/effect/floor_decal/corner/lightgrey/bordercorner2{
 	dir = 6
+	},
+/obj/structure/closet/hydrant{
+	dir = 4;
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
@@ -3988,13 +4032,17 @@
 /area/shuttle/escape)
 "mp" = (
 /obj/structure/table/glass,
-/obj/random/action_figure,
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/lightgrey/border{
 	dir = 8
 	},
+/obj/item/radio{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/radio,
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
 "mq" = (
@@ -4173,6 +4221,9 @@
 /obj/effect/floor_decal/corner/lightgrey/bordercorner2{
 	dir = 5
 	},
+/obj/machinery/vending/wallmed1/public{
+	pixel_x = 26
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
 "mM" = (
@@ -4269,12 +4320,20 @@
 /obj/machinery/door/airlock/security{
 	name = "Shuttle Security"
 	},
+<<<<<<< HEAD
+=======
+/obj/map_helper/access_helper/airlock/station/security/department,
+>>>>>>> 5a36e02f5 (Triumph + Rift Departure Shuttle renovations & fixes (#6704))
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape)
 "mZ" = (
 /obj/machinery/door/airlock/medical{
 	name = "Shuttle Medical"
 	},
+<<<<<<< HEAD
+=======
+/obj/map_helper/access_helper/airlock/station/medical/department,
+>>>>>>> 5a36e02f5 (Triumph + Rift Departure Shuttle renovations & fixes (#6704))
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape)
 "na" = (
@@ -4300,7 +4359,9 @@
 	id = "emergency_shuttle_lockdown";
 	name = "Emergency Shuttle Blast Door"
 	},
-/obj/spawner/window/full/firelocks,
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks{
+	id = "emergency_security"
+	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/escape)
 "nd" = (
@@ -4396,6 +4457,9 @@
 "nr" = (
 /obj/item/handcuffs,
 /obj/structure/table/standard,
+/obj/structure/closet/hydrant{
+	pixel_y = -26
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
 "ns" = (
@@ -4525,7 +4589,13 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
 "nM" = (
-/obj/spawner/window/full/firelocks,
+/obj/machinery/door/blast/regular/open{
+	id = "emergency_shuttle_lockdown";
+	name = "Emergency Shuttle Blast Door"
+	},
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks{
+	id = "emergency_cockpit"
+	},
 /turf/simulated/floor,
 /area/shuttle/escape)
 "nN" = (
@@ -4650,6 +4720,9 @@
 	dir = 1
 	},
 /obj/structure/handrail,
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/shuttle/escape)
 "og" = (
@@ -6278,6 +6351,10 @@
 /obj/item/grenade/chem_grenade/metalfoam,
 /turf/unsimulated/floor/dark,
 /area/centcom/specops)
+"un" = (
+/obj/spawner/window/low_wall/reinforced/full/firelocks,
+/turf/simulated/floor,
+/area/shuttle/escape)
 "ur" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6815,6 +6892,15 @@
 	icon_state = "lino"
 	},
 /area/tdome/tdomeobserve)
+"yJ" = (
+/obj/structure/bed/chair/shuttle{
+	dir = 4
+	},
+/obj/structure/closet/hydrant{
+	pixel_y = -26
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/shuttle/escape)
 "yO" = (
 /obj/structure/table/standard,
 /obj/machinery/computer/skills{
@@ -7669,6 +7755,12 @@
 /obj/item/clothing/glasses/sunglasses/sechud/tactical,
 /turf/unsimulated/floor/dark,
 /area/centcom/specops)
+"BW" = (
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks{
+	id = "emergency_cockpit"
+	},
+/turf/simulated/floor,
+/area/shuttle/escape)
 "Cb" = (
 /obj/machinery/lathe/autolathe{
 	desc = "Your typical Autolathe. It appears to have much more options than your regular one, however...";
@@ -7970,6 +8062,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/centcom/specops/dock)
+"Ey" = (
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks{
+	id = "emergency_security"
+	},
+/turf/simulated/floor,
+/area/shuttle/escape)
 "EC" = (
 /obj/machinery/vending/tool,
 /turf/unsimulated/floor/dark,
@@ -8275,6 +8373,15 @@
 /obj/item/storage/belt/security/tactical,
 /turf/unsimulated/floor/dark,
 /area/centcom/specops)
+"Jr" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/machinery/door/blast/regular/open{
+	id = "emergency_shuttle_lockdown";
+	name = "Emergency Shuttle Blast Door"
+	},
+/obj/spawner/window/low_wall/reinforced/full/firelocks,
+/turf/simulated/floor/reinforced,
+/area/shuttle/escape)
 "Jx" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/storage/firstaid/combat,
@@ -8405,6 +8512,25 @@
 /obj/effect/shuttle_landmark/shuttle_initializer/specops,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/specops/general)
+"Kv" = (
+/obj/structure/bed/chair/shuttle,
+/obj/effect/floor_decal/borderfloor{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/lightgrey/border{
+	dir = 5
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/lightgrey/bordercorner2{
+	dir = 5
+	},
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/shuttle/escape)
 "Ky" = (
 /obj/item/radio/intercom{
 	dir = 1;
@@ -9037,6 +9163,17 @@
 "Rn" = (
 /turf/unsimulated/wall,
 /area/centcom/specops/dock)
+"Ro" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/machinery/door/blast/regular/open{
+	id = "emergency_shuttle_lockdown";
+	name = "Emergency Shuttle Blast Door"
+	},
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks{
+	id = "emergency_medical"
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/escape)
 "Rs" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -11552,7 +11689,7 @@ gx
 ji
 jP
 kt
-nc
+Jr
 kt
 kt
 kt
@@ -11937,7 +12074,7 @@ gy
 gz
 nM
 gy
-jk
+bg
 jR
 rY
 ia
@@ -12324,7 +12461,7 @@ gz
 gz
 hi
 hX
-nM
+BW
 jm
 ia
 ku
@@ -12334,7 +12471,7 @@ lL
 gz
 gy
 mY
-nM
+Ey
 iE
 gz
 of
@@ -12518,7 +12655,7 @@ nM
 ha
 hj
 hY
-nM
+BW
 jn
 jT
 jT
@@ -12530,7 +12667,7 @@ mK
 ia
 nf
 ns
-nM
+un
 og
 oI
 px
@@ -12906,7 +13043,7 @@ nM
 hc
 hl
 hY
-nM
+BW
 jo
 jV
 jV
@@ -12918,7 +13055,7 @@ mL
 ia
 ng
 nu
-nM
+un
 oi
 oK
 gz
@@ -13100,7 +13237,7 @@ gz
 gz
 hm
 ib
-nM
+BW
 jp
 ia
 kx
@@ -13110,7 +13247,7 @@ lO
 gz
 gy
 mZ
-nM
+bh
 iE
 gz
 of
@@ -13305,7 +13442,7 @@ gy
 mM
 ia
 Cx
-Cx
+yJ
 gy
 oj
 oM
@@ -13489,7 +13626,7 @@ gy
 gz
 nM
 gy
-jF
+Kv
 jW
 rY
 ia
@@ -13880,7 +14017,7 @@ gx
 js
 jY
 kt
-nc
+Jr
 kt
 kt
 kt
@@ -14080,8 +14217,8 @@ lJ
 mr
 mP
 nb
-nc
-nc
+Ro
+Ro
 nb
 ok
 gx
