@@ -362,6 +362,7 @@
 	cost = 25
 
 /obj/item/ka_modkit/range/modify_projectile(obj/projectile/kinetic/K)
+<<<<<<< HEAD
 	K.range += modifier
 
 
@@ -375,6 +376,9 @@
 	K.damage += modifier
 
 
+=======
+	K.range += modifier * WORLD_ICON_SIZE
+>>>>>>> 9a5c5e619 (Backspaces the PKA Damage Modkit from code (#6695))
 //Cooldown
 /obj/item/ka_modkit/cooldown
 	name = "cooldown decrease"
