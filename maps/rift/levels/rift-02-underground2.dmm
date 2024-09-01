@@ -8620,6 +8620,9 @@
 "CH" = (
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/sun,
+/obj/map_helper/electrochromatic_linker{
+	id = "ce_office"
+	},
 /turf/simulated/floor,
 /area/crew_quarters/heads/chief)
 "CI" = (
@@ -9272,6 +9275,9 @@
 /obj/machinery/door/firedoor/glass,
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/palebottlegreen,
+/obj/map_helper/electrochromatic_linker{
+	id = "chapel_office"
+	},
 /turf/simulated/floor/plating,
 /area/chapel/office)
 "EU" = (
@@ -9781,6 +9787,9 @@
 /obj/machinery/door/firedoor/glass,
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/palebottlegreen,
+/obj/map_helper/electrochromatic_linker{
+	id = "chapel_hall"
+	},
 /turf/simulated/floor/plating,
 /area/chapel/main)
 "Hb" = (

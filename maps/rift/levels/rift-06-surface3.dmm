@@ -2089,6 +2089,11 @@
 "agL" = (
 /obj/item/folder/blue,
 /obj/structure/table/wooden_reinforced,
+/obj/machinery/button/windowtint/multitint{
+	pixel_x = -8;
+	pixel_y = 7;
+	id = "pathfinder_office"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration/pathfinder_office)
 "agN" = (
@@ -20474,6 +20479,9 @@
 	opacity = 0
 	},
 /obj/effect/paint/commandblue,
+/obj/map_helper/electrochromatic_linker{
+	id = "hop_office"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/hop)
 "fUe" = (
@@ -21367,6 +21375,9 @@
 "igJ" = (
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/violet,
+/obj/map_helper/electrochromatic_linker{
+	id = "pathfinder_office"
+	},
 /turf/simulated/floor/plating,
 /area/exploration/pathfinder_office)
 "iio" = (
@@ -21491,6 +21502,9 @@
 	id = "hop_office"
 	},
 /obj/effect/paint/commandblue,
+/obj/map_helper/electrochromatic_linker{
+	id = "hop_office"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/hop)
 "iCv" = (
@@ -22258,8 +22272,30 @@
 	name = "Bridge Lockdown Shutters";
 	opacity = 0
 	},
+<<<<<<< HEAD
 /obj/effect/paint/commandblue,
 /turf/simulated/floor/plating,
+=======
+/obj/machinery/door/firedoor/glass{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/command/polarized{
+	id_tint = "bridge_tint";
+	name = "Bridge";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/command/bridge,
+/obj/map_helper/electrochromatic_linker{
+	id = "bridge_tint"
+	},
+/turf/simulated/floor/tiled/dark,
+>>>>>>> f4c95bb05 (Electrochromic Helpers, Placing Said Helpers in Atlas, and fixing Cargo's Conveyor ID's (#6698))
 /area/bridge)
 "kih" = (
 /obj/machinery/door/firedoor/glass{
@@ -22478,6 +22514,33 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration)
+<<<<<<< HEAD
+=======
+"kQT" = (
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 8;
+	icon_state = "shutter0";
+	id = "bridge";
+	layer = 3.1;
+	name = "Bridge Lockdown Shutters";
+	opacity = 0
+	},
+/obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
+/obj/effect/paint/commandblue,
+/obj/map_helper/electrochromatic_linker{
+	id = "bridge_tint"
+	},
+/turf/simulated/floor/plating,
+/area/bridge)
+"kQV" = (
+/obj/machinery/atmospherics/pipe/tank/air{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/turf/simulated/floor,
+/area/shuttle/emt/general)
+>>>>>>> f4c95bb05 (Electrochromic Helpers, Placing Said Helpers in Atlas, and fixing Cargo's Conveyor ID's (#6698))
 "kRX" = (
 /turf/simulated/wall/r_wall/prepainted/security,
 /area/security/checkpoint2)
@@ -23220,6 +23283,40 @@
 	name = "Kitchen Access";
 	req_access = list(28)
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/firedoor/glass{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass/command/polarized{
+	id_tint = "bridge_tint";
+	name = "Bridge";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/command/bridge,
+/obj/map_helper/electrochromatic_linker{
+	id = "bridge_tint"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/bridge)
+"mCH" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/catwalk,
+>>>>>>> f4c95bb05 (Electrochromic Helpers, Placing Said Helpers in Atlas, and fixing Cargo's Conveyor ID's (#6698))
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
@@ -24043,6 +24140,9 @@
 /obj/machinery/door/firedoor/glass,
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/commandblue,
+/obj/map_helper/electrochromatic_linker{
+	id = "blueshieldoffice"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/blueshield)
 "oLI" = (
@@ -24202,6 +24302,34 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/monotile,
 /area/rift/trade_shop/landing_pad)
+<<<<<<< HEAD
+=======
+"pip" = (
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id = "bridge";
+	layer = 3.1;
+	name = "Bridge Lockdown Shutters";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/glass/command/polarized{
+	id_tint = "bridge_tint";
+	name = "Bridge";
+	req_one_access = null
+	},
+/obj/map_helper/access_helper/airlock/station/command/bridge,
+/obj/map_helper/electrochromatic_linker{
+	id = "bridge_tint"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/bridge)
+>>>>>>> f4c95bb05 (Electrochromic Helpers, Placing Said Helpers in Atlas, and fixing Cargo's Conveyor ID's (#6698))
 "pis" = (
 /obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 1;
@@ -24863,6 +24991,9 @@
 	},
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/commandblue,
+/obj/map_helper/electrochromatic_linker{
+	id = "bridge_tint"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "qKs" = (
@@ -25660,6 +25791,11 @@
 /obj/structure/flora/pottedplant/smallcactus{
 	pixel_y = 12
 	},
+/obj/machinery/button/windowtint/multitint{
+	pixel_x = 9;
+	pixel_y = 8;
+	id = "blueshieldoffice"
+	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/blueshield)
 "tpD" = (
@@ -26097,7 +26233,14 @@
 	opacity = 0
 	},
 /obj/effect/paint/commandblue,
+<<<<<<< HEAD
 /turf/simulated/wall/r_wall/prepainted/command,
+=======
+/obj/map_helper/electrochromatic_linker{
+	id = "bridge_tint"
+	},
+/turf/simulated/floor/plating,
+>>>>>>> f4c95bb05 (Electrochromic Helpers, Placing Said Helpers in Atlas, and fixing Cargo's Conveyor ID's (#6698))
 /area/bridge)
 "uAA" = (
 /obj/structure/closet/firecloset/full,
@@ -26983,6 +27126,9 @@
 /obj/machinery/door/firedoor/glass,
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/commandblue,
+/obj/map_helper/electrochromatic_linker{
+	id = "meeting_tint"
+	},
 /turf/simulated/floor/plating,
 /area/bridge/bridge_hallway)
 "wnH" = (
@@ -27186,6 +27332,9 @@
 /obj/machinery/door/firedoor/glass,
 /obj/spawner/window/low_wall/reinforced/electrochromic/full/firelocks,
 /obj/effect/paint/commandblue,
+/obj/map_helper/electrochromatic_linker{
+	id = "meeting_tint"
+	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
 "wUC" = (
