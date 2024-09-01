@@ -44,10 +44,6 @@
 // Activate Noms!
 
 /mob/living/simple_mob/otie
-	vore_active = 1
-	vore_capacity = 1
-	vore_pounce_chance = 20
-	vore_icons = SA_ICON_LIVING | SA_ICON_REST
 
 /mob/living/simple_mob/otie/feral //gets the pet2tame feature. starts out hostile tho so get gamblin'
 	name = "mutated feral otie"
@@ -144,10 +140,6 @@
 	tamed = 1
 	has_eye_glow = TRUE
 	loot_list = list(/obj/item/clothing/glasses/sunglasses/sechud,/obj/item/clothing/suit/armor/vest/alt)
-	vore_pounce_chance = 60 // Good boys don't do too much police brutality.
-
-	var/check_records = 0 // If true, arrests people without a record.
-	var/check_arrest = 1 // If true, arrests people who are set to arrest.
 
 /mob/living/simple_mob/otie/security/phoron
 	name = "mutated guard otie"
@@ -182,6 +174,7 @@
 	mod_min = 150
 	mod_max = 150
 
+<<<<<<< HEAD
 /mob/living/simple_mob/otie/attackby(var/obj/item/O, var/mob/user) // Trade donuts for bellybrig victims.
 	if(istype(O, /obj/item/reagent_containers/food))
 		qdel(O)
@@ -217,6 +210,8 @@
 		return H.get_id_name("unidentified person")
 	return "unidentified lifeform"
 
+=======
+>>>>>>> 2f758a135 (completely removes simplemob automated vore support (#6714))
 //Pet 4 friendly
 
 /mob/living/simple_mob/otie/attack_hand(mob/user, list/params)

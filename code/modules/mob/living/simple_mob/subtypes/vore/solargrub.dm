@@ -114,6 +114,7 @@ GLOBAL_LIST_EMPTY(solargrubs)
 			anchored = 0
 			PN = null
 
+<<<<<<< HEAD
 		// fuck you
 		if(prob(1) && charge >= 32000 && can_evolve == 1) // CitRP: We can quote this out and see what happens; && moth_amount <= 1) //it's reading from the moth_amount global list to determine if it can evolve. There should only ever be a maxcap of 1 existing solar moth alive at any time. TODO: make the code decrease the list after 1 has spawned this shift.
 			anchored = 0
@@ -122,20 +123,20 @@ GLOBAL_LIST_EMPTY(solargrubs)
 			prey_excludes.Cut()
 			GLOB.moth_amount += 1 //CitRP: There was some magic going on around this here part, it might actualy be working.
 			death_star()
+=======
+			// fuck you
+			if(prob(1) && charge >= 32000 && can_evolve == 1) // CitRP: We can quote this out and see what happens; && moth_amount <= 1) //it's reading from the moth_amount global list to determine if it can evolve. There should only ever be a maxcap of 1 existing solar moth alive at any time. TODO: make the code decrease the list after 1 has spawned this shift.
+				anchored = 0
+				PN = attached.powernet
+				GLOB.moth_amount += 1 //CitRP: There was some magic going on around this here part, it might actualy be working.
+				death_star()
+>>>>>>> 2f758a135 (completely removes simplemob automated vore support (#6714))
 
 /mob/living/simple_mob/vore/solargrub/proc/death_star()
 	visible_message("<span class='warning'>\The [src]'s shell rips open and evolves!</span>")
 	var/chosen_form = pickweight(adult_forms)
 	new chosen_form(get_turf(src))
 	qdel(src)
-
-/mob/living/simple_mob/vore/solargrub //active noms
-	vore_bump_chance = 50
-	vore_bump_emote = "applies minimal effort to try and slurp up"
-	vore_active = 1
-	vore_capacity = 1
-	vore_pounce_chance = 0 //grubs only eat incapacitated targets
-	vore_default_mode = DM_DIGEST
 
 /mob/living/simple_mob/vore/solargrub/apply_melee_effects(var/atom/A)
 	if(isliving(A))
