@@ -327,8 +327,13 @@ proc/check_panel(mob/M)
 		qdel(O)
 	return
 
+<<<<<<< HEAD
 GLOBAL_LIST_INIT(non_fakeattack_weapons, list(/obj/item/gun/ballistic, /obj/item/ammo_magazine/s357,\
 	/obj/item/gun/energy/crossbow, /obj/item/melee/energy/sword,\
+=======
+GLOBAL_LIST_INIT(non_fakeattack_weapons, list(/obj/item/gun/ballistic, /obj/item/ammo_magazine/a357/speedloader,\
+	/obj/item/gun/energy/crossbow, /obj/item/melee/transforming/energy/sword,\
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 	/obj/item/storage/box/syndicate, /obj/item/storage/box/emps,\
 	/obj/item/cartridge/syndicate, /obj/item/clothing/under/chameleon,\
 	/obj/item/clothing/shoes/syndigaloshes, /obj/item/card/id/syndicate,\

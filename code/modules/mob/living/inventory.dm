@@ -185,6 +185,7 @@
 		SLOT_ID_MASK
 	)
 
+<<<<<<< HEAD
 /mob/living/ret_grab(obj/effect/list_container/mobl/L as obj, flag)
 	if ((!( istype(l_hand, /obj/item/grab) ) && !( istype(r_hand, /obj/item/grab) )))
 		if (!( L ))
@@ -234,6 +235,8 @@
 
 	get_active_held_item()?.attack_self(src)
 
+=======
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 /mob/living/abiotic(full_body)
 	if(full_body)
 		if(item_considered_abiotic(wear_mask))

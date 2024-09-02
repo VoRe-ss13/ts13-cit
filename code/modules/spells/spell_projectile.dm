@@ -6,8 +6,12 @@
 
 	var/spell/targeted/projectile/carried
 
+<<<<<<< HEAD
 	penetrating = 0
 	range = 10 //set by the duration of the spell
+=======
+	range = WORLD_ICON_SIZE * 10 //set by the duration of the spell
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 	var/proj_trail = 0 //if it leaves a trail
 	var/proj_trail_lifespan = 0 //deciseconds
@@ -46,10 +50,12 @@
 		prox_cast(carried.choose_prox_targets(user = carried.holder, spell_holder = src))
 	return 1
 
-/obj/projectile/spell_projectile/on_impact()
+/obj/projectile/spell_projectile/on_impact(atom/target, impact_flags, def_zone, efficiency)
+	. = ..()
+	if(. & PROJECTILE_IMPACT_FLAGS_UNCONDITIONAL_ABORT)
+		return
 	if(loc && carried)
 		prox_cast(carried.choose_prox_targets(user = carried.holder, spell_holder = src))
-	return 1
 
 /obj/projectile/spell_projectile/seeking
 	name = "seeking spell"

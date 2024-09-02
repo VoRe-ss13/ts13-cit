@@ -113,6 +113,7 @@
 		return TRUE	// impact!
 	return ..()
 
+<<<<<<< HEAD
 /turf/check_impact(atom/movable/falling_atom)
 	return TRUE
 
@@ -123,6 +124,8 @@
 		if(istype(above))
 			above.queue()
 
+=======
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 //* lookups
 
 /turf/proc/above()

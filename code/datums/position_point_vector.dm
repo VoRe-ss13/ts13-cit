@@ -109,10 +109,22 @@
 	var/turf/T = return_turf()
 	return "\ref[src] aX [x] aY [y] aZ [z] pX [return_px()] pY [return_py()] mX [T.x] mY [T.y] mZ [T.z]"
 
+<<<<<<< HEAD
 /datum/point/proc/move_atom_to_src(atom/movable/AM)
 	AM.forceMove(return_turf())
 	AM.pixel_x = return_px()
 	AM.pixel_y = return_py()
+=======
+/**
+ * angle is clockwise from north
+ *
+ * @return self
+ */
+/datum/point/proc/shift_in_projectile_angle(angle, distance)
+	x += sin(angle) * distance
+	y += cos(angle) * distance
+	return src
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 /datum/point/proc/return_turf()
 	return locate(CEILING(x / world.icon_size, 1), CEILING(y / world.icon_size, 1), z)

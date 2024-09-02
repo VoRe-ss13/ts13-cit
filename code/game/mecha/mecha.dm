@@ -300,18 +300,27 @@
 	src.go_out()
 	for(var/mob/M in src) //Be Extra Sure
 		M.forceMove(get_turf(src))
+<<<<<<< HEAD:code/game/mecha/mecha.dm
 		M.loc.Entered(M)
 		if(M != src.occupant)
+=======
+		if(M != src.occupant_legacy)
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha.dm
 			step_rand(M)
+
 	for(var/atom/movable/A in src.cargo)
 		A.forceMove(get_turf(src))
 		var/turf/T = get_turf(A)
 		if(T)
 			T.Entered(A)
 		step_rand(A)
+<<<<<<< HEAD:code/game/mecha/mecha.dm
 
 	if(loc)
 		loc.Exited(src)
+=======
+	cargo = list()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha.dm
 
 	if(prob(30))
 		explosion(get_turf(loc), 0, 0, 1, 3)
@@ -884,7 +893,12 @@
 ///////////////////////////////////
 
 //ATM, the ignore_threshold is literally only used for the pulse rifles beams used mostly by deathsquads.
+<<<<<<< HEAD:code/game/mecha/mecha.dm
 /obj/mecha/proc/check_for_internal_damage(var/list/possible_int_damage,var/ignore_threshold=null)
+=======
+// todo: this is uh, not a check, this is a **roll**.
+/obj/vehicle/sealed/mecha/proc/check_for_internal_damage(var/list/possible_int_damage,var/ignore_threshold=null)
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha.dm
 	if(!islist(possible_int_damage) || !length(possible_int_damage)) return
 	if(prob(30))
 		if(ignore_threshold || src.integrity*100/initial(src.integrity) < src.internal_damage_threshold)
@@ -926,6 +940,7 @@
 			occupant_message("<font color='blue'><b>Internal fire extinquished.</b></font>")
 		if(MECHA_INT_TANK_BREACH)
 			occupant_message("<font color='blue'><b>Damaged internal tank has been sealed.</b></font>")
+<<<<<<< HEAD:code/game/mecha/mecha.dm
 	return
 
 
@@ -934,6 +949,10 @@
 ////////////////////////////////////////
 
 /obj/mecha/proc/take_damage_legacy(amount, type="brute")
+=======
+
+/obj/vehicle/sealed/mecha/proc/take_damage_legacy(amount, type="brute")
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha.dm
 	update_damage_alerts()
 	if(amount)
 		var/damage = absorbDamage(amount,type)
@@ -1120,16 +1139,24 @@
 	return
 
 
+<<<<<<< HEAD:code/game/mecha/mecha.dm
 /obj/mecha/bullet_act(var/obj/projectile/Proj) //wrapper
 	if(istype(Proj, /obj/projectile/test))
 		var/obj/projectile/test/Test = Proj
 		Test.hit |= occupant // Register a hit on the occupant, for things like turrets, or in simple-mob cases stopping friendly fire in firing line mode.
 		return
+=======
+/obj/vehicle/sealed/mecha/on_bullet_act(obj/projectile/proj, impact_flags, list/bullet_act_args)
+	if(istype(proj, /obj/projectile/test))
+		var/obj/projectile/test/Test = proj
+		Test.hit |= occupant_legacy // Register a hit on the occupant, for things like turrets, or in simple-mob cases stopping friendly fire in firing line mode.
+		return ..()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha.dm
 
-	src.log_message("Hit by projectile. Type: [Proj.name]([Proj.damage_flag]).",1)
-	call((proc_res["dynbulletdamage"]||src), "dynbulletdamage")(Proj) //calls equipment
-	..()
-	return
+	src.log_message("Hit by projectile. Type: [proj.name]([proj.damage_flag]).",1)
+	impact_flags |= call((proc_res["dynbulletdamage"]||src), "dynbulletdamage")(proj) //calls equipment
+	impact_flags |= PROJECTILE_IMPACT_SKIP_STANDARD_DAMAGE
+	return ..()
 
 /obj/mecha/proc/dynbulletdamage(var/obj/projectile/Proj)
 	var/obj/item/mecha_parts/component/armor/ArmC = internal_components[MECH_ARMOR]
@@ -1173,7 +1200,7 @@
 		if(pass_damage < temp_damage_minimum)//too pathetic to really damage you.
 			src.occupant_message("<span class='notice'>The armor deflects incoming projectile.</span>")
 			src.visible_message("The [src.name] armor deflects\the [Proj]")
-			return
+			return PROJECTILE_IMPACT_BLOCKED
 
 		else if(Proj.armor_penetration < temp_minimum_penetration)	//If you don't have enough pen, you won't do full damage
 			src.occupant_message("<span class='notice'>\The [Proj] struggles to pierce \the [src] armor.</span>")
@@ -1193,24 +1220,29 @@
 			src.check_for_internal_damage(list(MECHA_INT_FIRE,MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH,MECHA_INT_CONTROL_LOST,MECHA_INT_SHORT_CIRCUIT),ignore_threshold)
 
 		//AP projectiles have a chance to cause additional damage
+<<<<<<< HEAD:code/game/mecha/mecha.dm
 		if(Proj.penetrating)
 			var/distance = get_dist(Proj.starting, get_turf(loc))
 			var/hit_occupant = 1 //only allow the occupant to be hit once
 			for(var/i in 1 to min(Proj.penetrating, round(Proj.damage/15)))
 				if(src.occupant && hit_occupant && prob(20))
 					Proj.projectile_attack_mob(src.occupant, distance)
+=======
+		if(Proj.legacy_penetrating)
+			var/hit_occupant = 1 //only allow the occupant to be hit once
+			for(var/i in 1 to min(Proj.legacy_penetrating, round(Proj.damage/15)))
+				if(src.occupant_legacy && hit_occupant && prob(20))
+					Proj.impact(occupant_legacy)
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha.dm
 					hit_occupant = 0
 				else
 					if(pass_damage > internal_damage_minimum)	//Only decently painful attacks trigger a chance of mech damage.
 						src.check_for_internal_damage(list(MECHA_INT_FIRE,MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH,MECHA_INT_CONTROL_LOST,MECHA_INT_SHORT_CIRCUIT), 1)
 
-				Proj.penetrating--
+				Proj.legacy_penetrating--
 
 				if(prob(15))
 					break //give a chance to exit early
-
-	Proj.on_hit(src) //on_hit just returns if it's argument is not a living mob so does this actually do anything?
-	return
 
 //This refer to whenever you are caught in an explosion.
 /obj/mecha/legacy_ex_act(severity)
@@ -1230,19 +1262,13 @@
 		src.log_append_to_last("Armor saved, changing severity to [severity].")
 	switch(severity)
 		if(1.0)
-			src.take_damage_legacy(initial(src.integrity), "bomb")
+			src.take_damage_legacy(initial(src.integrity)/1.25, "bomb")
 		if(2.0)
-			if (prob(30))
-				src.take_damage_legacy(initial(src.integrity), "bomb")
-			else
-				src.take_damage_legacy(initial(src.integrity)/2, "bomb")
-				src.check_for_internal_damage(list(MECHA_INT_FIRE,MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH,MECHA_INT_CONTROL_LOST,MECHA_INT_SHORT_CIRCUIT),1)
+			src.take_damage_legacy(initial(src.integrity)/2.5, "bomb")
+			src.check_for_internal_damage(list(MECHA_INT_FIRE,MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH,MECHA_INT_CONTROL_LOST,MECHA_INT_SHORT_CIRCUIT),1)
 		if(3.0)
-			if (prob(5))
-				qdel(src)
-			else
-				src.take_damage_legacy(initial(src.integrity)/5, "bomb")
-				src.check_for_internal_damage(list(MECHA_INT_FIRE,MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH,MECHA_INT_CONTROL_LOST,MECHA_INT_SHORT_CIRCUIT),1)
+			src.take_damage_legacy(initial(src.integrity)/8, "bomb")
+			src.check_for_internal_damage(list(MECHA_INT_FIRE,MECHA_INT_TEMP_CONTROL,MECHA_INT_TANK_BREACH,MECHA_INT_CONTROL_LOST,MECHA_INT_SHORT_CIRCUIT),1)
 	return
 
 /*Will fix later -Sieve
@@ -2852,3 +2878,108 @@
 // Various sideways-defined get_cells
 /obj/mecha/get_cell(inducer)
 	return cell
+<<<<<<< HEAD:code/game/mecha/mecha.dm
+=======
+
+//* Entry / Exit *//
+
+/obj/vehicle/sealed/mecha/occupant_added(mob/adding, datum/event_args/actor/actor, control_flags, silent)
+	. = ..()
+	if(occupant_legacy)
+		stack_trace("how did we get another?")
+		return
+
+	var/mob/living/carbon/human/H = adding
+
+	if(istype(H) && H.client && (H in range(1)))
+		H.stop_pulling()
+		H.forceMove(src)
+		H.update_perspective()
+		occupant_legacy = H
+		add_fingerprint(H)
+		log_append_to_last("[H] moved in as pilot.")
+		update_icon()
+		if(occupant_legacy.hud_used)
+			minihud = new (occupant_legacy.hud_used, src)
+
+	GrantActions(occupant_legacy, 1)
+
+	//This part removes all the verbs if you don't have them the _possible on your mech. This is a little clunky, but it lets you just add that to any mech.
+	//And it's not like this 10yo code wasn't clunky before.
+	if(!smoke_possible)			//Can't use smoke? No verb for you.
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/toggle_smoke)
+	if(!thrusters_possible)		//Can't use thrusters? No verb for you.
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/toggle_thrusters)
+	if(!defence_mode_possible)	//Do i need to explain everything?
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/toggle_defence_mode)
+	if(!overload_possible)
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/toggle_overload)
+	if(!zoom_possible)
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/toggle_zoom)
+	if(!phasing_possible)
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/toggle_phasing)
+	if(!switch_dmg_type_possible)
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/switch_damtype)
+	if(!cloak_possible)
+		remove_obj_verb(src, /obj/vehicle/sealed/mecha/verb/toggle_cloak)
+
+	update_cell_alerts()
+	update_damage_alerts()
+	setDir(dir_in)
+	playsound(src, 'sound/machines/door/windowdoor.ogg', 50, 1)
+	if(occupant_legacy.client && cloaked_selfimage)
+		occupant_legacy.client.images += cloaked_selfimage
+	play_entered_noise(occupant_legacy)
+
+/obj/vehicle/sealed/mecha/occupant_removed(mob/removing, datum/event_args/actor/actor, control_flags, silent)
+	. = ..()
+	QDEL_NULL(minihud)
+	RemoveActions(removing, human_occupant=1)
+
+	log_message("[removing] moved out.")
+	removing << browse(null, "window=exosuit")
+	if(removing.client && cloaked_selfimage)
+		removing.client.images -= cloaked_selfimage
+	// if(istype(mob_container, /obj/item/mmi))
+	// 	var/obj/item/mmi/mmi = mob_container
+	// 	if(mmi.brainmob)
+	// 		removing.forceMove(mmi)
+	// 	mmi.mecha = null
+	// 	removing.mobility_flags = NONE
+	removing.clear_alert("charge")
+	removing.clear_alert("mech damage")
+
+	if(occupant_legacy == removing)
+		occupant_legacy = null
+
+	update_appearance()
+	setDir(dir_in)
+
+	if(removing.client)
+		removing.client.view = world.view
+		src.zoom = 0
+
+	strafing = 0
+
+//* Action Datums - /datum/action/vehicle/mecha *//
+
+/datum/action/vehicle/mecha
+	target_type = /obj/vehicle/sealed/mecha
+	background_icon_state = "mecha"
+	button_icon = 'icons/screen/actions/mecha.dmi'
+
+	required_control_flags = NONE
+
+/datum/action/vehicle/mecha/eject
+	name = "Eject"
+	desc = "Eject from your mecha."
+	button_icon_state = "eject"
+
+	required_control_flags = VEHICLE_CONTROL_EXIT
+
+/datum/action/vehicle/mecha/eject/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	target.mob_try_exit(actor.performer, actor)
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha.dm

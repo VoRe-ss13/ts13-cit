@@ -1129,11 +1129,6 @@
 	if(!CHECK_MOBILITY(user, MOBILITY_CAN_MOVE))
 		return
 
-	if(locate(/obj/effect/stop/, wearer.loc))
-		for(var/obj/effect/stop/S in wearer.loc)
-			if(S.victim == wearer)
-				return
-
 	if(!wearer.lastarea)
 		wearer.lastarea = get_area(wearer.loc)
 

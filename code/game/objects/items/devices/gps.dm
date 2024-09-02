@@ -211,7 +211,7 @@
 		hud_bound?.add_screen(hud_arrow)
 	hud_arrow.set_disabled(FALSE)
 	update_tracking()
-	START_PROCESSING(SSfastprocess, src)
+	START_PROCESSING(SSprocess_5fps, src)
 	return TRUE
 
 /**
@@ -224,7 +224,7 @@
 	tracking = null
 	// just kick it out
 	hud_arrow?.set_disabled(TRUE)
-	STOP_PROCESSING(SSfastprocess, src)
+	STOP_PROCESSING(SSprocess_5fps, src)
 	return TRUE
 
 /obj/item/gps/process(delta_time)

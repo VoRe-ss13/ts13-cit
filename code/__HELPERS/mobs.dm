@@ -1,8 +1,13 @@
 /atom/movable/proc/get_mob()
 	return
 
+<<<<<<< HEAD
 /obj/mecha/get_mob()
 	return occupant
+=======
+/obj/vehicle/get_mob()
+	return SAFEPICK(occupants)
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 /obj/vehicle_old/train/get_mob()
 	return buckled_mobs

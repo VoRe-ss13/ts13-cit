@@ -161,7 +161,7 @@
 	attack_edge = 1
 	attacktext = list("slashed")
 
-	loot_list = list(/obj/item/melee/energy/sword = 100, /obj/item/shield/energy = 100)
+	loot_list = list(/obj/item/melee/transforming/energy/sword = 100, /obj/item/shield/transforming/energy = 100)
 
 // They have a shield, so they try to block
 /mob/living/simple_mob/humanoid/merc/melee/sword/attackby(var/obj/item/O as obj, var/mob/user as mob)
@@ -177,9 +177,9 @@
 		to_chat(user, "<span class='warning'>This weapon is ineffective, it does no damage.</span>")
 		visible_message("<span class='warning'>\The [user] gently taps [src] with \the [O].</span>")
 
-/mob/living/simple_mob/humanoid/merc/melee/sword/bullet_act(var/obj/projectile/Proj)
-	if(!Proj)	return
+/mob/living/simple_mob/humanoid/merc/melee/sword/on_bullet_act(obj/projectile/proj, impact_flags, list/bullet_act_args)
 	if(prob(35))
+<<<<<<< HEAD
 		visible_message("<span class='warning'>[src] blocks [Proj] with its shield!</span>")
 		if(Proj.firer)
 			ai_holder.react_to_attack(Proj.firer)
@@ -187,6 +187,13 @@
 	else
 		..()
 
+=======
+		visible_message("<span class='warning'>[src] blocks [proj] with its shield!</span>")
+		if(proj.firer)
+			ai_holder.react_to_attack_polaris(proj.firer)
+		return PROJECTILE_IMPACT_BLOCKED
+	return ..()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 ////////////////////////////////
 //			Ranged
@@ -553,15 +560,22 @@
 	else
 		visible_message("<span class='warning'>\The [user] gently taps [src] with \the [O].</span>")
 
-/mob/living/simple_mob/humanoid/merc/ranged/space/suppressor/bullet_act(var/obj/projectile/Proj)
-	if(!Proj)	return
+/mob/living/simple_mob/humanoid/merc/ranged/space/suppressor/on_bullet_act(obj/projectile/proj, impact_flags, list/bullet_act_args)
 	if(prob(50))
+<<<<<<< HEAD
 		visible_message("<span class='warning'>[src] blocks [Proj] with its shield!</span>")
 		if(Proj.firer)
 			ai_holder.react_to_attack(Proj.firer)
 		return
 	else
 		..()
+=======
+		visible_message("<span class='warning'>[src] blocks [proj] with its shield!</span>")
+		if(proj.firer)
+			ai_holder.react_to_attack_polaris(proj.firer)
+		return PROJECTILE_IMPACT_BLOCKED
+	return ..()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 ////////////////////////////////
 //			PoI Mercs
@@ -683,7 +697,7 @@
 
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/evasive
 	corpse = /obj/spawner/corpse/vox/boarder_m
-	loot_list = list(/obj/item/melee/energy/sword = 100)
+	loot_list = list(/obj/item/melee/transforming/energy/sword = 100)
 
 // They're good with the swords? I dunno. I like the idea they can deflect.
 /mob/living/simple_mob/humanoid/merc/voxpirate/boarder/attackby(var/obj/item/O, var/mob/user)
@@ -699,15 +713,22 @@
 		to_chat(user, "<span class='warning'>This weapon is ineffective, it does no damage.</span>")
 		visible_message("<span class='warning'>\The [user] gently taps [src] with \the [O].</span>")
 
-/mob/living/simple_mob/humanoid/merc/voxpirate/boarder/bullet_act(var/obj/projectile/Proj)
-	if(!Proj)	return
+/mob/living/simple_mob/humanoid/merc/voxpirate/boarder/on_bullet_act(obj/projectile/proj, impact_flags, list/bullet_act_args)
 	if(prob(35))
+<<<<<<< HEAD
 		visible_message("<span class='warning'>[src] blocks [Proj] with its sword!</span>")
 		if(Proj.firer)
 			ai_holder.react_to_attack(Proj.firer)
 		return
 	else
 		..()
+=======
+		visible_message("<span class='warning'>[src] blocks [proj] with its sword!</span>")
+		if(proj.firer)
+			ai_holder.react_to_attack_polaris(proj.firer)
+		return PROJECTILE_IMPACT_BLOCKED
+	return ..()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 ////////////////////////////////
 //			Vox Ranged

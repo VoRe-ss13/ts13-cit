@@ -170,8 +170,8 @@
 				thermitemelt(user)
 				return
 
-		else if( istype(I, /obj/item/melee/energy/blade) )
-			var/obj/item/melee/energy/blade/EB = I
+		else if( istype(I, /obj/item/melee/ninja_energy_blade) )
+			var/obj/item/melee/ninja_energy_blade/EB = I
 
 			EB.spark_system.start()
 			to_chat(user, "<span class='notice'>You slash \the [src] with \the [EB]; the thermite ignites!</span>")
@@ -222,8 +222,13 @@
 			dismantle_verb = "cutting"
 			dismantle_sound = I.tool_sound
 		//	cut_delay *= 0.7 // Tools themselves now can shorten the time it takes.
+<<<<<<< HEAD
 		else if(istype(I,/obj/item/melee/energy/blade))
 			dismantle_sound = "sparks"
+=======
+		else if(istype(I,/obj/item/melee/ninja_energy_blade))
+			dismantle_sound = /datum/soundbyte/grouped/sparks
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 			dismantle_verb = "slicing"
 			cut_delay *= 0.5
 		else if (istype(I, /obj/item/melee/thermalcutter))

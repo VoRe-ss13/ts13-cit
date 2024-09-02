@@ -105,6 +105,22 @@
 			new outcropdrop(get_turf(src), rand(mindrop,upperdrop))
 			qdel(src)
 			return
+<<<<<<< HEAD
+=======
+		return
+	. = ..()
+
+/obj/structure/outcrop/on_bullet_act(obj/projectile/proj, impact_flags, list/bullet_act_args)
+	. = ..()
+	if(. & PROJECTILE_IMPACT_FLAGS_TARGET_ABORT)
+		return
+	if(proj.damage_flag == ARMOR_BOMB) //Intended for kinetic accelerators/daggers to just get rid of this stuff quickly. They're rocks.
+		GetDrilled()
+
+/obj/structure/outcrop/proc/GetDrilled()
+	new outcropdrop(get_turf(src), rand(mindrop,upperdrop))
+	qdel(src)
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 /obj/random/outcrop //In case you want an outcrop without pre-determining the type of ore.
 	name = "random rock outcrop"

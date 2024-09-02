@@ -27,6 +27,7 @@
 	icon_scale_x = 1.2
 	icon_scale_y = 1.2
 
+<<<<<<< HEAD:code/game/mecha/working/ripley.dm
 /obj/mecha/working/ripley/Destroy()
 	for(var/atom/movable/A in src.cargo)
 		A.forceMove(loc)
@@ -35,6 +36,9 @@
 	..()
 
 /obj/mecha/working/ripley/firefighter
+=======
+/obj/vehicle/sealed/mecha/working/ripley/firefighter
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/subtypes/working/ripley.dm
 	desc = "Standard APLU chassis was refitted with additional thermal protection and cistern."
 	name = "APLU \"Firefighter\""
 	icon_state = "firefighter"

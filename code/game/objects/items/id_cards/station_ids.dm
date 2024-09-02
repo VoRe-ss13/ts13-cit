@@ -52,10 +52,29 @@
 		job_access_type = getting_from
 
 /obj/item/card/id/examine(mob/user, dist)
+<<<<<<< HEAD
 	var/list/result = dat()
 	result.Insert(1, ..())
 	return result
 	//show(user)
+=======
+	. = ..()
+	. += "<div"
+	if(front || side)
+		. += " style='background: "
+		if(side)
+			. += "url([icon2html(side, world, sourceonly = TRUE)])"
+		if(front && side)
+			. += ", "
+		if(front)
+			. += "url([icon2html(front, world, sourceonly = TRUE)])"
+		. += "; background-repeat: no-repeat; background-size: 64px; background-position: right 0px top 0px, right 64px top 0px; -ms-interpolation-mode: nearest-neighbor; image-rendering: pixelated'"
+	. += ">"
+	. += dat()
+	. += "</div>"
+	if(Adjacent(user))
+		. += SPAN_NOTICE("<b>Alt-click</b> to [extra_info_visible ? "close" : "open"] the confidential information flap.")
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 
 /obj/item/card/id/examine_more(mob/user)
 	. = ..()

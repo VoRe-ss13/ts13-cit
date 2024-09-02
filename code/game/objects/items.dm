@@ -8,7 +8,41 @@
 	depth_level = 0
 	climb_allowed = FALSE
 
+<<<<<<< HEAD
 	//? Flags
+=======
+	//* Actions *//
+
+	/// cached action descriptors
+	///
+	/// this can be:
+	/// * a /datum/action instance
+	/// * a /datum/action typepath
+	/// * a list of /datum/action instancse
+	/// * a list of /datum/action typepaths
+	///
+	/// typepaths get instanced on us entering inventory
+	var/item_actions
+	/// if [item_actions] is not set, and this is, we make a single action rendering ourselves
+	/// and set its name to this
+	var/item_action_name
+	/// if [item_actions] is not set, and [action_name] is set, this is the mobility flags
+	/// the action will check for
+	var/item_action_mobility_flags = MOBILITY_CAN_HOLD | MOBILITY_CAN_USE
+
+	//* Combat *//
+	/// passive parry data / frame
+	///
+	/// * anonymous typepath is allowed
+	/// * typepath is allowed
+	/// * instance is allowed
+	///
+	/// note that the component will not be modified while held;
+	/// if this is changed, the component needs to be remade.
+	var/passive_parry
+
+	//* Flags *//
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 	/// Item flags.
 	/// These flags are listed in [code/__DEFINES/inventory/item_flags.dm].
 	var/item_flags = ITEM_ENCUMBERS_WHILE_HELD
@@ -524,14 +558,6 @@
 /obj/item/ui_action_click(datum/action/action, mob/user)
 	attack_self(usr)
 
-//RETURN VALUES
-//handle_shield should return a positive value to indicate that the attack is blocked and should be prevented.
-//If a negative value is returned, it should be treated as a special return value for bullet_act() and handled appropriately.
-//For non-projectile attacks this usually means the attack is blocked.
-//Otherwise should return 0 to indicate that the attack is not affected in any way.
-/obj/item/proc/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
-	return 0
-
 /obj/item/proc/get_loc_turf()
 	var/atom/L = loc
 	while(L && !istype(L, /turf/))
@@ -636,7 +662,7 @@
 	if (!..())
 		return 0
 
-	if(istype(src, /obj/item/melee/energy))
+	if(istype(src, /obj/item/melee/transforming/energy))
 		return
 
 	//if we haven't made our blood_overlay already
@@ -781,27 +807,6 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 // 	. = ..()
 // 	update_action_buttons()
 
-//* Armor *//
-
-/**
- * called to be checked for mob armor
- *
- * @returns copy of args with modified values
- */
-/obj/item/proc/checking_mob_armor(damage, tier, flag, mode, attack_type, datum/weapon, target_zone)
-	damage = fetch_armor().resultant_damage(damage, tier, flag)
-	return args.Copy()
-
-/**
- * called to be used as mob armor
- * side effects are allowed
- *
- * @returns copy of args with modified values
- */
-/obj/item/proc/running_mob_armor(damage, tier, flag, mode, attack_type, datum/weapon, target_zone)
-	damage = fetch_armor().resultant_damage(damage, tier, flag)
-	return args.Copy()
-
 //* Attack *//
 
 /**
@@ -852,7 +857,20 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 /obj/item/proc/is_shred(strict)
 	return (damage_mode & DAMAGE_MODE_SHRED)
 
-//* Interaction *//
+//* Combat *//
+
+/obj/item/proc/load_passive_parry()
+	if(!passive_parry)
+		return
+	passive_parry = resolve_passive_parry_data(passive_parry)
+	var/datum/component/passive_parry/loaded = GetComponent(/datum/component/passive_parry)
+	if(loaded)
+		loaded.parry_data = passive_parry
+
+/obj/item/proc/reload_passive_parry()
+	load_passive_parry()
+
+//* Interactions *//
 
 /obj/item/attackby(obj/item/I, mob/user, list/params, clickchain_flags, damage_multiplier)
 	if(isturf(loc) && I.obj_storage?.allow_mass_gather && I.obj_storage.allow_mass_gather_via_click)
@@ -927,6 +945,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 /obj/item/proc/attacksound_override(atom/target, attack_type)
 	return
 
+<<<<<<< HEAD
 //* Carry Weight *//
 
 /obj/item/proc/get_weight()
@@ -1013,6 +1032,8 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 		if(should_attempt_pickup(e_args) && attempt_pickup(e_args.performer))
 			return TRUE
 
+=======
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579))
 //* Inventory *//
 
 /**
@@ -1081,8 +1102,18 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 //* VV *//
 
+/obj/item/vv_get_var(var_name, resolve)
+	switch(var_name)
+		if(NAMEOF(src, passive_parry))
+			if(resolve)
+				load_passive_parry()
+	return ..()
+
 /obj/item/vv_edit_var(var_name, var_value, mass_edit, raw_edit)
 	switch(var_name)
+		if(NAMEOF(src, passive_parry))
+			. = ..()
+			reload_passive_parry()
 		if(NAMEOF(src, item_flags))
 			var/requires_update = (item_flags & (ITEM_ENCUMBERS_WHILE_HELD | ITEM_ENCUMBERS_ONLY_HELD)) != (var_value & (ITEM_ENCUMBERS_WHILE_HELD | ITEM_ENCUMBERS_ONLY_HELD))
 			. = ..()
@@ -1102,7 +1133,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 					L.update_carry_slowdown()
 		if(NAMEOF(src, slowdown))
 			. = ..()
-			if(. )
+			if(.)
 				var/mob/living/L = worn_mob()
 				// check, as worn_mob() returns /mob, not /living
 				if(istype(L))

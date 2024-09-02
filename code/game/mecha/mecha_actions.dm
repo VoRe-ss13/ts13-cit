@@ -77,10 +77,21 @@
 	name = "Toggle Lights"
 	button_icon_state = "mech_lights_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_toggle_lights/Activate()
 	button_icon_state = "mech_lights_[chassis.lights ? "off" : "on"]"
 	button.UpdateIcon()
 	chassis.lights()
+=======
+/datum/action/mecha/mech_toggle_lights/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	chassis.lights()
+	button_icon_state = "mech_lights_[chassis.lights ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 
 
 
@@ -88,9 +99,19 @@
 	name = "Toggle Internal Airtank Usage"
 	button_icon_state = "mech_internals_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_toggle_internals/Activate()
 	button_icon_state = "mech_internals_[chassis.use_internal_tank ? "off" : "on"]"
 	button.UpdateIcon()
+=======
+/datum/action/mecha/mech_toggle_internals/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	button_icon_state = "mech_internals_[chassis.use_internal_tank ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 	chassis.internal_tank()
 
 
@@ -117,10 +138,21 @@
 	name = "Toggle Mech Strafing"
 	button_icon_state = "mech_strafe_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/strafe/Activate()
 	button_icon_state = "mech_strafe_[chassis.strafing ? "off" : "on"]"
 	button.UpdateIcon()
 	chassis.strafing()
+=======
+/datum/action/mecha/strafe/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	chassis.strafing()
+	button_icon_state = "mech_strafe_[chassis.strafing ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 
 
 
@@ -128,10 +160,21 @@
 	name = "Toggle Mech defence mode"
 	button_icon_state = "mech_defense_mode_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_defence_mode/Activate()
 	button_icon_state = "mech_defense_mode_[chassis.defence_mode ? "off" : "on"]"
 	button.UpdateIcon()
 	chassis.defence_mode()
+=======
+/datum/action/mecha/mech_defence_mode/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	chassis.defence_mode()
+	button_icon_state = "mech_defense_mode_[chassis.defence_mode ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 
 
 
@@ -139,10 +182,21 @@
 	name = "Toggle Mech Leg Overload"
 	button_icon_state = "mech_overload_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_overload_mode/Activate()
 	button_icon_state = "mech_overload_[chassis.overload ? "off" : "on"]"
 	button.UpdateIcon()
 	chassis.overload()
+=======
+/datum/action/mecha/mech_overload_mode/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	chassis.overload()
+	button_icon_state = "mech_overload_[chassis.overload ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 
 
 
@@ -161,10 +215,21 @@
 	name = "Toggle Mech Zoom"
 	button_icon_state = "mech_zoom_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_zoom/Activate()
 	button_icon_state = "mech_zoom_[chassis.zoom ? "off" : "on"]"
 	button.UpdateIcon()
 	chassis.zoom()
+=======
+/datum/action/mecha/mech_zoom/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	chassis.zoom()
+	button_icon_state = "mech_zoom_[chassis.zoom ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 
 
 
@@ -172,10 +237,21 @@
 	name = "Toggle Mech thrusters"
 	button_icon_state = "mech_thrusters_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_toggle_thrusters/Activate()
 	button_icon_state = "mech_thrusters_[chassis.thrusters ? "off" : "on"]"
 	button.UpdateIcon()
 	chassis.thrusters()
+=======
+/datum/action/mecha/mech_toggle_thrusters/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	chassis.thrusters()
+	button_icon_state = "mech_thrusters_[chassis.thrusters ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 
 
 
@@ -238,9 +314,19 @@
 	name = "Toggle Mech phasing"
 	button_icon_state = "mech_phasing_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_toggle_phasing/Activate()
 	button_icon_state = "mech_phasing_[chassis.phasing ? "off" : "on"]"
 	button.UpdateIcon()
+=======
+/datum/action/mecha/mech_toggle_phasing/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	button_icon_state = "mech_phasing_[chassis.phasing ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 	chassis.phasing()
 
 
@@ -249,9 +335,19 @@
 	name = "Toggle Mech phasing"
 	button_icon_state = "mech_phasing_off"
 
+<<<<<<< HEAD:code/game/mecha/mecha_actions.dm
 /datum/action/innate/mecha/mech_toggle_cloaking/Activate()
 	button_icon_state = "mech_phasing_[chassis.cloaked ? "off" : "on"]"
 	button.UpdateIcon()
+=======
+/datum/action/mecha/mech_toggle_cloaking/invoke_target(obj/vehicle/sealed/mecha/target, datum/event_args/actor/actor)
+	. = ..()
+	if(.)
+		return
+	var/obj/vehicle/sealed/mecha/chassis = target
+	button_icon_state = "mech_phasing_[chassis.cloaked ? "on" : "off"]"
+	update_buttons()
+>>>>>>> 2533caefd (combat code overhaul + projectiles v8: impact handling (#6579)):code/modules/vehicles/sealed/mecha/mecha_actions.dm
 	chassis.toggle_cloaking()
 
 
