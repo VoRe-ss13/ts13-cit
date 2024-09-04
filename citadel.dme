@@ -165,7 +165,18 @@
 #include "code\__DEFINES\dcs\signals\datums\signals_perspective.dm"
 #include "code\__DEFINES\dcs\signals\elements\conflict.dm"
 #include "code\__DEFINES\dcs\signals\items\signals_inducer.dm"
+<<<<<<< HEAD
 #include "code\__DEFINES\dcs\signals\signals_atom\context_system.dm"
+=======
+#include "code\__DEFINES\dcs\signals\modules\signals_module_fishing.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-buckling.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-clickchain.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-context_system.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-defense.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-reachability.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-throwing.dm"
+#include "code\__DEFINES\dcs\signals\signals_atom\signals_atom-tool_system.dm"
+>>>>>>> f26c79e34 (item interaction API (#6721))
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_appearance.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_attack.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_buckling.dm"
@@ -179,7 +190,12 @@
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_throwing.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_visuals.dm"
 #include "code\__DEFINES\dcs\signals\signals_atom\signals_atom_x_act.dm"
+<<<<<<< HEAD
 #include "code\__DEFINES\dcs\signals\signals_atom\tool_system.dm"
+=======
+#include "code\__DEFINES\dcs\signals\signals_item\signals_item-clickchain.dm"
+#include "code\__DEFINES\dcs\signals\signals_item\signals_item-interaction.dm"
+>>>>>>> f26c79e34 (item interaction API (#6721))
 #include "code\__DEFINES\dcs\signals\signals_item\signals_item_economy.dm"
 #include "code\__DEFINES\dcs\signals\signals_item\signals_item_inventory.dm"
 #include "code\__DEFINES\dcs\signals\signals_item\signals_item_mouse.dm"
@@ -982,6 +998,7 @@
 #include "code\game\click\cyborg.dm"
 #include "code\game\click\drag_drop.dm"
 #include "code\game\click\item_attack.dm"
+#include "code\game\click\items-item_attack_chain.dm"
 #include "code\game\click\items.dm"
 #include "code\game\click\mobs.dm"
 #include "code\game\click\observer.dm"
