@@ -5899,6 +5899,23 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/atmospherics)
+<<<<<<< HEAD
+=======
+"vz" = (
+/obj/machinery/vending/cigarette{
+	name = "Cigarette machine";
+	prices = list();
+	products = list(/obj/item/storage/fancy/cigarettes = 10, /obj/item/storage/box/matches = 10, /obj/item/flame/lighter/zippo = 4, /obj/item/clothing/mask/smokable/cigarette/cigar/havana = 2)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/trade_ship/cockpit)
+"vA" = (
+/obj/machinery/atmospherics/component/unary/vent_pump/siphon/on{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced/airmix,
+/area/tradeport/atmospherics)
+>>>>>>> 784368f1a (Nebula Air Supply (#6723))
 "vC" = (
 /obj/structure/closet/jcloset,
 /obj/random/soap,
@@ -14032,9 +14049,10 @@
 /turf/simulated/floor/outdoors/beach/sand/desert/indoors,
 /area/tradeport/safarizoo)
 "YT" = (
-/obj/machinery/atmospherics/component/binary/pump/on{
+/obj/machinery/atmospherics/component/binary/pump/high_power/on{
 	dir = 1;
-	name = "Airmix to Distro"
+	name = "Air Supply";
+	target_pressure = 1000
 	},
 /turf/simulated/floor/plating,
 /area/tradeport/atmospherics)
@@ -14187,14 +14205,14 @@
 /turf/simulated/floor/wmarble,
 /area/tradeport/cafeteria)
 "Zu" = (
-/obj/machinery/atmospherics/component/binary/pump/on{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/effect/debris/cleanable/blood/gibs/robot/limb,
 /obj/effect/floor_decal/rust,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/tradeport/atmospherics)
 "Zv" = (
