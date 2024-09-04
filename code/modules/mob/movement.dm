@@ -364,14 +364,14 @@
 	// preserve momentum: for non-evenly-0.5-multiple movespeeds (HELLO, DIAGONAL MOVES),
 	// we need to store how much we're cheated out of our tick and carry it through
 	// make an intelligent guess at if they're trying to keep moving, tho!
-	if(mob.last_move_time > (world.time - add_delay * 1.25))
+	if(mob.last_self_move > (world.time - add_delay * 1.25))
 		mob.move_delay = old_delay + add_delay
 	else
 		mob.move_delay = world.time + add_delay
 
 	SMOOTH_GLIDE_SIZE(mob, DELAY_TO_GLIDE_SIZE(add_delay))
 
-	mob.last_move_time = world.time
+	mob.last_self_move = world.time
 
 /mob/proc/SelfMove(turf/T, dir)
 	in_selfmove = TRUE
@@ -549,7 +549,7 @@
   * * we are not restrained
   */
 /mob/proc/canface()
-	if(world.time <= last_turn)
+	if(world.time <= last_self_turn)
 		return FALSE
 	if(stat == DEAD || stat == UNCONSCIOUS)
 		return FALSE
@@ -566,7 +566,7 @@
 	if(!canface())
 		return FALSE
 	setDir(EAST)
-	last_turn = world.time
+	last_self_turn = world.time
 	return TRUE
 
 ///Hidden verb to turn west
@@ -576,7 +576,7 @@
 	if(!canface())
 		return FALSE
 	setDir(WEST)
-	last_turn = world.time
+	last_self_turn = world.time
 	return TRUE
 
 ///Hidden verb to turn north
@@ -586,7 +586,7 @@
 	if(!canface())
 		return FALSE
 	setDir(NORTH)
-	last_turn = world.time
+	last_self_turn = world.time
 	return TRUE
 
 ///Hidden verb to turn south
@@ -596,7 +596,7 @@
 	if(!canface())
 		return FALSE
 	setDir(SOUTH)
-	last_turn = world.time
+	last_self_turn = world.time
 	return TRUE
 
 //! Pixel Shifting
