@@ -596,8 +596,13 @@
 		src.melee_action(target)
 	return
 
+<<<<<<< HEAD:code/game/mecha/mecha.dm
 /obj/mecha/proc/interface_action(obj/machinery/target)
 	if(istype(target, /obj/machinery/access_button))
+=======
+/obj/vehicle/sealed/mecha/proc/interface_action(obj/machinery/target)
+	if(istype(target, /obj/machinery/access_button) || istype(target, /obj/machinery/button/remote/blast_door))
+>>>>>>> 710a7cc87 (lets mechs open blast doors (#6729)):code/modules/vehicles/sealed/mecha/mecha.dm
 		src.occupant_message("<span class='notice'>Interfacing with [target].</span>")
 		src.log_message("Interfaced with [target].")
 		target.attack_hand(src.occupant)
